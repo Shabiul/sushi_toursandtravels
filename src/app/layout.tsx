@@ -113,18 +113,19 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-cream font-sans text-navy">
-        {/* Google Analytics */}
+        {/* Google tag (gtag.js) for Google Ads & Google Analytics */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-51P2C6Y9D7"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18310323966"
           strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'G-51P2C6Y9D7');
+            gtag('config', 'AW-18310323966');
           `}
         </Script>
 

@@ -8,6 +8,7 @@ import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import { contactSchema, ContactData } from '@/lib/validations';
 import { getBreadcrumbListSchema, getWebPageSchema, getVideoObjectSchema } from '@/lib/schema';
 import { PHONE_NUMBER, getWhatsAppUrl } from '@/lib/contact';
+import { trackLeadFormConversion } from '@/lib/gtag';
 
 export default function ContactPage() {
   const {
@@ -29,6 +30,12 @@ export default function ContactPage() {
   const onSubmitContact = (data: ContactData) => {
     console.log('Sushi Travels Contact Inquiry:', data);
     
+    // Google Ads: Event snippet for Submit lead form conversion
+    trackLeadFormConversion({
+      lead_step: 'contact_form_submitted',
+      subject: data.subject,
+    });
+
     // Construct WhatsApp message text
     const text = `Hello Sushi Travels, I would like to make an inquiry:\n- *Name:* ${data.name}\n- *Email:* ${data.email}\n- *Phone:* ${data.phone}\n- *Subject:* ${data.subject}\n- *Message:* ${data.message}`;
     

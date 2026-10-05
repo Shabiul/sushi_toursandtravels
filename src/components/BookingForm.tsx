@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { bookingSchema, BookingData } from '@/lib/validations';
 import { getWhatsAppUrl } from '@/lib/contact';
+import { trackLeadFormConversion } from '@/lib/gtag';
 
 interface BookingFormVehicle {
   id: string;
@@ -126,7 +127,13 @@ export default function BookingForm() {
               bookingId: randomId
             })
           });
-          if (!response.ok) {
+          if (response.ok) {
+            // Track Google Ads lead creation conversion
+            trackLeadFormConversion({
+              lead_step: 'booking_lead_created',
+              booking_id: randomId
+            });
+          } else {
             console.error('Failed to create booking database entry');
           }
         } catch (error) {
@@ -143,6 +150,15 @@ export default function BookingForm() {
 
   const onSubmitForm = (data: BookingData) => {
     console.log('Sushi Travels - Booking confirmed!', data, 'Booking ID:', bookingId);
+    
+    // Google Ads: Event snippet for Submit lead form conversion
+    trackLeadFormConversion({
+      lead_step: 'booking_form_confirmed',
+      booking_id: bookingId,
+      vehicle_type: data.vehicleType,
+      trip_type: data.tripType,
+    });
+
     // Auto-redirect to WhatsApp detailed booking confirmation link in a new tab
     const waUrl = getWhatsAppDetailedBookingUrl();
     if (typeof window !== 'undefined') {
