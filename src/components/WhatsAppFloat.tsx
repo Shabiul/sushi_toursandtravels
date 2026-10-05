@@ -14,6 +14,7 @@ export default function WhatsAppFloat() {
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full shadow-2xl hover:scale-110 transition-all duration-300 group"
       aria-label="Contact Sushi Travels on WhatsApp"
+      title="Contact Sushi Travels on WhatsApp (+91 90716 60099)"
     >
       {/* Pulsing ring indicator */}
       <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-40 animate-ping group-hover:animate-none"></span>

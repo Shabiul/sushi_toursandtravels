@@ -44,8 +44,6 @@ export default function Navbar() {
     { name: 'Contact', href: '/contact' },
   ];
 
-
-
   return (
     <>
       <header
@@ -58,10 +56,16 @@ export default function Navbar() {
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-3 group" aria-label="Sushi Travels Home">
+            <Link
+              href="/"
+              className="flex items-center space-x-3 group"
+              aria-label="Sushi Travels Home"
+              title="Sushi Travels Home Page"
+            >
               <Image
                 src="/logo-light-v3.png"
-                alt="Sushi Travels Logo"
+                alt="Sushi Travels Logo — Car and Tempo Traveller Rental Bangalore"
+                title="Sushi Travels Official Logo"
                 width={56}
                 height={56}
                 className="object-contain"
@@ -90,8 +94,10 @@ export default function Navbar() {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className={`text-sm font-medium transition-colors duration-200 relative py-1 ${isActive ? 'text-white font-semibold' : 'text-cream-warm hover:text-primary'
-                      }`}
+                    title={`Navigate to ${link.name}`}
+                    className={`text-sm font-medium transition-colors duration-200 relative py-1 ${
+                      isActive ? 'text-white font-semibold' : 'text-cream-warm hover:text-primary'
+                    }`}
                   >
                     {link.name}
                     {isActive && (
@@ -111,6 +117,7 @@ export default function Navbar() {
               {/* Booking CTA */}
               <Link
                 href="/booking"
+                title="Book a Chauffeur Driven Vehicle in Bangalore"
                 className="inline-flex items-center justify-center bg-primary hover:bg-primary-dark active:scale-[0.98] text-white text-sm font-semibold rounded-full px-6 py-2.5 shadow-sm transition-all duration-200"
               >
                 Book Your Ride
@@ -124,6 +131,7 @@ export default function Navbar() {
                 className="inline-flex items-center justify-center p-2 rounded-full text-cream-warm hover:text-primary hover:bg-navy-light/20 transition-all duration-200"
                 aria-expanded={isOpen}
                 aria-label="Main menu"
+                title="Toggle Main Navigation Menu"
               >
                 {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
@@ -154,10 +162,16 @@ export default function Navbar() {
               className="fixed right-0 top-0 bottom-0 w-80 bg-navy-dark text-white z-50 shadow-2xl flex flex-col p-6 border-l border-navy-light/10"
             >
               <div className="flex items-center justify-between pb-6 border-b border-navy-light/20">
-                <Link href="/" className="flex items-center space-x-3 group" onClick={() => setIsOpen(false)}>
+                <Link
+                  href="/"
+                  title="Sushi Travels Home Page"
+                  className="flex items-center space-x-3 group"
+                  onClick={() => setIsOpen(false)}
+                >
                   <Image
                     src="/logo-light-v3.png"
                     alt="Sushi Travels Logo"
+                    title="Sushi Travels Official Logo"
                     width={40}
                     height={40}
                     className="object-contain"
@@ -180,6 +194,7 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className="p-2 rounded-full text-cream-warm hover:text-primary hover:bg-navy-light/20"
                   aria-label="Close menu"
+                  title="Close Navigation Drawer"
                 >
                   <X className="w-6 h-6" />
                 </button>
@@ -193,10 +208,12 @@ export default function Navbar() {
                     <Link
                       key={link.name}
                       href={link.href}
-                      className={`text-lg font-medium py-2 px-3 rounded-xl transition-all duration-200 ${isActive
+                      title={`Navigate to ${link.name}`}
+                      className={`text-lg font-medium py-2 px-3 rounded-xl transition-all duration-200 ${
+                        isActive
                           ? 'bg-primary text-white'
                           : 'text-cream-warm hover:bg-navy-light/35 hover:text-white'
-                        }`}
+                      }`}
                     >
                       {link.name}
                     </Link>
@@ -208,6 +225,7 @@ export default function Navbar() {
               <div className="pt-6 border-t border-navy-light/20 space-y-4">
                 <a
                   href={`tel:${PHONE_NUMBER}`}
+                  title="Call Sushi Travels Helpline at +91 90716 60099"
                   className="flex items-center justify-center space-x-2 w-full border border-primary/40 hover:border-primary text-cream-warm hover:text-white rounded-full py-3 text-sm font-semibold transition-all duration-200 active:scale-[0.98] bg-navy/30"
                 >
                   <PhoneCall className="w-4 h-4 text-primary" />
@@ -216,6 +234,7 @@ export default function Navbar() {
 
                 <Link
                   href="/booking"
+                  title="Book Your Ride Online with Sushi Travels"
                   className="flex items-center justify-center w-full bg-primary hover:bg-primary-dark active:scale-[0.98] text-white rounded-full py-3 text-sm font-semibold shadow-sm transition-all duration-200"
                 >
                   Book Your Ride Now

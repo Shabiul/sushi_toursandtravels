@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://www.sushitravels.com/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.sushitravels.com/videos/hero-mountains-poster.webp</video:thumbnail_loc>
+      <video:title>Sushi Travels — Outstation Mountain Highway Travel &amp; Group Rental Video</video:title>
+      <video:description>Watch Sushi Travels Tempo Travellers and luxury fleet navigating scenic South India ghat roads and outstation highways with verified chauffeurs.</video:description>
+      <video:content_loc>https://www.sushitravels.com/videos/hero-mountains.mp4</video:content_loc>
+      <video:duration>24</video:duration>
+      <video:publication_date>2024-01-15</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.sushitravels.com/fleet</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.sushitravels.com/videos/fleet-scene-12-poster.webp</video:thumbnail_loc>
+      <video:title>Sushi Travels — Tempo Traveller and Luxury Fleet Showcase Video</video:title>
+      <video:description>Detailed video showcase of Sushi Travels Tempo Traveller interior seating, Force Urbania luxury vans, pushback recliners, and executive passenger buses.</video:description>
+      <video:content_loc>https://www.sushitravels.com/videos/fleet-scene-12.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2024-01-15</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.sushitravels.com/about</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.sushitravels.com/videos/about-scene-13-poster.webp</video:thumbnail_loc>
+      <video:title>About Sushi Travels — Chauffeur Fleet Operations &amp; Company Story Video</video:title>
+      <video:description>Behind the scenes at Sushi Travels garage operations, mechanical safety inspections, sanitized vehicle handovers, and chauffeur briefings in Bangalore.</video:description>
+      <video:content_loc>https://www.sushitravels.com/videos/about-scene-13.mp4</video:content_loc>
+      <video:duration>18</video:duration>
+      <video:publication_date>2024-01-15</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.sushitravels.com/contact</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.sushitravels.com/videos/goa-beach-drone-poster.webp</video:thumbnail_loc>
+      <video:title>Sushi Travels — Outstation Destinations &amp; Coastline Route Showcase Video</video:title>
+      <video:description>Drone footage of scenic road trip destinations, coastal highways, and holiday locations served by Sushi Travels round-trip chauffeur service from Bangalore.</video:description>
+      <video:content_loc>https://www.sushitravels.com/videos/goa-beach-drone.mp4</video:content_loc>
+      <video:duration>15</video:duration>
+      <video:publication_date>2024-01-15</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+</urlset>

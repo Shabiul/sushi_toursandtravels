@@ -50,7 +50,11 @@ export default function GroupSizeComparisonTable({
                 <tr key={vehicle.id} className="border-b border-navy-light/10 last:border-0">
                   <td className="py-3 pr-3 font-semibold text-navy">
                     {href ? (
-                      <Link href={href} className="hover:text-primary transition-colors">
+                      <Link
+                        href={href}
+                        title={`View ${vehicle.name} specifications and rental pricing`}
+                        className="hover:text-primary transition-colors"
+                      >
                         {vehicle.name}
                       </Link>
                     ) : (

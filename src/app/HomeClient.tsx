@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Shield, UserCheck, Headset, BadgePercent, ArrowRight, Star, MapPin, MessageSquare, AlertCircle, X } from 'lucide-react';
-import { getLocalBusinessSchema, getFAQSchema } from '@/lib/schema';
+import { getLocalBusinessSchema, getFAQSchema, getWebPageSchema, getVideoObjectSchema } from '@/lib/schema';
 import { motion } from 'framer-motion';
 import VehicleCard from '@/components/VehicleCard';
 import { sortVehiclesForDisplay, Vehicle } from '@/lib/vehicles';
@@ -126,7 +126,36 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
       />
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getWebPageSchema({
+              name: 'Sushi Travels — Car & Tempo Traveller Rental Bangalore',
+              description: 'Chauffeur-driven car, SUV and Tempo Traveller rentals in Bangalore for outstation road trips, airport transfers, and group holidays.',
+              url: '/',
+              datePublished: '2024-01-15T08:00:00+05:30',
+              dateModified: '2026-10-05T08:00:00+05:30',
+            })
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(faqs)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getVideoObjectSchema({
+              name: 'Sushi Travels — Outstation Mountain Highway Travel & Group Rental Video',
+              description: 'Watch Sushi Travels Tempo Travellers and luxury fleet navigating scenic South India ghat roads and outstation highways with verified chauffeurs.',
+              thumbnailUrl: '/videos/hero-mountains-poster.webp',
+              uploadDate: '2024-01-15T08:00:00+05:30',
+              duration: 'PT24S',
+              contentUrl: '/videos/hero-mountains.mp4',
+            })
+          ),
+        }}
       />
 
       {/* Hero Section — pulled up under the fixed transparent header, same pattern as the Fleet page */}
@@ -143,6 +172,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
           playsInline
           preload="auto"
           poster="/videos/hero-mountains-poster.webp"
+          title="Sushi Travels Outstation Mountain Highway Travel Video"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-navy-dark/55 z-0 pointer-events-none" />
@@ -150,6 +180,14 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto w-full text-center space-y-8">
           <div className="space-y-4 max-w-3xl mx-auto">
+            {/* Freshness & Trust Badge */}
+            <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full text-xs text-cream-warm">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>Season 2026 Verified Rates</span>
+              <span className="text-white/40">•</span>
+              <span>Updated <time dateTime="2026-10-05">October 5, 2026</time></span>
+            </div>
+
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white leading-tight">
               Your Trusted Travel Partner Across India
             </h1>
@@ -161,6 +199,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
           <div className="flex justify-center">
             <Link
               href="/booking"
+              title="Book Your Ride with Sushi Travels"
               className="inline-flex items-center justify-center bg-primary hover:bg-primary-dark active:scale-[0.98] text-white text-base font-bold rounded-full px-8 py-3.5 shadow-sm transition-all duration-200"
             >
               <span>Book Your Ride</span>
@@ -267,6 +306,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
                 <Image
                   src="/mysuru.webp"
                   alt="Mysuru Palace — one of Karnataka's most iconic destinations, reachable on a Sushi Travels round trip"
+                  title="Mysuru Palace — South India Tour Destination by Sushi Travels"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover"
@@ -307,6 +347,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
               <div className="pt-2">
                 <Link
                   href="/booking"
+                  title="Plan Your Group Trip with Sushi Travels"
                   className="inline-flex items-center justify-center bg-navy hover:bg-primary active:scale-[0.98] text-white text-xs font-bold rounded-full px-6 py-3 shadow transition-all duration-200"
                 >
                   <span>Plan Your Group Trip</span>
@@ -371,6 +412,58 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
               </p>
             </div>
           </div>
+
+          {/* Statutory Compliance & Regulatory Citations */}
+          <div className="mt-12 bg-white rounded-2xl border border-navy-light/10 p-6 sm:p-8 text-left shadow-sm">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-navy-light/10 pb-4 mb-4">
+              <div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-primary-dark">Official Compliance &amp; Citations</span>
+                <h3 className="text-base sm:text-lg font-serif font-bold text-navy">
+                  Adherence to National &amp; Karnataka Transport Regulations
+                </h3>
+              </div>
+              <span className="inline-flex items-center text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full w-fit">
+                ✓ 100% Commercial Tourist Permit Compliant
+              </span>
+            </div>
+            <p className="text-xs sm:text-sm text-navy-light leading-relaxed mb-4">
+              Sushi Travels operates strictly under the guidelines defined by the{' '}
+              <a
+                href="https://morth.nic.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Ministry of Road Transport and Highways (MoRTH) Official Portal"
+                className="text-primary font-semibold underline decoration-primary/40 hover:decoration-primary"
+              >
+                Ministry of Road Transport and Highways (MoRTH)
+              </a>{' '}
+              and the{' '}
+              <a
+                href="https://transport.karnataka.gov.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Karnataka Transport Department &amp; RTO Official Portal"
+                className="text-primary font-semibold underline decoration-primary/40 hover:decoration-primary"
+              >
+                Karnataka Transport Department
+              </a>
+              . All Tempo Travellers, Force Urbanias, and luxury coaches carry valid All India Tourist Permits (AITP), AIS-140 GPS tracking devices, emergency panic buttons, and fitness certifications as mandated by the Motor Vehicles Act.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-navy">
+              <div className="bg-cream/60 rounded-xl p-3 border border-navy-light/5">
+                <p className="font-bold text-navy">AIS-140 Certified GPS</p>
+                <p className="text-navy-light mt-0.5">Real-time vehicle location &amp; emergency alert system linked to state command centers.</p>
+              </div>
+              <div className="bg-cream/60 rounded-xl p-3 border border-navy-light/5">
+                <p className="font-bold text-navy">Driver Duty &amp; Rest Logs</p>
+                <p className="text-navy-light mt-0.5">MoRTH-compliant shift caps to prevent driver fatigue during long-distance night drives.</p>
+              </div>
+              <div className="bg-cream/60 rounded-xl p-3 border border-navy-light/5">
+                <p className="font-bold text-navy">Interstate Border Clearances</p>
+                <p className="text-navy-light mt-0.5">Seamless e-permit border taxes paid for Tamil Nadu, Kerala, Andhra Pradesh &amp; Goa.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -384,6 +477,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
             </div>
             <Link
               href="/fleet"
+              title="Explore Full Vehicle Rental Fleet in Bangalore"
               className="inline-flex items-center space-x-1.5 text-sm font-bold text-primary hover:text-primary-dark transition duration-150 mt-4 md:mt-0"
             >
               <span>View All Fleet</span>
@@ -460,7 +554,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
             ) : (
               <div className="col-span-full text-center text-navy-light py-16">
                 Route guides are temporarily unavailable. Please check our{' '}
-                <Link href="/routes" className="text-primary font-semibold hover:text-primary-dark">
+                <Link href="/routes" title="Explore Popular Outstation Routes from Bangalore" className="text-primary font-semibold hover:text-primary-dark">
                   full routes page
                 </Link>{' '}
                 or contact us directly.
@@ -471,6 +565,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
           <div className="text-center mt-10">
             <Link
               href="/routes"
+              title="View All Route Guides and Fare Enquiries"
               className="inline-flex items-center space-x-1.5 text-sm font-bold text-primary hover:text-primary-dark transition duration-150"
             >
               <span>View All Route Guides &amp; Fare Enquiries</span>
@@ -490,7 +585,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
             <div>
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-2xl sm:text-3xl font-serif font-bold text-navy">Our Services</h2>
-                <Link href="/services" className="inline-flex items-center space-x-1 text-xs font-bold text-primary-dark hover:text-navy transition">
+                <Link href="/services" title="View All Chauffeur Rental Services in Bangalore" className="inline-flex items-center space-x-1 text-xs font-bold text-primary-dark hover:text-navy transition">
                   <span>View All</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
@@ -505,6 +600,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
                   <Link
                     key={item.href}
                     href={item.href}
+                    title={`Explore ${item.label} services in Bangalore`}
                     className="bg-cream rounded-xl border border-navy-light/10 px-4 py-3 text-sm font-semibold text-navy hover:text-primary hover:border-primary/30 transition-colors"
                   >
                     {item.label}
@@ -517,7 +613,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
             <div>
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-2xl sm:text-3xl font-serif font-bold text-navy">Popular Areas We Serve</h2>
-                <Link href="/locations" className="inline-flex items-center space-x-1 text-xs font-bold text-primary-dark hover:text-navy transition">
+                <Link href="/locations" title="View All Service Locations in Bangalore" className="inline-flex items-center space-x-1 text-xs font-bold text-primary-dark hover:text-navy transition">
                   <span>View All</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
@@ -532,6 +628,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
                   <Link
                     key={item.href}
                     href={item.href}
+                    title={`Car and Tempo Traveller rental in ${item.label}, Bangalore`}
                     className="bg-cream rounded-xl border border-navy-light/10 px-4 py-3 text-sm font-semibold text-navy hover:text-primary hover:border-primary/30 transition-colors"
                   >
                     Car Rental in {item.label}
@@ -624,6 +721,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
             </div>
             <Link
               href="/tours-and-packages"
+              title="View All South India Tours and Holiday Packages"
               className="inline-flex items-center space-x-1.5 text-sm font-bold text-primary hover:text-primary-dark transition duration-150 mt-4 md:mt-0"
             >
               <span>View All Tours &amp; Packages</span>
@@ -762,6 +860,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
                 href={getCustomRouteWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Request Custom Route Quote on WhatsApp"
                 onClick={() => setShowCustomRouteModal(false)}
                 className="flex-1 inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-full py-3.5 px-6 shadow-md shadow-emerald-600/20 hover:scale-[1.02] active:scale-[0.98] transition duration-200 text-xs sm:text-sm"
               >

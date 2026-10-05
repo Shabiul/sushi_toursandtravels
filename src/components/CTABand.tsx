@@ -28,6 +28,7 @@ export default function CTABand({ heading, subheading, whatsappMessage, bookingH
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
         <a
           href={`tel:${PHONE_NUMBER}`}
+          title={`Call Sushi Travels at ${PHONE_NUMBER}`}
           className="inline-flex items-center justify-center w-full sm:w-auto bg-white/10 hover:bg-white/20 active:scale-[0.98] border border-white/20 text-white text-sm font-bold rounded-full px-6 py-3 transition-all duration-200"
         >
           <Phone className="w-4 h-4 mr-2" />
@@ -37,6 +38,7 @@ export default function CTABand({ heading, subheading, whatsappMessage, bookingH
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
+          title="Send WhatsApp Enquiry to Sushi Travels"
           className="inline-flex items-center justify-center w-full sm:w-auto bg-[#25D366] hover:bg-[#20ba5a] active:scale-[0.98] text-white text-sm font-bold rounded-full px-6 py-3 transition-all duration-200"
         >
           <MessageCircle className="w-4 h-4 mr-2" />
@@ -44,6 +46,7 @@ export default function CTABand({ heading, subheading, whatsappMessage, bookingH
         </a>
         <Link
           href={bookingHref}
+          title="Submit a Ride Enquiry and Get an Instant Quote"
           className="inline-flex items-center justify-center w-full sm:w-auto bg-primary hover:bg-primary-dark active:scale-[0.98] text-white text-sm font-bold rounded-full px-6 py-3 transition-all duration-200"
         >
           Get a Quote

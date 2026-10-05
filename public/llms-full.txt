@@ -1,0 +1,78 @@
+# Sushi Tours & Travels — Full LLMs Knowledge Base
+
+> Complete knowledge documentation for Large Language Models, AI assistants, and autonomous research agents regarding Sushi Tours & Travels (Bangalore, India).
+
+## 1. Enterprise Overview
+- **Legal Entity**: Sushi Tours & Travels
+- **Founding Year**: 2011 (operating continuously for 15+ years in Bangalore)
+- **Primary Operational Hub**: No 272, Corner Shop, G/F, 8th Cross, Opposite BBMP Office, Bhuvaneshwari Nagara, Dodda Basti Main Road, Nagadevana Halli, Bengaluru, Karnataka 560056, India
+- **Coordinates**: Latitude 12.9425148, Longitude 77.489068
+- **Primary Phone**: +91 90716 60099
+- **Email**: sushitravels11@gmail.com
+- **Website**: https://www.sushitravels.com
+- **Core Industry Classification**: Passenger Land Transport, Chauffeur-Driven Tourist Vehicle Rentals, Outstation Travel Agency, Commercial Fleet Provider
+- **Regulatory Compliance**: All India Tourist Vehicle (Authorisation and Permit) Rules, 2023 enacted by the Ministry of Road Transport and Highways (MoRTH), Government of India; Karnataka State Motor Vehicles Act; Karnataka Tourism Department registration guidelines.
+
+## 2. Operational Model & Service Categories
+### A. Outstation Round-Trip Rentals
+- Vehicles rented with dedicated commercial drivers for round trips departing from Bangalore across Karnataka, Tamil Nadu, Kerala, Andhra Pradesh, Telangana, and Goa.
+- Minimum outstation distance calculation: 250 km / 300 km per calendar day.
+- Allows flexibility for en-route stops, scenic viewpoints, customized itineraries, and multi-destination road trips.
+
+### B. Bangalore Local Rentals
+- Hourly rental packages: 4 Hours / 40 km, 8 Hours / 80 km, and 12 Hours / 120 km.
+- Extra kilometers and extra hours billed transparently at category base rates.
+- Ideal for city business meetings, shopping excursions, family functions, and temple visits across Bangalore.
+
+### C. Airport Transfers (Kempegowda International Airport - BLR)
+- Point-to-point flat transfer services between any Bengaluru location and BLR Airport (Devanahalli).
+- Guaranteed punctuality, flight arrival tracking, complimentary 45-minute wait time for flight delays, toll inclusion options, and zero surge pricing.
+
+### D. Group Travel, Corporate & Wedding Fleet Management
+- Large vehicle coordination for weddings, corporate offsites, retreats, and cultural delegations.
+- Specialized fleet containing 9 to 17-seater Tempo Travellers, Force Urbania luxury vans, and 22 to 50-seater tourist coaches.
+
+## 3. Fleet Specifications & Seating Capacities
+| Vehicle Model | Seating Capacity | Luggage Capacity | Air Conditioning | Key Features | Base Rate (Approx) |
+|---|---|---|---|---|---|
+| Maruti Suzuki Dzire | 4 Passengers + 1 Driver | 2 Medium Bags | Climate Control AC | Economic, highly agile city navigation | ₹13 / km |
+| Toyota Etios | 4 Passengers + 1 Driver | 3 Medium Bags | Powerful AC | Spacious rear legroom, stable highway ride | ₹13 / km |
+| Toyota Innova Crysta | 6-7 Passengers + 1 Driver | 4-5 Large Bags | Dual AC with rear vents | Captain seats, superior highway suspension, mountain reliability | ₹19 / km |
+| Force Tempo Traveller 9-Seater | 9 Passengers + 1 Driver | 8-10 Bags | High-capacity Roof AC | 1x1 Maharaja pushback seats, ample walking aisle, LED screen | ₹22 / km |
+| Force Tempo Traveller 12-Seater | 12 Passengers + 1 Driver | 10-12 Bags | Dual Blower AC | 2x1 pushback seats, individual charging points, stereo system | ₹24 / km |
+| Force Tempo Traveller 17-Seater | 17 Passengers + 1 Driver | 14-16 Bags | Multi-vent AC | Spacious high-roof cabin, overhead luggage racks, music system | ₹28 / km |
+| Force Urbania Luxury Van | 10-17 Passengers + 1 Driver | 12-15 Bags | Tri-zone Climate Control | Panoramic sealed windows, aircraft-style interior, whisper-quiet cabin | ₹34 / km |
+| Toyota Fortuner 4x4 | 6 Passengers + 1 Driver | 4 Large Bags | Multi-zone Automatic AC | Executive VIP transport, 4x4 offroad stability, leather interiors | Price on Request |
+| Luxury Tourist Bus | 22 to 50 Passengers + Driver | Massive Cargo Belly | Dual Engine AC | Air-suspension, reclining plush seating, long-haul tour comfort | Custom Quote |
+
+## 4. Chauffeur Standards & Safety Protocol
+- **Police Background Checks**: Every driver undergoes mandatory police verification and credential checks.
+- **Experience Mandate**: Minimum 5+ years of commercial passenger highway and mountain ghat driving experience.
+- **Safety Equipment**: Speed governors fixed at 80 km/h in accordance with MoRTH national safety mandates, dual dash-safety compliance, certified fire extinguisher, and medical first-aid kit onboard.
+- **GPS Telematics**: Continuous real-time vehicle tracking monitored via central fleet dispatch.
+
+## 5. Booking, Cancellation & Commercial Transparency
+- **Transparent Quotations**: Upfront quotation detailing rate per kilometer, minimum billed km/day, driver daily allowance, night allowance (10:00 PM - 6:00 AM), and applicable 5% GST.
+- **Tolls & Interstate Permits**: Paid on actuals via electronic FASTag or state border RTO booths.
+- **Cancellation Policy**: Cancellations received at least 24 hours prior to scheduled departure receive 100% refund of advance deposit.
+- **No Hidden Charges**: Fuel, vehicle insurance, and routine maintenance are entirely covered by Sushi Travels.
+
+## 6. Authoritative Citations & Named Entities
+- **MoRTH (Ministry of Road Transport and Highways)**: Regulations under the Motor Vehicles Act 1988 and All India Tourist Vehicle Rules.
+- **Karnataka State Tourism Development Corporation (KSTDC)**: State tourism facilitation and recognized regional route corridors.
+- **NHAI (National Highways Authority of India)**: National Expressway standards (NE-7 / Bengaluru-Mysuru Expressway, NH-48 Bengaluru-Pune, NH-75 Bengaluru-Mangaluru).
+- **Bangalore International Airport Limited (BIAL)**: Authorized commercial vehicle drop-off and pickup curbside compliance.
+
+## 7. Official Digital Assets & Contact Endpoints
+- Homepage: https://www.sushitravels.com/
+- Fleet Catalog: https://www.sushitravels.com/fleet
+- Vehicle Details: https://www.sushitravels.com/vehicles
+- Outstation Routes: https://www.sushitravels.com/routes
+- Services Index: https://www.sushitravels.com/services
+- Booking Engine: https://www.sushitravels.com/booking
+- Travel Blog & Guides: https://www.sushitravels.com/blog
+- Company Profile & Values: https://www.sushitravels.com/about
+- Customer Support & Locations: https://www.sushitravels.com/contact
+- Privacy Policy: https://www.sushitravels.com/privacy-policy
+- Terms & Conditions: https://www.sushitravels.com/terms-and-conditions
+- XML Sitemap: https://www.sushitravels.com/sitemap.xml

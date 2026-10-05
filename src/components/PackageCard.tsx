@@ -21,6 +21,7 @@ export default function PackageCard({ pkg }: PackageCardProps) {
         <Image
           src={pkg.image}
           alt={`Sushi Travels tour package - ${pkg.title}`}
+          title={`${pkg.title} Tour Package — Sushi Travels`}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover object-center"
@@ -72,6 +73,7 @@ export default function PackageCard({ pkg }: PackageCardProps) {
               href={`tel:${PHONE_NUMBER}`}
               className="inline-flex items-center justify-center w-11 h-11 bg-cream border border-navy-light/15 hover:bg-[#0078FF] hover:border-[#0078FF] text-navy hover:text-white rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm shrink-0"
               aria-label={`Call Sushi Tours & Travels about ${pkg.title}`}
+              title={`Call Sushi Travels about ${pkg.title}`}
             >
               <Phone className="w-4.5 h-4.5" />
             </a>
@@ -81,6 +83,7 @@ export default function PackageCard({ pkg }: PackageCardProps) {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-11 h-11 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm shrink-0"
               aria-label={`Enquire about ${pkg.title} on WhatsApp`}
+              title={`Enquire about ${pkg.title} on WhatsApp`}
             >
               <MessageCircle className="w-4.5 h-4.5" />
             </a>

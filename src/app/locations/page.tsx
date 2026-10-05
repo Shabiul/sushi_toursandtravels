@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, MapPin } from 'lucide-react';
 import { locationPages } from '@/lib/locations';
-import { getBreadcrumbListSchema } from '@/lib/schema';
+import { getBreadcrumbListSchema, getWebPageSchema } from '@/lib/schema';
 import LandingHero from '@/components/LandingHero';
 
 export const metadata: Metadata = {
@@ -38,6 +38,20 @@ export default function LocationsHubPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbListSchema(breadcrumbItems)) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getWebPageSchema({
+              name: 'Areas We Serve in Bangalore | Sushi Travels',
+              description: 'Sushi Travels provides chauffeur-driven car rental pickup and drop across Whitefield, Koramangala, Indiranagar, Electronic City and more Bangalore areas.',
+              url: 'https://www.sushitravels.com/locations',
+              datePublished: '2024-01-15',
+              dateModified: '2026-10-05',
+            })
+          ),
+        }}
+      />
 
       <LandingHero
         h1="Areas We Serve Across Bangalore"
@@ -51,6 +65,7 @@ export default function LocationsHubPage() {
             <Link
               key={page.slug}
               href={`/locations/${page.slug}`}
+              title={`Car and Tempo Traveller rental in ${page.name}, Bangalore`}
               className="group bg-white rounded-2xl border border-navy-light/10 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 flex items-center justify-between gap-4"
             >
               <div className="flex items-center gap-3">

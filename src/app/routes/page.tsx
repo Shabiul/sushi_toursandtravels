@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Route as RouteIcon } from 'lucide-react';
 import { routePages } from '@/lib/routes';
-import { getBreadcrumbListSchema } from '@/lib/schema';
+import { getBreadcrumbListSchema, getWebPageSchema } from '@/lib/schema';
 import LandingHero from '@/components/LandingHero';
 
 export const metadata: Metadata = {
@@ -39,6 +39,20 @@ export default function RoutesHubPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbListSchema(breadcrumbItems)) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getWebPageSchema({
+              name: 'Bangalore Outstation Cab Routes - Sushi Travels Hub',
+              description: 'Distance, travel time and vehicle guidance for popular Bangalore outstation cab routes.',
+              url: '/routes',
+              datePublished: '2024-01-15T08:00:00+05:30',
+              dateModified: '2026-10-05T08:00:00+05:30',
+            })
+          ),
+        }}
+      />
 
       <LandingHero
         h1="Popular Bangalore Outstation Cab Routes"
@@ -52,12 +66,14 @@ export default function RoutesHubPage() {
             <Link
               key={page.slug}
               href={`/routes/${page.slug}`}
+              title={`View ${page.h1} route guide, distance, and fare details`}
               className="group bg-white rounded-2xl border border-navy-light/10 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden flex flex-col"
             >
               <div className="relative aspect-video w-full overflow-hidden bg-cream-warm/30">
                 <Image
                   src={page.heroImage}
                   alt={page.h1}
+                  title={`Bangalore to ${page.destination} route scenery`}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover"
@@ -81,11 +97,15 @@ export default function RoutesHubPage() {
           ))}
         </div>
 
-        <div className="mt-14 bg-white rounded-2xl border border-navy-light/10 p-6 sm:p-8 text-center">
+        <div className="mt-14 bg-white rounded-2xl border border-navy-light/10 p-6 sm:p-8 text-center shadow-sm">
           <p className="text-sm text-navy-light">
             Planning a longer trip further afield?{' '}
-            <Link href="/blog/statue-of-unity-kevadia-gujarat-travel-diary" className="text-primary font-semibold hover:text-primary-dark">
-              Read: A Trip to the Statue of Unity, Gujarat
+            <Link
+              href="/blog/statue-of-unity-kevadia-gujarat-travel-diary"
+              title="Read our field travel diary to the Statue of Unity in Gujarat"
+              className="text-primary font-semibold hover:text-primary-dark"
+            >
+              Read: A Trip to the Statue of Unity, Gujarat →
             </Link>
           </p>
         </div>

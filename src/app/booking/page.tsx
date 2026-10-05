@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { ShieldCheck, Clock, ShieldAlert } from 'lucide-react';
-import { getServiceSchema, getBreadcrumbListSchema } from '@/lib/schema';
+import { getServiceSchema, getBreadcrumbListSchema, getWebPageSchema } from '@/lib/schema';
 import BookingForm from '@/components/BookingForm';
 
 export const metadata = {
@@ -41,6 +41,20 @@ export default function BookingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbListSchema(breadcrumbItems)) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getWebPageSchema({
+              name: 'Book a Car with Driver in Bangalore | Sushi Travels',
+              description: 'Book local drops, full-day packages, or outstation chauffeur services. Multi-step transparent booking with verified professional drivers.',
+              url: 'https://www.sushitravels.com/booking',
+              datePublished: '2024-01-15',
+              dateModified: '2026-10-05',
+            })
+          ),
+        }}
+      />
 
       {/* Booking Hero Banner — pulled up under the fixed transparent header, same pattern as the Fleet page */}
       <div
@@ -49,6 +63,12 @@ export default function BookingPage() {
       >
         <div className="absolute inset-0 bg-navy-dark/80 z-0" />
         <div className="relative z-10 max-w-7xl mx-auto space-y-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-cream-warm text-xs font-semibold mb-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Season 2026 Verified Booking Rates</span>
+            <span className="text-white/40">•</span>
+            <span>Updated <time dateTime="2026-10-05">October 2026</time></span>
+          </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white">
             Book a Vehicle with Driver in Bangalore
           </h1>

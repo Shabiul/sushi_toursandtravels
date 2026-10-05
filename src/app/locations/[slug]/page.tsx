@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { MapPin, Car } from 'lucide-react';
 import { locationPages, getLocationPage } from '@/lib/locations';
 import { vehiclePages } from '@/lib/vehiclePages';
-import { getBreadcrumbListSchema, getFAQSchema, getServiceLandingSchema } from '@/lib/schema';
+import { getBreadcrumbListSchema, getFAQSchema, getServiceLandingSchema, getWebPageSchema } from '@/lib/schema';
 import LandingHero from '@/components/LandingHero';
 import FaqAccordion from '@/components/FaqAccordion';
 import CTABand from '@/components/CTABand';
@@ -85,6 +85,20 @@ export default async function LocationDetailPage({ params }: { params: Promise<{
       />
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getWebPageSchema({
+              name: `${page.title} | Sushi Travels`,
+              description: page.metaDescription,
+              url,
+              datePublished: '2024-01-15',
+              dateModified: '2026-10-05',
+            })
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(page.faqs)) }}
       />
 
@@ -98,6 +112,16 @@ export default async function LocationDetailPage({ params }: { params: Promise<{
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-12">
+        <div className="flex items-center justify-between flex-wrap gap-2 text-xs text-navy-light px-1">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-navy-light/10 text-navy font-medium shadow-sm">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>Season 2026 Verified Pickup Availability</span>
+            <span>•</span>
+            <span>Updated <time dateTime="2026-10-05">October 2026</time></span>
+          </div>
+          <span className="text-[11px] text-navy-light">Bangalore RTO &amp; Police Verified Chauffeurs</span>
+        </div>
+
         <section className="bg-white rounded-2xl border border-navy-light/10 p-6 sm:p-8">
           <p className="text-sm sm:text-base text-navy leading-relaxed">{page.geoSummary}</p>
         </section>

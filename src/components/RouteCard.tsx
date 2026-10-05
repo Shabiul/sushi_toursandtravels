@@ -27,6 +27,7 @@ export default function RouteCard({ route }: RouteCardProps) {
       <Image
         src={route.imageUrl}
         alt={`Popular holiday route from ${route.from} to ${route.to}`}
+        title={`Cab route from ${route.from} to ${route.to}`}
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className="object-cover z-0"
@@ -71,6 +72,7 @@ export default function RouteCard({ route }: RouteCardProps) {
 
           <Link
             href={`/booking?pickup=${encodeURIComponent(route.from)}&drop=${encodeURIComponent(route.to)}&type=${encodeURIComponent(route.tripType || 'Round Trip')}&compulsory=true`}
+            title={`Book round-trip cab from ${route.from} to ${route.to}`}
             className="inline-flex items-center justify-center bg-white/15 hover:bg-primary text-white text-xs font-bold rounded-full px-4 py-2 border border-white/10 hover:border-transparent transition-all duration-300 hover:scale-105 active:scale-95"
           >
             <span>Book Now</span>

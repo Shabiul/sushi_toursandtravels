@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import { contactSchema, ContactData } from '@/lib/validations';
-import { getBreadcrumbListSchema } from '@/lib/schema';
+import { getBreadcrumbListSchema, getWebPageSchema, getVideoObjectSchema } from '@/lib/schema';
 import { PHONE_NUMBER, getWhatsAppUrl } from '@/lib/contact';
 
 export default function ContactPage() {
@@ -51,6 +51,35 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbListSchema(breadcrumbItems)) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getWebPageSchema({
+              name: 'Contact Sushi Travels — Rental Office, Phone & WhatsApp Support',
+              description: 'Contact Sushi Travels in Bangalore for Tempo Traveller, Force Urbania, and bus rentals. 24/7 phone and WhatsApp support.',
+              url: 'https://www.sushitravels.com/contact',
+              datePublished: '2024-01-15',
+              dateModified: '2026-10-05',
+            })
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getVideoObjectSchema({
+              name: 'Sushi Travels — Outstation Destinations & Coastline Route Showcase Video',
+              description: 'Drone footage of scenic road trip destinations, coastal highways, and holiday locations served by Sushi Travels round-trip chauffeur service from Bangalore.',
+              thumbnailUrl: '/videos/goa-beach-drone-poster.webp',
+              uploadDate: '2024-01-15T08:00:00+05:30',
+              duration: 'PT15S',
+              contentUrl: '/videos/goa-beach-drone.mp4',
+            })
+          ),
+        }}
+      />
 
       {/* Contact Hero Banner — pulled up under the fixed transparent header, same pattern as the Fleet/Home/About pages */}
       <div className="relative -mt-[72px] md:-mt-[80px] min-h-screen flex items-center justify-center px-4 text-center text-white overflow-hidden">
@@ -63,6 +92,7 @@ export default function ContactPage() {
           playsInline
           preload="auto"
           poster="/videos/goa-beach-drone-poster.webp"
+          title="Sushi Travels Outstation Destinations Showcase Video"
         />
         <div className="absolute inset-0 bg-navy-dark/75 z-0" />
         <div className="relative z-10 max-w-7xl mx-auto space-y-4">
@@ -96,6 +126,7 @@ export default function ContactPage() {
                 href="https://maps.google.com/?cid=15212322609133405823"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="View Sushi Travels Bangalore Office Location on Google Maps"
                 className="bg-white rounded-2xl border border-navy-light/10 p-5 flex items-start space-x-4 shadow-sm hover:border-primary/30 hover:shadow-md transition duration-200 group cursor-pointer"
               >
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-1 group-hover:scale-110 transition duration-200" />
@@ -119,7 +150,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-bold text-xs uppercase tracking-wider text-navy">Call & WhatsApp</h3>
                   <p className="text-sm font-semibold mt-1">
-                    <a href={`tel:${PHONE_NUMBER}`} className="hover:text-primary transition">
+                    <a href={`tel:${PHONE_NUMBER}`} title="Call Sushi Travels 24/7 Helpline" className="hover:text-primary transition">
                       +91 90716 60099
                     </a>
                   </p>
@@ -133,7 +164,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-bold text-xs uppercase tracking-wider text-navy">Inquiries Email</h3>
                   <p className="text-sm font-semibold mt-1">
-                    <a href="mailto:sushitravels11@gmail.com" className="hover:text-primary transition">
+                    <a href="mailto:sushitravels11@gmail.com" title="Send Email Inquiry to Sushi Travels" className="hover:text-primary transition">
                       sushitravels11@gmail.com
                     </a>
                   </p>
@@ -276,6 +307,7 @@ export default function ContactPage() {
               href="https://maps.google.com/?cid=15212322609133405823"
               target="_blank"
               rel="noopener noreferrer"
+              title="Open Sushi Travels Headquarters on Google Maps"
               className="absolute top-4 left-4 bg-navy-dark hover:bg-navy text-white p-3.5 rounded-xl border border-white/10 shadow text-xs space-y-1 transition duration-150 cursor-pointer z-10"
             >
               <div className="font-bold flex items-center">
@@ -291,6 +323,7 @@ export default function ContactPage() {
                 href="https://maps.google.com/?cid=15212322609133405823"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Open Route Navigation in Google Maps"
                 className="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-full text-xs shadow-md flex items-center space-x-1.5 transition duration-150"
               >
                 <span>Open in Google Maps</span>
@@ -303,6 +336,7 @@ export default function ContactPage() {
               href="https://share.google/St55UlsbDobuLv9jP"
               target="_blank"
               rel="noopener noreferrer"
+              title="Read Sushi Travels Verified Google Business Reviews"
               className="inline-flex items-center gap-2 text-sm font-semibold text-primary-dark hover:text-navy transition-colors duration-150"
             >
               <span>Read our reviews on Google</span>
@@ -316,15 +350,15 @@ export default function ContactPage() {
           <h2 className="font-serif font-bold text-xl text-navy">Looking for Something Specific?</h2>
           <p className="text-sm text-navy-light max-w-2xl mx-auto">
             See our{' '}
-            <Link href="/services" className="text-primary font-semibold hover:text-primary-dark">
+            <Link href="/services" title="Browse All Sushi Travels Chauffeur Rental Services" className="text-primary font-semibold hover:text-primary-dark">
               full list of rental services
             </Link>
             , browse{' '}
-            <Link href="/vehicles" className="text-primary font-semibold hover:text-primary-dark">
+            <Link href="/vehicles" title="View Rental Fleet Pricing and Capacity" className="text-primary font-semibold hover:text-primary-dark">
               vehicle pricing by category
             </Link>
             , or check whether we serve your{' '}
-            <Link href="/locations" className="text-primary font-semibold hover:text-primary-dark">
+            <Link href="/locations" title="Explore Sushi Travels Service Areas Across Bangalore" className="text-primary font-semibold hover:text-primary-dark">
               area of Bangalore
             </Link>
             .

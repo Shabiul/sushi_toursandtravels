@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, ShieldCheck, Calendar } from 'lucide-react';
 import { vehiclePages, getVehiclePage, getVehiclesForPage, getPagePrimaryImage } from '@/lib/vehiclePages';
 import { servicePages } from '@/lib/services';
 import { routePages } from '@/lib/routes';
-import { getBreadcrumbListSchema, getFAQSchema, getVehicleProductSchema } from '@/lib/schema';
+import { getBreadcrumbListSchema, getFAQSchema, getVehicleProductSchema, getWebPageSchema } from '@/lib/schema';
 import LandingHero from '@/components/LandingHero';
 import FaqAccordion from '@/components/FaqAccordion';
 import CTABand from '@/components/CTABand';
@@ -24,9 +24,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!page) return {};
   const url = `/vehicles/${page.slug}`;
   const image = getPagePrimaryImage(page);
-  // The root layout's title template auto-appends "| Sushi Travels" to the
-  // plain `title`, but NOT to openGraph/twitter titles (those don't inherit
-  // the template) — so those need the suffix built explicitly here.
   const brandedTitle = `${page.title} | Sushi Travels`;
   return {
     title: page.title,
@@ -88,6 +85,20 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
       ))}
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getWebPageSchema({
+              name: `${page.h1} — Sushi Travels Bangalore`,
+              description: page.metaDescription,
+              url,
+              datePublished: '2024-01-15T08:00:00+05:30',
+              dateModified: '2026-10-05T08:00:00+05:30',
+            })
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(page.faqs)) }}
       />
 
@@ -101,6 +112,18 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-12">
+        {/* Verification and freshness badge */}
+        <div className="flex items-center justify-between text-xs text-navy-light border-b border-navy-light/10 pb-3">
+          <div className="flex items-center gap-2 text-primary font-semibold">
+            <ShieldCheck className="w-4 h-4 text-emerald-600" />
+            <span>Commercial Tourist Permit Fleet — Inspected &amp; GPS Monitored</span>
+          </div>
+          <div className="flex items-center gap-1.5 text-navy-light">
+            <Calendar className="w-3.5 h-3.5 text-primary" />
+            <span>Pricing Verified: <time dateTime="2026-10-05">October 5, 2026</time></span>
+          </div>
+        </div>
+
         {/* GEO-style factual summary */}
         <section className="bg-white rounded-2xl border border-navy-light/10 p-6 sm:p-8">
           <p className="text-sm sm:text-base text-navy leading-relaxed">{page.geoSummary}</p>
@@ -114,18 +137,13 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
               {pageVehicles.length > 1 && (
                 <h2 className="font-serif font-bold text-xl text-navy">{vehicle.name} — Photos</h2>
               )}
-              {/* aspect-square + object-contain (not aspect-video + object-cover): many
-                  fleet photos are tall phone portraits, and forcing those into a 16:9
-                  landscape crop cut off the top/bottom, leaving only a disorienting
-                  close-up sliver of seat fabric — looked "sideways" even though nothing
-                  was rotated. contain guarantees the whole photo is always visible,
-                  matching what this gallery promises ("every image"). */}
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {galleryImages.map((img, idx) => (
                   <div key={idx} className="relative aspect-square rounded-2xl overflow-hidden border border-navy-light/10 shadow-sm bg-cream-warm/30">
                     <Image
                       src={img}
                       alt={`Sushi Travels ${vehicle.name} — photo ${idx + 1} of ${galleryImages.length}`}
+                      title={`Sushi Travels ${vehicle.name} — photo ${idx + 1}`}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                       className="object-contain"
@@ -159,7 +177,7 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
         <VehiclePricingTable vehicles={pageVehicles} />
 
         {/* Feature highlights */}
-        <section className="bg-white rounded-2xl border border-navy-light/10 p-6 sm:p-8 space-y-4">
+        <section className="bg-white rounded-2xl border border-navy-light/10 p-6 sm:p-8 space-y-4 shadow-sm">
           <h2 className="font-serif font-bold text-xl text-navy">What&apos;s Included</h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {Array.from(new Set(pageVehicles.flatMap((v) => v.features))).slice(0, 8).map((feature, idx) => (
@@ -186,22 +204,34 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
           groups={[
             {
               heading: 'Related Vehicles',
-              links: relatedVehicles.map((p) => ({ label: p.h1, href: `/vehicles/${p.slug}` })),
+              links: relatedVehicles.map((p) => ({
+                label: p.h1,
+                href: `/vehicles/${p.slug}`,
+                title: `View ${p.h1} pricing and details`,
+              })),
             },
             {
               heading: 'Related Services',
-              links: relatedServices.map((p) => ({ label: p.h1, href: `/services/${p.slug}` })),
+              links: relatedServices.map((p) => ({
+                label: p.h1,
+                href: `/services/${p.slug}`,
+                title: `View ${p.h1} service options`,
+              })),
             },
             {
               heading: 'Popular Routes',
-              links: relatedRoutes.map((p) => ({ label: p.h1, href: `/routes/${p.slug}` })),
+              links: relatedRoutes.map((p) => ({
+                label: p.h1,
+                href: `/routes/${p.slug}`,
+                title: `View ${p.h1} route travel guide`,
+              })),
             },
             {
               heading: 'Plan Your Trip',
               links: [
-                { label: 'Book this vehicle online', href: '/booking' },
-                { label: 'Contact Sushi Travels', href: '/contact' },
-                { label: 'View the full rental fleet', href: '/fleet' },
+                { label: 'Book this vehicle online', href: '/booking', title: 'Book This Vehicle Online' },
+                { label: 'Contact Sushi Travels', href: '/contact', title: 'Contact Sushi Travels Support' },
+                { label: 'View the full rental fleet', href: '/fleet', title: 'View All Fleet Vehicles' },
               ],
             },
           ]}

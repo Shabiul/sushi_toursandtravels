@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export interface LinkGroup {
   heading: string;
-  links: { label: string; href: string }[];
+  links: { label: string; href: string; title?: string }[];
 }
 
 /**
@@ -28,6 +28,7 @@ export default function RelatedLinks({ groups }: { groups: LinkGroup[] }) {
                 <li key={link.href}>
                   <Link
                     href={link.href}
+                    title={link.title || link.label}
                     className="inline-flex items-center text-sm text-navy hover:text-primary transition-colors duration-150 leading-snug"
                   >
                     <span>{link.label}</span>

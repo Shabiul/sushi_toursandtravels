@@ -9,14 +9,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.sushitravels.com';
   const now = new Date().toISOString();
 
-  const staticRoutes = ['', '/fleet', '/tours-and-packages', '/booking', '/about', '/contact', '/vehicles', '/services', '/locations', '/routes', '/blog'].map(
-    (route) => ({
-      url: `${baseUrl}${route}`,
-      lastModified: now,
-      changeFrequency: 'weekly' as const,
-      priority: route === '' ? 1.0 : 0.8,
-    })
-  );
+  const staticRoutes = [
+    '',
+    '/fleet',
+    '/tours-and-packages',
+    '/booking',
+    '/about',
+    '/contact',
+    '/vehicles',
+    '/services',
+    '/locations',
+    '/routes',
+    '/blog',
+    '/privacy-policy',
+    '/terms-and-conditions',
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: route === '' ? 1.0 : route === '/privacy-policy' || route === '/terms-and-conditions' ? 0.3 : 0.8,
+  }));
 
   const vehicleRoutes = vehiclePages.map((p) => ({
     url: `${baseUrl}/vehicles/${p.slug}`,

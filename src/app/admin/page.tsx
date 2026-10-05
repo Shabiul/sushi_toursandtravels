@@ -1306,7 +1306,7 @@ export default function AdminPage() {
                             <td className="p-4">
                               <div className="relative w-14 h-10 rounded overflow-hidden border border-navy-light/10 bg-cream">
                                 {(v.image || (v.images && v.images.length > 0)) && (
-                                  <img src={v.images?.[0] || v.image} alt={v.name} className="object-cover w-full h-full" />
+                                  <img src={v.images?.[0] || v.image} alt={v.name} title={v.name} className="object-cover w-full h-full" />
                                 )}
                               </div>
                             </td>
@@ -1385,7 +1385,7 @@ export default function AdminPage() {
                         <td className="p-4">
                           <div className="relative w-14 h-10 rounded overflow-hidden border border-navy-light/10 bg-cream">
                             {r.imageUrl && (
-                              <img src={r.imageUrl} alt={`${r.from} to ${r.to}`} className="object-cover w-full h-full" />
+                              <img src={r.imageUrl} alt={`${r.from} to ${r.to}`} title={`${r.from} to ${r.to} route`} className="object-cover w-full h-full" />
                             )}
                           </div>
                         </td>
@@ -1601,6 +1601,7 @@ export default function AdminPage() {
                                   <img
                                     src={imgUrl}
                                     alt={v.name}
+                                    title={v.name}
                                     className="object-cover w-full h-full"
                                     style={{
                                       objectPosition: v.imagePositions?.[0] || '50% 50%',
@@ -1794,14 +1795,15 @@ export default function AdminPage() {
                                 >
                                   {imgFit === 'contain' ? (
                                     <div className="w-full h-full relative overflow-hidden bg-cream-warm/30">
-                                      <img src={img} alt="" className="object-cover w-full h-full blur-md opacity-45 scale-110" />
-                                      <img src={img} alt={`Preview ${idx + 1}`} className="object-contain w-full h-full absolute inset-0 z-10 p-1" />
+                                      <img src={img} alt="" title="Background blur" className="object-cover w-full h-full blur-md opacity-45 scale-110" />
+                                      <img src={img} alt={`Preview ${idx + 1}`} title={`Preview ${idx + 1}`} className="object-contain w-full h-full absolute inset-0 z-10 p-1" />
                                     </div>
                                   ) : (
                                     <div className="w-full h-full relative">
                                       <img 
                                         src={img} 
-                                        alt={`Preview ${idx + 1}`} 
+                                        alt={`Preview ${idx + 1}`}
+                                        title={`Preview ${idx + 1}`}
                                         className="object-cover w-full h-full" 
                                         style={{
                                           objectPosition: `${x}% ${y}%`,
@@ -1930,7 +1932,7 @@ export default function AdminPage() {
                     {/* Preview box */}
                     <div className="border border-navy-light/10 rounded-2xl overflow-hidden flex items-center justify-center bg-cream relative aspect-video sm:aspect-auto">
                       {imagePreview ? (
-                        <img src={imagePreview} alt="Upload Preview" className="object-cover w-full h-full" />
+                        <img src={imagePreview} alt="Upload Preview" title="Upload Preview" className="object-cover w-full h-full" />
                       ) : (
                         <div className="text-center p-4">
                           <ImageIcon className="w-5 h-5 text-navy-light/60 mx-auto mb-1.5" />
@@ -2415,6 +2417,7 @@ export default function AdminPage() {
             <img
               src={vehicleForm.images[cropImageIndex]}
               alt="Crop target"
+              title="Crop target"
               onLoad={(e) => {
                 const { naturalWidth, naturalHeight } = e.currentTarget;
                 setCropImgRatio(naturalWidth / naturalHeight);

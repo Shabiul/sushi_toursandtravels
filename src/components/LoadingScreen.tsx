@@ -88,6 +88,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
             <Image
               src="/logo-light-v3.png"
               alt="Sushi Travels Logo"
+              title="Sushi Travels Logo"
               width={56}
               height={56}
               priority

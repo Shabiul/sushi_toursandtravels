@@ -43,6 +43,7 @@ export default function VehicleCard({ vehicle, priority = false }: VehicleCardPr
           <Image
             src={thumbnail}
             alt=""
+            title={`${vehicle.name} background`}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover blur-lg opacity-30 scale-110 group-hover:scale-120 transition-transform duration-500 pointer-events-none"
@@ -52,6 +53,7 @@ export default function VehicleCard({ vehicle, priority = false }: VehicleCardPr
           <Image
             src={thumbnail}
             alt={`Sushi Travels rental vehicle - ${vehicle.name}`}
+            title={`Sushi Travels ${vehicle.name}`}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-contain pointer-events-none z-10 p-1"
@@ -63,6 +65,7 @@ export default function VehicleCard({ vehicle, priority = false }: VehicleCardPr
         <Image
           src={thumbnail}
           alt={`Sushi Travels rental vehicle - ${vehicle.name}`}
+          title={`Sushi Travels ${vehicle.name} — Fleet Bangalore`}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -93,7 +96,11 @@ export default function VehicleCard({ vehicle, priority = false }: VehicleCardPr
     <div className="group bg-white rounded-2xl border border-navy-light/10 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col overflow-hidden h-full">
       {/* Card Image — static thumbnail; click through to the vehicle's detail page to see every photo + full info */}
       {detailHref ? (
-        <Link href={detailHref} aria-label={`View all photos and details for ${vehicle.name}`}>
+        <Link
+          href={detailHref}
+          aria-label={`View all photos and details for ${vehicle.name}`}
+          title={`View all photos and details for ${vehicle.name}`}
+        >
           {imageContent}
         </Link>
       ) : (
@@ -116,6 +123,7 @@ export default function VehicleCard({ vehicle, priority = false }: VehicleCardPr
         {detailHref && (
           <Link
             href={detailHref}
+            title={`View full pricing, specs and photos for ${vehicle.name}`}
             className="inline-flex items-center text-xs font-bold text-primary-dark hover:text-navy transition-colors -mt-2 mb-4 w-fit"
           >
             Full pricing &amp; details for {vehicle.name}
@@ -233,6 +241,7 @@ export default function VehicleCard({ vehicle, priority = false }: VehicleCardPr
               href={`tel:${PHONE_NUMBER}`}
               className="inline-flex items-center justify-center w-11 h-11 bg-cream border border-navy-light/15 hover:bg-[#0078FF] hover:border-[#0078FF] text-navy hover:text-white rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm shrink-0"
               aria-label={`Call Sushi Tours & Travels about ${vehicle.name}`}
+              title={`Call to enquire about ${vehicle.name}`}
             >
               <Phone className="w-4.5 h-4.5" />
             </a>
@@ -242,6 +251,7 @@ export default function VehicleCard({ vehicle, priority = false }: VehicleCardPr
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-11 h-11 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm shrink-0"
               aria-label={`Enquire about ${vehicle.name} on WhatsApp`}
+              title={`Enquire about ${vehicle.name} on WhatsApp`}
             >
               <MessageCircle className="w-4.5 h-4.5" />
             </a>
@@ -249,19 +259,19 @@ export default function VehicleCard({ vehicle, priority = false }: VehicleCardPr
               href={`/booking?vehicle=${encodeURIComponent(vehicle.type)}`}
               className="inline-flex items-center justify-center w-11 h-11 bg-navy hover:bg-primary text-white rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm group/btn shrink-0"
               aria-label={`Enquire / Book ${vehicle.name}`}
+              title={`Book ${vehicle.name} online with Sushi Travels`}
             >
               <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
 
-        {/* Primary Call CTA — full-width and clearly labeled, since a bare
-            phone icon above is easy to miss and calling is how most
-            customers actually book on a vehicle rental site in India. */}
+        {/* Primary Call CTA — full-width and clearly labeled */}
         <a
           href={`tel:${PHONE_NUMBER}`}
           className="mt-3 inline-flex items-center justify-center space-x-2 w-full bg-primary hover:bg-primary-dark active:scale-[0.98] text-white text-sm font-bold rounded-xl py-3 shadow-sm transition-all duration-200"
           aria-label={`Call Sushi Tours & Travels now about ${vehicle.name}`}
+          title={`Call Sushi Travels now for best ${vehicle.name} rental price`}
         >
           <Phone className="w-4 h-4" />
           <span>Call Now for Best Price</span>

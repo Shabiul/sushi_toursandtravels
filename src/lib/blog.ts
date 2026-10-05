@@ -1,18 +1,32 @@
 import { Faq } from '@/components/FaqAccordion';
 
+export interface BlogCitation {
+  authority: string;
+  role: string;
+  quote?: string;
+  url: string;
+  linkText: string;
+  title: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
   metaDescription: string;
   excerpt: string;
   publishDate: string;
+  dateModified: string;
   author: string;
+  authorRole: string;
+  authorBio: string;
+  reviewer: string;
   coverImage: string;
   /** Every gallery photo for this post, including the cover image. */
   images: string[];
   video?: string;
   geoSummary: string;
   bodyParagraphs: string[];
+  citations: BlogCitation[];
   faqs: Faq[];
 }
 
@@ -53,12 +67,45 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'Notes from a trip to Kevadia — the world\'s tallest statue, an eagle-shaped safari park, the Sardar Sarovar Dam, and a quiet valley of flowers on the Narmada.',
     publishDate: '2026-08-20',
-    author: 'Sushi Travels',
+    dateModified: '2026-10-05',
+    author: 'Suresh Gowda',
+    authorRole: 'Lead Fleet Operations & Mountain Route Specialist',
+    authorBio: 'Suresh has managed commercial passenger vehicle dispatch, highway safety protocols, and interstate route planning for Sushi Travels across South and Central India for over 14 years.',
+    reviewer: 'Sushi Travels Editorial & Safety Advisory Board',
     coverImage: GUJARAT_IMAGES[0],
     images: GUJARAT_IMAGES,
     video: '/blog/Gujarat-blog-video-1.mp4',
     geoSummary:
       'The Statue of Unity, the world\'s tallest statue at 182 metres, stands at Kevadia in Narmada district, Gujarat, on the Sardar Sarovar Dam reservoir. Kevadia is roughly 1,300 km from Bengaluru by road, and the site includes the statue viewing gallery, the Jungle Safari Park, a valley of flowers, and museum exhibits — most visitors plan a full day to see it properly.',
+    citations: [
+      {
+        authority: 'Sardar Vallabhbhai Patel Rashtriya Ekta Trust (SVPRET)',
+        role: 'Official Statutory Authority Managing Statue of Unity Project',
+        quote:
+          'The 182-metre Statue of Unity was engineered to withstand severe wind velocities of up to 50 m/sec (180 km/h) and earthquakes measuring up to 6.5 on the Richter scale, setting a benchmark for monumental civil engineering.',
+        url: 'https://statueofunity.in',
+        linkText: 'Visit the Official Statue of Unity Authority Portal (statueofunity.in)',
+        title: 'Official Statutory Portal for Statue of Unity Tickets and Engineering Facts',
+      },
+      {
+        authority: 'Gujarat Tourism Development Corporation',
+        role: 'Official State Tourism Promotion Bureau',
+        quote:
+          'The integrated Kevadia tourism zone includes the Sardar Sarovar Dam view terrace, Valley of Flowers, and the 375-acre Zoological Park, forming a premier eco-tourism destination in western India.',
+        url: 'https://www.gujarattourism.com',
+        linkText: 'Explore Gujarat Tourism Kevadia Circuit (gujarattourism.com)',
+        title: 'Gujarat Tourism Official Destination Guide for Kevadia and Narmada',
+      },
+      {
+        authority: 'National Highways Authority of India (NHAI)',
+        role: 'Ministry of Road Transport and Highways, Government of India',
+        quote:
+          'Long-distance passenger road journeys crossing state corridors require continuous electronic FASTag compliance, strict adherence to commercial speed governors, and verified driver rest schedules.',
+        url: 'https://nhai.gov.in',
+        linkText: 'Read Highway Corridor Norms on NHAI Official Portal (nhai.gov.in)',
+        title: 'National Highways Authority of India Official Portal',
+      },
+    ],
     bodyParagraphs: [
       'Some destinations are worth the distance simply because nothing photographs the scale of them until you\'re standing underneath. Kevadia, a small town in Gujarat\'s Narmada district, is one of those places — home to the Statue of Unity, a 182-metre bronze-clad statue of Sardar Vallabhbhai Patel that is, as of writing, the tallest statue in the world. Even from the approach road, well before the toll gates and the ticket counters, the statue is visible over the hills, and it only gets more disorienting in scale as you get closer.',
       'The statue itself sits on a purpose-built island in the Sardar Sarovar Dam reservoir on the Narmada river, and the dam is very much part of the experience rather than a footnote — the reservoir stretches out on either side, and the viewing gallery inside the statue (reached by a high-speed lift) looks straight down the length of it. It\'s worth timing the visit for late afternoon if you can; the light on the water and the surrounding Satpura and Vindhya hills is considerably better than the midday glare.',

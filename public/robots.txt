@@ -1,0 +1,75 @@
+# ========================================================
+# Sushi Tours & Travels (Sushi Travels) — Official robots.txt
+# Domain: https://www.sushitravels.com
+# ========================================================
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+# Explicit Allow for Major Search Engines
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /fleet/
+Allow: /videos/
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Googlebot-Video
+Allow: /
+Allow: /videos/
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+# Generative Engine Optimization (GEO) & AI Search Engines
+User-agent: GPTBot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Applebot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+# Google Search Console Multi-Asset Sitemaps
+Sitemap: https://www.sushitravels.com/sitemap.xml
+Sitemap: https://www.sushitravels.com/sitemap-pages.xml
+Sitemap: https://www.sushitravels.com/sitemap-images.xml
+Sitemap: https://www.sushitravels.com/sitemap-videos.xml

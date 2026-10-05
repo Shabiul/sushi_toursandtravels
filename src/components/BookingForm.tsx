@@ -673,6 +673,7 @@ export default function BookingForm() {
               href={getWhatsAppBookingUrl()}
               target="_blank"
               rel="noopener noreferrer"
+              title="Chat with Sushi Travels on WhatsApp for Instant Booking Quote"
               className="inline-flex items-center justify-center space-x-2 w-full bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-bold rounded-full py-3 shadow-sm transition"
             >
               <span>Click to Chat on WhatsApp →</span>
@@ -740,6 +741,7 @@ export default function BookingForm() {
                   href={getWhatsAppDetailedBookingUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Send Booking Request Details to Sushi Travels on WhatsApp"
                   className="inline-flex items-center justify-center space-x-2 w-full bg-[#25D366] hover:bg-[#20ba5a] text-white text-sm font-bold rounded-full py-3.5 shadow-md transition hover:scale-[1.02]"
                 >
                   <svg className="w-5.5 h-5.5 fill-current" viewBox="0 0 24 24">

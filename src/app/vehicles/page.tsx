@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { vehiclePages, getPagePrimaryImage } from '@/lib/vehiclePages';
-import { getBreadcrumbListSchema } from '@/lib/schema';
+import { getBreadcrumbListSchema, getWebPageSchema } from '@/lib/schema';
 import LandingHero from '@/components/LandingHero';
 
 export const metadata: Metadata = {
@@ -39,6 +39,20 @@ export default function VehiclesHubPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbListSchema(breadcrumbItems)) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getWebPageSchema({
+              name: 'Vehicle Rental Options in Bangalore - Sushi Travels',
+              description: 'Browse Sushi Travels vehicle rental categories with transparent pricing and seating specifications.',
+              url: '/vehicles',
+              datePublished: '2024-01-15T08:00:00+05:30',
+              dateModified: '2026-10-05T08:00:00+05:30',
+            })
+          ),
+        }}
+      />
 
       <LandingHero
         h1="Vehicle Rental Options in Bangalore"
@@ -52,12 +66,14 @@ export default function VehiclesHubPage() {
             <Link
               key={page.slug}
               href={`/vehicles/${page.slug}`}
+              title={`View ${page.h1} specifications, seating, and rental rates`}
               className="group bg-white rounded-2xl border border-navy-light/10 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden flex flex-col"
             >
               <div className="relative aspect-video w-full overflow-hidden bg-cream-warm/30">
                 <Image
                   src={getPagePrimaryImage(page)}
                   alt={page.h1}
+                  title={`${page.h1} — Sushi Travels Fleet Bangalore`}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover"

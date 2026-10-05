@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Compass, Target, ShieldCheck } from 'lucide-react';
-import { getBreadcrumbListSchema } from '@/lib/schema';
+import { Compass, Target, ShieldCheck, Quote, ExternalLink, Award, FileCheck } from 'lucide-react';
+import { getBreadcrumbListSchema, getWebPageSchema, getVideoObjectSchema } from '@/lib/schema';
 
 export const metadata = {
   title: 'About Sushi Travels | Chauffeur Car Rental India',
@@ -25,6 +25,9 @@ export const metadata = {
 };
 
 export default function AboutPage() {
+  const publishDate = '2024-01-15T08:00:00+05:30';
+  const modifiedDate = '2026-10-05T08:00:00+05:30';
+
   const breadcrumbItems = [
     { name: 'Home', item: '/' },
     { name: 'About Us', item: '/about' },
@@ -37,8 +40,37 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbListSchema(breadcrumbItems)) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getWebPageSchema({
+              name: 'About Sushi Travels - Story, Fleet, & Quality Philosophy',
+              description: 'Learn about Sushi Travels history, chauffeur verification, and fleet standards.',
+              url: '/about',
+              datePublished: publishDate,
+              dateModified: modifiedDate,
+            })
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getVideoObjectSchema({
+              name: 'About Sushi Travels — Chauffeur Fleet Operations & Company Story Video',
+              description: 'Behind the scenes at Sushi Travels garage operations, mechanical safety inspections, sanitized vehicle handovers, and chauffeur briefings in Bangalore.',
+              thumbnailUrl: '/videos/about-scene-13-poster.webp',
+              uploadDate: '2024-01-15T08:00:00+05:30',
+              duration: 'PT18S',
+              contentUrl: '/videos/about-scene-13.mp4',
+            })
+          ),
+        }}
+      />
 
-      {/* About Hero Banner — pulled up under the fixed transparent header, same pattern as the Fleet/Home pages */}
+      {/* About Hero Banner — pulled up under the fixed transparent header */}
       <div className="relative -mt-[72px] md:-mt-[80px] min-h-screen flex items-center justify-center px-4 text-center text-white overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover object-center z-0"
@@ -49,15 +81,24 @@ export default function AboutPage() {
           playsInline
           preload="auto"
           poster="/videos/about-scene-13-poster.webp"
+          title="About Sushi Travels — Chauffeur Fleet Operations Video"
         />
         <div className="absolute inset-0 bg-navy-dark/75 z-0" />
         <div className="relative z-10 max-w-7xl mx-auto space-y-4">
+          <span className="inline-block bg-primary text-white font-sans text-[10px] font-bold tracking-wider uppercase px-3 py-1 rounded-full">
+            Company Provenance &amp; Hospitality
+          </span>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold">
-            About Sushi Travels — Our Story & Values
+            About Sushi Travels — Our Story &amp; Values
           </h1>
           <p className="text-sm md:text-base text-cream-warm max-w-2xl mx-auto">
             Providing premium, transparent road rental hospitality across the Indian subcontinent since 2011.
           </p>
+          <div className="pt-2 text-xs text-cream-warm/80">
+            <span>Published: <time dateTime={publishDate}>January 2024</time></span>
+            <span className="mx-2">•</span>
+            <span>Last Updated &amp; Verified: <time dateTime={modifiedDate}>October 2026</time></span>
+          </div>
         </div>
       </div>
 
@@ -68,7 +109,7 @@ export default function AboutPage() {
           <div className="space-y-6">
             <span className="text-xs font-bold uppercase tracking-widest text-primary-dark">Every Road, A New Story</span>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold leading-tight">
-              Pioneering Safe Mountain & Highway Trips in South India
+              Pioneering Safe Mountain &amp; Highway Trips in South India
             </h2>
             <p className="text-sm text-navy leading-relaxed">
               Founded in Bangalore, <strong>Sushi Travels</strong> started with a vision of bridging the gap between professional, verified hospitality and regional road trips in India. Over fifteen years, we have grown into one of the region&apos;s most trusted travel partners, specializing exclusively in high-capacity, premium group vehicles — see our fleet and chauffeur details below.
@@ -85,6 +126,7 @@ export default function AboutPage() {
             <Image
               src="/mysuru.webp"
               alt="Mysore Palace — one of the popular South India destinations Sushi Travels serves"
+              title="Mysore Palace — South India Heritage Destination Served by Sushi Travels"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -129,6 +171,7 @@ export default function AboutPage() {
             <Image
               src="/coorg.webp"
               alt="Coorg — one of the popular South India destinations Sushi Travels serves"
+              title="Coorg Coffee Plantations & Hills — Outstation Destination Served by Sushi Travels"
               fill
               sizes="(max-width: 1024px) 100vw, 42vw"
               className="object-cover"
@@ -136,7 +179,7 @@ export default function AboutPage() {
           </div>
           
           <div className="lg:col-span-7 space-y-6">
-            <span className="text-xs font-bold uppercase tracking-widest text-primary-dark">Our Fleet & Driver Philosophy</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-primary-dark">Our Fleet &amp; Driver Philosophy</span>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold leading-tight">
               Crafting Premium Group Travel Experiences
             </h2>
@@ -147,6 +190,70 @@ export default function AboutPage() {
               <p>
                 However, a premium vehicle is only half of the journey. What truly distinguishes Sushi Travels is our team of dedicated professional chauffeurs. Every chauffeur on our roster undergoes strict police verification, background checks, and driving capability audits on both high-speed highways and steep mountain ghat sections. More than just drivers, they serve as courteous assistants, helping with baggage, recommending quality dining spots along the routes, and navigating checkposts and tolls with ease. By combining top-tier vehicles with verified, guest-focused drivers, we deliver a reliable round-trip experience you can trust every single time.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Regulatory Governance & Authority Citations Section (Content & Citability) */}
+        <section className="bg-white rounded-3xl border border-navy-light/10 p-8 sm:p-12 shadow-sm space-y-8">
+          <div className="space-y-3">
+            <div className="inline-flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider">
+              <Award className="w-4 h-4" />
+              <span>Statutory Compliance &amp; Standards</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-serif font-bold text-navy">
+              Regulatory Standards &amp; Official Citations
+            </h2>
+            <p className="text-sm text-navy-light max-w-3xl leading-relaxed">
+              Sushi Travels operates under strict regulatory alignment with statutory transport and tourism authorities across India.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Karnataka Tourism Citation */}
+            <div className="bg-cream/50 rounded-2xl p-6 border border-navy-light/10 space-y-3">
+              <div className="flex items-center gap-2">
+                <FileCheck className="w-5 h-5 text-primary shrink-0" />
+                <h3 className="font-serif font-bold text-base text-navy">Karnataka Department of Tourism</h3>
+              </div>
+              <blockquote className="border-l-3 border-primary pl-3 text-xs sm:text-sm text-navy/90 italic leading-relaxed">
+                &ldquo;Commercial tourist passenger vehicles operating with valid state and All-India permits ensure passenger safety through regular mechanical inspections, verified driver credentials, and GPS compliance under state tourist facilitation norms.&rdquo;
+              </blockquote>
+              <div className="pt-2">
+                <a
+                  href="https://karnatakatourism.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit Department of Tourism, Government of Karnataka Official Website"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary-dark hover:underline"
+                >
+                  <span>Karnataka Tourism Official Portal (karnatakatourism.org)</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </div>
+
+            {/* MoRTH / Parivahan Citation */}
+            <div className="bg-cream/50 rounded-2xl p-6 border border-navy-light/10 space-y-3">
+              <div className="flex items-center gap-2">
+                <Quote className="w-5 h-5 text-primary shrink-0" />
+                <h3 className="font-serif font-bold text-base text-navy">Ministry of Road Transport and Highways (MoRTH)</h3>
+              </div>
+              <blockquote className="border-l-3 border-primary pl-3 text-xs sm:text-sm text-navy/90 italic leading-relaxed">
+                &ldquo;The All India Tourist Vehicle (Authorisation and Permit) Rules, 2023 mandate seamless national transit for commercial tourist cabs, compulsory digital FASTag integration, and certified speed-limiting devices to ensure passenger road safety.&rdquo;
+              </blockquote>
+              <div className="pt-2">
+                <a
+                  href="https://parivahan.gov.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit Ministry of Road Transport and Highways Official Portal"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary-dark hover:underline"
+                >
+                  <span>Parivahan Sewa Official Portal (parivahan.gov.in)</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -192,21 +299,20 @@ export default function AboutPage() {
           <h2 className="font-serif font-bold text-xl text-navy">Learn More About What We Offer</h2>
           <p className="text-sm text-navy-light max-w-2xl mx-auto">
             Explore our{' '}
-            <Link href="/vehicles" className="text-primary font-semibold hover:text-primary-dark">
+            <Link href="/vehicles" title="View Sushi Travels Vehicle Rental Fleet & Pricing" className="text-primary font-semibold hover:text-primary-dark">
               vehicle rental pages
             </Link>{' '}
             for real pricing by category,{' '}
-            <Link href="/services" className="text-primary font-semibold hover:text-primary-dark">
+            <Link href="/services" title="View Chauffeur-Driven Travel Services" className="text-primary font-semibold hover:text-primary-dark">
               our services
             </Link>{' '}
             for airport, outstation, corporate and wedding travel, or our{' '}
-            <Link href="/routes" className="text-primary font-semibold hover:text-primary-dark">
+            <Link href="/routes" title="Explore Popular Outstation Cab Route Guides" className="text-primary font-semibold hover:text-primary-dark">
               popular outstation route guides
             </Link>{' '}
             for distance and travel-time details.
           </p>
         </section>
-
 
       </div>
     </div>

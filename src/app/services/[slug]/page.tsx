@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { ShieldCheck, Calendar } from 'lucide-react';
 import { servicePages, getServicePage } from '@/lib/services';
 import { vehiclePages } from '@/lib/vehiclePages';
 import { routePages } from '@/lib/routes';
 import { locationPages } from '@/lib/locations';
-import { getBreadcrumbListSchema, getFAQSchema, getServiceLandingSchema } from '@/lib/schema';
+import { getBreadcrumbListSchema, getFAQSchema, getServiceLandingSchema, getWebPageSchema } from '@/lib/schema';
 import LandingHero from '@/components/LandingHero';
 import FaqAccordion from '@/components/FaqAccordion';
 import CTABand from '@/components/CTABand';
@@ -20,9 +21,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const page = getServicePage(slug);
   if (!page) return {};
   const url = `/services/${page.slug}`;
-  // The root layout's title template auto-appends "| Sushi Travels" to the
-  // plain `title`, but NOT to openGraph/twitter titles (those don't inherit
-  // the template) — so those need the suffix built explicitly here.
   const brandedTitle = `${page.title} | Sushi Travels`;
   return {
     title: page.title,
@@ -84,6 +82,20 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
       />
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getWebPageSchema({
+              name: `${page.h1} - Sushi Travels Bangalore`,
+              description: page.metaDescription,
+              url,
+              datePublished: '2024-01-15T08:00:00+05:30',
+              dateModified: '2026-10-05T08:00:00+05:30',
+            })
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(page.faqs)) }}
       />
 
@@ -97,12 +109,31 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-12">
+        {/* Verification and freshness bar */}
+        <div className="flex items-center justify-between text-xs text-navy-light border-b border-navy-light/10 pb-3">
+          <div className="flex items-center gap-2 text-primary font-semibold">
+            <ShieldCheck className="w-4 h-4 text-emerald-600" />
+            <span>Commercial Passenger Chauffeur Service — Verified Operations</span>
+          </div>
+          <div className="flex items-center gap-1.5 text-navy-light">
+            <Calendar className="w-3.5 h-3.5 text-primary" />
+            <span>Updated: <time dateTime="2026-10-05">October 5, 2026</time></span>
+          </div>
+        </div>
+
         <section className="bg-white rounded-2xl border border-navy-light/10 p-6 sm:p-8">
           <p className="text-sm sm:text-base text-navy leading-relaxed">{page.geoSummary}</p>
         </section>
 
         <section className="relative aspect-[21/9] rounded-2xl overflow-hidden border border-navy-light/10 shadow-sm">
-          <Image src={page.heroImage} alt={page.h1} fill sizes="100vw" className="object-cover" />
+          <Image
+            src={page.heroImage}
+            alt={page.h1}
+            title={`${page.h1} — Chauffeur Service in Bangalore`}
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
         </section>
 
         <section className="space-y-4 text-sm sm:text-base text-navy-light leading-relaxed">
@@ -123,25 +154,41 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
           groups={[
             {
               heading: 'Recommended Vehicles',
-              links: relatedVehicles.map((p) => ({ label: p.h1, href: `/vehicles/${p.slug}` })),
+              links: relatedVehicles.map((p) => ({
+                label: p.h1,
+                href: `/vehicles/${p.slug}`,
+                title: `View ${p.h1} specifications and pricing`,
+              })),
             },
             {
               heading: 'Related Services',
-              links: relatedServices.map((p) => ({ label: p.h1, href: `/services/${p.slug}` })),
+              links: relatedServices.map((p) => ({
+                label: p.h1,
+                href: `/services/${p.slug}`,
+                title: `View ${p.h1} service details`,
+              })),
             },
             {
               heading: 'Popular Routes',
-              links: relatedRoutes.map((p) => ({ label: p.h1, href: `/routes/${p.slug}` })),
+              links: relatedRoutes.map((p) => ({
+                label: p.h1,
+                href: `/routes/${p.slug}`,
+                title: `View ${p.h1} route guide`,
+              })),
             },
             {
               heading: 'Areas We Serve',
-              links: relatedLocations.map((p) => ({ label: p.h1, href: `/locations/${p.slug}` })),
+              links: relatedLocations.map((p) => ({
+                label: p.h1,
+                href: `/locations/${p.slug}`,
+                title: `View ${p.h1} cab coverage`,
+              })),
             },
             {
               heading: 'Plan Your Trip',
               links: [
-                { label: 'Book online', href: '/booking' },
-                { label: 'Contact Sushi Travels', href: '/contact' },
+                { label: 'Book online', href: '/booking', title: 'Book Chauffeur Online' },
+                { label: 'Contact Sushi Travels', href: '/contact', title: 'Contact Sushi Travels Office' },
               ],
             },
           ]}
