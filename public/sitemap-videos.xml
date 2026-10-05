@@ -53,4 +53,17 @@
       <video:live>no</video:live>
     </video:video>
   </url>
+  <url>
+    <loc>https://www.sushitravels.com/vehicles/17-seater-tempo-traveller-bangalore</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.sushitravels.com/videos/force-tempo-traveller-17-seater-poster.webp</video:thumbnail_loc>
+      <video:title>17-Seater Force Tempo Traveller Cabin Walkthrough Video Bangalore</video:title>
+      <video:description>Exclusive interior video walkthrough of the 17-Seater Force Tempo Traveller showing luxury Maharaja pushback seats, ceiling LED lighting, individual AC vents, and entertainment screen.</video:description>
+      <video:content_loc>https://www.sushitravels.com/videos/force-tempo-traveller-17-seater.mp4</video:content_loc>
+      <video:duration>37</video:duration>
+      <video:publication_date>2026-10-05</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
 </urlset>

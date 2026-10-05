@@ -26,6 +26,13 @@ export interface VehiclePage {
    * page). Every cell reads from real vehicles.ts data, never invented.
    */
   compareVehicleType?: Vehicle['type'];
+  video?: {
+    src: string;
+    poster: string;
+    title: string;
+    description: string;
+    duration?: string;
+  };
 }
 
 function v(id: string): Vehicle {
@@ -314,6 +321,14 @@ export const vehiclePages: VehiclePage[] = [
     ],
     relatedServiceSlugs: ['outstation-cab-bangalore', 'corporate-transport-bangalore', 'wedding-vehicle-rental-bangalore'],
     relatedRouteSlugs: ['bangalore-to-coorg-cab', 'bangalore-to-tirupati-cab'],
+    video: {
+      src: '/videos/force-tempo-traveller-17-seater.mp4',
+      poster: '/videos/force-tempo-traveller-17-seater-poster.webp',
+      title: '17-Seater Force Tempo Traveller Cabin Walkthrough Video',
+      description:
+        'Exclusive interior video walkthrough of the 17-Seater Force Tempo Traveller showing luxury Maharaja pushback seats, ceiling LED lighting, individual AC vents, and entertainment screen.',
+      duration: 'PT37S',
+    },
   },
   {
     slug: 'force-urbania-12-seater-maharaja-bangalore',

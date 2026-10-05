@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { CheckCircle2, ShieldCheck, Calendar } from 'lucide-react';
+import { CheckCircle2, ShieldCheck, Calendar, Video } from 'lucide-react';
 import { vehiclePages, getVehiclePage, getVehiclesForPage, getPagePrimaryImage } from '@/lib/vehiclePages';
 import { servicePages } from '@/lib/services';
 import { routePages } from '@/lib/routes';
-import { getBreadcrumbListSchema, getFAQSchema, getVehicleProductSchema, getWebPageSchema } from '@/lib/schema';
+import { getBreadcrumbListSchema, getFAQSchema, getVehicleProductSchema, getWebPageSchema, getVideoObjectSchema } from '@/lib/schema';
 import LandingHero from '@/components/LandingHero';
 import FaqAccordion from '@/components/FaqAccordion';
 import CTABand from '@/components/CTABand';
@@ -101,6 +101,23 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(page.faqs)) }}
       />
+      {page.video && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              getVideoObjectSchema({
+                name: page.video.title,
+                description: page.video.description,
+                thumbnailUrl: page.video.poster,
+                uploadDate: '2026-10-05T08:00:00+05:30',
+                duration: page.video.duration || 'PT37S',
+                contentUrl: page.video.src,
+              })
+            ),
+          }}
+        />
+      )}
 
       <LandingHero
         h1={page.h1}
@@ -132,12 +149,13 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
         {/* Full photo gallery — every image for each vehicle on this page */}
         {pageVehicles.map((vehicle) => {
           const galleryImages = vehicle.images && vehicle.images.length > 0 ? vehicle.images : [vehicle.image];
+          const isFourImages = galleryImages.length >= 4;
           return (
             <section key={vehicle.id} className="space-y-4">
               {pageVehicles.length > 1 && (
                 <h2 className="font-serif font-bold text-xl text-navy">{vehicle.name} — Photos</h2>
               )}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <div className={`grid grid-cols-2 ${isFourImages ? 'sm:grid-cols-2 md:grid-cols-4' : 'sm:grid-cols-3'} gap-4`}>
                 {galleryImages.map((img, idx) => (
                   <div key={idx} className="relative aspect-square rounded-2xl overflow-hidden border border-navy-light/10 shadow-sm bg-cream-warm/30">
                     <Image
@@ -146,7 +164,7 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
                       title={`Sushi Travels ${vehicle.name} — photo ${idx + 1}`}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                      className="object-contain"
+                      className="object-cover"
                       loading={idx < 3 ? undefined : 'lazy'}
                     />
                   </div>
@@ -155,6 +173,38 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
             </section>
           );
         })}
+
+        {/* Real Cabin Video Walkthrough (when configured for this vehicle) */}
+        {page.video && (
+          <section className="bg-white rounded-2xl border border-navy-light/10 p-6 sm:p-8 space-y-4 shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase text-primary">
+                  <Video className="w-4 h-4 text-primary" />
+                  Real Fleet Video Walkthrough
+                </span>
+                <h2 className="font-serif font-bold text-xl sm:text-2xl text-navy mt-1">
+                  {page.video.title}
+                </h2>
+              </div>
+              <span className="self-start sm:self-auto text-xs text-navy-light bg-cream px-3 py-1.5 rounded-full border border-navy-light/10 font-medium">
+                Verified Cabin Tour
+              </span>
+            </div>
+            <p className="text-sm text-navy-light leading-relaxed">{page.video.description}</p>
+            <div className="relative aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden bg-navy-dark border border-navy-light/10 shadow-md">
+              <video
+                className="w-full h-full object-cover"
+                src={page.video.src}
+                poster={page.video.poster}
+                controls
+                playsInline
+                preload="metadata"
+                title={page.video.title}
+              />
+            </div>
+          </section>
+        )}
 
         {/* Body copy */}
         <section className="space-y-4 text-sm sm:text-base text-navy-light leading-relaxed">

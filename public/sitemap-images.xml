@@ -40,7 +40,7 @@
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-tempo-traveller-17-seater-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-tempo-traveller-17-seater-side-01.webp</image:loc>
       <image:title>17-Seater Force Tempo Traveller Rental in Bangalore</image:title>
       <image:caption>17-Seater Force Tempo Traveller (17 Seater) for outstation and local travel in Bangalore.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -220,7 +220,7 @@
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-tempo-traveller-17-seater-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-tempo-traveller-17-seater-side-01.webp</image:loc>
       <image:title>17-Seater Force Tempo Traveller Fleet Specifications and Pricing</image:title>
       <image:caption>Book 17-Seater Force Tempo Traveller with verified driver from Sushi Travels Bangalore.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -380,13 +380,55 @@
     <loc>https://www.sushitravels.com/vehicles/sedan-rental-bangalore</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/etios-front-01.webp</image:loc>
-      <image:title>Toyota Etios Rental in Bangalore</image:title>
+      <image:title>Toyota Etios Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a chauffeur-driven sedan (Toyota Etios / Maruti Suzuki Dzire) in Bangalore at ₹13/km. Airport transfers, local drops &amp; outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/etios-side-01.webp</image:loc>
+      <image:title>Toyota Etios Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a chauffeur-driven sedan (Toyota Etios / Maruti Suzuki Dzire) in Bangalore at ₹13/km. Airport transfers, local drops &amp; outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/etios-interior-01.webp</image:loc>
+      <image:title>Toyota Etios Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a chauffeur-driven sedan (Toyota Etios / Maruti Suzuki Dzire) in Bangalore at ₹13/km. Airport transfers, local drops &amp; outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/etios-interior-02.webp</image:loc>
+      <image:title>Toyota Etios Photo 4 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a chauffeur-driven sedan (Toyota Etios / Maruti Suzuki Dzire) in Bangalore at ₹13/km. Airport transfers, local drops &amp; outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/etios-rear-01.webp</image:loc>
+      <image:title>Toyota Etios Photo 5 - Bangalore Rental Fleet</image:title>
       <image:caption>Book a chauffeur-driven sedan (Toyota Etios / Maruti Suzuki Dzire) in Bangalore at ₹13/km. Airport transfers, local drops &amp; outstation trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/dzire-front-01.webp</image:loc>
-      <image:title>Maruti Suzuki Dzire Rental in Bangalore</image:title>
+      <image:title>Maruti Suzuki Dzire Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a chauffeur-driven sedan (Toyota Etios / Maruti Suzuki Dzire) in Bangalore at ₹13/km. Airport transfers, local drops &amp; outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/dzire-dashboard-01.webp</image:loc>
+      <image:title>Maruti Suzuki Dzire Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a chauffeur-driven sedan (Toyota Etios / Maruti Suzuki Dzire) in Bangalore at ₹13/km. Airport transfers, local drops &amp; outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/dzire-interior-01.webp</image:loc>
+      <image:title>Maruti Suzuki Dzire Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a chauffeur-driven sedan (Toyota Etios / Maruti Suzuki Dzire) in Bangalore at ₹13/km. Airport transfers, local drops &amp; outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/dzire-interior-02.webp</image:loc>
+      <image:title>Maruti Suzuki Dzire Photo 4 - Bangalore Rental Fleet</image:title>
       <image:caption>Book a chauffeur-driven sedan (Toyota Etios / Maruti Suzuki Dzire) in Bangalore at ₹13/km. Airport transfers, local drops &amp; outstation trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -395,7 +437,43 @@
     <loc>https://www.sushitravels.com/vehicles/innova-rental-bangalore</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/innova-2011-front-02.webp</image:loc>
-      <image:title>Toyota Innova Rental in Bangalore</image:title>
+      <image:title>Toyota Innova Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Chauffeur-driven Toyota Innova rental in Bangalore at ₹17/km. Spacious 7-seater SUV for family outstation trips, pilgrimages &amp; airport transfers.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/innova-2011-dashboard-01.webp</image:loc>
+      <image:title>Toyota Innova Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Chauffeur-driven Toyota Innova rental in Bangalore at ₹17/km. Spacious 7-seater SUV for family outstation trips, pilgrimages &amp; airport transfers.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/innova-2011-interior-01.webp</image:loc>
+      <image:title>Toyota Innova Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Chauffeur-driven Toyota Innova rental in Bangalore at ₹17/km. Spacious 7-seater SUV for family outstation trips, pilgrimages &amp; airport transfers.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/innova-2011-interior-02.webp</image:loc>
+      <image:title>Toyota Innova Photo 4 - Bangalore Rental Fleet</image:title>
+      <image:caption>Chauffeur-driven Toyota Innova rental in Bangalore at ₹17/km. Spacious 7-seater SUV for family outstation trips, pilgrimages &amp; airport transfers.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/innova-2011-interior-03.webp</image:loc>
+      <image:title>Toyota Innova Photo 5 - Bangalore Rental Fleet</image:title>
+      <image:caption>Chauffeur-driven Toyota Innova rental in Bangalore at ₹17/km. Spacious 7-seater SUV for family outstation trips, pilgrimages &amp; airport transfers.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/innova-2011-interior-04.webp</image:loc>
+      <image:title>Toyota Innova Photo 6 - Bangalore Rental Fleet</image:title>
+      <image:caption>Chauffeur-driven Toyota Innova rental in Bangalore at ₹17/km. Spacious 7-seater SUV for family outstation trips, pilgrimages &amp; airport transfers.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/innova-2011-interior-08.webp</image:loc>
+      <image:title>Toyota Innova Photo 7 - Bangalore Rental Fleet</image:title>
       <image:caption>Chauffeur-driven Toyota Innova rental in Bangalore at ₹17/km. Spacious 7-seater SUV for family outstation trips, pilgrimages &amp; airport transfers.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -404,7 +482,19 @@
     <loc>https://www.sushitravels.com/vehicles/innova-crysta-rental-bangalore</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/innova-crysta-front-01.webp</image:loc>
-      <image:title>Toyota Innova Crysta Rental in Bangalore</image:title>
+      <image:title>Toyota Innova Crysta Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a chauffeur-driven Toyota Innova Crysta in Bangalore at ₹19/km. Premium 7-seater SUV for family holidays, corporate travel &amp; outstation road trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/innova-crysta-dashboard-01.webp</image:loc>
+      <image:title>Toyota Innova Crysta Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a chauffeur-driven Toyota Innova Crysta in Bangalore at ₹19/km. Premium 7-seater SUV for family holidays, corporate travel &amp; outstation road trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/innova-crysta-rear-01.webp</image:loc>
+      <image:title>Toyota Innova Crysta Photo 3 - Bangalore Rental Fleet</image:title>
       <image:caption>Book a chauffeur-driven Toyota Innova Crysta in Bangalore at ₹19/km. Premium 7-seater SUV for family holidays, corporate travel &amp; outstation road trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -413,7 +503,49 @@
     <loc>https://www.sushitravels.com/vehicles/tempo-traveller-rental-bangalore</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/force-traveller-c-front-03.webp</image:loc>
-      <image:title>12 Seater Tempo Traveller Rental in Bangalore</image:title>
+      <image:title>12 Seater Tempo Traveller Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire a 12-seater Tempo Traveller in Bangalore — AC (₹22/km) or Non-AC (₹20/km). Pushback seats, dedicated luggage boot. Ideal for group outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-traveller-c-front-01.webp</image:loc>
+      <image:title>12 Seater Tempo Traveller Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire a 12-seater Tempo Traveller in Bangalore — AC (₹22/km) or Non-AC (₹20/km). Pushback seats, dedicated luggage boot. Ideal for group outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-traveller-c-front-02.webp</image:loc>
+      <image:title>12 Seater Tempo Traveller Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire a 12-seater Tempo Traveller in Bangalore — AC (₹22/km) or Non-AC (₹20/km). Pushback seats, dedicated luggage boot. Ideal for group outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-traveller-c-interior-01.webp</image:loc>
+      <image:title>12 Seater Tempo Traveller Photo 4 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire a 12-seater Tempo Traveller in Bangalore — AC (₹22/km) or Non-AC (₹20/km). Pushback seats, dedicated luggage boot. Ideal for group outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-traveller-c-interior-02.webp</image:loc>
+      <image:title>12 Seater Tempo Traveller Photo 5 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire a 12-seater Tempo Traveller in Bangalore — AC (₹22/km) or Non-AC (₹20/km). Pushback seats, dedicated luggage boot. Ideal for group outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-traveller-c-interior-03.webp</image:loc>
+      <image:title>12 Seater Tempo Traveller Photo 6 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire a 12-seater Tempo Traveller in Bangalore — AC (₹22/km) or Non-AC (₹20/km). Pushback seats, dedicated luggage boot. Ideal for group outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-traveller-c-interior-04.webp</image:loc>
+      <image:title>12 Seater Tempo Traveller Photo 7 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire a 12-seater Tempo Traveller in Bangalore — AC (₹22/km) or Non-AC (₹20/km). Pushback seats, dedicated luggage boot. Ideal for group outstation trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-traveller-c-rear-02.webp</image:loc>
+      <image:title>12 Seater Tempo Traveller Photo 8 - Bangalore Rental Fleet</image:title>
       <image:caption>Hire a 12-seater Tempo Traveller in Bangalore — AC (₹22/km) or Non-AC (₹20/km). Pushback seats, dedicated luggage boot. Ideal for group outstation trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -422,7 +554,55 @@
     <loc>https://www.sushitravels.com/vehicles/9-seater-luxury-tempo-traveller-bangalore</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/tempo-traveller-9-seater-front-01.webp</image:loc>
-      <image:title>9 Seater Tempo Traveller Rental in Bangalore</image:title>
+      <image:title>9 Seater Tempo Traveller Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a 9 seater tempo traveller in Bangalore at ₹28/km — executive pushback seats for corporate teams, pilgrimages &amp; mid-size family trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/tempo-traveller-9-seater-front-02.webp</image:loc>
+      <image:title>9 Seater Tempo Traveller Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a 9 seater tempo traveller in Bangalore at ₹28/km — executive pushback seats for corporate teams, pilgrimages &amp; mid-size family trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/tempo-traveller-9-seater-side-01.webp</image:loc>
+      <image:title>9 Seater Tempo Traveller Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a 9 seater tempo traveller in Bangalore at ₹28/km — executive pushback seats for corporate teams, pilgrimages &amp; mid-size family trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/tempo-traveller-9-seater-interior-01.webp</image:loc>
+      <image:title>9 Seater Tempo Traveller Photo 4 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a 9 seater tempo traveller in Bangalore at ₹28/km — executive pushback seats for corporate teams, pilgrimages &amp; mid-size family trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/tempo-traveller-9-seater-interior-02.webp</image:loc>
+      <image:title>9 Seater Tempo Traveller Photo 5 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a 9 seater tempo traveller in Bangalore at ₹28/km — executive pushback seats for corporate teams, pilgrimages &amp; mid-size family trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/tempo-traveller-9-seater-interior-03.webp</image:loc>
+      <image:title>9 Seater Tempo Traveller Photo 6 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a 9 seater tempo traveller in Bangalore at ₹28/km — executive pushback seats for corporate teams, pilgrimages &amp; mid-size family trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/tempo-traveller-9-seater-interior-04.webp</image:loc>
+      <image:title>9 Seater Tempo Traveller Photo 7 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a 9 seater tempo traveller in Bangalore at ₹28/km — executive pushback seats for corporate teams, pilgrimages &amp; mid-size family trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/tempo-traveller-9-seater-interior-05.webp</image:loc>
+      <image:title>9 Seater Tempo Traveller Photo 8 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book a 9 seater tempo traveller in Bangalore at ₹28/km — executive pushback seats for corporate teams, pilgrimages &amp; mid-size family trips.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/tempo-traveller-9-seater-interior-06.webp</image:loc>
+      <image:title>9 Seater Tempo Traveller Photo 9 - Bangalore Rental Fleet</image:title>
       <image:caption>Book a 9 seater tempo traveller in Bangalore at ₹28/km — executive pushback seats for corporate teams, pilgrimages &amp; mid-size family trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -430,8 +610,26 @@
   <url>
     <loc>https://www.sushitravels.com/vehicles/17-seater-tempo-traveller-bangalore</loc>
     <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-tempo-traveller-17-seater-side-01.webp</image:loc>
+      <image:title>17-Seater Force Tempo Traveller Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire a 17 seater tempo traveller in Bangalore — AC (₹30/km) or Non-AC (₹28/km) — for large group outstation trips, corporate offsites &amp; pilgrimages.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
       <image:loc>https://www.sushitravels.com/fleet/force-tempo-traveller-17-seater-front-01.webp</image:loc>
-      <image:title>17-Seater Force Tempo Traveller Rental in Bangalore</image:title>
+      <image:title>17-Seater Force Tempo Traveller Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire a 17 seater tempo traveller in Bangalore — AC (₹30/km) or Non-AC (₹28/km) — for large group outstation trips, corporate offsites &amp; pilgrimages.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-tempo-traveller-17-seater-interior-01.webp</image:loc>
+      <image:title>17-Seater Force Tempo Traveller Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire a 17 seater tempo traveller in Bangalore — AC (₹30/km) or Non-AC (₹28/km) — for large group outstation trips, corporate offsites &amp; pilgrimages.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-tempo-traveller-17-seater-interior-02.webp</image:loc>
+      <image:title>17-Seater Force Tempo Traveller Photo 4 - Bangalore Rental Fleet</image:title>
       <image:caption>Hire a 17 seater tempo traveller in Bangalore — AC (₹30/km) or Non-AC (₹28/km) — for large group outstation trips, corporate offsites &amp; pilgrimages.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -440,7 +638,13 @@
     <loc>https://www.sushitravels.com/vehicles/force-urbania-12-seater-maharaja-bangalore</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/force-urbania-maharaja-12-seater-front-01.webp</image:loc>
-      <image:title>Urbania 12 Seater Maharaja Rental in Bangalore</image:title>
+      <image:title>Urbania 12 Seater Maharaja Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire the Urbania 12 Seater Maharaja in Bangalore. High-roof premium van with captain seats for family holidays &amp; corporate group travel. Call or WhatsApp for a quote.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-maharaja-12-seater-interior-01.webp</image:loc>
+      <image:title>Urbania 12 Seater Maharaja Photo 2 - Bangalore Rental Fleet</image:title>
       <image:caption>Hire the Urbania 12 Seater Maharaja in Bangalore. High-roof premium van with captain seats for family holidays &amp; corporate group travel. Call or WhatsApp for a quote.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -449,7 +653,61 @@
     <loc>https://www.sushitravels.com/vehicles/force-urbania-16-seater-luxury-bangalore</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-02.webp</image:loc>
-      <image:title>Force Urbania Rental in Bangalore</image:title>
+      <image:title>Force Urbania Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:title>Force Urbania Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-02.webp</image:loc>
+      <image:title>Force Urbania Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-01.webp</image:loc>
+      <image:title>Force Urbania Photo 4 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-03.webp</image:loc>
+      <image:title>Force Urbania Photo 5 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-04.webp</image:loc>
+      <image:title>Force Urbania Photo 6 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-05.webp</image:loc>
+      <image:title>Force Urbania Photo 7 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-06.webp</image:loc>
+      <image:title>Force Urbania Photo 8 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-rear-01.webp</image:loc>
+      <image:title>Force Urbania Photo 9 - Bangalore Rental Fleet</image:title>
+      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-rear-02.webp</image:loc>
+      <image:title>Force Urbania Photo 10 - Bangalore Rental Fleet</image:title>
       <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -458,7 +716,37 @@
     <loc>https://www.sushitravels.com/vehicles/25-seater-mini-bus-rental-bangalore</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-front-01.webp</image:loc>
-      <image:title>25 Seater Mini Bus Rental in Bangalore</image:title>
+      <image:title>25 Seater Mini Bus Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>25-seater AC mini bus rental in Bangalore for corporate offsites, school trips &amp; pilgrimage groups. Price on request — call or WhatsApp for a custom quote.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-front-02.webp</image:loc>
+      <image:title>25 Seater Mini Bus Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>25-seater AC mini bus rental in Bangalore for corporate offsites, school trips &amp; pilgrimage groups. Price on request — call or WhatsApp for a custom quote.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-side-01.webp</image:loc>
+      <image:title>25 Seater Mini Bus Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>25-seater AC mini bus rental in Bangalore for corporate offsites, school trips &amp; pilgrimage groups. Price on request — call or WhatsApp for a custom quote.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-interior-01.webp</image:loc>
+      <image:title>25 Seater Mini Bus Photo 4 - Bangalore Rental Fleet</image:title>
+      <image:caption>25-seater AC mini bus rental in Bangalore for corporate offsites, school trips &amp; pilgrimage groups. Price on request — call or WhatsApp for a custom quote.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-interior-02.webp</image:loc>
+      <image:title>25 Seater Mini Bus Photo 5 - Bangalore Rental Fleet</image:title>
+      <image:caption>25-seater AC mini bus rental in Bangalore for corporate offsites, school trips &amp; pilgrimage groups. Price on request — call or WhatsApp for a custom quote.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-interior-03.webp</image:loc>
+      <image:title>25 Seater Mini Bus Photo 6 - Bangalore Rental Fleet</image:title>
       <image:caption>25-seater AC mini bus rental in Bangalore for corporate offsites, school trips &amp; pilgrimage groups. Price on request — call or WhatsApp for a custom quote.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -467,7 +755,19 @@
     <loc>https://www.sushitravels.com/vehicles/50-seater-bus-rental-bangalore</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-50-seater-bus-side-01.webp</image:loc>
-      <image:title>Sushi Travels - 50 Seater Bus Rental in Bangalore</image:title>
+      <image:title>Sushi Travels - 50 Seater Bus Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>50-seater AC bus rental in Bangalore for large corporate events, weddings &amp; big pilgrimage groups. Price on request — call or WhatsApp for a custom quote.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-50-seater-bus-interior-01-v2.webp</image:loc>
+      <image:title>Sushi Travels - 50 Seater Bus Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>50-seater AC bus rental in Bangalore for large corporate events, weddings &amp; big pilgrimage groups. Price on request — call or WhatsApp for a custom quote.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-50-seater-bus-interior-02-v2.webp</image:loc>
+      <image:title>Sushi Travels - 50 Seater Bus Photo 3 - Bangalore Rental Fleet</image:title>
       <image:caption>50-seater AC bus rental in Bangalore for large corporate events, weddings &amp; big pilgrimage groups. Price on request — call or WhatsApp for a custom quote.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -476,25 +776,127 @@
     <loc>https://www.sushitravels.com/vehicles/bus-rental-bangalore</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-front-01.webp</image:loc>
-      <image:title>25 Seater Mini Bus Rental in Bangalore</image:title>
+      <image:title>25 Seater Mini Bus Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-front-02.webp</image:loc>
+      <image:title>25 Seater Mini Bus Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-side-01.webp</image:loc>
+      <image:title>25 Seater Mini Bus Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-interior-01.webp</image:loc>
+      <image:title>25 Seater Mini Bus Photo 4 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-interior-02.webp</image:loc>
+      <image:title>25 Seater Mini Bus Photo 5 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-interior-03.webp</image:loc>
+      <image:title>25 Seater Mini Bus Photo 6 - Bangalore Rental Fleet</image:title>
       <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-50-seater-bus-side-01.webp</image:loc>
-      <image:title>Sushi Travels - 50 Seater Bus Rental in Bangalore</image:title>
+      <image:title>Sushi Travels - 50 Seater Bus Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-50-seater-bus-interior-01-v2.webp</image:loc>
+      <image:title>Sushi Travels - 50 Seater Bus Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-50-seater-bus-interior-02-v2.webp</image:loc>
+      <image:title>Sushi Travels - 50 Seater Bus Photo 3 - Bangalore Rental Fleet</image:title>
       <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-front-01.webp</image:loc>
-      <image:title>Volvo Bus 45 Seater Luxury Rental in Bangalore</image:title>
+      <image:title>Volvo Bus 45 Seater Luxury Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-front-02.webp</image:loc>
+      <image:title>Volvo Bus 45 Seater Luxury Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-side-01.webp</image:loc>
+      <image:title>Volvo Bus 45 Seater Luxury Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-side-02.webp</image:loc>
+      <image:title>Volvo Bus 45 Seater Luxury Photo 4 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-interior-01-v2.webp</image:loc>
+      <image:title>Volvo Bus 45 Seater Luxury Photo 5 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-interior-02-v2.webp</image:loc>
+      <image:title>Volvo Bus 45 Seater Luxury Photo 6 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-interior-03-v2.webp</image:loc>
+      <image:title>Volvo Bus 45 Seater Luxury Photo 7 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-interior-04-v2.webp</image:loc>
+      <image:title>Volvo Bus 45 Seater Luxury Photo 8 - Bangalore Rental Fleet</image:title>
       <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-33-seater-bus-luxury-front-01.webp</image:loc>
-      <image:title>33 Seater Bus Luxury Rental in Bangalore</image:title>
+      <image:title>33 Seater Bus Luxury Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-33-seater-bus-luxury-front-02.webp</image:loc>
+      <image:title>33 Seater Bus Luxury Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-33-seater-bus-luxury-interior-01.webp</image:loc>
+      <image:title>33 Seater Bus Luxury Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/sushi-travels-33-seater-bus-luxury-interior-02.webp</image:loc>
+      <image:title>33 Seater Bus Luxury Photo 4 - Bangalore Rental Fleet</image:title>
       <image:caption>Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel &amp; events.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>

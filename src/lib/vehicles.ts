@@ -13,6 +13,8 @@ export interface Vehicle {
   imageFits?: ('cover' | 'contain')[];
   imagePositions?: string[];
   imageScales?: number[];
+  video?: string;
+  videoPoster?: string;
   description: string;
   sortOrder?: number;
 
@@ -192,10 +194,15 @@ export const vehicles: Vehicle[] = [
       'Dedicated rear luggage boot for group baggage',
       'Best for large family groups, corporate offsites & pilgrimages',
     ],
-    image: '/fleet/force-tempo-traveller-17-seater-front-01.webp',
+    image: '/fleet/force-tempo-traveller-17-seater-side-01.webp',
     images: [
-      '/fleet/force-tempo-traveller-17-seater-front-01.webp',
+       '/fleet/force-tempo-traveller-17-seater-side-01.webp',
+       '/fleet/force-tempo-traveller-17-seater-front-01.webp',
+       '/fleet/force-tempo-traveller-17-seater-interior-01.webp',
+       '/fleet/force-tempo-traveller-17-seater-interior-02.webp',
     ],
+    video: '/videos/force-tempo-traveller-17-seater.mp4',
+    videoPoster: '/videos/force-tempo-traveller-17-seater-poster.webp',
     description:
       'Our 17-seater Force Tempo Traveller is built for large groups who need extra capacity for outstation trips, corporate offsites and pilgrimages out of Bangalore — available in AC or Non-AC. Pushback seating and a dedicated luggage boot make it a strong pick for bigger group travel.',
     sortOrder: 2,

@@ -177,11 +177,14 @@ const pages: PageMeta[] = [
 // Add Vehicle Pages
 vehiclePages.forEach((vp) => {
   const matchingVehicles = vehicles.filter((v) => vp.vehicleIds.includes(v.id));
-  const images = matchingVehicles.map((v) => ({
-    loc: `${BASE_URL}${v.images?.[0] || v.image}`,
-    title: `${v.name} Rental in Bangalore`,
-    caption: vp.metaDescription,
-  }));
+  const images = matchingVehicles.flatMap((v) => {
+    const list = v.images && v.images.length > 0 ? v.images : [v.image];
+    return list.map((img, i) => ({
+      loc: `${BASE_URL}${img}`,
+      title: `${v.name} Photo ${i + 1} - Bangalore Rental Fleet`,
+      caption: vp.metaDescription,
+    }));
+  });
   pages.push({
     url: `${BASE_URL}/vehicles/${vp.slug}`,
     lastmod: NOW,
@@ -345,6 +348,16 @@ const videos = [
       'Drone footage of scenic road trip destinations, coastal highways, and holiday locations served by Sushi Travels round-trip chauffeur service from Bangalore.',
     duration: 15,
     uploadDate: '2024-01-15',
+  },
+  {
+    pageUrl: `${BASE_URL}/vehicles/17-seater-tempo-traveller-bangalore`,
+    contentUrl: `${BASE_URL}/videos/force-tempo-traveller-17-seater.mp4`,
+    thumbnailUrl: `${BASE_URL}/videos/force-tempo-traveller-17-seater-poster.webp`,
+    title: '17-Seater Force Tempo Traveller Cabin Walkthrough Video Bangalore',
+    description:
+      'Exclusive interior video walkthrough of the 17-Seater Force Tempo Traveller showing luxury Maharaja pushback seats, ceiling LED lighting, individual AC vents, and entertainment screen.',
+    duration: 37,
+    uploadDate: '2026-10-05',
   },
 ];
 
