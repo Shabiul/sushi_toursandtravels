@@ -47,6 +47,7 @@ const business = `## Business details
 - Email: sushitravels11@gmail.com
 - Website: ${BASE}
 - Hours: open 24 hours, 7 days a week
+- Founded: 2011 (operating in Bengaluru for 15+ years)
 - Service area: Bengaluru and outstation routes across South India
 `;
 
@@ -60,10 +61,13 @@ const fleetRows = vehicles
 
 const pricingTerms = `## Pricing & booking terms (from ${BASE}/terms-and-conditions)
 - Outstation billing: minimum 250 km or 300 km per calendar day depending on vehicle category; standard duty 6:00 AM–10:00 PM for vehicles with a published rate.
-- Driver bata: ₹400–₹700 per day depending on vehicle (see each vehicle above). Night driving between 10:00 PM and 6:00 AM adds a night allowance.
+- Driver bata (daily allowance) varies by vehicle and by route; the per-day figure for each vehicle is listed above and your quote confirms the exact amount. Night driving between 10:00 PM and 6:00 AM adds a night allowance.
 - Tolls (FASTag), parking, interstate permits and entry fees are paid at actuals.
 - GST: 5% on commercial passenger transport invoices.
 - Cancellation: more than 24 hours before departure — 100% advance refunded; 12–24 hours — 50%; under 12 hours or no-show — advance retained.
+- Fuel, vehicle insurance and routine maintenance are covered by Sushi Travels; no surge pricing is applied for peak hours, festivals or high-demand dates.
+- Airport pickups include a complimentary 45-minute wait for flight delays, with flight tracking on request.
+- Chauffeurs are police-verified and have a minimum of 5 years of commercial highway and mountain-ghat driving experience.
 - Vehicles marked "Price on Request" have no fixed per-km rate; call or WhatsApp with your route, dates and group size for a quote.
 `;
 

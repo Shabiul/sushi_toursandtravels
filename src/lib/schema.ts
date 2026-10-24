@@ -15,7 +15,7 @@ export function getLocalBusinessSchema() {
     description: 'Sushi Travels is a premier Indian travel agency renting out vehicles with drivers for local, airport transfer, and outstation trips in India.',
     url: SITE_URL,
     telephone: PHONE_NUMBER,
-    foundingDate: '2019-04-10',
+    foundingDate: '2011',
     datePublished: '2024-01-15T08:00:00+05:30',
     dateModified: '2026-10-05T08:00:00+05:30',
     termsOfService: `${SITE_URL}/terms-and-conditions`,

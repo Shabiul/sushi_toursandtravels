@@ -57,6 +57,16 @@ export const servicePages: ServicePage[] = [
           'Yes, one-way airport drop and pickup are both available — you don\'t need to book a round trip for an airport transfer.',
       },
       {
+        question: 'Is there a waiting time allowance for delayed flights?',
+        answer:
+          'Yes — airport pickups include a complimentary 45-minute wait for flight delays, and we track your flight on request so the driver is there when you land.',
+      },
+      {
+        question: 'Does airport taxi pricing go up at peak times?',
+        answer:
+          'No — we do not apply surge pricing. The fare you are quoted is the fare you pay, plus tolls and parking at actuals.',
+      },
+      {
         question: 'How long does it take to reach Bangalore airport by taxi?',
         answer:
           'The airport is roughly 35–40 km from central Bangalore. Plan on about an hour in light traffic and longer during weekday peak hours, so leave extra buffer when you are catching a flight.',

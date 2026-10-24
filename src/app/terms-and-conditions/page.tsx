@@ -124,10 +124,12 @@ export default function TermsAndConditionsPage() {
             <h2 className="text-xl font-serif font-bold text-navy">3. Tolls, Parking &amp; Driver Allowances</h2>
           </div>
           <ul className="list-disc list-inside space-y-2 text-sm text-navy/90 pl-2">
-            <li><strong>Driver Daily Bata:</strong> A standard driver daily allowance (₹400 to ₹600 depending on vehicle size) covers food and incidental expenses for the chauffeur.</li>
+            <li><strong>Driver Daily Bata:</strong> The driver daily allowance covers food and incidental expenses for the chauffeur. It varies by vehicle and by route — the daily bata for each vehicle is shown on its page, and your quote confirms the exact amount for your trip.</li>
             <li><strong>Night Driving Charges:</strong> Trips involving driving between 10:00 PM and 6:00 AM incur an additional night allowance to ensure driver rest and road safety vigilance.</li>
             <li><strong>Tolls &amp; Parking Fees:</strong> Toll gate charges (FASTag) and parking tickets at tourist monuments, airports, or hotels are to be paid on actuals by the guest.</li>
             <li><strong>Interstate Permits:</strong> When crossing state borders (e.g. Karnataka into Tamil Nadu, Kerala, Andhra Pradesh, or Goa), state passenger entry taxes and RTO permit fees are charged on actuals as levied by the respective transport departments.</li>
+            <li><strong>Fuel &amp; Insurance:</strong> Fuel, vehicle insurance and routine maintenance are covered by Sushi Travels and are not billed separately.</li>
+            <li><strong>No Surge Pricing:</strong> Quoted rates are not raised for peak hours, festivals or high-demand dates.</li>
             <li><strong>Goods and Services Tax (GST):</strong> 5% GST is applicable on all commercial passenger transport invoices in accordance with Government of India regulations.</li>
           </ul>
         </section>
