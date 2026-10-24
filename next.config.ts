@@ -17,6 +17,19 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Canonical host is www (see metadataBase + canonical tags). Search Console
+  // showed the bare domain collecting clicks as a separate URL, splitting
+  // the homepage's signals, so send it to www with a permanent redirect.
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'sushitravels.com' }],
+        destination: 'https://www.sushitravels.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     const isDev = process.env.NODE_ENV === 'development';
     const scriptSrc = isDev

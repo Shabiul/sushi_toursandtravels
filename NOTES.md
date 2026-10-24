@@ -1824,3 +1824,9 @@ Compared the project against Ahrefs' "How to Rank Higher on Google" (10 steps).
 - **Still needs owner/data**: Search Console/Ahrefs ranking data (guide steps
   1, 9, 10), live-SERP intent check, backlinks/GBP reviews, and confirming the
   About page's "50+ cars / 10k+ travellers" claims.
+
+### 15b. Search Console-driven pass (2026-10-24, 3-month GSC export)
+- Bare `sushitravels.com` was collecting clicks as a separate URL from `www` (51 vs 17 on the homepage) -> permanent host redirect in `next.config.ts`. If the host already redirects www->bare at platform level this would loop; canonical everywhere is www.
+- `/services/bangalore-airport-taxi`: 715 impressions at avg position 68 across 40+ airport queries. Added title/description, two body paragraphs and three FAQs (duration, fare process, terminals) and a link from every route page. No fares invented — a flat airport drop fare from the owner is the next lever.
+- "rent / on rent / for rent" wording added to the 12-seater Tempo Traveller and 25-seater bus titles (queries sat at positions 20-60).
+- `/vehicles/9-seater-luxury-tempo-traveller-bangalore` (16 clicks, pos 8.6) left unchanged.

@@ -20,9 +20,9 @@ export const servicePages: ServicePage[] = [
   {
     slug: 'bangalore-airport-taxi',
     h1: 'Bangalore Airport Taxi Service',
-    title: 'Bangalore Airport Taxi Service',
+    title: 'Bangalore Airport Taxi (BLR) Pickup & Drop',
     metaDescription:
-      'Chauffeur-driven airport taxi in Bangalore for Kempegowda International Airport (BLR) pickup & drop. Sedans, SUVs & group vehicles. Flight-time tracking on request.',
+      'Book an airport taxi in Bangalore for Kempegowda Airport (BLR) pickup & drop. One-way or round trip, sedans to Tempo Travellers, flight tracking on request.',
     heroSubtitle:
       'Reliable pickup and drop to and from Kempegowda International Airport (BLR), in a vehicle sized to your group.',
     heroImage: '/fleet/etios-front-01.webp',
@@ -32,6 +32,8 @@ export const servicePages: ServicePage[] = [
       'Airport transfers are one of our most frequent bookings — early-morning and late-night flights, business travellers who need a punctual pickup, and families arriving with a full set of luggage who want one vehicle instead of splitting into two cabs.',
       'For solo travellers or couples, a sedan (Toyota Etios or Maruti Suzuki Dzire) is the most economical option. Families of five to seven usually prefer the Toyota Innova or Innova Crysta for extra luggage room. Larger groups arriving together — extended families, wedding parties, or corporate teams — can book a Tempo Traveller or Force Urbania van and travel from the airport in one vehicle.',
       'Because Kempegowda Airport is well outside the city core, we recommend booking in advance and sharing your flight number so pickup timing can be adjusted for early landings or delays. Toll charges on the airport road are billed at actuals as per our standard terms.',
+      'Typical airport transfer questions we hear: how long will it take, which terminal, and can I book just one way. The airport is roughly 35–40 km from central Bangalore, so the drive usually takes about an hour in light traffic and noticeably longer at peak hours — we suggest leaving extra buffer for departures, particularly on weekday mornings and evenings.',
+      'To book an airport taxi in Bangalore, call or WhatsApp with your pickup or drop address, travel date and time, flight number if you have it, the number of passengers and the amount of luggage. We confirm the vehicle and the fare with you before the trip, so there is nothing to work out on the day.',
     ],
     faqs: [
       {
@@ -53,6 +55,21 @@ export const servicePages: ServicePage[] = [
         question: 'Can I book a one-way airport drop only?',
         answer:
           'Yes, one-way airport drop and pickup are both available — you don\'t need to book a round trip for an airport transfer.',
+      },
+      {
+        question: 'How long does it take to reach Bangalore airport by taxi?',
+        answer:
+          'The airport is roughly 35–40 km from central Bangalore. Plan on about an hour in light traffic and longer during weekday peak hours, so leave extra buffer when you are catching a flight.',
+      },
+      {
+        question: 'What is the airport taxi fare in Bangalore?',
+        answer:
+          'The fare depends on the vehicle, your pickup or drop area, and the time of day, with tolls and parking billed at actuals. Call or WhatsApp us with your address and flight time for a confirmed fare before you travel.',
+      },
+      {
+        question: 'Do you serve both airport terminals?',
+        answer:
+          'Yes — tell us your terminal and airline when booking, along with your flight number, and your driver will be briefed for the right pickup point.',
       },
     ],
     relatedVehicleSlugs: ['sedan-rental-bangalore', 'innova-rental-bangalore', 'tempo-traveller-rental-bangalore'],

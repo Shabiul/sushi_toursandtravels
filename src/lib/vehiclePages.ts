@@ -175,9 +175,9 @@ export const vehiclePages: VehiclePage[] = [
   {
     slug: 'tempo-traveller-rental-bangalore',
     h1: '12-Seater Tempo Traveller Rental in Bangalore',
-    title: 'Tempo Traveller Rental Bangalore (AC & Non-AC)',
+    title: 'Tempo Traveller Rent Bangalore, 12 Seater',
     metaDescription:
-      'Hire a 12-seater Tempo Traveller in Bangalore — AC (₹22/km) or Non-AC (₹20/km). Pushback seats, dedicated luggage boot. Ideal for group outstation trips.',
+      'Tempo Traveller for rent in Bangalore — 12-seater AC (₹22/km) or Non-AC (₹20/km). Pushback seats, luggage boot. Ideal for group outstation trips.',
     heroSubtitle:
       '12-seater Tempo Traveller, available in AC (₹22/km) and Non-AC (₹20/km) — pushback seating and a dedicated luggage boot for group trips out of Bangalore.',
     vehicleIds: ['tempo-traveller'],
@@ -423,10 +423,10 @@ export const vehiclePages: VehiclePage[] = [
   },
   {
     slug: '25-seater-mini-bus-rental-bangalore',
-    h1: '25 Seater Mini Bus Rental in Bangalore',
-    title: '25 Seater Mini Bus Rental Bangalore',
+    h1: '25 Seater Mini Bus for Rent in Bangalore',
+    title: '25 Seater Mini Bus on Rent in Bangalore',
     metaDescription:
-      '25-seater AC mini bus rental in Bangalore for corporate offsites, school trips & pilgrimage groups. Price on request — call or WhatsApp for a custom quote.',
+      '25-seater AC mini bus for rent in Bangalore for offsites, school trips & pilgrimages. See sample Mysuru & Ooty trip prices — call for an exact quote.',
     heroSubtitle:
       'AC pushback seating for 25 passengers — built for mid-size groups that have outgrown a Tempo Traveller. Pricing on request.',
     vehicleIds: ['sushi-travels-25-seater-mini-bus'],

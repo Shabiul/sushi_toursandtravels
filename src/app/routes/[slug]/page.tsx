@@ -250,6 +250,11 @@ export default async function RouteLandingPage({ params }: { params: Promise<{ s
                   title: 'Book Outstation Cab Service from Bangalore',
                 },
                 {
+                  label: 'Bangalore Airport Taxi',
+                  href: '/services/bangalore-airport-taxi',
+                  title: 'Book Bangalore Airport Taxi Pickup and Drop',
+                },
+                {
                   label: 'Bangalore Sightseeing Cab',
                   href: '/services/bangalore-sightseeing-cab',
                   title: 'Book Bangalore Local Sightseeing Cab',
