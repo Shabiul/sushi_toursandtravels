@@ -57,6 +57,11 @@ export const servicePages: ServicePage[] = [
           'Yes, one-way airport drop and pickup are both available — you don\'t need to book a round trip for an airport transfer.',
       },
       {
+        question: 'Is airport pickup punctuality guaranteed?',
+        answer:
+          'Yes — we guarantee punctuality: your chauffeur arrives at the confirmed pickup time, and for airport arrivals we track your flight on request so the driver is waiting when you land.',
+      },
+      {
         question: 'Is there a waiting time allowance for delayed flights?',
         answer:
           'Yes — airport pickups include a complimentary 45-minute wait for flight delays, and we track your flight on request so the driver is there when you land.',

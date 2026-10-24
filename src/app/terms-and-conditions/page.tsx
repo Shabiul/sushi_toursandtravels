@@ -129,6 +129,7 @@ export default function TermsAndConditionsPage() {
             <li><strong>Tolls &amp; Parking Fees:</strong> Toll gate charges (FASTag) and parking tickets at tourist monuments, airports, or hotels are to be paid on actuals by the guest.</li>
             <li><strong>Interstate Permits:</strong> When crossing state borders (e.g. Karnataka into Tamil Nadu, Kerala, Andhra Pradesh, or Goa), state passenger entry taxes and RTO permit fees are charged on actuals as levied by the respective transport departments.</li>
             <li><strong>Fuel &amp; Insurance:</strong> Fuel, vehicle insurance and routine maintenance are covered by Sushi Travels and are not billed separately.</li>
+            <li><strong>Guaranteed Punctuality:</strong> Your chauffeur arrives at the confirmed pickup time.</li>
             <li><strong>No Surge Pricing:</strong> Quoted rates are not raised for peak hours, festivals or high-demand dates.</li>
             <li><strong>Goods and Services Tax (GST):</strong> 5% GST is applicable on all commercial passenger transport invoices in accordance with Government of India regulations.</li>
           </ul>
