@@ -1,5 +1,6 @@
 import { vehicles, Vehicle } from './vehicles';
 import { Faq } from '@/components/FaqAccordion';
+import type { TripEstimate } from '@/components/TripEstimateTable';
 
 export interface VehiclePage {
   slug: string;
@@ -18,6 +19,9 @@ export interface VehiclePage {
   relatedRouteSlugs: string[];
   relatedLocationSlugs?: string[];
   isHub?: boolean;
+  /** Indicative per-trip ranges for vehicles quoted per trip (not a tariff). */
+  tripEstimates?: TripEstimate[];
+  tripEstimateNote?: string;
   /**
    * When set, renders a side-by-side comparison table of every vehicle.ts
    * entry matching this type on this page — lets a visitor pick a seat
@@ -440,6 +444,16 @@ export const vehiclePages: VehiclePage[] = [
           'This tier is priced per trip rather than a flat confirmed per-km rate, based on route, duration and group size. Call or WhatsApp us with your itinerary for a quote.',
       },
       {
+        question: 'How much does a mini bus cost for a Bangalore to Mysuru day trip?',
+        answer:
+          'As an indicative estimate, a same-day Bangalore–Mysuru round trip in our 25-seater mini bus typically works out to about ₹13,000–₹16,000 including driver bata and tolls. The exact price depends on your date, pickup point and stops — call or WhatsApp for a confirmed quote.',
+      },
+      {
+        question: 'How much does a mini bus cost for a Bangalore to Ooty trip?',
+        answer:
+          'As an indicative estimate, a 2-day/1-night Bangalore–Ooty round trip in our 25-seater mini bus typically works out to about ₹27,000–₹33,000 including driver bata, tolls and permit charges. The exact price depends on your dates and itinerary — call or WhatsApp for a confirmed quote.',
+      },
+      {
         question: 'Is driver bata included?',
         answer:
           'Driver bata, tolls, parking, permits and state taxes are quoted as part of the custom trip quote for this vehicle.',
@@ -453,6 +467,12 @@ export const vehiclePages: VehiclePage[] = [
         answer: 'Yes, group airport pickup/drop for a large team or tour group can be arranged — mention your group size when enquiring.',
       },
     ],
+    tripEstimates: [
+      { trip: 'Bangalore – Mysuru – Bangalore (same day)', basis: '~286 km, 300 km/day minimum', range: '₹13,000 – ₹16,000' },
+      { trip: 'Bangalore – Ooty – Bangalore (2 days / 1 night)', basis: '~540 km, 2 × 300 km/day minimum', range: '₹27,000 – ₹33,000' },
+    ],
+    tripEstimateNote:
+      'Indicative estimates only, not a fixed tariff. They assume the day-minimum kilometres above, driver bata, and typical tolls (plus state permit and entry charges on the Ooty trip). Parking, night halt and any extra stops are additional. The final quote depends on your date, pickup point and itinerary — call or WhatsApp for an exact price.',
     relatedVehicleSlugs: ['bus-rental-bangalore', 'force-urbania-16-seater-luxury-bangalore', '50-seater-bus-rental-bangalore'],
     relatedServiceSlugs: ['corporate-transport-bangalore', 'outstation-cab-bangalore', 'bangalore-sightseeing-cab'],
     relatedRouteSlugs: ['bangalore-to-hampi-cab', 'bangalore-to-tirupati-cab'],
@@ -498,10 +518,10 @@ export const vehiclePages: VehiclePage[] = [
   },
   {
     slug: 'bus-rental-bangalore',
-    h1: 'Bus & Mini Coach Rental in Bangalore',
-    title: 'Bus & Mini Coach Rental Bangalore',
+    h1: 'Bus for Rent in Bangalore — Mini Bus & Coach Rental',
+    title: 'Bus for Rent in Bangalore, 25–50 Seater AC',
     metaDescription:
-      'Compare our Bangalore bus rental options: 25 to 50-seater AC coaches, including 33-seater and Volvo 45-seater luxury buses, for group travel & events.',
+      'Bus for rent in Bangalore: 25 to 50-seater AC mini buses & luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.',
     heroSubtitle:
       'From a 25-seater mini bus to a full-size Volvo luxury coach — compare our AC bus fleet for corporate events, weddings, school trips and pilgrimage groups.',
     vehicleIds: ['sushi-travels-25-seater-mini-bus', 'sushi-travels-33-seater-bus-luxury', 'volvo-bus-45-seater-luxury', 'bus-50-seater'],

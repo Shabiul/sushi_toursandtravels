@@ -56,6 +56,10 @@ export const routePages: RoutePage[] = [
         question: 'Which vehicle is best for a Mysore day trip?',
         answer: 'A sedan or Innova suits smaller families; for larger groups, a Tempo Traveller keeps everyone together and is one of our most-booked options for this route.',
       },
+      {
+        question: "How much is a 25-seater mini bus for a Mysuru day trip?",
+        answer: "As an indicative estimate, a same-day round trip in our 25-seater mini bus is typically about ₹13,000–₹16,000 including driver bata and tolls. Call or WhatsApp for a confirmed quote for your date and group.",
+      },
     ],
     relatedVehicleSlugs: ['sedan-rental-bangalore', 'innova-rental-bangalore', 'tempo-traveller-rental-bangalore'],
     packageSlug: 'bangalore-to-mysore',
@@ -135,6 +139,10 @@ export const routePages: RoutePage[] = [
       {
         question: 'Which vehicle is best for the Ooty hairpin bends?',
         answer: 'An SUV suits smaller families comfortably; for larger groups, our 12 or 16-seater Tempo Traveller/Force Urbania tiers handle the hairpin sections well with an experienced driver.',
+      },
+      {
+        question: "How much is a 25-seater mini bus for an Ooty trip?",
+        answer: "As an indicative estimate, a 2-day/1-night round trip in our 25-seater mini bus is typically about ₹27,000–₹33,000 including driver bata, tolls and permit charges. Call or WhatsApp for a confirmed quote for your dates and group.",
       },
     ],
     relatedVehicleSlugs: ['innova-crysta-rental-bangalore', 'force-urbania-12-seater-maharaja-bangalore', 'tempo-traveller-rental-bangalore'],

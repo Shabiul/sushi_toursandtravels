@@ -51,7 +51,7 @@ white-hat only (no PBNs, link farms, or paid link schemes).
 | `force-urbania-16-seater-luxury-bangalore` | Force Urbania 16 seater rental Bangalore | luxury van rental Bangalore, wedding van hire |
 | `25-seater-mini-bus-rental-bangalore` | 25 seater mini bus rental Bangalore | mid-size bus hire Bangalore, group bus rental |
 | `50-seater-bus-rental-bangalore` | 50 seater bus rental Bangalore | large group bus hire Bangalore, corporate event bus |
-| `bus-rental-bangalore` | Bus rental Bangalore | mini coach hire Bangalore, AC bus rental with driver |
+| `bus-rental-bangalore` | Bus for rent in Bangalore | bus rental Bangalore, mini coach hire Bangalore, AC bus rental with driver |
 
 ### Service pages (`/services/[slug]`)
 

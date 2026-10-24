@@ -12,6 +12,7 @@ import CTABand from '@/components/CTABand';
 import RelatedLinks from '@/components/RelatedLinks';
 import VehiclePricingTable from '@/components/VehiclePricingTable';
 import GroupSizeComparisonTable from '@/components/GroupSizeComparisonTable';
+import TripEstimateTable from '@/components/TripEstimateTable';
 import { vehicles as allVehicles } from '@/lib/vehicles';
 
 export function generateStaticParams() {
@@ -225,6 +226,13 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
 
         {/* Pricing */}
         <VehiclePricingTable vehicles={pageVehicles} />
+        {page.tripEstimates && page.tripEstimateNote && (
+          <TripEstimateTable
+            heading="Estimated Trip Prices"
+            estimates={page.tripEstimates}
+            note={page.tripEstimateNote}
+          />
+        )}
 
         {/* Feature highlights */}
         <section className="bg-white rounded-2xl border border-navy-light/10 p-6 sm:p-8 space-y-4 shadow-sm">
