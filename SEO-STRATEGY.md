@@ -49,7 +49,7 @@ white-hat only (no PBNs, link farms, or paid link schemes).
 | `9-seater-luxury-tempo-traveller-bangalore` | 9 seater luxury Tempo Traveller Bangalore | executive Tempo Traveller hire, 9+1 seater van rental |
 | `force-urbania-12-seater-maharaja-bangalore` | Force Urbania 12 seater rental Bangalore | Urbania Maharaja hire, premium van rental Bangalore |
 | `force-urbania-16-seater-luxury-bangalore` | Force Urbania 16 seater rental Bangalore | luxury van rental Bangalore, wedding van hire |
-| `21-seater-bus-rental-bangalore` | 21 seater bus rental Bangalore | mid-size bus hire Bangalore, group bus rental |
+| `25-seater-mini-bus-rental-bangalore` | 25 seater mini bus rental Bangalore | mid-size bus hire Bangalore, group bus rental |
 | `50-seater-bus-rental-bangalore` | 50 seater bus rental Bangalore | large group bus hire Bangalore, corporate event bus |
 | `bus-rental-bangalore` | Bus rental Bangalore | mini coach hire Bangalore, AC bus rental with driver |
 

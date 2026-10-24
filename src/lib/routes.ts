@@ -213,7 +213,7 @@ export const routePages: RoutePage[] = [
       },
       {
         question: 'Can I book a bus for a large Hampi tour group?',
-        answer: 'Yes — our 21-seater and 50-seater bus tiers are available on a per-trip quote for larger heritage tour groups or school/college trips.',
+        answer: 'Yes — our 25-seater and 50-seater bus tiers are available on a per-trip quote for larger heritage tour groups or school/college trips.',
       },
     ],
     relatedVehicleSlugs: ['innova-crysta-rental-bangalore', 'tempo-traveller-rental-bangalore', 'bus-rental-bangalore'],

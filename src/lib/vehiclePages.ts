@@ -471,7 +471,7 @@ export const vehiclePages: VehiclePage[] = [
     bodyParagraphs: [
       'When an entire company, wedding party or large tour group needs to travel together, the 50-seater is our largest-capacity vehicle — full-size AC pushback seating, large overhead luggage racks, a rear cargo hold, and a PA/music system.',
       'It is most often booked for corporate events with staff transport requirements, wedding guest transportation, and large pilgrimage or school/college group tours where splitting the group across multiple smaller vehicles isn\'t practical.',
-      'As with the 21-seater, pricing is quoted per trip based on route, duration and group size — call or WhatsApp with your itinerary. See our Bus Rental hub page below if you\'re comparing bus sizes for your group.',
+      'As with the 25-seater, pricing is quoted per trip based on route, duration and group size — call or WhatsApp with your itinerary. See our Bus Rental hub page below if you\'re comparing bus sizes for your group.',
     ],
     faqs: [
       {

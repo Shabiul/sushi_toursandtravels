@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { execFileSync } from 'child_process';
 import path from 'path';
 import { vehiclePages } from '../src/lib/vehiclePages';
 import { vehicles } from '../src/lib/vehicles';
@@ -262,6 +263,51 @@ blogPosts.forEach((bp) => {
   });
 });
 
+// Real lastmod: the date of the last git commit touching the source file(s)
+// that render each URL, instead of stamping every URL with today's date
+// (which Google learns to ignore). Falls back to NOW outside a git checkout.
+const ROOT = path.join(__dirname, '..');
+const gitDateCache = new Map<string, string>();
+function gitDate(files: string[]): string {
+  const key = files.join('|');
+  const cached = gitDateCache.get(key);
+  if (cached) return cached;
+  let date = NOW;
+  try {
+    const out = execFileSync('git', ['log', '-1', '--format=%cs', '--', ...files], {
+      cwd: ROOT,
+      encoding: 'utf8',
+    }).trim();
+    if (out) date = out;
+  } catch {
+    /* not a git checkout — keep NOW */
+  }
+  gitDateCache.set(key, date);
+  return date;
+}
+function sourceFilesFor(url: string): string[] {
+  const route = url.replace(BASE_URL, '').replace(/\/$/, '');
+  if (route === '') return ['src/app/page.tsx', 'src/app/HomeClient.tsx'];
+  const [seg] = route.slice(1).split('/');
+  const isDetail = route.slice(1).includes('/');
+  const data: Record<string, string[]> = {
+    vehicles: ['src/lib/vehiclePages.ts', 'src/lib/vehicles.ts'],
+    services: ['src/lib/services.ts'],
+    locations: ['src/lib/locations.ts'],
+    routes: ['src/lib/routes.ts'],
+  };
+  if (isDetail && data[seg]) return [...data[seg], `src/app/${seg}/[slug]/page.tsx`];
+  if (seg === 'fleet') return ['src/app/fleet'];
+  if (seg === 'tours-and-packages') return ['src/app/tours-and-packages', 'src/lib/packages.ts'];
+  return [`src/app/${seg}`, ...(data[seg] || [])];
+}
+pages.forEach((p) => {
+  if (!blogPosts.some((bp) => p.url.endsWith(`/blog/${bp.slug}`))) {
+    p.lastmod = gitDate(sourceFilesFor(p.url));
+  }
+});
+
+const NEWEST = pages.map((p) => p.lastmod).sort().pop() as string;
 console.log(`Aggregated ${pages.length} public indexable routes.`);
 
 // 1. Generate sitemap-pages.xml
@@ -390,15 +436,15 @@ const sitemapIndexXml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>${BASE_URL}/sitemap-pages.xml</loc>
-    <lastmod>${NOW}</lastmod>
+    <lastmod>${NEWEST}</lastmod>
   </sitemap>
   <sitemap>
     <loc>${BASE_URL}/sitemap-images.xml</loc>
-    <lastmod>${NOW}</lastmod>
+    <lastmod>${NEWEST}</lastmod>
   </sitemap>
   <sitemap>
     <loc>${BASE_URL}/sitemap-videos.xml</loc>
-    <lastmod>${NOW}</lastmod>
+    <lastmod>${NEWEST}</lastmod>
   </sitemap>
 </sitemapindex>`;
 fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap.xml'), sitemapIndexXml, 'utf8');

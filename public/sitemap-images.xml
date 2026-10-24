@@ -375,6 +375,24 @@
       <image:caption>Notes from a trip to Kevadia — the world&apos;s tallest statue, an eagle-shaped safari park, the Sardar Sarovar Dam, and a quiet valley of flowers on the Narmada.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/mysuru.webp</image:loc>
+      <image:title>Bangalore to Mysore Day Trip: Route, Timing &amp; Vehicle Guide</image:title>
+      <image:caption>Mysore is close enough for a same-day round trip from Bangalore. Here is a simple schedule, what to prioritise, and how to choose between a sedan, an Innova and a Tempo Traveller.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/coorg.webp</image:loc>
+      <image:title>Bangalore to Coorg Weekend Trip: Route &amp; Vehicle Guide</image:title>
+      <image:caption>Coorg is a classic two-day trip from Bangalore. This guide covers the drive, a simple 2-day plan, and why vehicle choice matters on the ghat-road sections.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/ooty.webp</image:loc>
+      <image:title>Bangalore to Ooty by Cab: Route, Timing &amp; Vehicle Guide</image:title>
+      <image:caption>The Ooty drive passes through the Bandipur forest corridor and climbs the Nilgiri hairpin bends. Here is what to expect and how to plan it.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sushitravels.com/vehicles/sedan-rental-bangalore</loc>
@@ -1213,6 +1231,33 @@
       <image:loc>https://www.sushitravels.com/blog/Gujarat-blog-1.webp</image:loc>
       <image:title>A Travel Diary: The Statue of Unity, Kevadia, Gujarat</image:title>
       <image:caption>Notes from a trip to Kevadia — the world&apos;s tallest statue, an eagle-shaped safari park, the Sardar Sarovar Dam, and a quiet valley of flowers on the Narmada.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.sushitravels.com/blog/bangalore-to-mysore-day-trip-guide</loc>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/mysuru.webp</image:loc>
+      <image:title>Bangalore to Mysore Day Trip: Route, Timing &amp; Vehicle Guide</image:title>
+      <image:caption>Mysore is close enough for a same-day round trip from Bangalore. Here is a simple schedule, what to prioritise, and how to choose between a sedan, an Innova and a Tempo Traveller.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.sushitravels.com/blog/bangalore-to-coorg-weekend-trip-guide</loc>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/coorg.webp</image:loc>
+      <image:title>Bangalore to Coorg Weekend Trip: Route &amp; Vehicle Guide</image:title>
+      <image:caption>Coorg is a classic two-day trip from Bangalore. This guide covers the drive, a simple 2-day plan, and why vehicle choice matters on the ghat-road sections.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.sushitravels.com/blog/bangalore-to-ooty-trip-guide</loc>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/ooty.webp</image:loc>
+      <image:title>Bangalore to Ooty by Cab: Route, Timing &amp; Vehicle Guide</image:title>
+      <image:caption>The Ooty drive passes through the Bandipur forest corridor and climbs the Nilgiri hairpin bends. Here is what to expect and how to plan it.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
   </url>

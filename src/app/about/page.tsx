@@ -5,20 +5,20 @@ import { Compass, Target, ShieldCheck, Quote, ExternalLink, Award, FileCheck } f
 import { getBreadcrumbListSchema, getWebPageSchema, getVideoObjectSchema } from '@/lib/schema';
 
 export const metadata = {
-  title: 'About Sushi Travels | Chauffeur Car Rental India',
+  title: 'About Sushi Travels, Bangalore Travel Agency',
   description: 'Learn about Sushi Travels, a premium car rental agency based in Bangalore. 15+ years experience, 50+ vehicles, and verified professional drivers.',
   alternates: {
     canonical: '/about',
   },
   openGraph: {
-    title: 'About Sushi Travels | Chauffeur Car Rental India',
+    title: 'About Sushi Travels, Bangalore Travel Agency | Sushi Travels',
     description: 'Learn about Sushi Travels, a premium car rental agency based in Bangalore. 15+ years experience, 50+ vehicles, and verified professional drivers.',
     url: '/about',
     images: [{ url: '/videos/about-scene-13-poster.webp', width: 800, height: 600, alt: 'About Sushi Travels — chauffeur car rental agency in Bangalore' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Sushi Travels | Chauffeur Car Rental India',
+    title: 'About Sushi Travels, Bangalore Travel Agency | Sushi Travels',
     description: 'Learn about Sushi Travels, a premium car rental agency based in Bangalore. 15+ years experience, 50+ vehicles, and verified professional drivers.',
     images: ['/videos/about-scene-13-poster.webp'],
   },

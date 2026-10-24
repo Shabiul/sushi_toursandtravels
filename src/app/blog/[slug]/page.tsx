@@ -226,14 +226,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {/* Video */}
         {post.video && (
           <section className="space-y-4">
-            <h2 className="font-serif font-bold text-xl text-navy">A Look Around Kevadia</h2>
+            <h2 className="font-serif font-bold text-xl text-navy">{post.videoHeading}</h2>
             <div className="relative rounded-2xl overflow-hidden border border-navy-light/10 shadow-sm bg-navy-dark">
               <video
                 controls
                 preload="metadata"
                 poster={post.coverImage}
                 className="w-full h-auto max-h-[560px] mx-auto"
-                title="A Look Around Kevadia, Gujarat - Video Tour"
+                title={`${post.videoHeading ?? post.title} - Video Tour`}
               >
                 <source src={post.video} type="video/mp4" />
               </video>
@@ -242,6 +242,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         )}
 
         {/* Full photo gallery */}
+        {post.images.length > 1 && (
         <section className="space-y-4">
           <h2 className="font-serif font-bold text-xl text-navy">Photo Gallery</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -252,8 +253,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               >
                 <Image
                   src={img}
-                  alt={`Statue of Unity, Kevadia, Gujarat — photo ${idx + 1} of ${post.images.length}`}
-                  title={`Statue of Unity, Kevadia photo ${idx + 1} — Sushi Travels Field Diary`}
+                  alt={`${post.imageAltPrefix} — photo ${idx + 1} of ${post.images.length}`}
+                  title={`${post.imageAltPrefix} photo ${idx + 1} — Sushi Travels Field Diary`}
                   fill
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   className="object-cover"
@@ -263,6 +264,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             ))}
           </div>
         </section>
+        )}
 
         {/* FAQ */}
         <FaqAccordion faqs={post.faqs} />
@@ -271,12 +273,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <CTABand
           heading="Planning Your Own Outstation Trip?"
           subheading="Sushi Travels offers chauffeur-driven outstation and round-trip car rental for the destinations within driving range of Bangalore."
-          whatsappMessage="Hello Sushi Tours & Travels, I read your Statue of Unity blog post and would like to enquire about an outstation trip."
+          whatsappMessage={`Hello Sushi Tours & Travels, I read your blog post "${post.title}" and would like to enquire about an outstation trip.`}
         />
 
         {/* Internal links */}
         <RelatedLinks
           groups={[
+            {
+              heading: 'Related Pages',
+              links: post.relatedLinks ?? [],
+            },
             {
               heading: 'Plan Your Trip',
               links: [

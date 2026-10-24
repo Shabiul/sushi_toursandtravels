@@ -4,20 +4,20 @@ import { getServiceSchema, getBreadcrumbListSchema, getWebPageSchema } from '@/l
 import BookingForm from '@/components/BookingForm';
 
 export const metadata = {
-  title: 'Book a Car with Driver | Chauffeur Rental India',
+  title: 'Book a Vehicle with Driver in Bangalore',
   description: 'Book local drops, full-day packages, or outstation chauffeur services. Multi-step transparent booking with verified professional drivers.',
   alternates: {
     canonical: '/booking',
   },
   openGraph: {
-    title: 'Book a Car with Driver | Chauffeur Rental India',
+    title: 'Book a Vehicle with Driver in Bangalore | Sushi Travels',
     description: 'Book local drops, full-day packages, or outstation chauffeur services. Multi-step transparent booking with verified professional drivers.',
     url: '/booking',
     images: [{ url: '/fleet/force-urbania-front-01.webp', width: 800, height: 600, alt: 'Book a Sushi Travels vehicle with driver online' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Book a Car with Driver | Chauffeur Rental India',
+    title: 'Book a Vehicle with Driver in Bangalore | Sushi Travels',
     description: 'Book local drops, full-day packages, or outstation chauffeur services. Multi-step transparent booking with verified professional drivers.',
     images: ['/fleet/force-urbania-front-01.webp'],
   },

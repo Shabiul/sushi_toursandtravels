@@ -2,16 +2,19 @@ import React from 'react';
 import { getBreadcrumbListSchema, getWebPageSchema } from '@/lib/schema';
 import { packages } from '@/lib/packages';
 import PackageCard from '@/components/PackageCard';
+import RelatedLinks from '@/components/RelatedLinks';
+import { blogPosts } from '@/lib/blog';
+import { routePages } from '@/lib/routes';
 
 export const metadata = {
-  title: 'Tours & Packages | Sushi Travels Bangalore',
+  title: 'Bangalore Holiday Tour Packages',
   description:
     'Explore Sushi Travels tour packages from Bangalore — Mysore, Coorg, Ooty, Goa, Tirupati and Pondicherry round trips with Tempo Travellers, sedans and SUVs.',
   alternates: {
     canonical: '/tours-and-packages',
   },
   openGraph: {
-    title: 'Tours & Packages | Sushi Travels Bangalore',
+    title: 'Bangalore Holiday Tour Packages | Sushi Travels',
     description:
       'Explore Sushi Travels tour packages from Bangalore — Mysore, Coorg, Ooty, Goa, Tirupati and Pondicherry round trips with Tempo Travellers, sedans and SUVs.',
     url: '/tours-and-packages',
@@ -19,7 +22,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Tours & Packages | Sushi Travels Bangalore',
+    title: 'Bangalore Holiday Tour Packages | Sushi Travels',
     description:
       'Explore Sushi Travels tour packages from Bangalore — Mysore, Coorg, Ooty, Goa, Tirupati and Pondicherry round trips with Tempo Travellers, sedans and SUVs.',
     images: ['/Isha-Temple.webp'],
@@ -102,6 +105,35 @@ export default function ToursAndPackagesPage() {
             WhatsApp us
           </a>{' '}
           with your route and we&apos;ll put together a customized itinerary and quote.
+        </div>
+
+        <div className="mt-12">
+          <RelatedLinks
+            groups={[
+              {
+                heading: 'Route Guides & Cab Fares',
+                links: routePages.slice(0, 6).map((r) => ({
+                  label: r.h1,
+                  href: `/routes/${r.slug}`,
+                  title: `${r.h1}: distance, travel time and fare enquiry`,
+                })),
+              },
+              {
+                heading: 'Travel Guides',
+                links: blogPosts
+                  .filter((b) => b.relatedLinks?.length)
+                  .map((b) => ({ label: b.title, href: `/blog/${b.slug}`, title: `Read: ${b.title}` })),
+              },
+              {
+                heading: 'Vehicles for Your Group',
+                links: [
+                  { label: 'Tempo Traveller rental in Bangalore', href: '/fleet', title: '9, 12 and 17 Seater Tempo Traveller Rental Fleet' },
+                  { label: 'All vehicle categories', href: '/vehicles', title: 'Browse Vehicle Rental Options in Bangalore' },
+                  { label: 'Outstation cab service', href: '/services/outstation-cab-bangalore', title: 'Outstation Cab Service from Bangalore' },
+                ],
+              },
+            ]}
+          />
         </div>
       </div>
     </div>

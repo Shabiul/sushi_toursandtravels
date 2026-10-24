@@ -214,7 +214,7 @@ export const servicePages: ServicePage[] = [
       {
         question: 'Which vehicle works best for large guest transport?',
         answer:
-          'For large guest counts, our Force Urbania 16-Seater, 21-seater and 50-seater bus tiers are the most efficient way to move groups between venues.',
+          'For large guest counts, our Force Urbania 16-Seater, 25-seater and 50-seater bus tiers are the most efficient way to move groups between venues.',
       },
       {
         question: 'How far in advance should I book for a wedding?',
@@ -222,7 +222,7 @@ export const servicePages: ServicePage[] = [
           'We recommend booking wedding transport as early as possible, especially during peak wedding season, so we can confirm the right number and type of vehicles for your event.',
       },
     ],
-    relatedVehicleSlugs: ['force-urbania-16-seater-luxury-bangalore', '21-seater-bus-rental-bangalore', 'tempo-traveller-rental-bangalore'],
+    relatedVehicleSlugs: ['force-urbania-16-seater-luxury-bangalore', '25-seater-mini-bus-rental-bangalore', 'tempo-traveller-rental-bangalore'],
     relatedServiceSlugs: ['corporate-transport-bangalore', 'outstation-cab-bangalore', 'bangalore-sightseeing-cab'],
   },
   {

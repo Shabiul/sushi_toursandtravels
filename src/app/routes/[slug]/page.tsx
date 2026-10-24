@@ -6,6 +6,7 @@ import { Route as RouteIcon, Clock, ArrowUpRight, ShieldCheck, ExternalLink, Cal
 import { routePages, getRoutePage } from '@/lib/routes';
 import { vehiclePages } from '@/lib/vehiclePages';
 import { packages } from '@/lib/packages';
+import { blogPosts } from '@/lib/blog';
 import { getBreadcrumbListSchema, getFAQSchema, getRouteTouristTripSchema, getWebPageSchema } from '@/lib/schema';
 import LandingHero from '@/components/LandingHero';
 import FaqAccordion from '@/components/FaqAccordion';
@@ -254,6 +255,16 @@ export default async function RouteLandingPage({ params }: { params: Promise<{ s
                   title: 'Book Bangalore Local Sightseeing Cab',
                 },
               ],
+            },
+            {
+              heading: 'Travel Guides',
+              links: blogPosts
+                .filter((b) => b.relatedLinks?.some((l) => l.href === `/routes/${page.slug}`))
+                .map((b) => ({
+                  label: b.title,
+                  href: `/blog/${b.slug}`,
+                  title: `Read: ${b.title}`,
+                })),
             },
             {
               heading: 'Plan Your Trip',

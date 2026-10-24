@@ -1792,3 +1792,35 @@ was replaced by server-rendered initial data.
 `src/app/api/home-data/route.ts` (new: `src/app/HomeClient.tsx`,
 `src/app/fleet/FleetClient.tsx`, `src/lib/dbMappers.ts`; deleted:
 `src/components/SkeletonLoader.tsx`).
+
+## 15. Guide-vs-work gap pass: titles, links, sitemap dates, blog (2026-10-24)
+
+Compared the project against Ahrefs' "How to Rank Higher on Google" (10 steps).
+
+- **Correction to sections 11 item 35 / 14**: `/` and `/fleet` are already
+  Server Components (commit `380c00b`); the "empty fleet grid for non-JS
+  crawlers" gap is resolved. Those notes are stale.
+- **Titles**: the root `title.template` appends " | Sushi Travels", so About,
+  Booking, Contact and Tours (which already contained the brand) rendered it
+  twice. Page titles no longer include the brand; OG/Twitter titles still do.
+  About/Booking/Contact/Tours titles now carry the Bangalore keywords from
+  `SEO-STRATEGY.md`. Root OG/Twitter copy said "India"; now Bangalore.
+- **Broken internal link**: `services.ts` linked to the removed
+  `21-seater-bus-rental-bangalore` (page is now `25-seater-mini-bus-...`).
+  Fixed that slug plus "21-seater" copy in `routes.ts`/`services.ts`/
+  `vehiclePages.ts` and the `SEO-STRATEGY.md` keyword table.
+- **Sitemap `lastmod`**: `scripts/generate-gsc-suite.ts` now uses the last git
+  commit date of each URL's source files (not today's date for everything);
+  the index uses the newest page date. Granularity is per data file, not per
+  entry.
+- **Blog**: added three Bangalore guides (Mysore, Coorg, Ooty) using only the
+  distances/times already in `routes.ts`; no prices, no named-person author,
+  no invented citations (`citations: []`). Template no longer hardcodes the
+  Gujarat strings (`imageAltPrefix`, `videoHeading`, `relatedLinks` fields;
+  gallery only renders with 2+ photos). Route pages link to their guide and
+  `/tours-and-packages` now has a RelatedLinks block.
+- **Checked, no merge needed**: `/fleet` (Tempo Traveller keyword) and
+  `/vehicles` (category hub) serve different intents.
+- **Still needs owner/data**: Search Console/Ahrefs ranking data (guide steps
+  1, 9, 10), live-SERP intent check, backlinks/GBP reviews, and confirming the
+  About page's "50+ cars / 10k+ travellers" claims.
