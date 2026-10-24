@@ -491,6 +491,36 @@ Allow: /
 Disallow: /admin
 Disallow: /api/
 
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: GoogleOther
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
 User-agent: PerplexityBot
 Allow: /
 Disallow: /admin
@@ -529,3 +559,5 @@ Sitemap: ${BASE_URL}/sitemap-videos.xml
 `;
 fs.writeFileSync(path.join(PUBLIC_DIR, 'robots.txt'), robotsTxt, 'utf8');
 console.log('✓ Generated public/robots.txt');
+
+import './generate-llms';

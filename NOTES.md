@@ -1830,3 +1830,9 @@ Compared the project against Ahrefs' "How to Rank Higher on Google" (10 steps).
 - `/services/bangalore-airport-taxi`: 715 impressions at avg position 68 across 40+ airport queries. Added title/description, two body paragraphs and three FAQs (duration, fare process, terminals) and a link from every route page. No fares invented — a flat airport drop fare from the owner is the next lever.
 - "rent / on rent / for rent" wording added to the 12-seater Tempo Traveller and 25-seater bus titles (queries sat at positions 20-60).
 - `/vehicles/9-seater-luxury-tempo-traveller-bangalore` (16 clicks, pos 8.6) left unchanged.
+
+### 15c. AEO / AI-engine pass (2026-10-24)
+- `public/llms.txt` and `llms-full.txt` were hand-written and had drifted: wrong per-km rates (12-seater ₹24 vs ₹22/20, 17-seater ₹28 vs ₹30/28, Urbania ₹34 vs ₹38, 9-seater ₹22 vs ₹28), ~10 URLs that 404, and unverifiable promises (zero surge pricing, free 45-min wait, 5+ yr drivers, fuel/insurance covered, "guaranteed punctuality"). Now generated from the data files by `scripts/generate-llms.ts` (runs from `generate-gsc-suite.ts`); includes every page FAQ as Q&A. Re-run `npx tsx scripts/generate-gsc-suite.ts` after editing rates/pages.
+- robots.txt now also allows OAI-SearchBot, ChatGPT-User, Perplexity-User, Claude-SearchBot, Claude-User, GoogleOther.
+- LocalBusiness schema gained `hasMap` + Maps `sameAs`.
+- Open owner questions: founding year (About page + old llms say 2011, schema says 2019); Terms page says bata ₹400–600 but vehicles.ts has ₹700 on several vehicles.

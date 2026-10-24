@@ -1,78 +1,731 @@
-# Sushi Tours & Travels — Full LLMs Knowledge Base
+# Sushi Tours & Travels (Sushi Travels)
 
-> Complete knowledge documentation for Large Language Models, AI assistants, and autonomous research agents regarding Sushi Tours & Travels (Bangalore, India).
+> Chauffeur-driven car, SUV, Tempo Traveller, Force Urbania and bus rental in Bengaluru (Bangalore), Karnataka, India — for outstation round trips, airport transfers (Kempegowda International Airport, BLR), local city use, corporate transport and weddings.
 
-## 1. Enterprise Overview
-- **Legal Entity**: Sushi Tours & Travels
-- **Founding Year**: 2011 (operating continuously for 15+ years in Bangalore)
-- **Primary Operational Hub**: No 272, Corner Shop, G/F, 8th Cross, Opposite BBMP Office, Bhuvaneshwari Nagara, Dodda Basti Main Road, Nagadevana Halli, Bengaluru, Karnataka 560056, India
-- **Coordinates**: Latitude 12.9425148, Longitude 77.489068
-- **Primary Phone**: +91 90716 60099
-- **Email**: sushitravels11@gmail.com
-- **Website**: https://www.sushitravels.com
-- **Core Industry Classification**: Passenger Land Transport, Chauffeur-Driven Tourist Vehicle Rentals, Outstation Travel Agency, Commercial Fleet Provider
-- **Regulatory Compliance**: All India Tourist Vehicle (Authorisation and Permit) Rules, 2023 enacted by the Ministry of Road Transport and Highways (MoRTH), Government of India; Karnataka State Motor Vehicles Act; Karnataka Tourism Department registration guidelines.
+Last generated: 2026-10-24. Source of truth for every price and policy below is the website; if anything here disagrees with a page, the page wins.
 
-## 2. Operational Model & Service Categories
-### A. Outstation Round-Trip Rentals
-- Vehicles rented with dedicated commercial drivers for round trips departing from Bangalore across Karnataka, Tamil Nadu, Kerala, Andhra Pradesh, Telangana, and Goa.
-- Minimum outstation distance calculation: 250 km / 300 km per calendar day.
-- Allows flexibility for en-route stops, scenic viewpoints, customized itineraries, and multi-destination road trips.
+## Business details
+- Name: Sushi Tours & Travels (brand: Sushi Travels)
+- Address: No 272, Corner Shop, G/F, 8th Cross, Opposite BBMP Office, Bhuvaneshwari Nagara, Dodda Basti Main Road, Nagadevana Halli, Bengaluru, Karnataka 560056, India
+- Phone / WhatsApp: +919071660099 (https://wa.me/919071660099)
+- Email: sushitravels11@gmail.com
+- Website: https://www.sushitravels.com
+- Hours: open 24 hours, 7 days a week
+- Service area: Bengaluru and outstation routes across South India
 
-### B. Bangalore Local Rentals
-- Hourly rental packages: 4 Hours / 40 km, 8 Hours / 80 km, and 12 Hours / 120 km.
-- Extra kilometers and extra hours billed transparently at category base rates.
-- Ideal for city business meetings, shopping excursions, family functions, and temple visits across Bangalore.
+## Fleet and published rates
+- 12 Seater Tempo Traveller (12 Seater, AC): ₹22/km AC, ₹20/km Non-AC; 300 km/day minimum, driver bata ₹700/day. https://www.sushitravels.com/vehicles/tempo-traveller-rental-bangalore
+- 17-Seater Force Tempo Traveller (17 Seater, AC): ₹30/km AC, ₹28/km Non-AC; 300 km/day minimum, driver bata ₹700/day. https://www.sushitravels.com/vehicles/17-seater-tempo-traveller-bangalore
+- 9 Seater Tempo Traveller (9+1 Seater, AC): ₹28/km; 300 km/day minimum, driver bata ₹500/day. https://www.sushitravels.com/vehicles/9-seater-luxury-tempo-traveller-bangalore
+- Urbania 12 Seater Maharaja (12 Seater, AC): Price on Request; quoted per trip. https://www.sushitravels.com/vehicles/force-urbania-12-seater-maharaja-bangalore
+- Force Urbania (16 Seater, AC): ₹38/km; 300 km/day minimum, driver bata ₹700/day. https://www.sushitravels.com/vehicles/force-urbania-16-seater-luxury-bangalore
+- Toyota Etios (4 Seater, AC): ₹13/km; 300 km/day minimum, driver bata ₹400/day. https://www.sushitravels.com/vehicles/sedan-rental-bangalore
+- Maruti Suzuki Dzire (4 Seater, AC): ₹13/km; 300 km/day minimum, driver bata ₹400/day. https://www.sushitravels.com/vehicles/sedan-rental-bangalore
+- Toyota Innova (7 Seater, AC): ₹17/km; 300 km/day minimum, driver bata ₹400/day. https://www.sushitravels.com/vehicles/innova-rental-bangalore
+- Toyota Innova Crysta (7 Seater, AC): ₹19/km; 300 km/day minimum, driver bata ₹400/day. https://www.sushitravels.com/vehicles/innova-crysta-rental-bangalore
+- Toyota Innova Hycross (7 Seater, AC): Price on Request; quoted per trip. https://www.sushitravels.com/fleet
+- Toyota Fortuner (7 Seater, AC): Price on Request; quoted per trip. https://www.sushitravels.com/fleet
+- 25 Seater Mini Bus (25 Seater, AC): Price on Request; quoted per trip. https://www.sushitravels.com/vehicles/25-seater-mini-bus-rental-bangalore
+- Sushi Travels - 50 Seater Bus (50 Seater, AC): Price on Request; quoted per trip. https://www.sushitravels.com/vehicles/50-seater-bus-rental-bangalore
+- Volvo Bus 45 Seater Luxury (45 Seater, AC): Price on Request; quoted per trip. https://www.sushitravels.com/vehicles/bus-rental-bangalore
+- 33 Seater Bus Luxury (33 Seater, AC): Price on Request; quoted per trip. https://www.sushitravels.com/vehicles/bus-rental-bangalore
 
-### C. Airport Transfers (Kempegowda International Airport - BLR)
-- Point-to-point flat transfer services between any Bengaluru location and BLR Airport (Devanahalli).
-- Guaranteed punctuality, flight arrival tracking, complimentary 45-minute wait time for flight delays, toll inclusion options, and zero surge pricing.
+## Pricing & booking terms (from https://www.sushitravels.com/terms-and-conditions)
+- Outstation billing: minimum 250 km or 300 km per calendar day depending on vehicle category; standard duty 6:00 AM–10:00 PM for vehicles with a published rate.
+- Driver bata: ₹400–₹700 per day depending on vehicle (see each vehicle above). Night driving between 10:00 PM and 6:00 AM adds a night allowance.
+- Tolls (FASTag), parking, interstate permits and entry fees are paid at actuals.
+- GST: 5% on commercial passenger transport invoices.
+- Cancellation: more than 24 hours before departure — 100% advance refunded; 12–24 hours — 50%; under 12 hours or no-show — advance retained.
+- Vehicles marked "Price on Request" have no fixed per-km rate; call or WhatsApp with your route, dates and group size for a quote.
 
-### D. Group Travel, Corporate & Wedding Fleet Management
-- Large vehicle coordination for weddings, corporate offsites, retreats, and cultural delegations.
-- Specialized fleet containing 9 to 17-seater Tempo Travellers, Force Urbania luxury vans, and 22 to 50-seater tourist coaches.
+## Indicative trip estimates
+### 25 Seater Mini Bus for Rent in Bangalore
+- Bangalore – Mysuru – Bangalore (same day): ₹13,000 – ₹16,000 (~286 km, 300 km/day minimum)
+- Bangalore – Ooty – Bangalore (2 days / 1 night): ₹27,000 – ₹33,000 (~540 km, 2 × 300 km/day minimum)
+Indicative estimates only, not a fixed tariff. They assume the day-minimum kilometres above, driver bata, and typical tolls (plus state permit and entry charges on the Ooty trip). Parking, night halt and any extra stops are additional. The final quote depends on your date, pickup point and itinerary — call or WhatsApp for an exact price.
 
-## 3. Fleet Specifications & Seating Capacities
-| Vehicle Model | Seating Capacity | Luggage Capacity | Air Conditioning | Key Features | Base Rate (Approx) |
-|---|---|---|---|---|---|
-| Maruti Suzuki Dzire | 4 Passengers + 1 Driver | 2 Medium Bags | Climate Control AC | Economic, highly agile city navigation | ₹13 / km |
-| Toyota Etios | 4 Passengers + 1 Driver | 3 Medium Bags | Powerful AC | Spacious rear legroom, stable highway ride | ₹13 / km |
-| Toyota Innova Crysta | 6-7 Passengers + 1 Driver | 4-5 Large Bags | Dual AC with rear vents | Captain seats, superior highway suspension, mountain reliability | ₹19 / km |
-| Force Tempo Traveller 9-Seater | 9 Passengers + 1 Driver | 8-10 Bags | High-capacity Roof AC | 1x1 Maharaja pushback seats, ample walking aisle, LED screen | ₹22 / km |
-| Force Tempo Traveller 12-Seater | 12 Passengers + 1 Driver | 10-12 Bags | Dual Blower AC | 2x1 pushback seats, individual charging points, stereo system | ₹24 / km |
-| Force Tempo Traveller 17-Seater | 17 Passengers + 1 Driver | 14-16 Bags | Multi-vent AC | Spacious high-roof cabin, overhead luggage racks, music system | ₹28 / km |
-| Force Urbania Luxury Van | 10-17 Passengers + 1 Driver | 12-15 Bags | Tri-zone Climate Control | Panoramic sealed windows, aircraft-style interior, whisper-quiet cabin | ₹34 / km |
-| Toyota Fortuner 4x4 | 6 Passengers + 1 Driver | 4 Large Bags | Multi-zone Automatic AC | Executive VIP transport, 4x4 offroad stability, leather interiors | Price on Request |
-| Luxury Tourist Bus | 22 to 50 Passengers + Driver | Massive Cargo Belly | Dual Engine AC | Air-suspension, reclining plush seating, long-haul tour comfort | Custom Quote |
+## Questions and answers: vehicles
+### Sedan Rental in Bangalore with Driver
+Source: https://www.sushitravels.com/vehicles/sedan-rental-bangalore
+Q: What is the per-km rate for sedan rental in Bangalore?
+A: Both the Toyota Etios and Maruti Suzuki Dzire are priced at ₹13/km, with a 300 km/day minimum billing distance. This is the confirmed rate for both sedans in our fleet — there is no separate "starting from" figure.
 
-## 4. Chauffeur Standards & Safety Protocol
-- **Police Background Checks**: Every driver undergoes mandatory police verification and credential checks.
-- **Experience Mandate**: Minimum 5+ years of commercial passenger highway and mountain ghat driving experience.
-- **Safety Equipment**: Speed governors fixed at 80 km/h in accordance with MoRTH national safety mandates, dual dash-safety compliance, certified fire extinguisher, and medical first-aid kit onboard.
-- **GPS Telematics**: Continuous real-time vehicle tracking monitored via central fleet dispatch.
+Q: Is driver bata included in the sedan rate?
+A: Driver bata (₹400/day) is charged separately from the per-km rate, along with tolls, parking, permits and state taxes at actuals. Standard duty hours are 6:00 AM–10:00 PM; driving after 10:00 PM attracts extra driver bata.
 
-## 5. Booking, Cancellation & Commercial Transparency
-- **Transparent Quotations**: Upfront quotation detailing rate per kilometer, minimum billed km/day, driver daily allowance, night allowance (10:00 PM - 6:00 AM), and applicable 5% GST.
-- **Tolls & Interstate Permits**: Paid on actuals via electronic FASTag or state border RTO booths.
-- **Cancellation Policy**: Cancellations received at least 24 hours prior to scheduled departure receive 100% refund of advance deposit.
-- **No Hidden Charges**: Fuel, vehicle insurance, and routine maintenance are entirely covered by Sushi Travels.
+Q: Can I book a sedan for outstation travel?
+A: Yes. The Etios and Dzire are both used for outstation round trips to nearby destinations such as Mysore and Tirupati, subject to the 300 km/day minimum billing. For longer or larger-group outstation trips, an SUV or Tempo Traveller is usually more comfortable.
 
-## 6. Authoritative Citations & Named Entities
-- **MoRTH (Ministry of Road Transport and Highways)**: Regulations under the Motor Vehicles Act 1988 and All India Tourist Vehicle Rules.
-- **Karnataka State Tourism Development Corporation (KSTDC)**: State tourism facilitation and recognized regional route corridors.
-- **NHAI (National Highways Authority of India)**: National Expressway standards (NE-7 / Bengaluru-Mysuru Expressway, NH-48 Bengaluru-Pune, NH-75 Bengaluru-Mangaluru).
-- **Bangalore International Airport Limited (BIAL)**: Authorized commercial vehicle drop-off and pickup curbside compliance.
+Q: Can I book airport pickup with a sedan?
+A: Yes, sedan airport pickup and drop is one of the most common bookings we take — both cars are well suited to solo travellers, couples, and small families with standard luggage.
 
-## 7. Official Digital Assets & Contact Endpoints
-- Homepage: https://www.sushitravels.com/
-- Fleet Catalog: https://www.sushitravels.com/fleet
-- Vehicle Details: https://www.sushitravels.com/vehicles
-- Outstation Routes: https://www.sushitravels.com/routes
-- Services Index: https://www.sushitravels.com/services
-- Booking Engine: https://www.sushitravels.com/booking
-- Travel Blog & Guides: https://www.sushitravels.com/blog
-- Company Profile & Values: https://www.sushitravels.com/about
-- Customer Support & Locations: https://www.sushitravels.com/contact
-- Privacy Policy: https://www.sushitravels.com/privacy-policy
-- Terms & Conditions: https://www.sushitravels.com/terms-and-conditions
-- XML Sitemap: https://www.sushitravels.com/sitemap.xml
+### Toyota Innova Rental in Bangalore
+Source: https://www.sushitravels.com/vehicles/innova-rental-bangalore
+Q: What is the per-km rate for the Toyota Innova?
+A: The Toyota Innova is priced at ₹17/km with a 300 km/day minimum billing distance, driven by a verified chauffeur.
+
+Q: Is driver bata included?
+A: No — driver bata is ₹400/day, charged separately from the per-km fare, along with tolls, parking, permits and state taxes at actuals. Standard duty is 6:00 AM–10:00 PM, with extra bata for driving after 10:00 PM.
+
+Q: Can I book the Innova for outstation travel?
+A: Yes — the Innova is one of our most-booked vehicles for outstation family trips and pilgrimages, given its spacious 7-seat layout and highway-tested reliability.
+
+Q: Can I book airport pickup with this vehicle?
+A: Yes, airport pickup and drop is available with the Innova — a good option when your group has more passengers or luggage than a sedan can comfortably carry.
+
+### Toyota Innova Crysta Rental in Bangalore
+Source: https://www.sushitravels.com/vehicles/innova-crysta-rental-bangalore
+Q: What is the per-km rate for the Innova Crysta?
+A: The Toyota Innova Crysta is priced at ₹19/km with a 300 km/day minimum billing distance and a verified professional driver.
+
+Q: Is driver bata included?
+A: Driver bata is ₹400/day, billed separately from the per-km rate. Tolls, parking, permits and state taxes are additional. Standard duty hours are 6:00 AM–10:00 PM, with extra bata after 10:00 PM.
+
+Q: Can I book the Innova Crysta for outstation travel?
+A: Yes — the Crysta is a popular choice for outstation family holidays and corporate trips into the Western Ghats and other South Indian destinations, given its comfort on long drives.
+
+Q: Can I book airport pickup with this vehicle?
+A: Yes, the Innova Crysta is frequently booked for premium airport pickup and drop, especially by corporate clients and families travelling with more luggage.
+
+### 12-Seater Tempo Traveller Rental in Bangalore
+Source: https://www.sushitravels.com/vehicles/tempo-traveller-rental-bangalore
+Q: What is the per-km rate for the Tempo Traveller?
+A: The AC Tempo Traveller is ₹22/km and the Non-AC Tempo Traveller is ₹20/km, both with a 300 km/day minimum billing distance.
+
+Q: Is driver bata included?
+A: Driver bata is ₹700/day for both tiers, billed separately from the per-km rate. Tolls, parking, permits and state taxes are additional. Standard duty is 6:00 AM–10:00 PM, with extra bata after 10:00 PM.
+
+Q: Can I book this for outstation travel?
+A: Yes — the Tempo Traveller is our most-booked vehicle for outstation group trips such as Coorg, Ooty and Mysore, comfortably seating up to 12 with luggage.
+
+Q: Can I book airport pickup with this vehicle?
+A: Yes, group airport pickup/drop is available — useful when a family or group is arriving together and wants to travel from the airport in one vehicle.
+
+Q: Which Tempo Traveller size should I choose?
+A: We run three Tempo Traveller sizes: 9-seater (executive seating, ₹28/km), 12-seater (AC/Non-AC, ₹20–22/km), and 17-seater (AC/Non-AC, ₹28–30/km). For 12–16 passengers or a more premium cabin, the Force Urbania range is also worth comparing — see the table above.
+
+Q: What is the difference between AC and Non-AC?
+A: Both run the same pushback seating, luggage boot, USB points and music system. AC adds dual roof-mounted cooling across every row, better suited to summer travel and longer routes; Non-AC is a practical option for shorter or cooler-weather trips at a slightly lower per-km rate.
+
+Q: Do you provide a driver with the Tempo Traveller?
+A: Yes — every Tempo Traveller booking includes a verified chauffeur. Self-drive is not offered.
+
+### 9 Seater Tempo Traveller Rental in Bangalore
+Source: https://www.sushitravels.com/vehicles/9-seater-luxury-tempo-traveller-bangalore
+Q: What is the per-km rate for this vehicle?
+A: The 9 Seater Tempo Traveller is priced at ₹28/km with a 300 km/day minimum billing distance.
+
+Q: Is driver bata included?
+A: Driver bata is ₹500/day, charged separately from the per-km rate, along with tolls, parking, permits and state taxes at actuals. Standard duty is 6:00 AM–10:00 PM, with extra bata after 10:00 PM.
+
+Q: Can I book this for outstation travel?
+A: Yes — this tier is specifically built for outstation group travel, corporate offsites and pilgrimage trips where comfort over a long drive matters.
+
+Q: Can I book airport pickup with this vehicle?
+A: Yes, airport pickup for a corporate team or extended family group is available with this vehicle.
+
+### 17-Seater Force Tempo Traveller Rental in Bangalore
+Source: https://www.sushitravels.com/vehicles/17-seater-tempo-traveller-bangalore
+Q: What is the per-km rate for the 17-seater tempo traveller?
+A: The 17-seater Force Tempo Traveller is ₹30/km for AC or ₹28/km for Non-AC, both with a 300 km/day minimum and ₹700/day driver bata. Toll, parking, permit and state taxes are additional. Call or WhatsApp us with your route and group size for an exact quote.
+
+Q: Is this a real vehicle in the Sushi Travels fleet?
+A: Yes — the 17-seater Force Tempo Traveller is a confirmed, real vehicle in our fleet, in service today.
+
+Q: Can I book this for outstation travel?
+A: Yes — this is one of our larger-capacity vehicles, well suited to outstation group trips, corporate offsites and pilgrimages where 13-17 passengers want to travel together.
+
+Q: Can I book airport pickup with this vehicle?
+A: Yes, group airport pickup/drop can be arranged for large families or teams arriving together — mention your group size when enquiring.
+
+### Urbania 12 Seater Maharaja Rental in Bangalore
+Source: https://www.sushitravels.com/vehicles/force-urbania-12-seater-maharaja-bangalore
+Q: What is the per-km rate for the Urbania 12 Seater Maharaja?
+A: Pricing is available on request — call or WhatsApp us with your route and group size for a custom quote.
+
+Q: Is driver bata included?
+A: Driver bata is billed separately from the per-km rate, along with tolls, parking, permits and state taxes at actuals. Standard duty is 6:00 AM–10:00 PM, with extra bata after 10:00 PM.
+
+Q: Can I book this for outstation travel?
+A: Yes — this is one of our most-requested vehicles for outstation family and corporate group trips given its high-roof comfort and luggage capacity.
+
+Q: Can I book airport pickup with this vehicle?
+A: Yes, group airport pickup/drop is available for families and corporate teams arriving together.
+
+### Force Urbania Luxury 16-Seater Rental in Bangalore
+Source: https://www.sushitravels.com/vehicles/force-urbania-16-seater-luxury-bangalore
+Q: What is the per-km rate for the Force Urbania Luxury 16-Seater?
+A: It is priced at ₹38/km with a 300 km/day minimum billing distance.
+
+Q: Is driver bata included?
+A: Driver bata is ₹700/day, billed separately, along with tolls, parking, permits and state taxes at actuals. Standard duty is 6:00 AM–10:00 PM, with extra bata after 10:00 PM.
+
+Q: Can I book this for outstation travel?
+A: Yes — this is a popular pick for large-group outstation holidays and multi-day wedding transportation itineraries.
+
+Q: Can I book airport pickup with this vehicle?
+A: Yes, group airport pickup/drop for large families or wedding parties is available.
+
+### 25 Seater Mini Bus for Rent in Bangalore
+Source: https://www.sushitravels.com/vehicles/25-seater-mini-bus-rental-bangalore
+Q: What is the per-km rate for the 25-seater mini bus?
+A: This tier is priced per trip rather than a flat confirmed per-km rate, based on route, duration and group size. Call or WhatsApp us with your itinerary for a quote.
+
+Q: How much does a mini bus cost for a Bangalore to Mysuru day trip?
+A: As an indicative estimate, a same-day Bangalore–Mysuru round trip in our 25-seater mini bus typically works out to about ₹13,000–₹16,000 including driver bata and tolls. The exact price depends on your date, pickup point and stops — call or WhatsApp for a confirmed quote.
+
+Q: How much does a mini bus cost for a Bangalore to Ooty trip?
+A: As an indicative estimate, a 2-day/1-night Bangalore–Ooty round trip in our 25-seater mini bus typically works out to about ₹27,000–₹33,000 including driver bata, tolls and permit charges. The exact price depends on your dates and itinerary — call or WhatsApp for a confirmed quote.
+
+Q: Is driver bata included?
+A: Driver bata, tolls, parking, permits and state taxes are quoted as part of the custom trip quote for this vehicle.
+
+Q: Can I book this for outstation travel?
+A: Yes — the 25-seater mini bus is commonly booked for outstation group trips, pilgrimages and multi-day school/college tours.
+
+Q: Can I book airport pickup with this vehicle?
+A: Yes, group airport pickup/drop for a large team or tour group can be arranged — mention your group size when enquiring.
+
+### 50-Seater Bus Rental in Bangalore
+Source: https://www.sushitravels.com/vehicles/50-seater-bus-rental-bangalore
+Q: What is the per-km rate for the 50-seater bus?
+A: This tier is priced per trip rather than a flat confirmed per-km rate, based on route, duration and group size. Call or WhatsApp us with your itinerary for a quote.
+
+Q: Is driver bata included?
+A: Driver bata, tolls, parking, permits and state taxes are quoted as part of the custom trip quote for this vehicle.
+
+Q: Can I book this for outstation travel?
+A: Yes — the 50-seater is commonly booked for large outstation group tours, weddings and pilgrimage trips.
+
+Q: Can I book airport pickup with this vehicle?
+A: Yes, large-group airport pickup/drop can be arranged — mention your group size and flight details when enquiring.
+
+### Bus for Rent in Bangalore — Mini Bus & Coach Rental
+Source: https://www.sushitravels.com/vehicles/bus-rental-bangalore
+Q: Which bus size should I book for my group?
+A: The 25-seater mini bus suits mid-size groups, the 33 Seater Bus Luxury and Volvo Bus 45 Seater Luxury suit larger groups wanting a premium coach, and the 50-seater is for full corporate events, weddings or large tour groups. Tell us your headcount and we'll recommend the right fit.
+
+Q: What is the per-km rate for these buses?
+A: None of the bus tiers has a fixed confirmed per-km rate — each is quoted per trip based on route, duration and group size. Call or WhatsApp us with your itinerary for a quote.
+
+Q: Can I book a bus for outstation travel?
+A: Yes — all four tiers are commonly booked for outstation group trips, pilgrimages, weddings and multi-day tours.
+
+Q: Can I book airport pickup with a bus?
+A: Yes, large-group airport pickup/drop can be arranged for any of the four bus tiers — mention your group size when enquiring.
+
+## Questions and answers: services
+### Bangalore Airport Taxi Service
+Source: https://www.sushitravels.com/services/bangalore-airport-taxi
+Q: Which vehicle should I book for airport pickup?
+A: A sedan works well for one or two passengers with standard luggage. Families of five or more, or anyone with extra bags, are usually better off with an Innova or Innova Crysta. Groups of eight or more should book a Tempo Traveller or Force Urbania.
+
+Q: Do you track flight delays for pickup?
+A: Yes — share your flight number when booking and our dispatch team will adjust the pickup timing for early or delayed landings on request.
+
+Q: Are tolls included in the airport taxi fare?
+A: No, tolls, parking and permit charges are additional and billed at actuals, in line with our standard rental terms across the fleet.
+
+Q: Can I book a one-way airport drop only?
+A: Yes, one-way airport drop and pickup are both available — you don't need to book a round trip for an airport transfer.
+
+Q: How long does it take to reach Bangalore airport by taxi?
+A: The airport is roughly 35–40 km from central Bangalore. Plan on about an hour in light traffic and longer during weekday peak hours, so leave extra buffer when you are catching a flight.
+
+Q: What is the airport taxi fare in Bangalore?
+A: The fare depends on the vehicle, your pickup or drop area, and the time of day, with tolls and parking billed at actuals. Call or WhatsApp us with your address and flight time for a confirmed fare before you travel.
+
+Q: Do you serve both airport terminals?
+A: Yes — tell us your terminal and airline when booking, along with your flight number, and your driver will be briefed for the right pickup point.
+
+### Outstation Cab Service from Bangalore
+Source: https://www.sushitravels.com/services/outstation-cab-bangalore
+Q: Is outstation pricing per km or a fixed package?
+A: Pricing is per km based on the vehicle you choose, with a 300 km/day minimum billing distance for confirmed-rate vehicles, plus driver bata, tolls, parking and permits at actuals.
+
+Q: Do you offer one-way outstation trips or only round trips?
+A: We primarily operate round-trip outstation bookings, though one-way and multi-day itineraries can be arranged — mention your exact plan when enquiring.
+
+Q: Which vehicle is best for hill-station routes like Coorg or Ooty?
+A: An SUV (Innova/Innova Crysta) suits smaller families, while a Tempo Traveller or Force Urbania is more comfortable for groups of 8 or more on longer ghat-road drives.
+
+Q: Are driver food and lodging charged separately?
+A: No — driver food and lodging are included within the outstation per-km rate. Only driver bata, tolls, parking, permits and state taxes are additional.
+
+### Local Taxi Service in Bangalore
+Source: https://www.sushitravels.com/services/local-taxi-bangalore
+Q: Can I book a taxi for just a few hours within Bangalore?
+A: Yes — local hourly and point-to-point bookings are available. Share your planned stops and approximate duration when enquiring so we can quote accurately.
+
+Q: What is the cheapest local taxi option?
+A: Our sedans (Toyota Etios / Maruti Suzuki Dzire) at ₹13/km are the most economical option in the fleet for local city travel.
+
+Q: Can the driver wait between multiple stops?
+A: Yes, waiting time between stops on a local hire can be arranged — mention your itinerary when booking so it can be quoted correctly.
+
+Q: Is airport pickup counted as a local taxi booking?
+A: Airport transfers are handled as a separate service category — see our Bangalore Airport Taxi page for pickup/drop specific to Kempegowda International Airport.
+
+### Corporate Transport Service in Bangalore
+Source: https://www.sushitravels.com/services/corporate-transport-bangalore
+Q: Do you support recurring corporate bookings?
+A: Yes — for regular employee or executive transport, contact us with your pickup locations and frequency and we'll set up a straightforward recurring booking process.
+
+Q: Which vehicle suits a corporate offsite for 15 employees?
+A: The Force Urbania Luxury 16-Seater comfortably covers a group of that size in one vehicle; for slightly smaller teams, the 12-seater Maharaja or a Tempo Traveller also work well.
+
+Q: Can you handle executive airport pickup with flight tracking?
+A: Yes — share the executive's flight number and our dispatch team will adjust pickup timing for early landings or delays.
+
+Q: Is invoicing available for corporate clients?
+A: Yes, get in touch through our contact page or WhatsApp to discuss invoicing and billing requirements for corporate accounts.
+
+### Wedding Vehicle Rental in Bangalore
+Source: https://www.sushitravels.com/services/wedding-vehicle-rental-bangalore
+Q: Can you provide multiple vehicles for one wedding?
+A: Yes — we regularly coordinate a mix of sedans, Tempo Travellers, Force Urbania vans and buses for a single wedding event, sized to each leg of guest transport.
+
+Q: Do you support multi-day wedding event bookings?
+A: Yes, if your wedding spans multiple functions across several days, we can arrange multi-day vehicle hire — share your full event schedule when enquiring.
+
+Q: Which vehicle works best for large guest transport?
+A: For large guest counts, our Force Urbania 16-Seater, 25-seater and 50-seater bus tiers are the most efficient way to move groups between venues.
+
+Q: How far in advance should I book for a wedding?
+A: We recommend booking wedding transport as early as possible, especially during peak wedding season, so we can confirm the right number and type of vehicles for your event.
+
+### Bangalore Sightseeing Cab Service
+Source: https://www.sushitravels.com/services/bangalore-sightseeing-cab
+Q: Do you offer half-day and full-day sightseeing packages?
+A: Yes — local sightseeing can be booked as half-day or full-day hire within Bangalore. Share your planned stops when enquiring so we can quote correctly.
+
+Q: Can I book a same-day trip to Mysore as sightseeing?
+A: Yes — a same-day Mysore round trip is one of our most common sightseeing bookings. See our Bangalore to Mysore route page for distance and duration details.
+
+Q: Which vehicle is best for a family sightseeing day?
+A: A sedan suits a small family, while an Innova or Innova Crysta gives extra room for a larger family or a day with more luggage/shopping.
+
+Q: Does the driver know the local attractions?
+A: Our chauffeurs are experienced with Bangalore routes and common visitor stops, and can suggest a sensible order of stops based on your itinerary.
+
+## Questions and answers: routes
+### Bangalore to Mysore Cab Service
+Source: https://www.sushitravels.com/routes/bangalore-to-mysore-cab
+Q: What is the distance from Bangalore to Mysore?
+A: The Bangalore to Mysore route is approximately 143 km one way, taking roughly 2.5–3 hours by road under normal traffic conditions.
+
+Q: Can I do a same-day round trip to Mysore?
+A: Yes — Mysore is one of the most common same-day round trips we run from Bangalore, comfortably doable within a single day.
+
+Q: What is the fare for a Bangalore to Mysore cab?
+A: Exact route fares depend on the vehicle chosen, trip duration and applicable tolls/permits — call or WhatsApp us with your travel date and group size for an accurate quote.
+
+Q: Which vehicle is best for a Mysore day trip?
+A: A sedan or Innova suits smaller families; for larger groups, a Tempo Traveller keeps everyone together and is one of our most-booked options for this route.
+
+Q: How much is a 25-seater mini bus for a Mysuru day trip?
+A: As an indicative estimate, a same-day round trip in our 25-seater mini bus is typically about ₹13,000–₹16,000 including driver bata and tolls. Call or WhatsApp for a confirmed quote for your date and group.
+
+### Bangalore to Coorg Cab Service
+Source: https://www.sushitravels.com/routes/bangalore-to-coorg-cab
+Q: What is the distance from Bangalore to Coorg?
+A: The Bangalore to Coorg route is approximately 250 km one way, taking roughly 5.5–6 hours by road, including the ghat-road stretch.
+
+Q: Is Coorg a one-way or round-trip booking?
+A: Coorg is most commonly booked as a round trip, typically a 2-day/1-night itinerary, though longer stays and one-way drops can be arranged.
+
+Q: What is the fare for a Bangalore to Coorg cab?
+A: Fares depend on vehicle type, trip duration and number of days — call or WhatsApp us with your dates and group size for an accurate quote.
+
+Q: Which vehicle handles the Coorg ghat roads best?
+A: An SUV like the Innova or Innova Crysta is comfortable for smaller groups; for larger groups, a Tempo Traveller with an experienced ghat-road driver is a popular choice.
+
+### Bangalore to Ooty Cab Service
+Source: https://www.sushitravels.com/routes/bangalore-to-ooty-cab
+Q: What is the distance from Bangalore to Ooty?
+A: The Bangalore to Ooty route is approximately 270 km one way, taking roughly 6–7 hours by road via the Bandipur forest corridor and Nilgiri hairpin bends.
+
+Q: Does the route pass through a forest reserve?
+A: Yes, the drive passes through the Bandipur forest corridor — our drivers are familiar with the timing and driving conditions of this stretch.
+
+Q: What is the fare for a Bangalore to Ooty cab?
+A: Fares depend on vehicle type, trip duration and number of days — call or WhatsApp us with your dates and group size for an accurate quote.
+
+Q: Which vehicle is best for the Ooty hairpin bends?
+A: An SUV suits smaller families comfortably; for larger groups, our 12 or 16-seater Tempo Traveller/Force Urbania tiers handle the hairpin sections well with an experienced driver.
+
+Q: How much is a 25-seater mini bus for an Ooty trip?
+A: As an indicative estimate, a 2-day/1-night round trip in our 25-seater mini bus is typically about ₹27,000–₹33,000 including driver bata, tolls and permit charges. Call or WhatsApp for a confirmed quote for your dates and group.
+
+### Bangalore to Chikmagalur Cab Service
+Source: https://www.sushitravels.com/routes/bangalore-to-chikmagalur-cab
+Q: What is the distance from Bangalore to Chikmagalur?
+A: The Bangalore to Chikmagalur route is approximately 245 km one way, taking roughly 5–5.5 hours by road.
+
+Q: Is Chikmagalur a good weekend trip from Bangalore?
+A: Yes, it's one of the most popular weekend getaways from Bangalore given the manageable one-way distance and its coffee-estate hill scenery.
+
+Q: What is the fare for a Bangalore to Chikmagalur cab?
+A: Fares depend on vehicle type and trip duration — call or WhatsApp us with your dates and group size for an accurate quote.
+
+Q: Which vehicle suits the Chikmagalur hill roads?
+A: An SUV works well for smaller groups; a Tempo Traveller is a comfortable choice for larger weekend groups on the hill-road sections.
+
+### Bangalore to Hampi Cab Service
+Source: https://www.sushitravels.com/routes/bangalore-to-hampi-cab
+Q: What is the distance from Bangalore to Hampi?
+A: The Bangalore to Hampi route is approximately 340 km one way, taking roughly 6–7 hours by road.
+
+Q: Can I do a same-day trip to Hampi?
+A: It's possible but not recommended given the distance — we suggest a 2-day/1-night overnight round trip to comfortably see the ruins.
+
+Q: What is the fare for a Bangalore to Hampi cab?
+A: Fares depend on vehicle type and trip duration — call or WhatsApp us with your dates and group size for an accurate quote.
+
+Q: Can I book a bus for a large Hampi tour group?
+A: Yes — our 25-seater and 50-seater bus tiers are available on a per-trip quote for larger heritage tour groups or school/college trips.
+
+### Bangalore to Tirupati Cab Service
+Source: https://www.sushitravels.com/routes/bangalore-to-tirupati-cab
+Q: What is the distance from Bangalore to Tirupati?
+A: The Bangalore to Tirupati route is approximately 250 km one way, taking roughly 5–5.5 hours by road.
+
+Q: Can I do a same-day Tirupati darshan trip?
+A: Yes — an early-morning departure with a waiting driver in Tirupati is our standard arrangement for same-day return pilgrimage trips.
+
+Q: What is the fare for a Bangalore to Tirupati cab?
+A: Fares depend on vehicle type and whether it's a same-day or overnight trip — call or WhatsApp us with your dates and group size for an accurate quote.
+
+Q: Which vehicle suits an extended-family pilgrimage trip?
+A: A sedan or SUV works for a small family; for extended families travelling together, our Tempo Traveller tiers are a popular choice.
+
+### Bangalore to Pondicherry Cab Service
+Source: https://www.sushitravels.com/routes/bangalore-to-pondicherry-cab
+Q: What is the distance from Bangalore to Pondicherry?
+A: The Bangalore to Pondicherry route is approximately 310 km one way, taking roughly 6–7 hours by road.
+
+Q: Is Pondicherry a good weekend trip from Bangalore?
+A: Yes, it's a popular 2-day/1-night weekend getaway for couples and friend groups given the mostly highway drive.
+
+Q: What is the fare for a Bangalore to Pondicherry cab?
+A: Fares depend on vehicle type and trip duration — call or WhatsApp us with your dates and group size for an accurate quote.
+
+Q: Which vehicle suits a Pondicherry weekend trip?
+A: A sedan or SUV is comfortable for couples and small groups; a Tempo Traveller works well for larger friend circles travelling together.
+
+### Bangalore to Chennai Cab Service
+Source: https://www.sushitravels.com/routes/bangalore-to-chennai-cab
+Q: What is the distance from Bangalore to Chennai?
+A: The Bangalore to Chennai route is approximately 350 km one way, taking roughly 6–6.5 hours by road via NH44.
+
+Q: Can I book a one-way drop to Chennai?
+A: Yes, one-way drops are available on this route in addition to round trips — mention your requirement when enquiring.
+
+Q: What is the fare for a Bangalore to Chennai cab?
+A: Fares depend on vehicle type and whether it's one-way or round trip — call or WhatsApp us with your dates for an accurate quote.
+
+Q: Which vehicle suits a Bangalore to Chennai business trip?
+A: A sedan is a practical, economical choice for a single business traveller; families or those with more luggage often prefer an Innova.
+
+### Bangalore to Hyderabad Cab Service
+Source: https://www.sushitravels.com/routes/bangalore-to-hyderabad-cab
+Q: What is the distance from Bangalore to Hyderabad?
+A: The Bangalore to Hyderabad route is approximately 570 km one way, taking roughly 9–10 hours by road.
+
+Q: Is this a one-day drive?
+A: It can be done in a single long day, though some travellers prefer to break the journey — this can be arranged as part of your itinerary.
+
+Q: What is the fare for a Bangalore to Hyderabad cab?
+A: Fares depend on vehicle type and whether it's one-way or round trip — call or WhatsApp us with your dates for an accurate quote.
+
+Q: Which vehicle is recommended for this route?
+A: Given the distance, an SUV like the Innova or Innova Crysta is recommended over a sedan for extra comfort; larger groups can book a Tempo Traveller.
+
+### Bangalore to Mangalore Cab Service
+Source: https://www.sushitravels.com/routes/bangalore-to-mangalore-cab
+Q: What is the distance from Bangalore to Mangalore?
+A: The Bangalore to Mangalore route is approximately 350 km one way, taking roughly 7–8 hours by road via the Western Ghats.
+
+Q: Does this route cross the Western Ghats?
+A: Yes, the drive crosses the Western Ghats before descending to the coast, which is why travel time runs a bit longer than the distance alone would suggest.
+
+Q: What is the fare for a Bangalore to Mangalore cab?
+A: Fares depend on vehicle type and whether it's one-way or round trip — call or WhatsApp us with your dates for an accurate quote.
+
+Q: Which vehicle suits the Western Ghats crossing?
+A: An SUV like the Innova or Innova Crysta is recommended for the ghat-road sections; larger groups can book a Tempo Traveller.
+
+## Questions and answers: Bangalore areas
+### Car Rental in Whitefield, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-whitefield
+Q: Do you provide pickup and drop within Whitefield?
+A: Yes, Sushi Travels serves Whitefield for local pickup/drop, corporate travel, airport transfers and outstation bookings.
+
+Q: Can I book airport transfer from Whitefield?
+A: Yes — airport pickup and drop from Whitefield is one of our regular bookings, with flight-time coordination available on request.
+
+Q: Is outstation booking available from Whitefield?
+A: Yes, outstation round trips to destinations like Mysore, Coorg and Ooty can be booked with pickup from Whitefield.
+
+### Car Rental in Electronic City, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-electronic-city
+Q: Do you provide pickup and drop within Electronic City?
+A: Yes, we serve Electronic City for local pickup/drop, corporate travel, airport transfers and outstation bookings.
+
+Q: How far is the airport from Electronic City?
+A: Electronic City is on the southern side of Bangalore, generally further from Kempegowda Airport than central or northern areas — we recommend booking with extra buffer time for airport pickups from here.
+
+Q: Can I book an outstation trip toward Mysore from Electronic City?
+A: Yes — and being on the southern side of the city, Electronic City pickups can have a slight head start on southern outstation routes like Mysore compared to northern parts of Bangalore.
+
+### Car Rental in Koramangala, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-koramangala
+Q: Do you provide pickup and drop within Koramangala?
+A: Yes, Sushi Travels serves Koramangala for local pickup/drop, airport transfers and outstation bookings.
+
+Q: Can I book a weekend group trip from Koramangala?
+A: Yes — Koramangala is one of our most active pickup points for weekend outstation trips to Coorg, Ooty and similar destinations, usually booked as a Tempo Traveller for groups of friends.
+
+Q: Is airport pickup available from Koramangala?
+A: Yes, airport pickup and drop is available from Koramangala with flight-time coordination on request.
+
+### Car Rental in Indiranagar, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-indiranagar
+Q: Do you provide pickup and drop within Indiranagar?
+A: Yes, we serve Indiranagar for local pickup/drop, airport transfers and outstation bookings.
+
+Q: Is late-evening pickup available in Indiranagar?
+A: Yes — within our standard duty hours (6:00 AM–10:00 PM), late-evening pickups are available; driving past 10:00 PM attracts extra driver bata.
+
+Q: Can I book an outstation trip from Indiranagar?
+A: Yes, outstation round trips to destinations like Coorg, Ooty and Mysore can be booked with pickup from Indiranagar.
+
+### Car Rental in Jayanagar, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-jayanagar
+Q: Do you provide pickup and drop within Jayanagar?
+A: Yes, we serve Jayanagar for local pickup/drop, airport transfers and outstation bookings.
+
+Q: Can I book a pilgrimage trip to Tirupati from Jayanagar?
+A: Yes — pilgrimage trips to Tirupati and other South Indian temple towns are among our regular bookings from Jayanagar, typically in a sedan or SUV.
+
+Q: Is airport pickup available from Jayanagar?
+A: Yes, airport pickup and drop is available from Jayanagar with flight-time coordination on request.
+
+### Car Rental in JP Nagar, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-jp-nagar
+Q: Do you provide pickup and drop within JP Nagar?
+A: Yes, we serve JP Nagar for local pickup/drop, airport transfers and outstation bookings.
+
+Q: Can I book a family outstation trip from JP Nagar?
+A: Yes, family outstation and pilgrimage trips are commonly booked from JP Nagar, usually in a sedan or Innova depending on family size.
+
+Q: Is airport pickup available from JP Nagar?
+A: Yes, airport pickup and drop is available from JP Nagar with flight-time coordination on request.
+
+### Car Rental in Marathahalli, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-marathahalli
+Q: Do you provide pickup and drop within Marathahalli?
+A: Yes, we serve Marathahalli for local pickup/drop, corporate travel, airport transfers and outstation bookings.
+
+Q: Can I book a corporate commute between ORR and Whitefield?
+A: Yes — Marathahalli's junction location makes it a common pickup point for commutes between Outer Ring Road offices and Whitefield, which we book regularly.
+
+Q: Is airport pickup available from Marathahalli?
+A: Yes, airport pickup and drop is available from Marathahalli with flight-time coordination on request.
+
+### Car Rental in Hebbal, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-hebbal
+Q: Do you provide pickup and drop within Hebbal?
+A: Yes, we serve Hebbal for local pickup/drop, airport transfers and outstation bookings.
+
+Q: Is Hebbal close to the airport?
+A: Hebbal sits along the main road corridor toward Kempegowda International Airport, making it a convenient pickup point for airport-bound travel from north Bangalore.
+
+Q: Can I book outstation travel from Hebbal?
+A: Yes, outstation round trips can be booked with pickup from Hebbal, including routes heading north out of the city.
+
+### Car Rental in Yelahanka, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-yelahanka
+Q: Do you provide pickup and drop within Yelahanka?
+A: Yes, we serve Yelahanka for local pickup/drop, airport transfers and outstation bookings.
+
+Q: How close is Yelahanka to the airport?
+A: Yelahanka is one of the closer residential areas to Kempegowda International Airport compared to most of Bangalore, which usually means a shorter airport transfer time.
+
+Q: Can I book outstation travel from Yelahanka?
+A: Yes, outstation round trips can be booked with pickup from Yelahanka.
+
+### Car Rental in Yeshwanthpur, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-yeshwanthpur
+Q: Do you provide pickup and drop within Yeshwanthpur?
+A: Yes, we serve Yeshwanthpur for local pickup/drop, railway station transfers and outstation bookings.
+
+Q: Can I book a railway station pickup at Yeshwanthpur?
+A: Yes — railway station pickup and drop at Yeshwanthpur is one of our regular bookings, with a sedan usually sufficient for standard luggage.
+
+Q: Can I book outstation travel from Yeshwanthpur?
+A: Yes, outstation round trips can be booked with pickup from Yeshwanthpur.
+
+### Car Rental in HSR Layout, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-hsr-layout
+Q: Do you provide pickup and drop within HSR Layout?
+A: Yes, Sushi Travels serves HSR Layout for local pickup/drop, corporate travel, airport transfers and outstation bookings.
+
+Q: Can I book airport transfer from HSR Layout?
+A: Yes — airport pickup and drop from HSR Layout is one of our regular bookings, with flight-time coordination available on request.
+
+Q: Is outstation booking available from HSR Layout?
+A: Yes, outstation round trips to destinations like Coorg, Ooty and Mysore can be booked with pickup from HSR Layout.
+
+### Car Rental in Bellandur, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-bellandur
+Q: Do you provide pickup and drop within Bellandur?
+A: Yes, we serve Bellandur for local pickup/drop, corporate travel, airport transfers and outstation bookings.
+
+Q: Can I book airport transfer from Bellandur?
+A: Yes — airport pickup and drop from Bellandur is one of our regular bookings, with flight-time coordination available on request.
+
+Q: Is outstation booking available from Bellandur?
+A: Yes, outstation round trips to destinations like Coorg, Ooty and Mysore can be booked with pickup from Bellandur.
+
+### Car Rental in Sarjapur Road, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-sarjapur-road
+Q: Do you provide pickup and drop along Sarjapur Road?
+A: Yes, Sushi Travels serves Sarjapur Road for local pickup/drop, corporate travel, airport transfers and outstation bookings.
+
+Q: Can I book airport transfer from Sarjapur Road?
+A: Yes — airport pickup and drop from Sarjapur Road is one of our regular bookings, with flight-time coordination available on request.
+
+Q: Is outstation booking available from Sarjapur Road?
+A: Yes, outstation round trips to destinations like Coorg, Ooty and Mysore can be booked with pickup from Sarjapur Road.
+
+### Car Rental in Rajajinagar, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-rajajinagar
+Q: Do you provide pickup and drop within Rajajinagar?
+A: Yes, we serve Rajajinagar for local pickup/drop, airport transfers and outstation bookings.
+
+Q: Can I book airport transfer from Rajajinagar?
+A: Yes, airport pickup and drop is available from Rajajinagar with flight-time coordination on request.
+
+Q: Can I book a family outstation trip from Rajajinagar?
+A: Yes, family outstation and pilgrimage trips are commonly booked from Rajajinagar, usually in a sedan or Innova depending on family size.
+
+### Car Rental in Malleshwaram, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-malleshwaram
+Q: Do you provide pickup and drop within Malleshwaram?
+A: Yes, we serve Malleshwaram for local pickup/drop, airport transfers and outstation bookings.
+
+Q: Can I book a pilgrimage trip from Malleshwaram?
+A: Yes — pilgrimage trips to Tirupati and other South Indian temple towns are among our regular bookings from Malleshwaram, typically in a sedan or SUV.
+
+Q: Is airport pickup available from Malleshwaram?
+A: Yes, airport pickup and drop is available from Malleshwaram with flight-time coordination on request.
+
+### Car Rental in Banashankari, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-banashankari
+Q: Do you provide pickup and drop within Banashankari?
+A: Yes, we serve Banashankari for local pickup/drop, airport transfers and outstation bookings.
+
+Q: Can I book an outstation trip toward Mysore from Banashankari?
+A: Yes — Banashankari's proximity to the NICE Road corridor makes it a practical pickup point for outstation trips toward Mysore and the south-west.
+
+Q: Is airport pickup available from Banashankari?
+A: Yes, airport pickup and drop is available from Banashankari with flight-time coordination on request.
+
+### Car Rental in Basavanagudi, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-basavanagudi
+Q: Do you provide pickup and drop within Basavanagudi?
+A: Yes, we serve Basavanagudi for local pickup/drop, airport transfers and outstation bookings.
+
+Q: Can I book a pilgrimage trip from Basavanagudi?
+A: Yes — pilgrimage trips to Tirupati and other South Indian temple towns are among our regular bookings from Basavanagudi, typically in a sedan or SUV.
+
+Q: Is airport pickup available from Basavanagudi?
+A: Yes, airport pickup and drop is available from Basavanagudi with flight-time coordination on request.
+
+### Car Rental in BTM Layout, Bangalore
+Source: https://www.sushitravels.com/locations/car-rental-btm-layout
+Q: Do you provide pickup and drop within BTM Layout?
+A: Yes, we serve BTM Layout for local pickup/drop, airport transfers and outstation bookings.
+
+Q: Can I book airport transfer from BTM Layout?
+A: Yes, airport pickup and drop is available from BTM Layout with flight-time coordination on request.
+
+Q: Can I book a weekend outstation trip from BTM Layout?
+A: Yes — BTM Layout is a common pickup point for weekend outstation trips to Coorg, Ooty and Mysore, usually booked as a sedan, Innova or Tempo Traveller depending on group size.
+
+## Core pages
+- [Fleet](https://www.sushitravels.com/fleet): Tempo Travellers (9, 12, 17 seater) and the full vehicle list
+- [Vehicle categories](https://www.sushitravels.com/vehicles)
+- [Services](https://www.sushitravels.com/services)
+- [Outstation routes](https://www.sushitravels.com/routes)
+- [Areas served in Bangalore](https://www.sushitravels.com/locations)
+- [Tours & packages](https://www.sushitravels.com/tours-and-packages)
+- [Book online](https://www.sushitravels.com/booking)
+- [Contact](https://www.sushitravels.com/contact)
+- [About](https://www.sushitravels.com/about)
+- [Travel guides](https://www.sushitravels.com/blog)
+
+## Vehicles
+- [Sedan Rental in Bangalore with Driver](https://www.sushitravels.com/vehicles/sedan-rental-bangalore)
+- [Toyota Innova Rental in Bangalore](https://www.sushitravels.com/vehicles/innova-rental-bangalore)
+- [Toyota Innova Crysta Rental in Bangalore](https://www.sushitravels.com/vehicles/innova-crysta-rental-bangalore)
+- [12-Seater Tempo Traveller Rental in Bangalore](https://www.sushitravels.com/vehicles/tempo-traveller-rental-bangalore)
+- [9 Seater Tempo Traveller Rental in Bangalore](https://www.sushitravels.com/vehicles/9-seater-luxury-tempo-traveller-bangalore)
+- [17-Seater Force Tempo Traveller Rental in Bangalore](https://www.sushitravels.com/vehicles/17-seater-tempo-traveller-bangalore)
+- [Urbania 12 Seater Maharaja Rental in Bangalore](https://www.sushitravels.com/vehicles/force-urbania-12-seater-maharaja-bangalore)
+- [Force Urbania Luxury 16-Seater Rental in Bangalore](https://www.sushitravels.com/vehicles/force-urbania-16-seater-luxury-bangalore)
+- [25 Seater Mini Bus for Rent in Bangalore](https://www.sushitravels.com/vehicles/25-seater-mini-bus-rental-bangalore)
+- [50-Seater Bus Rental in Bangalore](https://www.sushitravels.com/vehicles/50-seater-bus-rental-bangalore)
+- [Bus for Rent in Bangalore — Mini Bus & Coach Rental](https://www.sushitravels.com/vehicles/bus-rental-bangalore)
+
+## Services
+- [Bangalore Airport Taxi Service](https://www.sushitravels.com/services/bangalore-airport-taxi)
+- [Outstation Cab Service from Bangalore](https://www.sushitravels.com/services/outstation-cab-bangalore)
+- [Local Taxi Service in Bangalore](https://www.sushitravels.com/services/local-taxi-bangalore)
+- [Corporate Transport Service in Bangalore](https://www.sushitravels.com/services/corporate-transport-bangalore)
+- [Wedding Vehicle Rental in Bangalore](https://www.sushitravels.com/services/wedding-vehicle-rental-bangalore)
+- [Bangalore Sightseeing Cab Service](https://www.sushitravels.com/services/bangalore-sightseeing-cab)
+
+## Outstation routes from Bangalore
+- [Bangalore to Mysore Cab Service](https://www.sushitravels.com/routes/bangalore-to-mysore-cab): Approx. 143 km, Approx. 2.5–3 hours one way
+- [Bangalore to Coorg Cab Service](https://www.sushitravels.com/routes/bangalore-to-coorg-cab): Approx. 250 km, Approx. 5.5–6 hours one way
+- [Bangalore to Ooty Cab Service](https://www.sushitravels.com/routes/bangalore-to-ooty-cab): Approx. 270 km, Approx. 6–7 hours one way
+- [Bangalore to Chikmagalur Cab Service](https://www.sushitravels.com/routes/bangalore-to-chikmagalur-cab): Approx. 245 km, Approx. 5–5.5 hours one way
+- [Bangalore to Hampi Cab Service](https://www.sushitravels.com/routes/bangalore-to-hampi-cab): Approx. 340 km, Approx. 6–7 hours one way
+- [Bangalore to Tirupati Cab Service](https://www.sushitravels.com/routes/bangalore-to-tirupati-cab): Approx. 250 km, Approx. 5–5.5 hours one way
+- [Bangalore to Pondicherry Cab Service](https://www.sushitravels.com/routes/bangalore-to-pondicherry-cab): Approx. 310 km, Approx. 6–7 hours one way
+- [Bangalore to Chennai Cab Service](https://www.sushitravels.com/routes/bangalore-to-chennai-cab): Approx. 350 km, Approx. 6–6.5 hours one way
+- [Bangalore to Hyderabad Cab Service](https://www.sushitravels.com/routes/bangalore-to-hyderabad-cab): Approx. 570 km, Approx. 9–10 hours one way
+- [Bangalore to Mangalore Cab Service](https://www.sushitravels.com/routes/bangalore-to-mangalore-cab): Approx. 350 km, Approx. 7–8 hours one way
+
+## Bangalore areas served
+- [Car Rental in Whitefield, Bangalore](https://www.sushitravels.com/locations/car-rental-whitefield)
+- [Car Rental in Electronic City, Bangalore](https://www.sushitravels.com/locations/car-rental-electronic-city)
+- [Car Rental in Koramangala, Bangalore](https://www.sushitravels.com/locations/car-rental-koramangala)
+- [Car Rental in Indiranagar, Bangalore](https://www.sushitravels.com/locations/car-rental-indiranagar)
+- [Car Rental in Jayanagar, Bangalore](https://www.sushitravels.com/locations/car-rental-jayanagar)
+- [Car Rental in JP Nagar, Bangalore](https://www.sushitravels.com/locations/car-rental-jp-nagar)
+- [Car Rental in Marathahalli, Bangalore](https://www.sushitravels.com/locations/car-rental-marathahalli)
+- [Car Rental in Hebbal, Bangalore](https://www.sushitravels.com/locations/car-rental-hebbal)
+- [Car Rental in Yelahanka, Bangalore](https://www.sushitravels.com/locations/car-rental-yelahanka)
+- [Car Rental in Yeshwanthpur, Bangalore](https://www.sushitravels.com/locations/car-rental-yeshwanthpur)
+- [Car Rental in HSR Layout, Bangalore](https://www.sushitravels.com/locations/car-rental-hsr-layout)
+- [Car Rental in Bellandur, Bangalore](https://www.sushitravels.com/locations/car-rental-bellandur)
+- [Car Rental in Sarjapur Road, Bangalore](https://www.sushitravels.com/locations/car-rental-sarjapur-road)
+- [Car Rental in Rajajinagar, Bangalore](https://www.sushitravels.com/locations/car-rental-rajajinagar)
+- [Car Rental in Malleshwaram, Bangalore](https://www.sushitravels.com/locations/car-rental-malleshwaram)
+- [Car Rental in Banashankari, Bangalore](https://www.sushitravels.com/locations/car-rental-banashankari)
+- [Car Rental in Basavanagudi, Bangalore](https://www.sushitravels.com/locations/car-rental-basavanagudi)
+- [Car Rental in BTM Layout, Bangalore](https://www.sushitravels.com/locations/car-rental-btm-layout)
+
+## Travel guides
+- [A Travel Diary: The Statue of Unity, Kevadia, Gujarat](https://www.sushitravels.com/blog/statue-of-unity-kevadia-gujarat-travel-diary)
+- [Bangalore to Mysore Day Trip: Route, Timing & Vehicle Guide](https://www.sushitravels.com/blog/bangalore-to-mysore-day-trip-guide)
+- [Bangalore to Coorg Weekend Trip: Route & Vehicle Guide](https://www.sushitravels.com/blog/bangalore-to-coorg-weekend-trip-guide)
+- [Bangalore to Ooty by Cab: Route, Timing & Vehicle Guide](https://www.sushitravels.com/blog/bangalore-to-ooty-trip-guide)
+
+## Policies
+- [Terms & conditions](https://www.sushitravels.com/terms-and-conditions)
+- [Privacy policy](https://www.sushitravels.com/privacy-policy)
+- [Sitemap](https://www.sushitravels.com/sitemap.xml)

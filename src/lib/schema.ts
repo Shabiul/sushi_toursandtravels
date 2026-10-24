@@ -72,7 +72,9 @@ export function getLocalBusinessSchema() {
       closes: '23:59',
     },
     priceRange: '₹₹',
+    hasMap: 'https://maps.google.com/?cid=15212322609133405823',
     sameAs: [
+      'https://maps.google.com/?cid=15212322609133405823',
       'https://www.instagram.com/sushi_travels_official?utm_source=qr&igsh=bXphYXc1d2p5cnRm',
       'https://share.google/St55UlsbDobuLv9jP',
     ],
