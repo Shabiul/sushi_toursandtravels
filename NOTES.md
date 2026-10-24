@@ -1836,3 +1836,9 @@ Compared the project against Ahrefs' "How to Rank Higher on Google" (10 steps).
 - robots.txt now also allows OAI-SearchBot, ChatGPT-User, Perplexity-User, Claude-SearchBot, Claude-User, GoogleOther.
 - LocalBusiness schema gained `hasMap` + Maps `sameAs`.
 - Owner confirmed: founded 2011 (schema fixed), bata varies by vehicle and route (Terms reworded), and no surge pricing, 45-min airport wait, 5+ yr drivers, fuel/insurance covered are all true — now stated on Terms, About and the airport page so llms.txt matches the site.
+
+## 16. Full crawl audit (2026-10-24, production build, all 62 sitemap URLs)
+- Found: `LoadingScreen` (rendered in `layout.tsx`) emitted an `<h1>Sushi Travels</h1>` before every page's real H1 -> 2 H1s site-wide (earlier notes claiming one H1 per page were wrong). Now a `<p>`.
+- Found and fixed: 8 titles >60 chars (Terms, Chikmagalur/Pondicherry routes, all 4 blog posts) and 5 descriptions >160 chars.
+- Final crawl: 62/62 HTTP 200, 1 H1, correct self-canonical, valid JSON-LD, no missing alt, no broken internal links, no duplicate titles/descriptions, no noindex. Unknown paths return 404; bare domain 308s to www.
+- Not measurable here: Core Web Vitals (no Lighthouse/field data) and DB-backed `/` + `/fleet` content (no database in the sandbox).

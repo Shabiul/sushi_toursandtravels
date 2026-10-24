@@ -67,7 +67,7 @@ const GUJARAT_IMAGES = [
 export const blogPosts: BlogPost[] = [
   {
     slug: 'statue-of-unity-kevadia-gujarat-travel-diary',
-    title: 'A Travel Diary: The Statue of Unity, Kevadia, Gujarat',
+    title: 'Statue of Unity, Kevadia: A Travel Diary',
     metaDescription:
       'A first-hand travel diary of Kevadia, Gujarat — the Statue of Unity, Jungle Safari Park, Sardar Sarovar Dam and the valley of flowers, from Sushi Travels.',
     excerpt:
@@ -147,7 +147,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "bangalore-to-mysore-day-trip-guide",
-    title: "Bangalore to Mysore Day Trip: Route, Timing & Vehicle Guide",
+    title: "Bangalore to Mysore Day Trip Guide",
     metaDescription:
       "Plan a Bangalore to Mysore day trip by cab: approx. 143 km, 2.5–3 hrs each way, what to see, an easy schedule and which vehicle suits your group.",
     excerpt:
@@ -186,7 +186,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "bangalore-to-coorg-weekend-trip-guide",
-    title: "Bangalore to Coorg Weekend Trip: Route & Vehicle Guide",
+    title: "Bangalore to Coorg Weekend Trip Guide",
     metaDescription:
       "Planning Bangalore to Coorg by cab? Approx. 250 km, 5.5–6 hrs through ghat roads. A 2-day plan, the best vehicle for the ghats and booking tips.",
     excerpt:
@@ -225,7 +225,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "bangalore-to-ooty-trip-guide",
-    title: "Bangalore to Ooty by Cab: Route, Timing & Vehicle Guide",
+    title: "Bangalore to Ooty by Cab: Trip Guide",
     metaDescription:
       "Bangalore to Ooty by cab: approx. 270 km, 6–7 hrs via Bandipur and the Nilgiri hairpin bends. Route notes, a 2-day plan and the right vehicle.",
     excerpt:

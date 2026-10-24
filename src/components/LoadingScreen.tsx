@@ -96,9 +96,9 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
             />
           </div>
 
-          <h1 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-1">
+          <p className="text-2xl sm:text-3xl font-serif font-bold text-white mb-1">
             Sushi Travels
-          </h1>
+          </p>
           <p className="text-[11px] text-cream-warm/90 uppercase tracking-[0.2em]">
             Every Road, A New Story
           </p>

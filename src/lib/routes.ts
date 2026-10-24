@@ -152,7 +152,7 @@ export const routePages: RoutePage[] = [
     slug: 'bangalore-to-chikmagalur-cab',
     destination: 'Chikmagalur',
     h1: 'Bangalore to Chikmagalur Cab Service',
-    title: 'Bangalore to Chikmagalur Cab | Fare & Distance',
+    title: 'Bangalore to Chikmagalur Cab Fare',
     metaDescription:
       'Bangalore to Chikmagalur cab service — approx. 245 km, 5–5.5 hrs one way through Karnataka\'s coffee hill country. SUVs & Tempo Travellers available.',
     heroSubtitle: 'Approx. 245 km, 5–5.5 hours one way into Karnataka\'s coffee-growing hill country.',
@@ -271,7 +271,7 @@ export const routePages: RoutePage[] = [
     slug: 'bangalore-to-pondicherry-cab',
     destination: 'Pondicherry',
     h1: 'Bangalore to Pondicherry Cab Service',
-    title: 'Bangalore to Pondicherry Cab | Fare & Distance',
+    title: 'Bangalore to Pondicherry Cab Fare',
     metaDescription:
       'Bangalore to Pondicherry cab service — approx. 310 km, 6–7 hrs one way to the French Quarter & beaches. Sedans to Tempo Travellers available.',
     heroSubtitle: 'Approx. 310 km, 6–7 hours one way to Pondicherry\'s French Quarter and beaches.',

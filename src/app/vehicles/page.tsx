@@ -9,12 +9,12 @@ import LandingHero from '@/components/LandingHero';
 export const metadata: Metadata = {
   title: 'Vehicle Rental Options in Bangalore',
   description:
-    'Browse Sushi Travels vehicle rental pages by category — sedans, Innova SUVs, Tempo Travellers, Force Urbania vans and buses, each with real pricing and rental terms.',
+    'Browse Sushi Travels vehicle rentals by category — sedans, Innova SUVs, Tempo Travellers, Force Urbania vans and buses, with real rates and terms.',
   alternates: { canonical: '/vehicles' },
   openGraph: {
     title: 'Vehicle Rental Options in Bangalore | Sushi Travels',
     description:
-      'Browse Sushi Travels vehicle rental pages by category — sedans, Innova SUVs, Tempo Travellers, Force Urbania vans and buses, each with real pricing and rental terms.',
+      'Browse Sushi Travels vehicle rentals by category — sedans, Innova SUVs, Tempo Travellers, Force Urbania vans and buses, with real rates and terms.',
     url: '/vehicles',
     images: [{ url: '/fleet/force-urbania-front-01.webp', width: 800, height: 600, alt: 'Sushi Travels vehicle rental fleet in Bangalore' }],
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Vehicle Rental Options in Bangalore | Sushi Travels',
     description:
-      'Browse Sushi Travels vehicle rental pages by category — sedans, Innova SUVs, Tempo Travellers, Force Urbania vans and buses, each with real pricing and rental terms.',
+      'Browse Sushi Travels vehicle rentals by category — sedans, Innova SUVs, Tempo Travellers, Force Urbania vans and buses, with real rates and terms.',
     images: ['/fleet/force-urbania-front-01.webp'],
   },
 };

@@ -6,7 +6,7 @@ import { getBreadcrumbListSchema } from '@/lib/schema';
 import { PHONE_NUMBER } from '@/lib/contact';
 
 export const metadata: Metadata = {
-  title: 'Terms and Conditions | Sushi Travels Bangalore',
+  title: 'Terms and Conditions, Bangalore Car Rental',
   description: 'Read the booking terms, kilometer billing guidelines, cancellation policies, and rental conditions for Sushi Tours & Travels Bangalore.',
   alternates: {
     canonical: '/terms-and-conditions',

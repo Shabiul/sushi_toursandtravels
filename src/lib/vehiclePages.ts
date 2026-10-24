@@ -339,7 +339,7 @@ export const vehiclePages: VehiclePage[] = [
     h1: 'Urbania 12 Seater Maharaja Rental in Bangalore',
     title: 'Urbania 12 Seater Maharaja Rental Bangalore',
     metaDescription:
-      'Hire the Urbania 12 Seater Maharaja in Bangalore. High-roof premium van with captain seats for family holidays & corporate group travel. Call or WhatsApp for a quote.',
+      'Hire the Urbania 12 Seater Maharaja in Bangalore. High-roof premium van with captain seats for family and corporate group travel. Call or WhatsApp for a quote.',
     heroSubtitle:
       'High-roof, premium 12-seater van with captain-style seating and strong AC — for mid-size groups who want extra comfort. Price on request.',
     vehicleIds: ['force-urbania-maharaja-12-seater'],
@@ -521,7 +521,7 @@ export const vehiclePages: VehiclePage[] = [
     h1: 'Bus for Rent in Bangalore — Mini Bus & Coach Rental',
     title: 'Bus for Rent in Bangalore, 25–50 Seater AC',
     metaDescription:
-      'Bus for rent in Bangalore: 25 to 50-seater AC mini buses & luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.',
+      'Bus for rent in Bangalore: 25 to 50-seater AC mini buses & luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.',
     heroSubtitle:
       'From a 25-seater mini bus to a full-size Volvo luxury coach — compare our AC bus fleet for corporate events, weddings, school trips and pilgrimage groups.',
     vehicleIds: ['sushi-travels-25-seater-mini-bus', 'sushi-travels-33-seater-bus-luxury', 'volvo-bus-45-seater-luxury', 'bus-50-seater'],
