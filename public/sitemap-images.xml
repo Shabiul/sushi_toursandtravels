@@ -58,6 +58,12 @@
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Rental in Bangalore</image:title>
+      <image:caption>Force Urbania 9 Seater (9 Seater) for outstation and local travel in Bangalore.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
       <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-02.webp</image:loc>
       <image:title>Force Urbania Rental in Bangalore</image:title>
       <image:caption>Force Urbania (16 Seater) for outstation and local travel in Bangalore.</image:caption>
@@ -238,6 +244,12 @@
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Fleet Specifications and Pricing</image:title>
+      <image:caption>Book Force Urbania 9 Seater with verified driver from Sushi Travels Bangalore.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
       <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-02.webp</image:loc>
       <image:title>Force Urbania Fleet Specifications and Pricing</image:title>
       <image:caption>Book Force Urbania with verified driver from Sushi Travels Bangalore.</image:caption>
@@ -371,25 +383,25 @@
     <loc>https://www.sushitravels.com/blog</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/blog/Gujarat-blog-1.webp</image:loc>
-      <image:title>A Travel Diary: The Statue of Unity, Kevadia, Gujarat</image:title>
+      <image:title>Statue of Unity, Kevadia: A Travel Diary</image:title>
       <image:caption>Notes from a trip to Kevadia — the world&apos;s tallest statue, an eagle-shaped safari park, the Sardar Sarovar Dam, and a quiet valley of flowers on the Narmada.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/mysuru.webp</image:loc>
-      <image:title>Bangalore to Mysore Day Trip: Route, Timing &amp; Vehicle Guide</image:title>
+      <image:title>Bangalore to Mysore Day Trip Guide</image:title>
       <image:caption>Mysore is close enough for a same-day round trip from Bangalore. Here is a simple schedule, what to prioritise, and how to choose between a sedan, an Innova and a Tempo Traveller.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/coorg.webp</image:loc>
-      <image:title>Bangalore to Coorg Weekend Trip: Route &amp; Vehicle Guide</image:title>
+      <image:title>Bangalore to Coorg Weekend Trip Guide</image:title>
       <image:caption>Coorg is a classic two-day trip from Bangalore. This guide covers the drive, a simple 2-day plan, and why vehicle choice matters on the ghat-road sections.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/ooty.webp</image:loc>
-      <image:title>Bangalore to Ooty by Cab: Route, Timing &amp; Vehicle Guide</image:title>
+      <image:title>Bangalore to Ooty by Cab: Trip Guide</image:title>
       <image:caption>The Ooty drive passes through the Bandipur forest corridor and climbs the Nilgiri hairpin bends. Here is what to expect and how to plan it.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -653,17 +665,44 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.sushitravels.com/vehicles/force-urbania-9-seater-bangalore</loc>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire the Force Urbania 9-seater in Bangalore with a driver — a high-roof AC van with extra space for executive, family &amp; airport trips. Call for a quote.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-02.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire the Force Urbania 9-seater in Bangalore with a driver — a high-roof AC van with extra space for executive, family &amp; airport trips. Call for a quote.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-rear-01.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire the Force Urbania 9-seater in Bangalore with a driver — a high-roof AC van with extra space for executive, family &amp; airport trips. Call for a quote.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-rear-02.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Photo 4 - Bangalore Rental Fleet</image:title>
+      <image:caption>Hire the Force Urbania 9-seater in Bangalore with a driver — a high-roof AC van with extra space for executive, family &amp; airport trips. Call for a quote.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.sushitravels.com/vehicles/force-urbania-12-seater-maharaja-bangalore</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/force-urbania-maharaja-12-seater-front-01.webp</image:loc>
       <image:title>Urbania 12 Seater Maharaja Photo 1 - Bangalore Rental Fleet</image:title>
-      <image:caption>Hire the Urbania 12 Seater Maharaja in Bangalore. High-roof premium van with captain seats for family holidays &amp; corporate group travel. Call or WhatsApp for a quote.</image:caption>
+      <image:caption>Hire the Urbania 12 Seater Maharaja in Bangalore. High-roof premium van with captain seats for family and corporate group travel. Call or WhatsApp for a quote.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/force-urbania-maharaja-12-seater-interior-01.webp</image:loc>
       <image:title>Urbania 12 Seater Maharaja Photo 2 - Bangalore Rental Fleet</image:title>
-      <image:caption>Hire the Urbania 12 Seater Maharaja in Bangalore. High-roof premium van with captain seats for family holidays &amp; corporate group travel. Call or WhatsApp for a quote.</image:caption>
+      <image:caption>Hire the Urbania 12 Seater Maharaja in Bangalore. High-roof premium van with captain seats for family and corporate group travel. Call or WhatsApp for a quote.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
   </url>
@@ -795,127 +834,127 @@
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-front-01.webp</image:loc>
       <image:title>25 Seater Mini Bus Photo 1 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-front-02.webp</image:loc>
       <image:title>25 Seater Mini Bus Photo 2 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-side-01.webp</image:loc>
       <image:title>25 Seater Mini Bus Photo 3 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-interior-01.webp</image:loc>
       <image:title>25 Seater Mini Bus Photo 4 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-interior-02.webp</image:loc>
       <image:title>25 Seater Mini Bus Photo 5 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-25-seater-mini-bus-interior-03.webp</image:loc>
       <image:title>25 Seater Mini Bus Photo 6 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-50-seater-bus-side-01.webp</image:loc>
       <image:title>Sushi Travels - 50 Seater Bus Photo 1 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-50-seater-bus-interior-01-v2.webp</image:loc>
       <image:title>Sushi Travels - 50 Seater Bus Photo 2 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-50-seater-bus-interior-02-v2.webp</image:loc>
       <image:title>Sushi Travels - 50 Seater Bus Photo 3 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-front-01.webp</image:loc>
       <image:title>Volvo Bus 45 Seater Luxury Photo 1 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-front-02.webp</image:loc>
       <image:title>Volvo Bus 45 Seater Luxury Photo 2 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-side-01.webp</image:loc>
       <image:title>Volvo Bus 45 Seater Luxury Photo 3 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-side-02.webp</image:loc>
       <image:title>Volvo Bus 45 Seater Luxury Photo 4 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-interior-01-v2.webp</image:loc>
       <image:title>Volvo Bus 45 Seater Luxury Photo 5 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-interior-02-v2.webp</image:loc>
       <image:title>Volvo Bus 45 Seater Luxury Photo 6 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-interior-03-v2.webp</image:loc>
       <image:title>Volvo Bus 45 Seater Luxury Photo 7 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/volvo-bus-45-seater-interior-04-v2.webp</image:loc>
       <image:title>Volvo Bus 45 Seater Luxury Photo 8 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-33-seater-bus-luxury-front-01.webp</image:loc>
       <image:title>33 Seater Bus Luxury Photo 1 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-33-seater-bus-luxury-front-02.webp</image:loc>
       <image:title>33 Seater Bus Luxury Photo 2 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-33-seater-bus-luxury-interior-01.webp</image:loc>
       <image:title>33 Seater Bus Luxury Photo 3 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/sushi-travels-33-seater-bus-luxury-interior-02.webp</image:loc>
       <image:title>33 Seater Bus Luxury Photo 4 - Bangalore Rental Fleet</image:title>
-      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or see sample trip prices.</image:caption>
+      <image:caption>Bus for rent in Bangalore: 25 to 50-seater AC mini buses &amp; luxury coaches for weddings, school trips and outstation tours. Get a quote or sample trip prices.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
   </url>
@@ -1229,7 +1268,7 @@
     <loc>https://www.sushitravels.com/blog/statue-of-unity-kevadia-gujarat-travel-diary</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/blog/Gujarat-blog-1.webp</image:loc>
-      <image:title>A Travel Diary: The Statue of Unity, Kevadia, Gujarat</image:title>
+      <image:title>Statue of Unity, Kevadia: A Travel Diary</image:title>
       <image:caption>Notes from a trip to Kevadia — the world&apos;s tallest statue, an eagle-shaped safari park, the Sardar Sarovar Dam, and a quiet valley of flowers on the Narmada.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -1238,7 +1277,7 @@
     <loc>https://www.sushitravels.com/blog/bangalore-to-mysore-day-trip-guide</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/mysuru.webp</image:loc>
-      <image:title>Bangalore to Mysore Day Trip: Route, Timing &amp; Vehicle Guide</image:title>
+      <image:title>Bangalore to Mysore Day Trip Guide</image:title>
       <image:caption>Mysore is close enough for a same-day round trip from Bangalore. Here is a simple schedule, what to prioritise, and how to choose between a sedan, an Innova and a Tempo Traveller.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -1247,7 +1286,7 @@
     <loc>https://www.sushitravels.com/blog/bangalore-to-coorg-weekend-trip-guide</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/coorg.webp</image:loc>
-      <image:title>Bangalore to Coorg Weekend Trip: Route &amp; Vehicle Guide</image:title>
+      <image:title>Bangalore to Coorg Weekend Trip Guide</image:title>
       <image:caption>Coorg is a classic two-day trip from Bangalore. This guide covers the drive, a simple 2-day plan, and why vehicle choice matters on the ghat-road sections.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
@@ -1256,7 +1295,7 @@
     <loc>https://www.sushitravels.com/blog/bangalore-to-ooty-trip-guide</loc>
     <image:image>
       <image:loc>https://www.sushitravels.com/ooty.webp</image:loc>
-      <image:title>Bangalore to Ooty by Cab: Route, Timing &amp; Vehicle Guide</image:title>
+      <image:title>Bangalore to Ooty by Cab: Trip Guide</image:title>
       <image:caption>The Ooty drive passes through the Bandipur forest corridor and climbs the Nilgiri hairpin bends. Here is what to expect and how to plan it.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>

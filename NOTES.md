@@ -1842,3 +1842,9 @@ Compared the project against Ahrefs' "How to Rank Higher on Google" (10 steps).
 - Found and fixed: 8 titles >60 chars (Terms, Chikmagalur/Pondicherry routes, all 4 blog posts) and 5 descriptions >160 chars.
 - Final crawl: 62/62 HTTP 200, 1 H1, correct self-canonical, valid JSON-LD, no missing alt, no broken internal links, no duplicate titles/descriptions, no noindex. Unknown paths return 404; bare domain 308s to www.
 - Not measurable here: Core Web Vitals (no Lighthouse/field data) and DB-backed `/` + `/fleet` content (no database in the sandbox).
+
+## 17. Force Urbania 9 Seater page (2026-10-27)
+- Owner confirmed the Urbania range is 9-seater, 12-seater Maharaja and 16-seater (a 17-seater Urbania was added then removed in error — it does not exist).
+- Added `force-urbania-9-seater` (vehicles.ts) + `/vehicles/force-urbania-9-seater-bangalore`, linked from the 12- and 16-seater Urbania pages.
+- **No rate/photos supplied:** `Price on Request`, exterior-only photos from the shared Urbania set, `luggage: 12` mirrors the Maharaja. Replace with real 9-seater photos/luggage/rate when available.
+- **DB gap:** `/fleet` and the homepage read from Postgres (`seed.ts` only seeds an empty table), so add the vehicle in the admin dashboard to show it there (id `force-urbania-9-seater`, 9 seats, AC only, Price on Request).

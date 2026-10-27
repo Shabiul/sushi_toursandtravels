@@ -2,7 +2,7 @@
 
 > Chauffeur-driven car, SUV, Tempo Traveller, Force Urbania and bus rental in Bengaluru (Bangalore), Karnataka, India — for outstation round trips, airport transfers (Kempegowda International Airport, BLR), local city use, corporate transport and weddings.
 
-Last generated: 2026-10-24. Source of truth for every price and policy below is the website; if anything here disagrees with a page, the page wins.
+Last generated: 2026-10-27. Source of truth for every price and policy below is the website; if anything here disagrees with a page, the page wins.
 
 ## Business details
 - Name: Sushi Tours & Travels (brand: Sushi Travels)
@@ -19,6 +19,7 @@ Last generated: 2026-10-24. Source of truth for every price and policy below is 
 - 17-Seater Force Tempo Traveller (17 Seater, AC): ₹30/km AC, ₹28/km Non-AC; 300 km/day minimum, driver bata ₹700/day. https://www.sushitravels.com/vehicles/17-seater-tempo-traveller-bangalore
 - 9 Seater Tempo Traveller (9+1 Seater, AC): ₹28/km; 300 km/day minimum, driver bata ₹500/day. https://www.sushitravels.com/vehicles/9-seater-luxury-tempo-traveller-bangalore
 - Urbania 12 Seater Maharaja (12 Seater, AC): Price on Request; quoted per trip. https://www.sushitravels.com/vehicles/force-urbania-12-seater-maharaja-bangalore
+- Force Urbania 9 Seater (9 Seater, AC): Price on Request; quoted per trip. https://www.sushitravels.com/vehicles/force-urbania-9-seater-bangalore
 - Force Urbania (16 Seater, AC): ₹38/km; 300 km/day minimum, driver bata ₹700/day. https://www.sushitravels.com/vehicles/force-urbania-16-seater-luxury-bangalore
 - Toyota Etios (4 Seater, AC): ₹13/km; 300 km/day minimum, driver bata ₹400/day. https://www.sushitravels.com/vehicles/sedan-rental-bangalore
 - Maruti Suzuki Dzire (4 Seater, AC): ₹13/km; 300 km/day minimum, driver bata ₹400/day. https://www.sushitravels.com/vehicles/sedan-rental-bangalore
@@ -142,6 +143,20 @@ A: Yes — this is one of our larger-capacity vehicles, well suited to outstatio
 
 Q: Can I book airport pickup with this vehicle?
 A: Yes, group airport pickup/drop can be arranged for large families or teams arriving together — mention your group size when enquiring.
+
+### Force Urbania 9 Seater Rental in Bangalore
+Source: https://www.sushitravels.com/vehicles/force-urbania-9-seater-bangalore
+Q: How many passengers does the Force Urbania 9 Seater carry?
+A: It seats 9 passengers, plus the driver, in an air-conditioned high-roof cabin with a rear cargo hold for luggage.
+
+Q: What is the price of the Force Urbania 9 Seater?
+A: This tier is priced per trip rather than at a flat confirmed per-km rate, based on route, duration and group size. Call or WhatsApp us with your itinerary for a quote.
+
+Q: Can I book the 9-seater Urbania for outstation trips?
+A: Yes — it is a comfortable choice for small-group outstation holidays and executive travel on longer routes.
+
+Q: Can I book airport pickup with this vehicle?
+A: Yes, airport pickup and drop can be arranged — mention your group size and luggage when enquiring.
 
 ### Urbania 12 Seater Maharaja Rental in Bangalore
 Source: https://www.sushitravels.com/vehicles/force-urbania-12-seater-maharaja-bangalore
@@ -687,6 +702,7 @@ A: Yes — BTM Layout is a common pickup point for weekend outstation trips to C
 - [12-Seater Tempo Traveller Rental in Bangalore](https://www.sushitravels.com/vehicles/tempo-traveller-rental-bangalore)
 - [9 Seater Tempo Traveller Rental in Bangalore](https://www.sushitravels.com/vehicles/9-seater-luxury-tempo-traveller-bangalore)
 - [17-Seater Force Tempo Traveller Rental in Bangalore](https://www.sushitravels.com/vehicles/17-seater-tempo-traveller-bangalore)
+- [Force Urbania 9 Seater Rental in Bangalore](https://www.sushitravels.com/vehicles/force-urbania-9-seater-bangalore)
 - [Urbania 12 Seater Maharaja Rental in Bangalore](https://www.sushitravels.com/vehicles/force-urbania-12-seater-maharaja-bangalore)
 - [Force Urbania Luxury 16-Seater Rental in Bangalore](https://www.sushitravels.com/vehicles/force-urbania-16-seater-luxury-bangalore)
 - [25 Seater Mini Bus for Rent in Bangalore](https://www.sushitravels.com/vehicles/25-seater-mini-bus-rental-bangalore)
@@ -734,10 +750,10 @@ A: Yes — BTM Layout is a common pickup point for weekend outstation trips to C
 - [Car Rental in BTM Layout, Bangalore](https://www.sushitravels.com/locations/car-rental-btm-layout)
 
 ## Travel guides
-- [A Travel Diary: The Statue of Unity, Kevadia, Gujarat](https://www.sushitravels.com/blog/statue-of-unity-kevadia-gujarat-travel-diary)
-- [Bangalore to Mysore Day Trip: Route, Timing & Vehicle Guide](https://www.sushitravels.com/blog/bangalore-to-mysore-day-trip-guide)
-- [Bangalore to Coorg Weekend Trip: Route & Vehicle Guide](https://www.sushitravels.com/blog/bangalore-to-coorg-weekend-trip-guide)
-- [Bangalore to Ooty by Cab: Route, Timing & Vehicle Guide](https://www.sushitravels.com/blog/bangalore-to-ooty-trip-guide)
+- [Statue of Unity, Kevadia: A Travel Diary](https://www.sushitravels.com/blog/statue-of-unity-kevadia-gujarat-travel-diary)
+- [Bangalore to Mysore Day Trip Guide](https://www.sushitravels.com/blog/bangalore-to-mysore-day-trip-guide)
+- [Bangalore to Coorg Weekend Trip Guide](https://www.sushitravels.com/blog/bangalore-to-coorg-weekend-trip-guide)
+- [Bangalore to Ooty by Cab: Trip Guide](https://www.sushitravels.com/blog/bangalore-to-ooty-trip-guide)
 
 ## Policies
 - [Terms & conditions](https://www.sushitravels.com/terms-and-conditions)

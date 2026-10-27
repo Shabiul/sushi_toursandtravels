@@ -295,6 +295,43 @@ export const vehicles: Vehicle[] = [
       'The Urbania 12 Seater Maharaja is the 12-seater trim of our flagship Force Urbania: a high-roof, premium van built for mid-size groups who want extra comfort. Captain seats, strong AC, and a spacious cabin make it a great choice for family holidays and corporate group travel across South India. Call or WhatsApp us for a custom quote.',
     sortOrder: 4,
   },
+  // ---------------------------------------------------------------------
+  // Force Urbania 9 Seater — added 2026-10-27 at the owner's request. No
+  // rate/photos were supplied: it is 'Price on Request' and uses only the
+  // EXTERIOR shots of the shared Force Urbania photo set (cabin layout differs
+  // by seat count, so no interiors). `luggage` mirrors the 12-seater Maharaja.
+  // Swap in real 9-seater photos and confirm luggage/rate with the owner.
+  // ---------------------------------------------------------------------
+  {
+    id: 'force-urbania-9-seater',
+    name: 'Force Urbania 9 Seater',
+    type: 'Tempo Traveller',
+    seats: 9,
+    seatsDisplay: '9 Seater',
+    ac: true,
+    luggage: 12,
+    ratePerKm: 0,
+    priceDisplay: 'Price on Request',
+    acOnly: true,
+    features: [
+      '9-seat Force Urbania with extra space per passenger',
+      'High-roof cabin with stand-up walking space',
+      'Roof AC for the full cabin',
+      'Rear cargo hold for luggage',
+      'Best for small groups, executive travel & family trips wanting Urbania comfort',
+      'Custom quote based on route, duration & group size',
+    ],
+    image: '/fleet/force-urbania-front-01.webp',
+    images: [
+      '/fleet/force-urbania-front-01.webp',
+      '/fleet/force-urbania-front-02.webp',
+      '/fleet/force-urbania-rear-01.webp',
+      '/fleet/force-urbania-rear-02.webp',
+    ],
+    description:
+      'The Force Urbania 9 Seater is the roomiest way to travel as a small group: a high-roof, air-conditioned Urbania with generous space per passenger, suited to executive travel, family holidays and airport transfers. Pricing is quoted per trip based on route, duration and group size.',
+    sortOrder: 4,
+  },
   {
     id: 'force-urbania-luxury-16-seater',
     name: 'Force Urbania',

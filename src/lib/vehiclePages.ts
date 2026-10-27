@@ -335,6 +335,49 @@ export const vehiclePages: VehiclePage[] = [
     },
   },
   {
+    slug: 'force-urbania-9-seater-bangalore',
+    h1: 'Force Urbania 9 Seater Rental in Bangalore',
+    title: 'Force Urbania 9-Seater Rental Bangalore',
+    metaDescription:
+      'Hire the Force Urbania 9-seater in Bangalore with a driver — a high-roof AC van with extra space for executive, family & airport trips. Call for a quote.',
+    heroSubtitle:
+      'A 9-seat high-roof Force Urbania with full-cabin AC — extra space per passenger for small groups travelling out of Bangalore.',
+    vehicleIds: ['force-urbania-9-seater'],
+    geoSummary:
+      'Sushi Travels offers the Force Urbania 9 Seater in Bangalore for executive travel, small-group family holidays and airport transfers. This tier does not have a fixed confirmed per-km rate — pricing is quoted per trip based on route, duration and group size.',
+    bodyParagraphs: [
+      'The Force Urbania 9 Seater suits groups of up to nine that want more room than a standard Tempo Traveller: a high-roof, air-conditioned cabin with space to stand and move about, and a rear cargo hold for luggage.',
+      'It is a natural pick for executive and corporate travel, family holidays, and airport pickups where comfort matters as much as capacity.',
+      'Because pricing depends on route, trip duration and total distance, we quote this vehicle individually rather than listing a per-km figure — call or WhatsApp with your itinerary for a fast quote. For bigger groups, see the 12-seater Maharaja and the 16-seater Urbania below.',
+    ],
+    faqs: [
+      {
+        question: 'How many passengers does the Force Urbania 9 Seater carry?',
+        answer: 'It seats 9 passengers, plus the driver, in an air-conditioned high-roof cabin with a rear cargo hold for luggage.',
+      },
+      {
+        question: 'What is the price of the Force Urbania 9 Seater?',
+        answer:
+          'This tier is priced per trip rather than at a flat confirmed per-km rate, based on route, duration and group size. Call or WhatsApp us with your itinerary for a quote.',
+      },
+      {
+        question: 'Can I book the 9-seater Urbania for outstation trips?',
+        answer: 'Yes — it is a comfortable choice for small-group outstation holidays and executive travel on longer routes.',
+      },
+      {
+        question: 'Can I book airport pickup with this vehicle?',
+        answer: 'Yes, airport pickup and drop can be arranged — mention your group size and luggage when enquiring.',
+      },
+    ],
+    relatedVehicleSlugs: [
+      'force-urbania-12-seater-maharaja-bangalore',
+      'force-urbania-16-seater-luxury-bangalore',
+      '9-seater-luxury-tempo-traveller-bangalore',
+    ],
+    relatedServiceSlugs: ['bangalore-airport-taxi', 'corporate-transport-bangalore', 'outstation-cab-bangalore'],
+    relatedRouteSlugs: ['bangalore-to-coorg-cab', 'bangalore-to-mysore-cab'],
+  },
+  {
     slug: 'force-urbania-12-seater-maharaja-bangalore',
     h1: 'Urbania 12 Seater Maharaja Rental in Bangalore',
     title: 'Urbania 12 Seater Maharaja Rental Bangalore',
@@ -371,6 +414,7 @@ export const vehiclePages: VehiclePage[] = [
       },
     ],
     relatedVehicleSlugs: [
+      'force-urbania-9-seater-bangalore',
       'force-urbania-16-seater-luxury-bangalore',
       '9-seater-luxury-tempo-traveller-bangalore',
       'tempo-traveller-rental-bangalore',
@@ -414,6 +458,7 @@ export const vehiclePages: VehiclePage[] = [
       },
     ],
     relatedVehicleSlugs: [
+      'force-urbania-9-seater-bangalore',
       'force-urbania-12-seater-maharaja-bangalore',
       '25-seater-mini-bus-rental-bangalore',
       'tempo-traveller-rental-bangalore',
