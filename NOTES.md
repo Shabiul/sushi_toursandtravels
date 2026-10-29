@@ -1849,4 +1849,10 @@ Compared the project against Ahrefs' "How to Rank Higher on Google" (10 steps).
 - **Assumption to confirm:** driver bata/min km for the 9- and 12-seater mirror the 16-seater (₹700/day, 300 km). The owner gave rates only.
 - **Photos:** owner's new sets (9-seater 9, 12-seater 8, 16-seater 6) converted to WebP by `scripts/convert-urbania-photos.mjs` and named `force-urbania-9-seater-*`, `force-urbania-maharaja-12-seater-*`, `force-urbania-16-seater-*`. All old `force-urbania-{front,rear,interior}-*` files deleted; shared references (OG image, schema, location/service heroes, sitemap generator) now point to `force-urbania-16-seater-front-01.webp`. Raw WhatsApp exports were moved out of `public/`.
 - Seat headrests in the new photos carry logos ("PKN" on the 9-seater, crest/elephant emblems on 12/16) — confirm they are Sushi Travels' own branding.
-- **DB gap (must run before deploy):** `/fleet` and the homepage read vehicles from Postgres, and `seed.ts` only seeds an empty table. Run `npx tsx scripts/sync-urbania-db.ts` (dry run) then `--apply` with the production `DATABASE_URL`, or edit the three vehicles in the admin dashboard. Until then those pages show old rates/photos and the deleted images 404.
+- **DB gap resolved by section 18** — the public pages no longer read vehicles from the database.
+
+## 18. Public pages no longer read the database (2026-10-29)
+- `/` and `/fleet` now render from `src/lib/vehicles.ts` and the new `src/lib/homeContent.ts` (popular routes + sample testimonials, moved out of `seed.ts`). Both are statically generated; they cannot go blank if Postgres is down, and fleet edits are code edits + redeploy.
+- Verified before switching: the live DB held exactly the code defaults (same 3 reviews, 11 routes, no custom `homeCategory`/`showOnHome`), so nothing was lost.
+- Still on the database (unchanged): booking submissions, admin login and the admin dashboard. **The dashboard's vehicle/route/review editors no longer change the public site** (they edit rows the public pages ignore); remove or repurpose them if that is confusing. `/api/fleet` and `/api/home-data` GET remain but are unused by the public pages.
+- The 3 sample testimonials (names/locations/text in `homeContent.ts`) are seed content, one mentioning a Honda City that is not in the fleet — replace with real customer reviews.
