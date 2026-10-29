@@ -69,6 +69,7 @@ const pricingTerms = `## Pricing & booking terms (from ${BASE}/terms-and-conditi
 - Airport pickups include a complimentary 45-minute wait for flight delays, with flight tracking on request.
 - Punctuality is guaranteed: your chauffeur arrives at the confirmed pickup time.
 - Chauffeurs are police-verified and have a minimum of 5 years of commercial highway and mountain-ghat driving experience.
+- Force Urbania per-km rates are outstation rates; for local (within-city) rentals, call or WhatsApp for an enquiry.
 - Vehicles marked "Price on Request" have no fixed per-km rate; call or WhatsApp with your route, dates and group size for a quote.
 `;
 

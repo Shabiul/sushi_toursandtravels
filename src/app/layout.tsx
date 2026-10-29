@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: 'Sushi Travels',
     images: [
       {
-        url: 'https://www.sushitravels.com/fleet/force-urbania-front-01.webp',
+        url: 'https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp',
         width: 800,
         height: 600,
         alt: 'Sushi Travels Chauffeur Services Bangalore'
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Sushi Travels | Car & Tempo Traveller Rental Bangalore',
     description: 'Book verified drivers and Tempo Travellers, sedans and SUVs from Bangalore. Transparent pricing and 24/7 service.',
-    images: ['https://www.sushitravels.com/fleet/force-urbania-front-01.webp']
+    images: ['https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp']
   },
   robots: {
     index: true,

@@ -10,7 +10,7 @@ export function getLocalBusinessSchema() {
     '@id': `${SITE_URL}/#agency`,
     name: 'Sushi Travels',
     legalName: 'Sushi Tours & Travels',
-    image: `${SITE_URL}/fleet/force-urbania-front-01.webp`,
+    image: `${SITE_URL}/fleet/force-urbania-16-seater-front-01.webp`,
     logo: `${SITE_URL}/logo-light-v3.png`,
     description: 'Sushi Travels is a premier Indian travel agency renting out vehicles with drivers for local, airport transfer, and outstation trips in India.',
     url: SITE_URL,

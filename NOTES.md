@@ -1843,8 +1843,10 @@ Compared the project against Ahrefs' "How to Rank Higher on Google" (10 steps).
 - Final crawl: 62/62 HTTP 200, 1 H1, correct self-canonical, valid JSON-LD, no missing alt, no broken internal links, no duplicate titles/descriptions, no noindex. Unknown paths return 404; bare domain 308s to www.
 - Not measurable here: Core Web Vitals (no Lighthouse/field data) and DB-backed `/` + `/fleet` content (no database in the sandbox).
 
-## 17. Force Urbania 9 Seater page (2026-10-27)
-- Owner confirmed the Urbania range is 9-seater, 12-seater Maharaja and 16-seater (a 17-seater Urbania was added then removed in error — it does not exist).
-- Added `force-urbania-9-seater` (vehicles.ts) + `/vehicles/force-urbania-9-seater-bangalore`, linked from the 12- and 16-seater Urbania pages.
-- **No rate/photos supplied:** `Price on Request`, exterior-only photos from the shared Urbania set, `luggage: 12` mirrors the Maharaja. Replace with real 9-seater photos/luggage/rate when available.
-- **DB gap:** `/fleet` and the homepage read from Postgres (`seed.ts` only seeds an empty table), so add the vehicle in the admin dashboard to show it there (id `force-urbania-9-seater`, 9 seats, AC only, Price on Request).
+## 17. Force Urbania range: 9 / 12 Maharaja / 16 (2026-10-27 to 10-29)
+- Owner confirmed the Urbania range is 9-seater Luxury, 12-seater Maharaja and 16-seater (a 17-seater was added then removed in error — it does not exist).
+- **Rates (owner, 2026-10-29), outstation per km:** 9-seater Luxury ₹60, 12-seater Maharaja ₹45, 16-seater ₹38. **Local rentals: "call for enquiry"** — stated on all three pages (FAQ), in vehicle descriptions and llms.txt.
+- **Assumption to confirm:** driver bata/min km for the 9- and 12-seater mirror the 16-seater (₹700/day, 300 km). The owner gave rates only.
+- **Photos:** owner's new sets (9-seater 9, 12-seater 8, 16-seater 6) converted to WebP by `scripts/convert-urbania-photos.mjs` and named `force-urbania-9-seater-*`, `force-urbania-maharaja-12-seater-*`, `force-urbania-16-seater-*`. All old `force-urbania-{front,rear,interior}-*` files deleted; shared references (OG image, schema, location/service heroes, sitemap generator) now point to `force-urbania-16-seater-front-01.webp`. Raw WhatsApp exports were moved out of `public/`.
+- Seat headrests in the new photos carry logos ("PKN" on the 9-seater, crest/elephant emblems on 12/16) — confirm they are Sushi Travels' own branding.
+- **DB gap (must run before deploy):** `/fleet` and the homepage read vehicles from Postgres, and `seed.ts` only seeds an empty table. Run `npx tsx scripts/sync-urbania-db.ts` (dry run) then `--apply` with the production `DATABASE_URL`, or edit the three vehicles in the admin dashboard. Until then those pages show old rates/photos and the deleted images 404.

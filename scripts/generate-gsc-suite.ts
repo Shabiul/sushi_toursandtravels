@@ -42,7 +42,7 @@ const pages: PageMeta[] = [
         caption: 'Mysuru Palace round-trip tour destination from Bangalore with verified chauffeur.',
       },
       {
-        loc: `${BASE_URL}/fleet/force-urbania-front-01.webp`,
+        loc: `${BASE_URL}/fleet/force-urbania-16-seater-front-01.webp`,
         title: 'Force Urbania Luxury Van Rental Bangalore',
         caption: 'Luxury Force Urbania van rental for outstation and airport travel in Bangalore.',
       },
@@ -86,7 +86,7 @@ const pages: PageMeta[] = [
     priority: 0.8,
     images: [
       {
-        loc: `${BASE_URL}/fleet/force-urbania-front-01.webp`,
+        loc: `${BASE_URL}/fleet/force-urbania-16-seater-front-01.webp`,
         title: 'Book a Car with Driver in Bangalore',
         caption: 'Online booking for chauffeur-driven cars and tempo travellers in Bangalore.',
       },
@@ -204,7 +204,7 @@ servicePages.forEach((sp) => {
     priority: 0.8,
     images: [
       {
-        loc: `${BASE_URL}/fleet/force-urbania-front-01.webp`,
+        loc: `${BASE_URL}/fleet/force-urbania-16-seater-front-01.webp`,
         title: sp.h1,
         caption: sp.metaDescription,
       },
@@ -221,7 +221,7 @@ locationPages.forEach((lp) => {
     priority: 0.7,
     images: [
       {
-        loc: `${BASE_URL}/fleet/force-urbania-front-01.webp`,
+        loc: `${BASE_URL}/fleet/force-urbania-16-seater-front-01.webp`,
         title: `Car Rental in ${lp.name}, Bangalore`,
         caption: lp.metaDescription,
       },

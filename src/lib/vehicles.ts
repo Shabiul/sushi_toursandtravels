@@ -64,6 +64,12 @@ const PRICING = {
   luxuryTempoTraveller9Plus1: { ratePerKm: 28, driverBata: 500 },
   tempoTraveller17SeaterAc: { ratePerKm: 30, driverBata: 700 },
   tempoTraveller17SeaterNonAc: { ratePerKm: 28, driverBata: 700 },
+  // Outstation per-km rates confirmed by the owner 2026-10-29 (local rentals:
+  // "call for enquiry"). driverBata/minKm for the 9- and 12-seater mirror the
+  // 16-seater (the 12-seater Maharaja was ₹700 in the earlier pricing sheet;
+  // the 9-seater's bata was NOT supplied — confirm both).
+  forceUrbania9Luxury: { ratePerKm: 60, driverBata: 700 },
+  forceUrbaniaMaharaja12: { ratePerKm: 45, driverBata: 700 },
   forceUrbaniaLuxury16: { ratePerKm: 38, driverBata: 700 },
 } as const;
 
@@ -275,8 +281,10 @@ export const vehicles: Vehicle[] = [
     seatsDisplay: '12 Seater',
     ac: true,
     luggage: 12,
-    ratePerKm: 0,
-    priceDisplay: 'Price on Request',
+    ratePerKm: PRICING.forceUrbaniaMaharaja12.ratePerKm,
+    driverBata: PRICING.forceUrbaniaMaharaja12.driverBata,
+    minKmPerDay: MIN_KM_PER_DAY,
+    drivingHours: STANDARD_DUTY_HOURS,
     acOnly: true,
     features: [
       '12 luxury captain-style pushback seats',
@@ -289,47 +297,57 @@ export const vehicles: Vehicle[] = [
     image: '/fleet/force-urbania-maharaja-12-seater-front-01.webp',
     images: [
       '/fleet/force-urbania-maharaja-12-seater-front-01.webp',
+      '/fleet/force-urbania-maharaja-12-seater-side-01.webp',
       '/fleet/force-urbania-maharaja-12-seater-interior-01.webp',
+      '/fleet/force-urbania-maharaja-12-seater-interior-02.webp',
+      '/fleet/force-urbania-maharaja-12-seater-interior-03.webp',
+      '/fleet/force-urbania-maharaja-12-seater-interior-04.webp',
+      '/fleet/force-urbania-maharaja-12-seater-interior-05.webp',
+      '/fleet/force-urbania-maharaja-12-seater-interior-06.webp',
     ],
     description:
-      'The Urbania 12 Seater Maharaja is the 12-seater trim of our flagship Force Urbania: a high-roof, premium van built for mid-size groups who want extra comfort. Captain seats, strong AC, and a spacious cabin make it a great choice for family holidays and corporate group travel across South India. Call or WhatsApp us for a custom quote.',
+      'The Urbania 12 Seater Maharaja is the 12-seater trim of our flagship Force Urbania: a high-roof, premium van built for mid-size groups who want extra comfort. Captain seats, strong AC, and a spacious cabin make it a great choice for family holidays and corporate group travel across South India. Outstation rate ₹45/km; for local rentals, call for enquiry.',
     sortOrder: 4,
   },
   // ---------------------------------------------------------------------
-  // Force Urbania 9 Seater — added 2026-10-27 at the owner's request. No
-  // rate/photos were supplied: it is 'Price on Request' and uses only the
-  // EXTERIOR shots of the shared Force Urbania photo set (cabin layout differs
-  // by seat count, so no interiors). `luggage` mirrors the 12-seater Maharaja.
-  // Swap in real 9-seater photos and confirm luggage/rate with the owner.
+  // Force Urbania 9 Seater Luxury — real owner photos + ₹60/km outstation
+  // rate supplied 2026-10-28/29 (local rentals: call for enquiry).
   // ---------------------------------------------------------------------
   {
     id: 'force-urbania-9-seater',
-    name: 'Force Urbania 9 Seater',
+    name: 'Force Urbania 9 Seater Luxury',
     type: 'Tempo Traveller',
     seats: 9,
     seatsDisplay: '9 Seater',
     ac: true,
     luggage: 12,
-    ratePerKm: 0,
-    priceDisplay: 'Price on Request',
+    ratePerKm: PRICING.forceUrbania9Luxury.ratePerKm,
+    driverBata: PRICING.forceUrbania9Luxury.driverBata,
+    minKmPerDay: MIN_KM_PER_DAY,
+    drivingHours: STANDARD_DUTY_HOURS,
     acOnly: true,
     features: [
-      '9-seat Force Urbania with extra space per passenger',
+      '9 luxury leather recliner-style seats with leg rests',
       'High-roof cabin with stand-up walking space',
-      'Roof AC for the full cabin',
-      'Rear cargo hold for luggage',
-      'Best for small groups, executive travel & family trips wanting Urbania comfort',
-      'Custom quote based on route, duration & group size',
+      'Powerful roof AC for the full cabin',
+      'Ceiling-mounted TV screen',
+      'Wood-finish interior trim and window curtains',
+      'Best for executive travel, small family groups & premium airport transfers',
     ],
-    image: '/fleet/force-urbania-front-01.webp',
+    image: '/fleet/force-urbania-9-seater-front-01.webp',
     images: [
-      '/fleet/force-urbania-front-01.webp',
-      '/fleet/force-urbania-front-02.webp',
-      '/fleet/force-urbania-rear-01.webp',
-      '/fleet/force-urbania-rear-02.webp',
+      '/fleet/force-urbania-9-seater-front-01.webp',
+      '/fleet/force-urbania-9-seater-interior-01.webp',
+      '/fleet/force-urbania-9-seater-interior-02.webp',
+      '/fleet/force-urbania-9-seater-interior-03.webp',
+      '/fleet/force-urbania-9-seater-interior-04.webp',
+      '/fleet/force-urbania-9-seater-interior-05.webp',
+      '/fleet/force-urbania-9-seater-interior-06.webp',
+      '/fleet/force-urbania-9-seater-interior-07.webp',
+      '/fleet/force-urbania-9-seater-interior-08.webp',
     ],
     description:
-      'The Force Urbania 9 Seater is the roomiest way to travel as a small group: a high-roof, air-conditioned Urbania with generous space per passenger, suited to executive travel, family holidays and airport transfers. Pricing is quoted per trip based on route, duration and group size.',
+      'The Force Urbania 9 Seater Luxury is the most spacious way to travel as a small group: a high-roof, air-conditioned Urbania with leather recliner-style seats and leg rests, suited to executive travel, family holidays and premium airport transfers. Outstation rate ₹60/km; for local rentals, call for enquiry.',
     sortOrder: 4,
   },
   {
@@ -353,26 +371,17 @@ export const vehicles: Vehicle[] = [
       'Premium interior lighting & entertainment system',
       'Best for large families, wedding groups, corporate offsites & big pilgrimages',
     ],
-    // Card front image is interior-02 (owner-requested, 2026-08-25) — despite
-    // the filename it's actually a front exterior shot at a temple, not an
-    // interior photo. Moved to the front of the gallery to become the
-    // VehicleCard thumbnail (VehicleCard uses images[0], not the `image`
-    // field, once a "side" match isn't found).
-    image: '/fleet/force-urbania-interior-02.webp',
+    image: '/fleet/force-urbania-16-seater-front-01.webp',
     images: [
-      '/fleet/force-urbania-interior-02.webp',
-      '/fleet/force-urbania-front-01.webp',
-      '/fleet/force-urbania-front-02.webp',
-      '/fleet/force-urbania-interior-01.webp',
-      '/fleet/force-urbania-interior-03.webp',
-      '/fleet/force-urbania-interior-04.webp',
-      '/fleet/force-urbania-interior-05.webp',
-      '/fleet/force-urbania-interior-06.webp',
-      '/fleet/force-urbania-rear-01.webp',
-      '/fleet/force-urbania-rear-02.webp',
+      '/fleet/force-urbania-16-seater-front-01.webp',
+      '/fleet/force-urbania-16-seater-side-01.webp',
+      '/fleet/force-urbania-16-seater-rear-01.webp',
+      '/fleet/force-urbania-16-seater-rear-02.webp',
+      '/fleet/force-urbania-16-seater-interior-01.webp',
+      '/fleet/force-urbania-16-seater-interior-02.webp',
     ],
     description:
-      'Our flagship Force Urbania is the largest and most premium van in the fleet: a full 16-seater built for big groups who refuse to compromise on comfort. High-roof cabin space, captain seats, and strong AC make it the top choice for large family holidays, wedding transportation, and corporate group travel across South India.',
+      'Our flagship Force Urbania is the largest and most premium van in the fleet: a full 16-seater built for big groups who refuse to compromise on comfort. High-roof cabin space, captain seats, and strong AC make it the top choice for large family holidays, wedding transportation, and corporate group travel across South India. Outstation rate ₹38/km; for local rentals, call for enquiry.',
     sortOrder: 5,
   },
 

@@ -9,7 +9,7 @@ import FaqAccordion from '@/components/FaqAccordion';
 import CTABand from '@/components/CTABand';
 import RelatedLinks from '@/components/RelatedLinks';
 
-const HERO_IMAGE = '/fleet/force-urbania-front-01.webp';
+const HERO_IMAGE = '/fleet/force-urbania-16-seater-front-01.webp';
 
 export function generateStaticParams() {
   return locationPages.map((p) => ({ slug: p.slug }));

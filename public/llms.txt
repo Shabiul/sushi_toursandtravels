@@ -2,7 +2,7 @@
 
 > Chauffeur-driven car, SUV, Tempo Traveller, Force Urbania and bus rental in Bengaluru (Bangalore), Karnataka, India — for outstation round trips, airport transfers (Kempegowda International Airport, BLR), local city use, corporate transport and weddings.
 
-Last generated: 2026-10-27. Source of truth for every price and policy below is the website; if anything here disagrees with a page, the page wins.
+Last generated: 2026-10-29. Source of truth for every price and policy below is the website; if anything here disagrees with a page, the page wins.
 
 ## Business details
 - Name: Sushi Tours & Travels (brand: Sushi Travels)
@@ -18,8 +18,8 @@ Last generated: 2026-10-27. Source of truth for every price and policy below is 
 - 12 Seater Tempo Traveller (12 Seater, AC): ₹22/km AC, ₹20/km Non-AC; 300 km/day minimum, driver bata ₹700/day. https://www.sushitravels.com/vehicles/tempo-traveller-rental-bangalore
 - 17-Seater Force Tempo Traveller (17 Seater, AC): ₹30/km AC, ₹28/km Non-AC; 300 km/day minimum, driver bata ₹700/day. https://www.sushitravels.com/vehicles/17-seater-tempo-traveller-bangalore
 - 9 Seater Tempo Traveller (9+1 Seater, AC): ₹28/km; 300 km/day minimum, driver bata ₹500/day. https://www.sushitravels.com/vehicles/9-seater-luxury-tempo-traveller-bangalore
-- Urbania 12 Seater Maharaja (12 Seater, AC): Price on Request; quoted per trip. https://www.sushitravels.com/vehicles/force-urbania-12-seater-maharaja-bangalore
-- Force Urbania 9 Seater (9 Seater, AC): Price on Request; quoted per trip. https://www.sushitravels.com/vehicles/force-urbania-9-seater-bangalore
+- Urbania 12 Seater Maharaja (12 Seater, AC): ₹45/km; 300 km/day minimum, driver bata ₹700/day. https://www.sushitravels.com/vehicles/force-urbania-12-seater-maharaja-bangalore
+- Force Urbania 9 Seater Luxury (9 Seater, AC): ₹60/km; 300 km/day minimum, driver bata ₹700/day. https://www.sushitravels.com/vehicles/force-urbania-9-seater-bangalore
 - Force Urbania (16 Seater, AC): ₹38/km; 300 km/day minimum, driver bata ₹700/day. https://www.sushitravels.com/vehicles/force-urbania-16-seater-luxury-bangalore
 - Toyota Etios (4 Seater, AC): ₹13/km; 300 km/day minimum, driver bata ₹400/day. https://www.sushitravels.com/vehicles/sedan-rental-bangalore
 - Maruti Suzuki Dzire (4 Seater, AC): ₹13/km; 300 km/day minimum, driver bata ₹400/day. https://www.sushitravels.com/vehicles/sedan-rental-bangalore
@@ -42,6 +42,7 @@ Last generated: 2026-10-27. Source of truth for every price and policy below is 
 - Airport pickups include a complimentary 45-minute wait for flight delays, with flight tracking on request.
 - Punctuality is guaranteed: your chauffeur arrives at the confirmed pickup time.
 - Chauffeurs are police-verified and have a minimum of 5 years of commercial highway and mountain-ghat driving experience.
+- Force Urbania per-km rates are outstation rates; for local (within-city) rentals, call or WhatsApp for an enquiry.
 - Vehicles marked "Price on Request" have no fixed per-km rate; call or WhatsApp with your route, dates and group size for a quote.
 
 ## Indicative trip estimates
@@ -69,7 +70,7 @@ Indicative estimates only, not a fixed tariff. They assume the day-minimum kilom
 - [12-Seater Tempo Traveller Rental in Bangalore](https://www.sushitravels.com/vehicles/tempo-traveller-rental-bangalore)
 - [9 Seater Tempo Traveller Rental in Bangalore](https://www.sushitravels.com/vehicles/9-seater-luxury-tempo-traveller-bangalore)
 - [17-Seater Force Tempo Traveller Rental in Bangalore](https://www.sushitravels.com/vehicles/17-seater-tempo-traveller-bangalore)
-- [Force Urbania 9 Seater Rental in Bangalore](https://www.sushitravels.com/vehicles/force-urbania-9-seater-bangalore)
+- [Force Urbania 9 Seater Luxury Rental in Bangalore](https://www.sushitravels.com/vehicles/force-urbania-9-seater-bangalore)
 - [Urbania 12 Seater Maharaja Rental in Bangalore](https://www.sushitravels.com/vehicles/force-urbania-12-seater-maharaja-bangalore)
 - [Force Urbania Luxury 16-Seater Rental in Bangalore](https://www.sushitravels.com/vehicles/force-urbania-16-seater-luxury-bangalore)
 - [25 Seater Mini Bus for Rent in Bangalore](https://www.sushitravels.com/vehicles/25-seater-mini-bus-rental-bangalore)

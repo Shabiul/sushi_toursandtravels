@@ -10,7 +10,7 @@
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Force Urbania Luxury Van Rental Bangalore</image:title>
       <image:caption>Luxury Force Urbania van rental for outstation and airport travel in Bangalore.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -58,13 +58,13 @@
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
-      <image:title>Force Urbania 9 Seater Rental in Bangalore</image:title>
-      <image:caption>Force Urbania 9 Seater (9 Seater) for outstation and local travel in Bangalore.</image:caption>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-9-seater-front-01.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Luxury Rental in Bangalore</image:title>
+      <image:caption>Force Urbania 9 Seater Luxury (9 Seater) for outstation and local travel in Bangalore.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-02.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Force Urbania Rental in Bangalore</image:title>
       <image:caption>Force Urbania (16 Seater) for outstation and local travel in Bangalore.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -133,7 +133,7 @@
   <url>
     <loc>https://www.sushitravels.com/booking</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Book a Car with Driver in Bangalore</image:title>
       <image:caption>Online booking for chauffeur-driven cars and tempo travellers in Bangalore.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -244,13 +244,13 @@
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
-      <image:title>Force Urbania 9 Seater Fleet Specifications and Pricing</image:title>
-      <image:caption>Book Force Urbania 9 Seater with verified driver from Sushi Travels Bangalore.</image:caption>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-9-seater-front-01.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Luxury Fleet Specifications and Pricing</image:title>
+      <image:caption>Book Force Urbania 9 Seater Luxury with verified driver from Sushi Travels Bangalore.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-02.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Force Urbania Fleet Specifications and Pricing</image:title>
       <image:caption>Book Force Urbania with verified driver from Sushi Travels Bangalore.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -667,27 +667,57 @@
   <url>
     <loc>https://www.sushitravels.com/vehicles/force-urbania-9-seater-bangalore</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
-      <image:title>Force Urbania 9 Seater Photo 1 - Bangalore Rental Fleet</image:title>
-      <image:caption>Hire the Force Urbania 9-seater in Bangalore with a driver — a high-roof AC van with extra space for executive, family &amp; airport trips. Call for a quote.</image:caption>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-9-seater-front-01.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Luxury Photo 1 - Bangalore Rental Fleet</image:title>
+      <image:caption>Force Urbania 9-seater luxury rental in Bangalore at ₹60/km outstation. Recliner seats, high-roof AC van with driver. Call for local rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-02.webp</image:loc>
-      <image:title>Force Urbania 9 Seater Photo 2 - Bangalore Rental Fleet</image:title>
-      <image:caption>Hire the Force Urbania 9-seater in Bangalore with a driver — a high-roof AC van with extra space for executive, family &amp; airport trips. Call for a quote.</image:caption>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-9-seater-interior-01.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Luxury Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Force Urbania 9-seater luxury rental in Bangalore at ₹60/km outstation. Recliner seats, high-roof AC van with driver. Call for local rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-rear-01.webp</image:loc>
-      <image:title>Force Urbania 9 Seater Photo 3 - Bangalore Rental Fleet</image:title>
-      <image:caption>Hire the Force Urbania 9-seater in Bangalore with a driver — a high-roof AC van with extra space for executive, family &amp; airport trips. Call for a quote.</image:caption>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-9-seater-interior-02.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Luxury Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Force Urbania 9-seater luxury rental in Bangalore at ₹60/km outstation. Recliner seats, high-roof AC van with driver. Call for local rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-rear-02.webp</image:loc>
-      <image:title>Force Urbania 9 Seater Photo 4 - Bangalore Rental Fleet</image:title>
-      <image:caption>Hire the Force Urbania 9-seater in Bangalore with a driver — a high-roof AC van with extra space for executive, family &amp; airport trips. Call for a quote.</image:caption>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-9-seater-interior-03.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Luxury Photo 4 - Bangalore Rental Fleet</image:title>
+      <image:caption>Force Urbania 9-seater luxury rental in Bangalore at ₹60/km outstation. Recliner seats, high-roof AC van with driver. Call for local rates.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-9-seater-interior-04.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Luxury Photo 5 - Bangalore Rental Fleet</image:title>
+      <image:caption>Force Urbania 9-seater luxury rental in Bangalore at ₹60/km outstation. Recliner seats, high-roof AC van with driver. Call for local rates.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-9-seater-interior-05.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Luxury Photo 6 - Bangalore Rental Fleet</image:title>
+      <image:caption>Force Urbania 9-seater luxury rental in Bangalore at ₹60/km outstation. Recliner seats, high-roof AC van with driver. Call for local rates.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-9-seater-interior-06.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Luxury Photo 7 - Bangalore Rental Fleet</image:title>
+      <image:caption>Force Urbania 9-seater luxury rental in Bangalore at ₹60/km outstation. Recliner seats, high-roof AC van with driver. Call for local rates.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-9-seater-interior-07.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Luxury Photo 8 - Bangalore Rental Fleet</image:title>
+      <image:caption>Force Urbania 9-seater luxury rental in Bangalore at ₹60/km outstation. Recliner seats, high-roof AC van with driver. Call for local rates.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-9-seater-interior-08.webp</image:loc>
+      <image:title>Force Urbania 9 Seater Luxury Photo 9 - Bangalore Rental Fleet</image:title>
+      <image:caption>Force Urbania 9-seater luxury rental in Bangalore at ₹60/km outstation. Recliner seats, high-roof AC van with driver. Call for local rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
   </url>
@@ -696,76 +726,88 @@
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/force-urbania-maharaja-12-seater-front-01.webp</image:loc>
       <image:title>Urbania 12 Seater Maharaja Photo 1 - Bangalore Rental Fleet</image:title>
-      <image:caption>Hire the Urbania 12 Seater Maharaja in Bangalore. High-roof premium van with captain seats for family and corporate group travel. Call or WhatsApp for a quote.</image:caption>
+      <image:caption>Urbania 12 Seater Maharaja rental in Bangalore at ₹45/km outstation. High-roof premium van for family &amp; corporate groups. Call for local rates.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-maharaja-12-seater-side-01.webp</image:loc>
+      <image:title>Urbania 12 Seater Maharaja Photo 2 - Bangalore Rental Fleet</image:title>
+      <image:caption>Urbania 12 Seater Maharaja rental in Bangalore at ₹45/km outstation. High-roof premium van for family &amp; corporate groups. Call for local rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.sushitravels.com/fleet/force-urbania-maharaja-12-seater-interior-01.webp</image:loc>
-      <image:title>Urbania 12 Seater Maharaja Photo 2 - Bangalore Rental Fleet</image:title>
-      <image:caption>Hire the Urbania 12 Seater Maharaja in Bangalore. High-roof premium van with captain seats for family and corporate group travel. Call or WhatsApp for a quote.</image:caption>
+      <image:title>Urbania 12 Seater Maharaja Photo 3 - Bangalore Rental Fleet</image:title>
+      <image:caption>Urbania 12 Seater Maharaja rental in Bangalore at ₹45/km outstation. High-roof premium van for family &amp; corporate groups. Call for local rates.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-maharaja-12-seater-interior-02.webp</image:loc>
+      <image:title>Urbania 12 Seater Maharaja Photo 4 - Bangalore Rental Fleet</image:title>
+      <image:caption>Urbania 12 Seater Maharaja rental in Bangalore at ₹45/km outstation. High-roof premium van for family &amp; corporate groups. Call for local rates.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-maharaja-12-seater-interior-03.webp</image:loc>
+      <image:title>Urbania 12 Seater Maharaja Photo 5 - Bangalore Rental Fleet</image:title>
+      <image:caption>Urbania 12 Seater Maharaja rental in Bangalore at ₹45/km outstation. High-roof premium van for family &amp; corporate groups. Call for local rates.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-maharaja-12-seater-interior-04.webp</image:loc>
+      <image:title>Urbania 12 Seater Maharaja Photo 6 - Bangalore Rental Fleet</image:title>
+      <image:caption>Urbania 12 Seater Maharaja rental in Bangalore at ₹45/km outstation. High-roof premium van for family &amp; corporate groups. Call for local rates.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-maharaja-12-seater-interior-05.webp</image:loc>
+      <image:title>Urbania 12 Seater Maharaja Photo 7 - Bangalore Rental Fleet</image:title>
+      <image:caption>Urbania 12 Seater Maharaja rental in Bangalore at ₹45/km outstation. High-roof premium van for family &amp; corporate groups. Call for local rates.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-maharaja-12-seater-interior-06.webp</image:loc>
+      <image:title>Urbania 12 Seater Maharaja Photo 8 - Bangalore Rental Fleet</image:title>
+      <image:caption>Urbania 12 Seater Maharaja rental in Bangalore at ₹45/km outstation. High-roof premium van for family &amp; corporate groups. Call for local rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
   </url>
   <url>
     <loc>https://www.sushitravels.com/vehicles/force-urbania-16-seater-luxury-bangalore</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-02.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Force Urbania Photo 1 - Bangalore Rental Fleet</image:title>
-      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:caption>Force Urbania Luxury 16-Seater in Bangalore at ₹38/km outstation. Premium van for weddings, big families &amp; offsites. Call for local rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-side-01.webp</image:loc>
       <image:title>Force Urbania Photo 2 - Bangalore Rental Fleet</image:title>
-      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:caption>Force Urbania Luxury 16-Seater in Bangalore at ₹38/km outstation. Premium van for weddings, big families &amp; offsites. Call for local rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-02.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-rear-01.webp</image:loc>
       <image:title>Force Urbania Photo 3 - Bangalore Rental Fleet</image:title>
-      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:caption>Force Urbania Luxury 16-Seater in Bangalore at ₹38/km outstation. Premium van for weddings, big families &amp; offsites. Call for local rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-rear-02.webp</image:loc>
       <image:title>Force Urbania Photo 4 - Bangalore Rental Fleet</image:title>
-      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:caption>Force Urbania Luxury 16-Seater in Bangalore at ₹38/km outstation. Premium van for weddings, big families &amp; offsites. Call for local rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-03.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-interior-01.webp</image:loc>
       <image:title>Force Urbania Photo 5 - Bangalore Rental Fleet</image:title>
-      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:caption>Force Urbania Luxury 16-Seater in Bangalore at ₹38/km outstation. Premium van for weddings, big families &amp; offsites. Call for local rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-04.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-interior-02.webp</image:loc>
       <image:title>Force Urbania Photo 6 - Bangalore Rental Fleet</image:title>
-      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
-      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-05.webp</image:loc>
-      <image:title>Force Urbania Photo 7 - Bangalore Rental Fleet</image:title>
-      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
-      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-interior-06.webp</image:loc>
-      <image:title>Force Urbania Photo 8 - Bangalore Rental Fleet</image:title>
-      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
-      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-rear-01.webp</image:loc>
-      <image:title>Force Urbania Photo 9 - Bangalore Rental Fleet</image:title>
-      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
-      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-rear-02.webp</image:loc>
-      <image:title>Force Urbania Photo 10 - Bangalore Rental Fleet</image:title>
-      <image:caption>Book the Force Urbania Luxury 16-Seater in Bangalore at ₹38/km. Our largest premium van — ideal for weddings, big families &amp; corporate offsites.</image:caption>
+      <image:caption>Force Urbania Luxury 16-Seater in Bangalore at ₹38/km outstation. Premium van for weddings, big families &amp; offsites. Call for local rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
   </url>
@@ -961,7 +1003,7 @@
   <url>
     <loc>https://www.sushitravels.com/services/bangalore-airport-taxi</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Bangalore Airport Taxi Service</image:title>
       <image:caption>Book an airport taxi in Bangalore for Kempegowda Airport (BLR) pickup &amp; drop. One-way or round trip, sedans to Tempo Travellers, flight tracking on request.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -970,7 +1012,7 @@
   <url>
     <loc>https://www.sushitravels.com/services/outstation-cab-bangalore</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Outstation Cab Service from Bangalore</image:title>
       <image:caption>Book an outstation cab from Bangalore with a verified chauffeur — sedans, SUVs, Tempo Travellers &amp; buses for round trips to Mysore, Coorg, Ooty and beyond.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -979,7 +1021,7 @@
   <url>
     <loc>https://www.sushitravels.com/services/local-taxi-bangalore</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Local Taxi Service in Bangalore</image:title>
       <image:caption>Book a local taxi in Bangalore for point-to-point drops, hourly city travel and errands — chauffeur-driven sedans and SUVs with transparent per-km rates.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -988,7 +1030,7 @@
   <url>
     <loc>https://www.sushitravels.com/services/corporate-transport-bangalore</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Corporate Transport Service in Bangalore</image:title>
       <image:caption>Corporate car and van rental in Bangalore for executive travel, employee transport and offsites. Sedans to Tempo Travellers with verified chauffeurs.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -997,7 +1039,7 @@
   <url>
     <loc>https://www.sushitravels.com/services/wedding-vehicle-rental-bangalore</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Wedding Vehicle Rental in Bangalore</image:title>
       <image:caption>Wedding car and van rental in Bangalore for guest transport between venues, family pickups &amp; multi-day wedding events. Tempo Travellers to buses.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1006,7 +1048,7 @@
   <url>
     <loc>https://www.sushitravels.com/services/bangalore-sightseeing-cab</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Bangalore Sightseeing Cab Service</image:title>
       <image:caption>Half-day and full-day Bangalore sightseeing cab rental with a local driver — sedans, SUVs and group vehicles for city tours and day trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1015,7 +1057,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-whitefield</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Whitefield, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Whitefield, Bangalore. Airport transfers, IT park commutes, outstation trips. Call or WhatsApp for a quote.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1024,7 +1066,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-electronic-city</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Electronic City, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Electronic City, Bangalore. Corporate travel, airport transfers, outstation trips with verified drivers.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1033,7 +1075,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-koramangala</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Koramangala, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Koramangala, Bangalore. Local travel, airport transfers, outstation trips with verified drivers.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1042,7 +1084,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-indiranagar</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Indiranagar, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Indiranagar, Bangalore. Local travel, airport transfers, outstation trips with verified drivers.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1051,7 +1093,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-jayanagar</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Jayanagar, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Jayanagar, Bangalore. Local travel, airport transfers, outstation and pilgrimage trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1060,7 +1102,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-jp-nagar</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in JP Nagar, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in JP Nagar, Bangalore. Local travel, airport transfers, outstation trips with verified drivers.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1069,7 +1111,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-marathahalli</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Marathahalli, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Marathahalli, Bangalore. Corporate travel, airport transfers, outstation trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1078,7 +1120,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-hebbal</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Hebbal, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Hebbal, Bangalore. Airport transfers, local travel, outstation trips toward North Karnataka.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1087,7 +1129,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-yelahanka</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Yelahanka, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Yelahanka, Bangalore. Airport transfers, local travel, outstation trips with verified drivers.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1096,7 +1138,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-yeshwanthpur</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Yeshwanthpur, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Yeshwanthpur, Bangalore. Railway station transfers, local travel, outstation trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1105,7 +1147,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-hsr-layout</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in HSR Layout, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in HSR Layout, Bangalore. Corporate travel, airport transfers, outstation trips with verified drivers.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1114,7 +1156,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-bellandur</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Bellandur, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Bellandur, Bangalore. Corporate travel, airport transfers, outstation trips with verified drivers.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1123,7 +1165,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-sarjapur-road</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Sarjapur Road, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop along Sarjapur Road, Bangalore. Corporate travel, airport transfers, outstation trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1132,7 +1174,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-rajajinagar</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Rajajinagar, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Rajajinagar, Bangalore. Local travel, airport transfers, outstation and pilgrimage trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1141,7 +1183,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-malleshwaram</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Malleshwaram, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Malleshwaram, Bangalore. Local travel, airport transfers, outstation and pilgrimage trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1150,7 +1192,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-banashankari</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Banashankari, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Banashankari, Bangalore. Local travel, airport transfers, outstation and pilgrimage trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1159,7 +1201,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-basavanagudi</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in Basavanagudi, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in Basavanagudi, Bangalore. Local travel, airport transfers, outstation and pilgrimage trips.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
@@ -1168,7 +1210,7 @@
   <url>
     <loc>https://www.sushitravels.com/locations/car-rental-btm-layout</loc>
     <image:image>
-      <image:loc>https://www.sushitravels.com/fleet/force-urbania-front-01.webp</image:loc>
+      <image:loc>https://www.sushitravels.com/fleet/force-urbania-16-seater-front-01.webp</image:loc>
       <image:title>Car Rental in BTM Layout, Bangalore</image:title>
       <image:caption>Chauffeur-driven car rental for pickup and drop in BTM Layout, Bangalore. Local travel, airport transfers, outstation trips with verified drivers.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>

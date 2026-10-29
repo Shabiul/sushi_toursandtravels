@@ -224,7 +224,7 @@ export const servicePages: ServicePage[] = [
       'Wedding car and van rental in Bangalore for guest transport between venues, family pickups & multi-day wedding events. Tempo Travellers to buses.',
     heroSubtitle:
       'Guest and family transportation for Bangalore weddings — coordinated pickups, venue-to-venue transfers, and vehicles sized to your event.',
-    heroImage: '/fleet/force-urbania-front-01.webp',
+    heroImage: '/fleet/force-urbania-16-seater-front-01.webp',
     geoSummary:
       'Sushi Travels provides wedding vehicle rental in Bangalore for guest transportation between venues, family pickups, and multi-day wedding event logistics. Vehicle options range from sedans for close family to Tempo Travellers, Force Urbania vans and buses for large guest groups.',
     bodyParagraphs: [

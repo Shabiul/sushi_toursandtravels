@@ -13,13 +13,13 @@ export const metadata = {
     title: 'Book a Vehicle with Driver in Bangalore | Sushi Travels',
     description: 'Book local drops, full-day packages, or outstation chauffeur services. Multi-step transparent booking with verified professional drivers.',
     url: '/booking',
-    images: [{ url: '/fleet/force-urbania-front-01.webp', width: 800, height: 600, alt: 'Book a Sushi Travels vehicle with driver online' }],
+    images: [{ url: '/fleet/force-urbania-16-seater-front-01.webp', width: 800, height: 600, alt: 'Book a Sushi Travels vehicle with driver online' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Book a Vehicle with Driver in Bangalore | Sushi Travels',
     description: 'Book local drops, full-day packages, or outstation chauffeur services. Multi-step transparent booking with verified professional drivers.',
-    images: ['/fleet/force-urbania-front-01.webp'],
+    images: ['/fleet/force-urbania-16-seater-front-01.webp'],
   },
 };
 
