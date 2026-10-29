@@ -4,7 +4,6 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Lock,
   Mail,
-  Key,
   ShieldCheck,
   Plus,
   Edit2,
@@ -19,7 +18,9 @@ import {
   Star,
   X,
   ZoomIn,
-  ZoomOut
+  ZoomOut,
+  Eye,
+  EyeOff,
 } from 'lucide-react';
 
 // Client-side image compression helper
@@ -68,14 +69,10 @@ export default function AdminPage() {
   const [authenticated, setAuthenticated] = useState(false);
 
   // Login States
-  const [loginStep, setLoginStep] = useState(1);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [secretKey, setSecretKey] = useState('');
-  const [otp, setOtp] = useState('');
-  const [tempToken, setTempToken] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [loginError, setLoginError] = useState('');
-  const [loginInfo, setLoginInfo] = useState('');
 
   // Dashboard Active Tab
   const [activeTab, setActiveTab] = useState<'fleet' | 'routes' | 'reviews' | 'bookings' | 'rearrange'>('bookings');
@@ -421,61 +418,17 @@ export default function AdminPage() {
   }, []);
 
   // Login handlers
-  const handleLoginStep1 = async (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoginError('');
     try {
       const res = await fetch('/api/admin/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ step: 1, email, password })
+        body: JSON.stringify({ email, password })
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Login failed');
-
-      setTempToken(data.tempToken);
-      setLoginStep(2);
-    } catch (err: any) {
-      setLoginError(err.message);
-    }
-  };
-
-  const handleLoginStep2 = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoginError('');
-    setLoginInfo('');
-    try {
-      const res = await fetch('/api/admin/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ step: 2, tempToken, secretKey })
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Verification failed');
-
-      setTempToken(data.tempToken);
-      setLoginStep(3);
-      if (data.emailNote) {
-        setLoginInfo(data.emailNote);
-      } else {
-        setLoginInfo('OTP has been sent to your email.');
-      }
-    } catch (err: any) {
-      setLoginError(err.message);
-    }
-  };
-
-  const handleLoginStep3 = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoginError('');
-    try {
-      const res = await fetch('/api/admin/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ step: 3, tempToken, otp })
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'OTP verification failed');
 
       setAuthenticated(true);
       fetchDashboardData();
@@ -488,12 +441,9 @@ export default function AdminPage() {
     try {
       await fetch('/api/admin/logout', { method: 'POST' });
       setAuthenticated(false);
-      setLoginStep(1);
       setEmail('');
       setPassword('');
-      setSecretKey('');
-      setOtp('');
-      setTempToken('');
+      setShowPassword(false);
     } catch (err) {
       console.error('Logout error:', err);
     }
@@ -880,26 +830,7 @@ export default function AdminPage() {
           {/* Header */}
           <div className="text-center mb-8 relative z-10">
             <h1 className="text-2xl sm:text-3xl font-serif font-bold text-navy">Sushi Travels</h1>
-            <p className="text-xs text-navy-light/85 uppercase tracking-widest mt-1">Admin Panel Security</p>
-          </div>
-
-          {/* Login Steps indicator */}
-          <div className="flex items-center justify-between max-w-[240px] mx-auto mb-8 relative">
-            <div className="absolute left-0 right-0 top-1/2 h-[1px] bg-navy-light/10 -translate-y-1/2 -z-0" />
-            {[1, 2, 3].map((s) => (
-              <div
-                key={s}
-                className={`w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs relative z-10 border transition-all duration-300 ${
-                  loginStep === s
-                    ? 'bg-primary border-primary text-white scale-110 shadow-md shadow-primary/30'
-                    : loginStep > s
-                    ? 'bg-navy border-navy text-white'
-                    : 'bg-white border-navy-light/20 text-navy-light'
-                }`}
-              >
-                {loginStep > s ? '✓' : s}
-              </div>
-            ))}
+            <p className="text-xs text-navy-light/85 uppercase tracking-widest mt-1">Admin Panel</p>
           </div>
 
           {/* Error Banner */}
@@ -910,134 +841,55 @@ export default function AdminPage() {
             </div>
           )}
 
-          {/* Notification Info */}
-          {loginInfo && (
-            <div className="mb-6 bg-[#E7F7EF] border-l-4 border-[#25D366] p-3 rounded-r-xl text-xs text-[#128C7E] font-medium flex items-start">
-              <Check className="w-4 h-4 mr-2 flex-shrink-0 mt-0.5" />
-              <span>{loginInfo}</span>
+          <form onSubmit={handleLogin} className="space-y-5">
+            <div className="space-y-1">
+              <label className="block text-[10px] font-bold uppercase tracking-wider text-navy">Admin Email</label>
+              <div className="relative">
+                <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-light/60" />
+                <input
+                  type="email"
+                  required
+                  autoComplete="username"
+                  placeholder="admin@sushitravels.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full bg-cream border border-navy-light/15 rounded-xl pl-10 pr-4 py-3 text-sm text-navy outline-none focus:border-primary transition"
+                />
+              </div>
             </div>
-          )}
 
-          {/* Step 1 Form: Email/Password */}
-          {loginStep === 1 && (
-            <form onSubmit={handleLoginStep1} className="space-y-5">
-              <div className="space-y-1">
-                <label className="block text-[10px] font-bold uppercase tracking-wider text-navy">Admin Email</label>
-                <div className="relative">
-                  <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-light/60" />
-                  <input
-                    type="email"
-                    required
-                    placeholder="admin@sushitravels.com"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full bg-cream border border-navy-light/15 rounded-xl pl-10 pr-4 py-3 text-sm text-navy outline-none focus:border-primary transition"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-1">
-                <label className="block text-[10px] font-bold uppercase tracking-wider text-navy">Password</label>
-                <div className="relative">
-                  <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-light/60" />
-                  <input
-                    type="password"
-                    required
-                    placeholder="••••••••"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    className="w-full bg-cream border border-navy-light/15 rounded-xl pl-10 pr-4 py-3 text-sm text-navy outline-none focus:border-primary transition"
-                  />
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-navy hover:bg-primary text-white text-xs font-bold uppercase tracking-wider rounded-xl py-3.5 shadow-lg transition duration-200 mt-2"
-              >
-                Verify Credentials
-              </button>
-            </form>
-          )}
-
-          {/* Step 2 Form: Secret Key */}
-          {loginStep === 2 && (
-            <form onSubmit={handleLoginStep2} className="space-y-5">
-              <p className="text-xs text-navy-light/80 text-center leading-relaxed">
-                Step 1 completed. Please verify with the admin secret key set in the environment variables.
-              </p>
-              <div className="space-y-1">
-                <label className="block text-[10px] font-bold uppercase tracking-wider text-navy">Admin Secret Key</label>
-                <div className="relative">
-                  <Key className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-light/60" />
-                  <input
-                    type="text"
-                    required
-                    placeholder="Enter Secret Key"
-                    value={secretKey}
-                    onChange={(e) => setSecretKey(e.target.value)}
-                    className="w-full bg-cream border border-navy-light/15 rounded-xl pl-10 pr-4 py-3 text-sm text-navy outline-none focus:border-primary transition font-mono"
-                  />
-                </div>
-              </div>
-
-              <div className="flex space-x-3 pt-2">
+            <div className="space-y-1">
+              <label className="block text-[10px] font-bold uppercase tracking-wider text-navy">Password</label>
+              <div className="relative">
+                <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-light/60" />
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  required
+                  autoComplete="current-password"
+                  placeholder="••••••••"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full bg-cream border border-navy-light/15 rounded-xl pl-10 pr-11 py-3 text-sm text-navy outline-none focus:border-primary transition"
+                />
                 <button
                   type="button"
-                  onClick={() => setLoginStep(1)}
-                  className="w-1/3 border border-navy-light/25 hover:bg-cream text-navy text-xs font-bold uppercase tracking-wider rounded-xl py-3.5 transition"
+                  onClick={() => setShowPassword((v) => !v)}
+                  aria-label={showPassword ? 'Hide password' : 'Show password'}
+                  title={showPassword ? 'Hide password' : 'Show password'}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-navy-light/70 hover:text-navy transition"
                 >
-                  Back
-                </button>
-                <button
-                  type="submit"
-                  className="w-2/3 bg-navy hover:bg-primary text-white text-xs font-bold uppercase tracking-wider rounded-xl py-3.5 shadow-lg transition"
-                >
-                  Verify Key & Send OTP
+                  {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                 </button>
               </div>
-            </form>
-          )}
+            </div>
 
-          {/* Step 3 Form: OTP Verification */}
-          {loginStep === 3 && (
-            <form onSubmit={handleLoginStep3} className="space-y-5">
-              <p className="text-xs text-navy-light/80 text-center leading-relaxed">
-                We have generated a verification OTP for you. Check your admin inbox or your local server terminal log.
-              </p>
-              <div className="space-y-1">
-                <label className="block text-[10px] font-bold uppercase tracking-wider text-navy">One-Time Password (OTP)</label>
-                <div className="relative">
-                  <ShieldCheck className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-light/60" />
-                  <input
-                    type="text"
-                    required
-                    maxLength={6}
-                    placeholder="Enter 6-digit OTP"
-                    value={otp}
-                    onChange={(e) => setOtp(e.target.value)}
-                    className="w-full bg-cream border border-navy-light/15 rounded-xl pl-10 pr-4 py-3 text-sm text-navy outline-none focus:border-primary transition text-center font-bold tracking-widest text-lg"
-                  />
-                </div>
-              </div>
-
-              <div className="flex space-x-3 pt-2">
-                <button
-                  type="button"
-                  onClick={() => setLoginStep(2)}
-                  className="w-1/3 border border-navy-light/25 hover:bg-cream text-navy text-xs font-bold uppercase tracking-wider rounded-xl py-3.5 transition"
-                >
-                  Back
-                </button>
-                <button
-                  type="submit"
-                  className="w-2/3 bg-gradient-to-r from-primary to-primary-light hover:from-primary-dark hover:to-primary text-white text-xs font-bold uppercase tracking-wider rounded-xl py-3.5 shadow-lg transition"
-                >
-                  Complete Login
-                </button>
-              </div>
-            </form>
-          )}
+            <button
+              type="submit"
+              className="w-full bg-navy hover:bg-primary text-white text-xs font-bold uppercase tracking-wider rounded-xl py-3.5 shadow-lg transition duration-200 mt-2"
+            >
+              Log In
+            </button>
+          </form>
         </div>
       </div>
     );
