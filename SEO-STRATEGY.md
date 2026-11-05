@@ -175,10 +175,10 @@ The Blog system is active and indexed under `/blog`, serving as high-intent info
 
 ### Live Blog Posts & Target Queries
 
-| Slug | Primary Keyword / Intent | Supporting AEO / AIEO Queries | Video / Media Assets |
+| Slug | Primary Keyword / Intent | Supporting AEO / AIEO Queries | Word Count & Media Assets |
 |---|---|---|---|
-| `force-urbania-16-seater-rental-bangalore-guide` | Force Urbania 16 seater rental Bangalore | 16 seater Urbania price per km, Urbania luxury van hire Bangalore, Bangalore to Coorg Ooty 16 seater, outstation Urbania tariff | Full 95s walkthrough video (`/videos/force-urbania-16-seater.mp4`), 6 real WebP photos with localized geo alt tags |
-| `force-urbania-16-seater-vs-tempo-traveller-bangalore` | Force Urbania 16-seater vs 17-seater Tempo Traveller | Urbania vs Tempo Traveller which is better, ghat road body roll comparison, Urbania per km price difference Bangalore | 6 comparative interior/exterior WebP photos, full 17-point engineering & cost specification matrix |
+| `force-urbania-16-seater-rental-bangalore-guide` | Force Urbania 16 seater rental Bangalore | 16 seater Urbania price per km, Urbania luxury van hire Bangalore, Bangalore to Coorg Ooty 16 seater, outstation Urbania tariff | **11,010 words** (17 comprehensive chapters, 12 verified FAQs, 4 government citations, interactive tables), 95s walkthrough video (`/videos/force-urbania-16-seater.mp4`), 6 localized WebP fleet photos |
+| `force-urbania-16-seater-vs-tempo-traveller-bangalore` | Force Urbania 16-seater vs 17-seater Tempo Traveller | Urbania vs Tempo Traveller which is better, ghat road body roll comparison, Urbania per km price difference Bangalore | **2,137 words** (6 chapters, head-to-head engineering & cost matrix), 6 comparative interior/exterior WebP photos |
 | `bangalore-to-mysore-day-trip-guide` | Bangalore to Mysore day trip cab | Mysore day trip itinerary, Bangalore Mysore cab fare | Heritage route coverage |
 | `bangalore-to-coorg-weekend-trip-guide` | Bangalore to Coorg weekend trip cab | Coorg ghat road cab, Bangalore Coorg 2 day itinerary | Western Ghats route guide |
 | `bangalore-to-ooty-trip-guide` | Bangalore to Ooty cab | Nilgiri hairpin bend cab, Bandipur forest corridor rules | Hill station route guide |
@@ -241,3 +241,172 @@ authenticity signals.
 - Geo-tag GBP posts to the areas covered by `/locations/[slug]` pages where
   relevant (e.g. a post about airport transfers can reference the Hebbal/
   Yelahanka service area) to reinforce local relevance signals.
+
+---
+
+## (e) Google Search Console (GSC) Strategy & Multi-Asset Indexation Protocol
+
+This section provides the master operational roadmap for Google Search Console (GSC) to achieve rapid indexation, high-authority rich snippet capture, and sustained Top-3 rankings for commercial and informational queries in Bangalore and South India.
+
+```mermaid
+flowchart TD
+    A["Google Search Console (GSC) Master Architecture"] --> B["1. Dual Property Verification"]
+    A --> C["2. Triple Asset Sitemap Engine"]
+    A --> D["3. Priority URL Inspection Protocol"]
+    A --> E["4. Structured Data & Rich Results Audit"]
+    A --> F["5. Index Coverage & Error Remediation"]
+    A --> G["6. Query Mining & CTR Tuning"]
+    A --> H["7. Core Web Vitals & Page Experience"]
+
+    B --> B1["Domain Property (DNS TXT) + URL-Prefix Property"]
+    C --> C1["Pages (sitemap-pages.xml)"]
+    C --> C2["Images (sitemap-images.xml)"]
+    C --> C3["Videos (sitemap-videos.xml)"]
+    D --> D1["Tier 1: Money Pages & Urbania Fleet"]
+    D --> D2["Tier 2: 11,000-Word Skyscraper Guides"]
+    D --> D3["Tier 3: High-Intent Outstation Corridors"]
+```
+
+---
+
+### 1. Property Setup & Dual Verification Framework
+
+To ensure 100% crawl visibility and access to all GSC APIs and features, configure both property types:
+
+1. **Primary Property: Domain-Level Property (`sushitravels.com`)**
+   - **Why**: Captures all protocols (`http`, `https`), subdomains, and root traffic in a single unified dashboard.
+   - **Verification Method**: DNS TXT record on your DNS registrar (e.g., Cloudflare, GoDaddy, Namecheap):
+     ```text
+     Type: TXT
+     Host / Name: @ (or sushitravels.com)
+     Value: google-site-verification=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+     TTL: Automatic / 300 seconds
+     ```
+2. **Secondary Property: URL-Prefix Property (`https://www.sushitravels.com/`)**
+   - **Why**: Required for URL Inspection API integrations, Google Search Console associates in Google Analytics 4 (GA4), and granular path-level tracking.
+   - **Verification Method**: 
+     - **Option A (Automated Meta Tag via Environment Variable)**: Add your verification token to your Vercel project environment variables or `.env.local`:
+       ```bash
+       NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION="your-verification-token"
+       ```
+       Next.js will automatically output `<meta name="google-site-verification" content="..." />` into the HTML `<head>`.
+     - **Option B (HTML File)**: Upload Google's verification HTML file directly to the `public/` folder.
+
+---
+
+### 2. Multi-Asset Triple Sitemap Submission Strategy
+
+Sushi Travels utilizes a decoupled, multi-asset XML sitemap architecture engineered specifically for Google Search Console's dedicated crawler pipelines (Googlebot, Googlebot-Image, and Googlebot-Video).
+
+#### Sitemap Submission Order in GSC:
+Submit the following sitemaps in GSC under **Indexing > Sitemaps**:
+
+| Sitemap URL | Asset Scope | Included Entities | GSC Processing Target |
+| :--- | :--- | :--- | :--- |
+| `https://www.sushitravels.com/sitemap.xml` | **Sitemap Index** | Auto-points Googlebot to all sub-sitemaps | Discovers overall site hierarchy |
+| `https://www.sushitravels.com/sitemap-pages.xml` | **Pages & HTML Content** | 65+ commercial pages, vehicle pages, routes, locations, and blogs | Standard web search indexation |
+| `https://www.sushitravels.com/sitemap-images.xml` | **Image Assets** | 60+ real fleet photos, interiors, destination landmarks with localized geo titles & captions | Google Images & Visual Search |
+| `https://www.sushitravels.com/sitemap-videos.xml` | **Video Assets** | Real MP4 walkthroughs, video titles, descriptions, durations, and high-res WebP posters | Google Video Carousel & Watch Pages |
+
+#### Maintenance & Ping Schedule:
+Whenever new vehicles, routes, or blog guides are added:
+1. Run `npx tsx scripts/generate-gsc-suite.ts` to refresh all XML files.
+2. Verify `robots.txt` references all four sitemap URLs.
+3. Check the "Last read" date in GSC. If unchanged after 7 days, resubmit `sitemap.xml`.
+
+---
+
+### 3. Priority URL Inspection & Accelerated Indexation Sequence
+
+Do not wait for passive crawling. Immediately after deployment, utilize the **GSC URL Inspection Tool** to test live URLs and submit "Request Indexing" in the following priority batches:
+
+#### Batch 1: High-Value Commercial Fleet & Skyscraper Blog (Day 1)
+1. `https://www.sushitravels.com/blog/force-urbania-16-seater-rental-bangalore-guide` *(Primary 11,010-word Skyscraper Pillar Guide)*
+2. `https://www.sushitravels.com/vehicles/force-urbania-16-seater-luxury-bangalore` *(Money Page: ₹38/km Luxury Van)*
+3. `https://www.sushitravels.com/blog/force-urbania-16-seater-vs-tempo-traveller-bangalore` *(Decision Comparison Guide)*
+4. `https://www.sushitravels.com/fleet` *(Fleet Catalog Hub)*
+5. `https://www.sushitravels.com/` *(Homepage)*
+
+#### Batch 2: Core Revenue Fleet & Outstation Hubs (Day 2)
+6. `https://www.sushitravels.com/vehicles/force-urbania-12-seater-maharaja-bangalore`
+7. `https://www.sushitravels.com/vehicles/tempo-traveller-rental-bangalore`
+8. `https://www.sushitravels.com/vehicles/innova-crysta-rental-bangalore`
+9. `https://www.sushitravels.com/services/outstation-cab-bangalore`
+10. `https://www.sushitravels.com/services/bangalore-airport-taxi`
+
+#### Batch 3: High-Search-Volume Routes & Localities (Day 3)
+11. `https://www.sushitravels.com/routes/bangalore-to-coorg-cab`
+12. `https://www.sushitravels.com/routes/bangalore-to-ooty-cab`
+13. `https://www.sushitravels.com/routes/bangalore-to-mysore-cab`
+14. `https://www.sushitravels.com/locations/car-rental-whitefield`
+15. `https://www.sushitravels.com/locations/car-rental-electronic-city`
+
+> **Note on Quotas**: GSC typically allows 10–12 manual URL inspection requests per day per property. Follow the prioritized batch order above.
+
+---
+
+### 4. Structured Data & Rich Results Validation Pipeline
+
+Monitor the **Enhancements** and **Experience** reports in GSC to ensure Google parses all JSON-LD schemas without errors or warnings:
+
+| Schema Type | Monitored GSC Report | Target SERP Feature | Validation Criteria |
+| :--- | :--- | :--- | :--- |
+| `FAQPage` | **Enhancements > FAQ** | Expandable question/answer rich accordion in search results | Valid questions & answers with zero HTML errors; present on vehicle, route & blog pages. |
+| `VideoObject` | **Enhancements > Videos** | Video thumbnail badge, video carousel snippet, and key moments | Valid `contentUrl`, `thumbnailUrl`, `duration` (e.g. `PT95S`), and `uploadDate`. Must show "Video indexed". |
+| `LocalBusiness` | **Enhancements > Merchant / Business** | Knowledge panel grounding and local pack prominence | Correct NAP (Name, Address, Phone), geo coordinates, operating hours, and official service areas. |
+| `BreadcrumbList` | **Enhancements > Breadcrumbs** | Clean navigational hierarchy display instead of raw URL strings | Strict step-by-step breadcrumb trail across all nested pages. |
+| `BlogPosting` | **Enhancements > Article** | Google Discover inclusion, Google News (if approved), and author entity attribution | Author (`Suresh Gowda`), publisher, datePublished, and dateModified. |
+
+---
+
+### 5. Crawl Budget & Index Coverage Remediation Playbook
+
+Audit the **Indexing > Pages** report weekly. Resolve potential status flags using this standard operating procedure:
+
+| GSC Status Flag | Root Cause | Sushi Travels Architectural Remediation |
+| :--- | :--- | :--- |
+| **"Discovered – currently not indexed"** | Google knows the URL exists but has not budgeted crawler time to render it. | 1. Ensure internal links point to it from high-authority pages (e.g. homepage footer or vehicle hub).<br>2. Submit URL manually via URL Inspection tool.<br>3. Verify presence in `sitemap-pages.xml`. |
+| **"Crawled – currently not indexed"** | Googlebot crawled the page but assessed it as thin or duplicate content. | 1. Expand statistical entity density and unique localized copy (our 11,000-word Skyscraper guide and 2,000+ word vehicle guides are immune to this).<br>2. Ensure H1, title tag, and meta description are 100% unique. |
+| **"Duplicate without user-selected canonical"** | Missing or conflicting canonical tag. | Every page on Sushi Travels features an explicit, self-referencing canonical URL in `<head>` pointing to `https://www.sushitravels.com/...`. |
+| **"Page with redirect"** | Soft redirects or unnecessary redirect hops. | Keep internal links pointing directly to the final canonical URL without 301/302 redirects. |
+| **"Blocked by robots.txt"** | Mistaken Disallow rule. | `public/robots.txt` only disallows `/admin` and `/api/`. All public routes and assets are explicitly set to `Allow: /`. |
+
+---
+
+### 6. Search Performance Auditing, CTR Optimization & Query Mining
+
+Audit the **Performance > Search results** report bi-weekly to uncover revenue-generating optimization opportunities:
+
+#### (a) High-Volume Query Mining by Category
+Filter queries in GSC by regular expressions to isolate specific intent groups:
+- **Urbania Queries**: `regex:.*urbania.*` (e.g., "force urbania bangalore", "urbania 16 seater rental", "force urbania price per km").
+- **Tempo Traveller Queries**: `regex:.*tempo traveller.*` (e.g., "12 seater tempo traveller bangalore", "luxury tempo traveller").
+- **Ghat / Hill Station Routes**: `regex:.*(coorg|ooty|chikmagalur|wayanad).*`.
+- **Airport / Corporate Corridors**: `regex:.*(airport|whitefield|electronic city).*`.
+
+#### (b) "Striking Distance" CTR Optimization Protocol
+Identify queries that meet the **"Striking Distance"** criteria:
+- **Filter**: Average Position between **4.0 and 10.0**, Impressions **> 300/month**, CTR **< 3.5%**.
+- **Action Plan**:
+  1. Inspect the meta title: Does it clearly display the primary hook (e.g. *"₹38/km"*, *"With Verified Chauffeur"*, *"High-Roof 16-Seater"*)?
+  2. Inspect the meta description: Does it answer the searcher's core intent with direct numbers, seating capacity, and a clear call to action?
+  3. Inspect rich snippet rendering: Is the `FAQPage` snippet displaying in search results?
+
+#### (c) Keyword Cannibalization Audits
+Filter by specific exact queries (e.g. "force urbania rental bangalore"):
+- Click the **Pages** tab in GSC.
+- If two or more URLs receive substantial impressions for the same commercial query (e.g. `/fleet` and `/vehicles/force-urbania-16-seater-luxury-bangalore`), refine internal anchor text so internal links explicitly differentiate the vehicle page (transactional) from the blog guide (informational).
+
+---
+
+### 7. Core Web Vitals, Page Experience & Mobile-First Benchmarks
+
+Google Search Console evaluates page ranking factors based on real-world Chrome User Experience Report (CrUX) data under **Experience > Core Web Vitals**:
+
+| Metric | Target Threshold | Implementation in Sushi Travels Next.js Architecture |
+| :--- | :--- | :--- |
+| **Largest Contentful Paint (LCP)** | **< 2.5 seconds** (Good) | All hero images converted to modern WebP with explicit width/height and `priority` attributes; fast edge hosting on Vercel. |
+| **Interaction to Next Paint (INP)** | **< 200 milliseconds** (Good) | Client components minimized; lightweight interactive carousels and tabs without blocking heavy JS bundles. |
+| **Cumulative Layout Shift (CLS)** | **< 0.1** (Good) | Fixed aspect ratios on all vehicle images, video containers, and font swapping with `next/font` (`display: swap`). |
+| **Mobile Usability** | **100% Mobile Friendly** | Responsive flex/grid layouts, minimum 48px touch targets for booking buttons, and zero horizontal viewport scrolling. |
+| **HTTPS Security** | **100% Secure** | Full SSL/TLS certificate enforcement with HSTS headers and secure canonical redirects. |
