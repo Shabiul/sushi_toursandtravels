@@ -8,6 +8,8 @@ const { evaluateWithJev } = await import(jevPath);
 const testPages = [
   { name: 'About Page', file: '.next/server/app/about.html' },
   { name: 'Bangalore to Coorg Route', file: '.next/server/app/routes/bangalore-to-coorg-cab.html' },
+  { name: 'Force Urbania 16-Seater Rental Guide (Blog)', file: '.next/server/app/blog/force-urbania-16-seater-rental-bangalore-guide.html' },
+  { name: 'Force Urbania 16 vs 17 Tempo Traveller (Blog)', file: '.next/server/app/blog/force-urbania-16-seater-vs-tempo-traveller-bangalore.html' },
   { name: 'Whitefield Car Rental', file: '.next/server/app/locations/car-rental-whitefield.html' },
   { name: 'Privacy Policy', file: '.next/server/app/privacy-policy.html' },
 ];
@@ -44,7 +46,8 @@ async function main() {
       },
       authorityTerms: [
         'karnataka tourism', 'nhai', 'fastag', 'karnataka forest department',
-        'commercial permit', 'police verified', 'registered', 'dpdpa', 'information technology act'
+        'commercial permit', 'police verified', 'registered', 'dpdpa', 'information technology act',
+        'arai', 'morth', 'kstdc', 'cmvr', 'monocoque'
       ]
     };
 

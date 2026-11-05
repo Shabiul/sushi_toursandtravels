@@ -248,12 +248,15 @@ routePages.forEach((rp) => {
 
 // Add Blog Posts
 blogPosts.forEach((bp) => {
-  const images = [{ loc: `${BASE_URL}${bp.coverImage}`, title: bp.title, caption: bp.excerpt }];
-  if (bp.gallery) {
-    bp.gallery.forEach((g) => {
-      images.push({ loc: `${BASE_URL}${g.url}`, title: g.alt, caption: g.caption });
+  const images: { loc: string; title: string; caption?: string }[] = [];
+  const allImgs = bp.images && bp.images.length > 0 ? bp.images : [bp.coverImage];
+  allImgs.forEach((img, idx) => {
+    images.push({
+      loc: `${BASE_URL}${img}`,
+      title: `${bp.imageAltPrefix || bp.title} — Photo ${idx + 1}`,
+      caption: bp.excerpt,
     });
-  }
+  });
   pages.push({
     url: `${BASE_URL}/blog/${bp.slug}`,
     lastmod: bp.dateModified || bp.publishDate,
@@ -406,6 +409,21 @@ const videos = [
     uploadDate: '2026-10-05',
   },
 ];
+
+// Add any videos configured on blog posts
+blogPosts.forEach((bp) => {
+  if (bp.video && !videos.some((v) => v.pageUrl.endsWith(`/blog/${bp.slug}`))) {
+    videos.push({
+      pageUrl: `${BASE_URL}/blog/${bp.slug}`,
+      contentUrl: `${BASE_URL}${bp.video}`,
+      thumbnailUrl: `${BASE_URL}${bp.videoThumbnail || bp.coverImage}`,
+      title: `${bp.videoHeading || bp.title} — Video Tour`,
+      description: bp.metaDescription,
+      duration: bp.videoDuration || 60,
+      uploadDate: bp.videoUploadDate || bp.publishDate,
+    });
+  }
+});
 
 const sitemapVideosXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"

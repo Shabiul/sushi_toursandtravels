@@ -14,6 +14,7 @@ import VehiclePricingTable from '@/components/VehiclePricingTable';
 import GroupSizeComparisonTable from '@/components/GroupSizeComparisonTable';
 import TripEstimateTable from '@/components/TripEstimateTable';
 import { vehicles as allVehicles } from '@/lib/vehicles';
+import { blogPosts } from '@/lib/blog';
 
 export function generateStaticParams() {
   return vehiclePages.map((p) => ({ slug: p.slug }));
@@ -258,42 +259,61 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
         />
 
         {/* Internal links */}
-        <RelatedLinks
-          groups={[
-            {
-              heading: 'Related Vehicles',
-              links: relatedVehicles.map((p) => ({
-                label: p.h1,
-                href: `/vehicles/${p.slug}`,
-                title: `View ${p.h1} pricing and details`,
-              })),
-            },
-            {
-              heading: 'Related Services',
-              links: relatedServices.map((p) => ({
-                label: p.h1,
-                href: `/services/${p.slug}`,
-                title: `View ${p.h1} service options`,
-              })),
-            },
-            {
-              heading: 'Popular Routes',
-              links: relatedRoutes.map((p) => ({
-                label: p.h1,
-                href: `/routes/${p.slug}`,
-                title: `View ${p.h1} route travel guide`,
-              })),
-            },
-            {
-              heading: 'Plan Your Trip',
-              links: [
-                { label: 'Book this vehicle online', href: '/booking', title: 'Book This Vehicle Online' },
-                { label: 'Contact Sushi Travels', href: '/contact', title: 'Contact Sushi Travels Support' },
-                { label: 'View the full rental fleet', href: '/fleet', title: 'View All Fleet Vehicles' },
-              ],
-            },
-          ]}
-        />
+        {(() => {
+          const relatedBlogs = blogPosts.filter((b) =>
+            b.relatedLinks?.some((rl) => rl.href === `/vehicles/${page.slug}`)
+          );
+          return (
+            <RelatedLinks
+              groups={[
+                {
+                  heading: 'Related Vehicles',
+                  links: relatedVehicles.map((p) => ({
+                    label: p.h1,
+                    href: `/vehicles/${p.slug}`,
+                    title: `View ${p.h1} pricing and details`,
+                  })),
+                },
+                ...(relatedBlogs.length > 0
+                  ? [
+                      {
+                        heading: 'Related Travel Guides & Articles',
+                        links: relatedBlogs.map((b) => ({
+                          label: b.title,
+                          href: `/blog/${b.slug}`,
+                          title: `Read ${b.title}`,
+                        })),
+                      },
+                    ]
+                  : []),
+                {
+                  heading: 'Related Services',
+                  links: relatedServices.map((p) => ({
+                    label: p.h1,
+                    href: `/services/${p.slug}`,
+                    title: `View ${p.h1} service options`,
+                  })),
+                },
+                {
+                  heading: 'Popular Routes',
+                  links: relatedRoutes.map((p) => ({
+                    label: p.h1,
+                    href: `/routes/${p.slug}`,
+                    title: `View ${p.h1} route travel guide`,
+                  })),
+                },
+                {
+                  heading: 'Plan Your Trip',
+                  links: [
+                    { label: 'Book this vehicle online', href: '/booking', title: 'Book This Vehicle Online' },
+                    { label: 'Contact Sushi Travels', href: '/contact', title: 'Contact Sushi Travels Support' },
+                    { label: 'View the full rental fleet', href: '/fleet', title: 'View All Fleet Vehicles' },
+                  ],
+                },
+              ]}
+            />
+          );
+        })()}
       </div>
     </div>
   );

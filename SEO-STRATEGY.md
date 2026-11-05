@@ -169,30 +169,20 @@ Recommended distribution when outreach partners ask what anchor text to use:
 
 ---
 
-## (c) Blog Content Plan — 15 Topics (documentation only; Blog not rebuilt)
+## (c) Blog Content & AIEO / AEO / GEO Engine
 
-Per `NOTES.md` section 8, the Blog section was deliberately removed from
-this codebase in a prior pass (it was empty with no content or plan). This
-list is purely a plan for **if/when** the owner wants to reintroduce a blog
-— no blog infrastructure was rebuilt in this pass.
+The Blog system is active and indexed under `/blog`, serving as high-intent informational and decision-making entry points optimized under the Princeton GEO Standard, Answer Engine Optimization (AEO), and Google Search Console multi-asset indexing (Pages, Images, Videos).
 
-| # | Topic | Links to |
-|---|---|---|
-| 1 | Bangalore to Coorg: Complete Route Guide & Best Stops | `/routes/bangalore-to-coorg-cab` |
-| 2 | How Much Does a Tempo Traveller Cost in Bangalore? (Rate Breakdown Explained) | `/vehicles/tempo-traveller-rental-bangalore` |
-| 3 | Sedan vs. SUV vs. Tempo Traveller: Which Rental Fits Your Group? | `/vehicles` (hub) |
-| 4 | Kempegowda Airport Taxi: What First-Time Bangalore Visitors Should Know | `/services/bangalore-airport-taxi` |
-| 5 | Planning a Same-Day Tirupati Darshan Trip from Bangalore | `/routes/bangalore-to-tirupati-cab` |
-| 6 | The Ultimate Weekend Getaway Checklist: Bangalore to Chikmagalur | `/routes/bangalore-to-chikmagalur-cab` |
-| 7 | Corporate Offsite Transport Planning: A Practical Checklist | `/services/corporate-transport-bangalore` |
-| 8 | Wedding Guest Transportation: How to Plan Multi-Venue Logistics | `/services/wedding-vehicle-rental-bangalore` |
-| 9 | Hampi in 2 Days: A Heritage Itinerary from Bangalore | `/routes/bangalore-to-hampi-cab` |
-| 10 | Force Urbania vs. Traditional Tempo Traveller: What's the Difference? | `/vehicles/force-urbania-12-seater-maharaja-bangalore` |
-| 11 | Driving the Bangalore–Ooty Ghat Road: What to Expect | `/routes/bangalore-to-ooty-cab` |
-| 12 | Choosing a Bus Size for School & College Group Trips | `/vehicles/bus-rental-bangalore` |
-| 13 | Living in Whitefield/Electronic City: A Commuter's Guide to Local Transport Options | `/locations/car-rental-whitefield` |
-| 14 | Bangalore to Goa Road Trip: What Group Size Needs What Vehicle | `/tours-and-packages` (Goa package) |
-| 15 | Monsoon Travel Tips for Western Ghats Routes (Coorg, Chikmagalur, Mangalore) | `/routes/bangalore-to-mangalore-cab` |
+### Live Blog Posts & Target Queries
+
+| Slug | Primary Keyword / Intent | Supporting AEO / AIEO Queries | Video / Media Assets |
+|---|---|---|---|
+| `force-urbania-16-seater-rental-bangalore-guide` | Force Urbania 16 seater rental Bangalore | 16 seater Urbania price per km, Urbania luxury van hire Bangalore, Bangalore to Coorg Ooty 16 seater, outstation Urbania tariff | Full 95s walkthrough video (`/videos/force-urbania-16-seater.mp4`), 6 real WebP photos with localized geo alt tags |
+| `force-urbania-16-seater-vs-tempo-traveller-bangalore` | Force Urbania 16-seater vs 17-seater Tempo Traveller | Urbania vs Tempo Traveller which is better, ghat road body roll comparison, Urbania per km price difference Bangalore | 6 comparative interior/exterior WebP photos, full 17-point engineering & cost specification matrix |
+| `bangalore-to-mysore-day-trip-guide` | Bangalore to Mysore day trip cab | Mysore day trip itinerary, Bangalore Mysore cab fare | Heritage route coverage |
+| `bangalore-to-coorg-weekend-trip-guide` | Bangalore to Coorg weekend trip cab | Coorg ghat road cab, Bangalore Coorg 2 day itinerary | Western Ghats route guide |
+| `bangalore-to-ooty-trip-guide` | Bangalore to Ooty cab | Nilgiri hairpin bend cab, Bandipur forest corridor rules | Hill station route guide |
+| `statue-of-unity-kevadia-gujarat-travel-diary` | Statue of Unity travel guide | Kevadia tour from Bangalore, Gujarat outstation cab | 19 WebP gallery photos + video |
 
 ---
 

@@ -66,4 +66,30 @@
       <video:live>no</video:live>
     </video:video>
   </url>
+  <url>
+    <loc>https://www.sushitravels.com/blog/force-urbania-16-seater-rental-bangalore-guide</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.sushitravels.com/videos/force-urbania-16-seater-poster.webp</video:thumbnail_loc>
+      <video:title>Force Urbania 16-Seater Walkthrough &amp; Exterior Showcase — Video Tour</video:title>
+      <video:description>Rent a 16-seater Force Urbania in Bangalore at ₹38/km with driver. High-roof cabin, captain seats, outstation rates &amp; routes to Coorg, Ooty, Mysore &amp; Hampi.</video:description>
+      <video:content_loc>https://www.sushitravels.com/videos/force-urbania-16-seater.mp4</video:content_loc>
+      <video:duration>95</video:duration>
+      <video:publication_date>2026-11-05</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.sushitravels.com/blog/statue-of-unity-kevadia-gujarat-travel-diary</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.sushitravels.com/blog/Gujarat-blog-1.webp</video:thumbnail_loc>
+      <video:title>A Look Around Kevadia — Video Tour</video:title>
+      <video:description>A first-hand travel diary of Kevadia, Gujarat — the Statue of Unity, Jungle Safari Park, Sardar Sarovar Dam and the valley of flowers, from Sushi Travels.</video:description>
+      <video:content_loc>https://www.sushitravels.com/blog/Gujarat-blog-video-1.mp4</video:content_loc>
+      <video:duration>60</video:duration>
+      <video:publication_date>2026-08-20</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
 </urlset>

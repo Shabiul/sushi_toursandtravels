@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Calendar, User, Clock, CheckCircle2, ExternalLink, ShieldCheck, Quote } from 'lucide-react';
 import { blogPosts, getBlogPost } from '@/lib/blog';
-import { getBreadcrumbListSchema, getFAQSchema, getBlogPostingSchema } from '@/lib/schema';
+import { getBreadcrumbListSchema, getFAQSchema, getBlogPostingSchema, getVideoObjectSchema } from '@/lib/schema';
 import FaqAccordion from '@/components/FaqAccordion';
 import CTABand from '@/components/CTABand';
 import RelatedLinks from '@/components/RelatedLinks';
@@ -93,6 +93,23 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(post.faqs)) }}
       />
+      {post.video && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              getVideoObjectSchema({
+                name: post.videoHeading || post.title,
+                description: post.metaDescription,
+                thumbnailUrl: post.videoThumbnail || post.coverImage,
+                uploadDate: post.videoUploadDate || post.publishDate,
+                duration: post.videoDuration ? `PT${post.videoDuration}S` : 'PT95S',
+                contentUrl: post.video,
+              })
+            ),
+          }}
+        />
+      )}
 
       {/* Hero — cover photo with title, same flat-wash pattern as the rest of the site's heroes */}
       <div
@@ -167,12 +184,76 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <p className="text-sm sm:text-base text-navy leading-relaxed">{post.geoSummary}</p>
         </section>
 
-        {/* Story content */}
-        <section className="space-y-5 text-sm sm:text-base text-navy leading-relaxed">
-          {post.bodyParagraphs.map((para, idx) => (
-            <p key={idx}>{para}</p>
-          ))}
-        </section>
+        {/* Story content / Structured Sections */}
+        {post.sections && post.sections.length > 0 ? (
+          <div className="space-y-12">
+            {post.sections.map((section, sIdx) => (
+              <section key={sIdx} className="space-y-4">
+                <h2 className="text-2xl sm:text-3xl font-serif font-bold text-navy tracking-tight">
+                  {section.heading}
+                </h2>
+                {section.subheading && (
+                  <p className="text-xs sm:text-sm font-bold text-primary uppercase tracking-wider">
+                    {section.subheading}
+                  </p>
+                )}
+                {section.highlightBox && (
+                  <div className="bg-primary/5 border-l-4 border-primary rounded-r-2xl p-5 sm:p-6 my-4 shadow-sm">
+                    <h3 className="font-bold text-sm sm:text-base text-navy mb-1.5 flex items-center gap-2">
+                      <ShieldCheck className="w-4 h-4 text-primary shrink-0" />
+                      <span>{section.highlightBox.title}</span>
+                    </h3>
+                    <p className="text-xs sm:text-sm text-navy/90 leading-relaxed font-normal">
+                      {section.highlightBox.text}
+                    </p>
+                  </div>
+                )}
+                <div className="space-y-4 text-sm sm:text-base text-navy leading-relaxed">
+                  {section.paragraphs.map((para, pIdx) => (
+                    <p key={pIdx}>{para}</p>
+                  ))}
+                </div>
+                {section.table && (
+                  <div className="overflow-x-auto my-6 rounded-2xl border border-navy-light/15 shadow-sm bg-white">
+                    <table className="w-full text-left text-xs sm:text-sm text-navy">
+                      {section.table.caption && (
+                        <caption className="p-3 text-xs font-semibold text-navy-light bg-cream-warm/40 border-b border-navy-light/10 text-left">
+                          {section.table.caption}
+                        </caption>
+                      )}
+                      <thead className="bg-navy text-white text-xs uppercase tracking-wider">
+                        <tr>
+                          {section.table.headers.map((h, hIdx) => (
+                            <th key={hIdx} className="px-4 py-3 font-semibold">
+                              {h}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-navy-light/10">
+                        {section.table.rows.map((row, rIdx) => (
+                          <tr key={rIdx} className={rIdx % 2 === 0 ? 'bg-white hover:bg-cream/40' : 'bg-cream/20 hover:bg-cream/50'}>
+                            {row.map((cell, cIdx) => (
+                              <td key={cIdx} className="px-4 py-3 font-medium">
+                                {cell}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+              </section>
+            ))}
+          </div>
+        ) : (
+          <section className="space-y-5 text-sm sm:text-base text-navy leading-relaxed">
+            {post.bodyParagraphs.map((para, idx) => (
+              <p key={idx}>{para}</p>
+            ))}
+          </section>
+        )}
 
         {/* Official Citations & Authority Guidance (Content & Citability) */}
         {post.citations && post.citations.length > 0 && (
@@ -231,7 +312,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <video
                 controls
                 preload="metadata"
-                poster={post.coverImage}
+                poster={post.videoThumbnail || post.coverImage}
                 className="w-full h-auto max-h-[560px] mx-auto"
                 title={`${post.videoHeading ?? post.title} - Video Tour`}
               >

@@ -167,6 +167,7 @@ fs.writeFileSync(
     faqBlock('Questions and answers: services', servicePages, 'services'),
     faqBlock('Questions and answers: routes', routePages, 'routes'),
     faqBlock('Questions and answers: Bangalore areas', locationPages, 'locations'),
+    faqBlock('Questions and answers: travel guides & vehicle insights', blogPosts.map((b) => ({ h1: b.title, slug: b.slug, faqs: b.faqs })), 'blog'),
     ...sections,
   ].join('\n'),
   'utf8',
