@@ -49,7 +49,7 @@ export const vehiclePages: VehiclePage[] = [
   {
     slug: 'sedan-rental-bangalore',
     h1: 'Sedan Rental in Bangalore with Driver',
-    title: 'Sedan Rental Bangalore with Driver',
+    title: 'Sedan Rental Bangalore @ ₹13/km',
     metaDescription:
       'Book a chauffeur-driven sedan (Toyota Etios / Maruti Suzuki Dzire) in Bangalore at ₹13/km. Airport transfers, local drops & outstation trips.',
     heroSubtitle:
@@ -91,7 +91,7 @@ export const vehiclePages: VehiclePage[] = [
   {
     slug: 'innova-rental-bangalore',
     h1: 'Toyota Innova Rental in Bangalore',
-    title: 'Toyota Innova Rental Bangalore with Driver',
+    title: 'Toyota Innova Rental Bangalore @ ₹17/km',
     metaDescription:
       'Chauffeur-driven Toyota Innova rental in Bangalore at ₹17/km. Spacious 7-seater SUV for family outstation trips, pilgrimages & airport transfers.',
     heroSubtitle:
@@ -133,7 +133,7 @@ export const vehiclePages: VehiclePage[] = [
   {
     slug: 'innova-crysta-rental-bangalore',
     h1: 'Toyota Innova Crysta Rental in Bangalore',
-    title: 'Innova Crysta Rental Bangalore with Driver',
+    title: 'Innova Crysta Rental Bangalore @ ₹19/km',
     metaDescription:
       'Book a chauffeur-driven Toyota Innova Crysta in Bangalore at ₹19/km. Premium 7-seater SUV for family holidays, corporate travel & outstation road trips.',
     heroSubtitle:
@@ -175,7 +175,7 @@ export const vehiclePages: VehiclePage[] = [
   {
     slug: 'tempo-traveller-rental-bangalore',
     h1: '12-Seater Tempo Traveller Rental in Bangalore',
-    title: 'Tempo Traveller Rent Bangalore, 12 Seater',
+    title: 'Tempo Traveller Rent Bangalore @ ₹22/km',
     metaDescription:
       'Tempo Traveller for rent in Bangalore — 12-seater AC (₹22/km) or Non-AC (₹20/km). Pushback seats, luggage boot. Ideal for group outstation trips.',
     heroSubtitle:
@@ -237,7 +237,7 @@ export const vehiclePages: VehiclePage[] = [
   {
     slug: '9-seater-luxury-tempo-traveller-bangalore',
     h1: '9 Seater Tempo Traveller Rental in Bangalore',
-    title: '9 Seater Tempo Traveller Bangalore',
+    title: '9 Seater Tempo Traveller Bangalore ₹28/km',
     metaDescription:
       'Book a 9 seater tempo traveller in Bangalore at ₹28/km — executive pushback seats for corporate teams, pilgrimages & mid-size family trips.',
     heroSubtitle:
@@ -283,7 +283,7 @@ export const vehiclePages: VehiclePage[] = [
   {
     slug: '17-seater-tempo-traveller-bangalore',
     h1: '17-Seater Force Tempo Traveller Rental in Bangalore',
-    title: '17 Seater Tempo Traveller Rental Bangalore',
+    title: '17 Seater Tempo Traveller Bangalore ₹30/km',
     metaDescription:
       'Hire a 17 seater tempo traveller in Bangalore — AC (₹30/km) or Non-AC (₹28/km) — for large group outstation trips, corporate offsites & pilgrimages.',
     heroSubtitle:
@@ -337,7 +337,7 @@ export const vehiclePages: VehiclePage[] = [
   {
     slug: 'force-urbania-9-seater-bangalore',
     h1: 'Force Urbania 9 Seater Luxury Rental in Bangalore',
-    title: 'Urbania 9-Seater Luxury Rental Bangalore',
+    title: 'Urbania 9-Seater Luxury Bangalore @ ₹60/km',
     metaDescription:
       'Force Urbania 9-seater luxury rental in Bangalore at ₹60/km outstation. Recliner seats, high-roof AC van with driver. Call for local rates.',
     heroSubtitle:

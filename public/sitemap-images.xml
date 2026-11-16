@@ -417,6 +417,12 @@
       <image:caption>The Ooty drive passes through the Bandipur forest corridor and climbs the Nilgiri hairpin bends. Here is what to expect and how to plan it.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/tempo-traveller-9-seater-front-01.webp</image:loc>
+      <image:title>Tempo Traveller Rental Cost in Bangalore</image:title>
+      <image:caption>What a tempo traveller really costs in Bangalore: our per-km rates, how the 300 km minimum and driver bata work, and worked examples for Mysore and Coorg.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sushitravels.com/vehicles/sedan-rental-bangalore</loc>
@@ -1537,6 +1543,15 @@
       <image:loc>https://www.sushitravels.com/ooty.webp</image:loc>
       <image:title>Ooty, Tamil Nadu — Photo 1</image:title>
       <image:caption>The Ooty drive passes through the Bandipur forest corridor and climbs the Nilgiri hairpin bends. Here is what to expect and how to plan it.</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.sushitravels.com/blog/tempo-traveller-rental-cost-bangalore</loc>
+    <image:image>
+      <image:loc>https://www.sushitravels.com/fleet/tempo-traveller-9-seater-front-01.webp</image:loc>
+      <image:title>Force Tempo Traveller for rent in Bangalore — Photo 1</image:title>
+      <image:caption>What a tempo traveller really costs in Bangalore: our per-km rates, how the 300 km minimum and driver bata work, and worked examples for Mysore and Coorg.</image:caption>
       <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
   </url>

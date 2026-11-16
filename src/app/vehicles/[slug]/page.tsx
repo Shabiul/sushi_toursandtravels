@@ -14,6 +14,9 @@ import VehiclePricingTable from '@/components/VehiclePricingTable';
 import GroupSizeComparisonTable from '@/components/GroupSizeComparisonTable';
 import TripEstimateTable from '@/components/TripEstimateTable';
 import GoogleReviewsSection from '@/components/GoogleReviewsSection';
+import SampleFareTable from '@/components/SampleFareTable';
+import { confirmedRate } from '@/lib/sampleFares';
+import { locationPages } from '@/lib/locations';
 import { reviewsForVehicle, reviewKindsFor } from '@/lib/reviews';
 import { vehicles as allVehicles } from '@/lib/vehicles';
 import { blogPosts } from '@/lib/blog';
@@ -250,6 +253,12 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
           </ul>
         </section>
 
+        {/* Worked trip-cost examples from this vehicle's confirmed rate */}
+        {(() => {
+          const priced = pageVehicles.find((v) => confirmedRate(v) !== null);
+          return priced ? <SampleFareTable vehicle={priced} vehicleName={priced.name} /> : null;
+        })()}
+
         {/* Real Google reviews of Sushi Travels (vehicle-specific ones first) */}
         <GoogleReviewsSection
           reviews={reviewsForVehicle(
@@ -311,6 +320,22 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
                     label: p.h1,
                     href: `/routes/${p.slug}`,
                     title: `View ${p.h1} route travel guide`,
+                  })),
+                },
+                {
+                  heading: 'All Outstation Routes From Bangalore',
+                  links: routePages.map((p) => ({
+                    label: p.h1,
+                    href: `/routes/${p.slug}`,
+                    title: `${p.h1}: distance, travel time and fare enquiry`,
+                  })),
+                },
+                {
+                  heading: 'Hire By Area in Bangalore',
+                  links: locationPages.map((p) => ({
+                    label: p.h1,
+                    href: `/locations/${p.slug}`,
+                    title: `${p.h1} — pickup, drop and outstation`,
                   })),
                 },
                 {

@@ -1,4 +1,20 @@
 import { Faq } from '@/components/FaqAccordion';
+import { vehicles } from './vehicles';
+import { getSampleFares } from './sampleFares';
+
+// Numbers in the Tempo Traveller cost guide are computed from the vehicle data
+// (same source as the rate tables on the vehicle pages), never typed by hand.
+const inr = (n: number) => `₹${n.toLocaleString('en-IN')}`;
+function ttVehicle(id: string) {
+  const v = vehicles.find((x) => x.id === id);
+  if (!v) throw new Error(`blog.ts: unknown vehicle ${id}`);
+  const fares = getSampleFares(v);
+  if (!fares) throw new Error(`blog.ts: ${id} has no confirmed rate`);
+  return { v, fares, mysore: fares.rows[0], coorg: fares.rows[1] };
+}
+const TT9 = ttVehicle('luxury-tempo-traveller-9-plus-1');
+const TT12 = ttVehicle('tempo-traveller');
+const TT17 = ttVehicle('force-tempo-traveller-17-seater');
 
 export interface BlogCitation {
   authority: string;
@@ -1481,6 +1497,97 @@ export const blogPosts: BlogPost[] = [
       { label: "Ooty tour package", href: "/tours-and-packages", title: "Bangalore Holiday Tour Packages" },
       { label: "Force Urbania 12-seater rental", href: "/vehicles/force-urbania-12-seater-maharaja-bangalore", title: "Force Urbania 12 Seater Rental in Bangalore" },
       { label: "Innova Crysta rental", href: "/vehicles/innova-crysta-rental-bangalore", title: "Innova Crysta Rental in Bangalore" },
+    ],
+  },
+  {
+    slug: 'tempo-traveller-rental-cost-bangalore',
+    title: 'Tempo Traveller Rental Cost in Bangalore',
+    metaDescription:
+      'Tempo traveller rental cost in Bangalore: per-km rates for 9, 12 and 17 seaters, minimum km, driver bata and worked trip costs for Mysore, Coorg and Ooty.',
+    excerpt:
+      'What a tempo traveller really costs in Bangalore: our per-km rates, how the 300 km minimum and driver bata work, and worked examples for Mysore and Coorg.',
+    publishDate: '2026-11-16',
+    dateModified: '2026-11-16',
+    author: 'Sushi Travels Editorial Team',
+    authorRole: 'Bangalore Chauffeur & Outstation Travel Desk',
+    authorBio: 'The Sushi Travels team plans and runs chauffeur-driven outstation trips out of Bangalore, and writes these guides from the rates and routes we actually operate.',
+    reviewer: 'Sushi Travels Editorial & Safety Advisory Board',
+    coverImage: '/fleet/tempo-traveller-9-seater-front-01.webp',
+    images: ['/fleet/tempo-traveller-9-seater-front-01.webp'],
+    imageAltPrefix: 'Force Tempo Traveller for rent in Bangalore',
+    geoSummary: `A 12-seater Tempo Traveller in Bangalore costs ${inr(TT12.fares.rate)}/km (AC) or ${inr(TT12.v.ratePerKmNonAc ?? 0)}/km (non-AC), a 9-seater ${inr(TT9.fares.rate)}/km and a 17-seater ${inr(TT17.fares.rate)}/km. Outstation trips are billed on a ${TT12.fares.minKm} km-per-day minimum plus driver bata, so a same-day Mysore round trip in a 12-seater works out to about ${inr(TT12.mysore.total)} before tolls and parking.`,
+    bodyParagraphs: [
+      `Tempo Traveller rental in Bangalore is priced per kilometre, with a daily minimum and a driver allowance on top. This guide shows our actual rates and works through real trips so you can estimate your own cost before you call.`,
+    ],
+    sections: [
+      {
+        heading: 'How tempo traveller rental is priced',
+        paragraphs: [
+          `Every outstation booking has three parts: the per-km rate for the vehicle, a minimum of ${TT12.fares.minKm} km for each day of the trip, and a daily driver allowance (bata). Standard duty runs 6:00 AM to 10:00 PM, and driving after 10:00 PM adds a night allowance.`,
+          `The distance you are billed for is the larger of your actual round-trip kilometres and ${TT12.fares.minKm} km multiplied by the number of days. A short trip therefore still bills the daily minimum, which is why combining sightseeing stops into one day is the cheapest way to use a vehicle.`,
+          `Tolls, parking, state permit and entry fees are paid at actuals, and 5% GST applies to the invoice. Fuel, vehicle insurance and routine maintenance are our cost and are not billed separately.`,
+        ],
+      },
+      {
+        heading: 'Our tempo traveller rates',
+        paragraphs: [
+          `These are the confirmed outstation rates. For local use within Bangalore, call or WhatsApp for an enquiry and we will confirm the package.`,
+        ],
+        table: {
+          caption: 'Tempo Traveller outstation rates, Bangalore',
+          headers: ['Vehicle', 'Seats', 'Rate per km', 'Minimum per day', 'Driver bata'],
+          rows: [TT9, TT12, TT17].map(({ v, fares }) => [
+            v.name,
+            v.seatsDisplay ?? String(v.seats),
+            v.ratePerKmNonAc ? `${inr(fares.rate)} AC / ${inr(v.ratePerKmNonAc)} non-AC` : `${inr(fares.rate)} AC`,
+            `${fares.minKm} km`,
+            `${inr(fares.bata)} per day`,
+          ]),
+        },
+      },
+      {
+        heading: 'What a real trip costs',
+        paragraphs: [
+          `Here are two common trips worked out from the rates above. Mysore is a same-day round trip of about ${TT12.mysore.roundTripKm} km, so the ${TT12.fares.minKm} km minimum applies. Coorg is a two-day trip of about ${TT12.coorg.roundTripKm} km, billed at ${TT12.coorg.billedKm} km for two days.`,
+        ],
+        table: {
+          caption: 'Estimated cost before tolls, parking, permits and GST',
+          headers: ['Vehicle', 'Mysore, same day', 'Per person (Mysore)', 'Coorg, 2 days', 'Per person (Coorg)'],
+          rows: [TT9, TT12, TT17].map(({ v, mysore, coorg }) => [
+            `${v.seatsDisplay ?? v.seats} (AC)`,
+            inr(mysore.total),
+            mysore.perPerson !== null ? `about ${inr(mysore.perPerson)}` : '—',
+            inr(coorg.total),
+            coorg.perPerson !== null ? `about ${inr(coorg.perPerson)}` : '—',
+          ]),
+        },
+        highlightBox: {
+          title: 'How the numbers are worked out',
+          text: `Billed km × rate + driver bata × days. For the 12-seater AC on the Mysore day trip: ${TT12.mysore.billedKm} km × ${inr(TT12.fares.rate)} + ${inr(TT12.fares.bata)} = ${inr(TT12.mysore.total)}. Per-person figures divide the estimate by the seat count.`,
+        },
+      },
+      {
+        heading: 'Choosing between 9, 12 and 17 seats',
+        paragraphs: [
+          `Pick the smallest vehicle that seats your whole group comfortably with luggage. Per-km rates rise with size, but the cost per person usually falls when the vehicle is well filled, as the per-person columns above show.`,
+          `If your group is 8 or fewer, the 9-seater (9+1) gives extra room per passenger. A 12-seater suits most families and office teams. For 13 to 17 people, the 17-seater keeps everyone in a single vehicle, so nobody is split across two cars.`,
+        ],
+      },
+    ],
+    citations: [],
+    faqs: [
+      { question: 'How much does a tempo traveller cost per km in Bangalore?', answer: `Our 12-seater is ${inr(TT12.fares.rate)}/km AC and ${inr(TT12.v.ratePerKmNonAc ?? 0)}/km non-AC, the 9-seater is ${inr(TT9.fares.rate)}/km and the 17-seater is ${inr(TT17.fares.rate)}/km AC, on outstation trips.` },
+      { question: 'Is there a minimum distance per day?', answer: `Yes. Outstation trips are billed for at least ${TT12.fares.minKm} km per day, so a short trip still bills the daily minimum.` },
+      { question: 'What is not included in the estimate?', answer: 'Tolls, parking, state permit and entry fees, night allowance after 10:00 PM and 5% GST are extra and billed at actuals.' },
+      { question: 'Is fuel included in the rate?', answer: 'Yes. Fuel, vehicle insurance and routine maintenance are covered by Sushi Travels and not billed separately.' },
+      { question: 'Do you offer local rental within Bangalore?', answer: 'Yes. The rates in this guide are for outstation trips. For local rentals within the city, call or WhatsApp us for an enquiry.' },
+    ],
+    relatedLinks: [
+      { label: '12 seater Tempo Traveller rent in Bangalore', href: '/vehicles/tempo-traveller-rental-bangalore', title: '12 Seater Tempo Traveller Rent in Bangalore' },
+      { label: '9 seater Tempo Traveller in Bangalore', href: '/vehicles/9-seater-luxury-tempo-traveller-bangalore', title: '9 Seater Tempo Traveller in Bangalore' },
+      { label: '17 seater Tempo Traveller in Bangalore', href: '/vehicles/17-seater-tempo-traveller-bangalore', title: '17 Seater Tempo Traveller in Bangalore' },
+      { label: 'Bangalore to Mysore cab', href: '/routes/bangalore-to-mysore-cab', title: 'Bangalore to Mysore Cab: Distance and Fare Enquiry' },
+      { label: 'Bangalore to Coorg cab', href: '/routes/bangalore-to-coorg-cab', title: 'Bangalore to Coorg Cab: Distance and Fare Enquiry' },
     ],
   },
 ];

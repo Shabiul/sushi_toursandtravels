@@ -1881,3 +1881,12 @@ Read Google's own docs (AI features page, "Optimizing for generative AI search",
 ### 20c. Reviews inside blog posts (2026-11-16)
 - Each of the 6 blog posts now shows real Google reviews between the content: a "What travellers say on Google" pull-quote block after the 2nd paragraph (or after the middle section for sectioned posts) and a "What Customers Say About Sushi Travels" card grid after the article. Same one-home-per-review rule as vehicle pages (index % posts), so every general review is used once across posts; the Coorg review leads only the Coorg post, the "traveller driver" one only posts about Tempo Travellers.
 - Components: `InlineReviewQuotes`, `GoogleReviewsSection`; selector `reviewsForBlog` in `src/lib/reviews.ts`.
+
+## 21. Competitor teardown: why Tejas Travels outranks us (2026-11-16)
+Findings (their own site, via fetched pages; claims are theirs): operating since 2009 (we only started getting impressions in Jul 2026); ~1,000+ URLs (≈440 tempo-traveller pages = N-seater × ~30 areas, ≈700 route pages = place × vehicle) + 76 blog posts; price in title ("... @ ₹24/km") and full price/sample-fare tables incl. per-person cost; exact "rent" wording in URLs/titles; ~150 internal links per page; Google rating claim 4.5 from 2,735 reviews. Their area pages are ~85-90% templated (the pattern Google warns about) — we deliberately do NOT copy that.
+What we did instead (all from our own confirmed data):
+- `SampleFareTable` on every vehicle page with a confirmed rate: worked Mysore/Coorg/Ooty/Chikmagalur costs and per-person cost, computed in `src/lib/sampleFares.ts` from rate × max(round-trip km, 300 × days) + bata × days. Tolls/permits/GST excluded and stated.
+- Price-led titles (e.g. "9 Seater Tempo Traveller Bangalore ₹28/km"); Urbania 12/16 titles left alone (already ranking 2-6).
+- Vehicle pages now link to all 10 routes and all 18 area pages (≈86 links/page, was ≈44).
+- New guide `/blog/tempo-traveller-rental-cost-bangalore`; every figure computed from vehicle data.
+Still open (needs owner): local package rates (4h/40km, 8h/80km...), Google rating + review count, real local pickup points per area, more first-hand content/backlinks.
