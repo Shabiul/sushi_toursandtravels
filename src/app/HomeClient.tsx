@@ -692,7 +692,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto mb-16 text-center space-y-4">
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-navy">Reviewed By Our Travelers</h2>
-            <p className="text-sm text-navy">Read honest reviews from families, tourists, and business executives across India.</p>
+            <p className="text-sm text-navy">Real reviews from our customers on Google.</p>
           </div>
 
           <div className={`flex overflow-x-auto pb-6 space-x-6 md:space-x-0 md:grid md:grid-cols-3 md:gap-8 scrollbar-thin snap-x snap-mandatory scroll-smooth ${testimonialsList.length === 1 ? 'justify-center md:justify-start' : ''}`}>
@@ -707,6 +707,19 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
                 Reviews are temporarily unavailable — please check back shortly.
               </div>
             )}
+          </div>
+
+          <div className="mt-10 text-center">
+            <a
+              href="https://maps.google.com/?cid=15212322609133405823"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Read all Sushi Travels reviews on Google"
+              className="inline-flex items-center space-x-1.5 text-sm font-bold text-primary hover:text-primary-dark transition duration-150"
+            >
+              <span>Read all reviews on Google</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </div>
       </section>

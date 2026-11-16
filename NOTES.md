@@ -1865,3 +1865,9 @@ Read Google's own docs (AI features page, "Optimizing for generative AI search",
 - **Risk found:** 18 `/locations/*` pages average ~190 words with ~44% of text shared with sibling pages after removing the place name (up to 67% for JP Nagar). Google's guide says separate pages per query variation can count as scaled content abuse. They already get impressions with ~0 clicks. Fix requires real first-hand local facts from the owner (`scripts/check-location-similarity.ts` re-measures). Routes ~35% shared, services ~2%.
 - Core update rolling out since 10 Nov 2026 — judge results from one week after it completes.
 - LocalBusiness `dateModified` now stamped at build time.
+
+## 20. Real Google reviews on the homepage (2026-11-16)
+- Replaced the 3 placeholder testimonials in `src/lib/homeContent.ts` with 6 real 5-star Google Business Profile reviews supplied by the owner, wording unchanged (typos kept; spacing normalised), shown as first name + last initial, labelled "Google review", with a "Read all reviews on Google" link to the profile.
+- Left out on purpose: truncated reviews ("View full review") and one that names another business.
+- No Review/AggregateRating structured data (Google doesn't show stars for a business's own reviews). Overall rating/count were not supplied, so none is claimed.
+- The admin DB `Review` table still holds the old placeholder rows (not shown on the public site).

@@ -103,24 +103,45 @@ export const popularRoutes = [
   },
 ];
 
+// Real Google Business Profile reviews, copied word for word (typos included;
+// only line breaks/spacing normalised). All are 5-star. Reviewers are shown by
+// first name + last initial. Incomplete ("View full review") reviews and any
+// that name another business were left out on purpose.
 export const popularReviews = [
   {
-    name: 'Priya Deshmukh',
-    location: 'Pune',
+    name: 'Shanthappa',
+    location: 'Google review',
     rating: 5,
-    text: 'We rented an Innova Crysta for our family road trip from Bangalore to Ooty. The driver was extremely professional, navigating the 36 hairpin bends with ease. The car was spotless and spacious!',
+    text: 'Shushi Travels provided a completely hassle-free, safe, and spiritually fulfilling Sabarimala yatra, taking exceptional care of our comfort and schedule every step of the way.',
   },
   {
-    name: 'Aditya Sen',
-    location: 'Kolkata',
+    name: 'Sharath G.',
+    location: 'Google review',
     rating: 5,
-    text: 'Superb corporate rental service. I booked a Honda City for local transfers in Bangalore. Prompt pickup, courteous driver, and seamless payment. Highly recommend Sushi Travels.',
+    text: 'Excellent service drivery punctual polite and the vehicle was clean and comfortable highly recommended and staff was very friendly best travels to have a great journey',
   },
   {
-    name: 'Karthik Rao',
-    location: 'Bangalore',
+    name: 'Ishaan M.',
+    location: 'Google review',
     rating: 5,
-    text: 'Excellent outstation service. Booked a 12-seater Tempo Traveller for a pilgrimage to Tirupati. The pushback seats were comfortable for our elders, and the driver knew the route perfectly.',
+    text: 'Nice and fantastic staffs and Buses are too GOOD. The dinner and refreshment halts were at very decent places, which we never experienced in this route.',
+  },
+  {
+    name: 'Manya',
+    location: 'Google review',
+    rating: 5,
+    text: 'Pleasure to meet sushi travel! We had a smooth, comfortable and safe journey allover. Best experience, friendly driver. Thankyou for giving such a memorable and comfortable drive ✨',
+  },
+  {
+    name: 'Nandisha',
+    location: 'Google review',
+    rating: 5,
+    text: 'We had good journey, driver was so friendly and calmly Vechile was so hygienic and well maintained',
+  },
+  {
+    name: 'Ramesh P.',
+    location: 'Google review',
+    rating: 5,
+    text: 'Very Good experience and well maintained vehicles. Experienced drivers. Best travels to book a trips.',
   },
 ];
-
