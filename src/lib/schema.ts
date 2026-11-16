@@ -17,7 +17,8 @@ export function getLocalBusinessSchema() {
     telephone: PHONE_NUMBER,
     foundingDate: '2011',
     datePublished: '2024-01-15T08:00:00+05:30',
-    dateModified: '2026-10-05T08:00:00+05:30',
+    // Stamped at build time so it reflects the last deploy instead of a stale literal.
+    dateModified: new Date().toISOString(),
     termsOfService: `${SITE_URL}/terms-and-conditions`,
     privacyPolicy: `${SITE_URL}/privacy-policy`,
     author: {

@@ -1856,3 +1856,12 @@ Compared the project against Ahrefs' "How to Rank Higher on Google" (10 steps).
 - Verified before switching: the live DB held exactly the code defaults (same 3 reviews, 11 routes, no custom `homeCategory`/`showOnHome`), so nothing was lost.
 - Still on the database (unchanged): booking submissions, admin login and the admin dashboard. **The dashboard's vehicle/route/review editors no longer change the public site** (they edit rows the public pages ignore); remove or repurpose them if that is confusing. `/api/fleet` and `/api/home-data` GET remain but are unused by the public pages.
 - The 3 sample testimonials (names/locations/text in `homeContent.ts`) are seed content, one mentioning a Honda City that is not in the fleet — replace with real customer reviews.
+
+## 19. Google AI-search guidance check (2026-11-16) — primary sources only
+Read Google's own docs (AI features page, "Optimizing for generative AI search", structured-data gallery, Search Central blog Oct/Nov 2026).
+- **Official position:** no special optimisation exists for AI Overviews / AI Mode; "optimizing for generative AI search ... is still SEO". Requirements: indexed, snippet-eligible, crawlable, good page experience, helpful non-commodity content, Business Profile kept current. Site must be enabled for generative AI features in Search Console.
+- **Corrections to earlier advice:** `llms.txt` is NOT used by Google Search (harmless, may help other AI services — keep, but expect no Google benefit). FAQ rich results were removed from Google Search (May 2026); FAQPage markup is still valid and matches visible text, so it stays, but it no longer yields a rich result.
+- **Audited, clean:** no back-button/history manipulation (new spam policy, enforced 15 Jun 2026); Googlebot UA gets 200 + full HTML on key pages; Google-Extended allowed; robots/CDN not blocking.
+- **Risk found:** 18 `/locations/*` pages average ~190 words with ~44% of text shared with sibling pages after removing the place name (up to 67% for JP Nagar). Google's guide says separate pages per query variation can count as scaled content abuse. They already get impressions with ~0 clicks. Fix requires real first-hand local facts from the owner (`scripts/check-location-similarity.ts` re-measures). Routes ~35% shared, services ~2%.
+- Core update rolling out since 10 Nov 2026 — judge results from one week after it completes.
+- LocalBusiness `dateModified` now stamped at build time.
