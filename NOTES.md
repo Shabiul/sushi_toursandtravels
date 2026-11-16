@@ -1877,3 +1877,7 @@ Read Google's own docs (AI features page, "Optimizing for generative AI search",
 - New `/reviews` page lists all 43 (in sitemap, footer, llms.txt). Each of the 12 vehicle pages shows 3–5 reviews under "What Customers Say About Sushi Travels" (heading says company-wide on purpose).
 - Placement rule: each general review has exactly one home vehicle page (index % pages); only the two reviews that name a vehicle type are tagged (bus review -> bus pages; "traveller driver … Coorg" -> pages whose vehicle NAME contains "Tempo Traveller", not Urbania).
 - No Review/AggregateRating schema (self-serving reviews don't get stars in Google).
+
+### 20c. Reviews inside blog posts (2026-11-16)
+- Each of the 6 blog posts now shows real Google reviews between the content: a "What travellers say on Google" pull-quote block after the 2nd paragraph (or after the middle section for sectioned posts) and a "What Customers Say About Sushi Travels" card grid after the article. Same one-home-per-review rule as vehicle pages (index % posts), so every general review is used once across posts; the Coorg review leads only the Coorg post, the "traveller driver" one only posts about Tempo Travellers.
+- Components: `InlineReviewQuotes`, `GoogleReviewsSection`; selector `reviewsForBlog` in `src/lib/reviews.ts`.

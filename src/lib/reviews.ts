@@ -12,7 +12,7 @@
  * vehicle pages under a "what customers say about Sushi Travels" heading — never
  * as a claim about a specific vehicle.
  */
-export type ReviewTag = 'bus' | 'tempo-traveller';
+export type ReviewTag = 'bus' | 'tempo-traveller' | 'coorg';
 
 export interface GoogleReview {
   name: string;
@@ -30,7 +30,7 @@ export const googleReviews: GoogleReview[] = [
   { name: 'Manya', text: 'Pleasure to meet sushi travel! We had a smooth, comfortable and safe journey allover. Best experience, friendly driver. Thankyou for giving such a memorable and comfortable drive ✨' },
   { name: 'Nandisha', text: 'We had good journey, driver was so friendly and calmly Vechile was so hygienic and well maintained' },
   { name: 'Ramesh P.', text: 'Very Good experience and well maintained vehicles. Experienced drivers. Best travels to book a trips.' },
-  { name: 'Praveenkumar R.', text: "I'd highly recommend the traveller driver (Mr. Aadarsha) for anyone visiting Coorg: he knew the winding roads well,…", tags: ['tempo-traveller'], partial: true },
+  { name: 'Praveenkumar R.', text: "I'd highly recommend the traveller driver (Mr. Aadarsha) for anyone visiting Coorg: he knew the winding roads well,…", tags: ['tempo-traveller', 'coorg'], partial: true },
   { name: 'Ravindran J.', text: 'Absolutely flawless execution! Every detail of our trip was perfectly organized. 10/10 recommendation….', partial: true },
   { name: 'Reshma L.', text: "It's was amazing experience good driver Driver was so friendly and they suggest many places to see and the vehicle was well maintained i suggest everyone for sushi travels" },
   { name: 'Sanju', text: 'Very good service and excellent vehicle condition. Also special mention for Mr lohith for his patience and driving skills. Everything went almost perfect. Thank you. ✨🥰' },
@@ -95,5 +95,33 @@ export function reviewKindsFor(vehicles: { name: string; type: string }[]): Revi
   const kinds: ReviewTag[] = [];
   if (vehicles.some((v) => v.type === 'Bus')) kinds.push('bus');
   if (vehicles.some((v) => /tempo traveller/i.test(v.name))) kinds.push('tempo-traveller');
+  return kinds;
+}
+
+/**
+ * Reviews for one blog post, split into a mid-article group and an end-of-article
+ * group. Same one-home-per-review rule as vehicle pages (index % number of posts),
+ * so across all posts every general review is used once. Reviews that name a
+ * place or vehicle type go only on the matching post and lead the mid-article group.
+ */
+export function reviewsForBlog(
+  postIndex: number,
+  totalPosts: number,
+  kinds: ReviewTag[],
+): { mid: GoogleReview[]; end: GoogleReview[] } {
+  const tagged = googleReviews.filter((r) => r.tags?.some((t) => kinds.includes(t))).slice(0, 2);
+  const general = googleReviews
+    .filter((r) => !r.tags)
+    .filter((_, idx) => idx % totalPosts === postIndex)
+    .sort((a, b) => b.text.length - a.text.length);
+  const all = [...tagged, ...general];
+  return { mid: all.slice(0, 3), end: all.slice(3) };
+}
+
+/** Which review kinds a blog post can show, from its slug (place / vehicle type it is about). */
+export function blogReviewKinds(slug: string): ReviewTag[] {
+  const kinds: ReviewTag[] = [];
+  if (slug.includes('coorg')) kinds.push('coorg');
+  if (slug.includes('tempo-traveller')) kinds.push('tempo-traveller');
   return kinds;
 }

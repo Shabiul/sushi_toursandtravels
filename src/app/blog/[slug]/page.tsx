@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,6 +9,9 @@ import { getBreadcrumbListSchema, getFAQSchema, getBlogPostingSchema, getVideoOb
 import FaqAccordion from '@/components/FaqAccordion';
 import CTABand from '@/components/CTABand';
 import RelatedLinks from '@/components/RelatedLinks';
+import InlineReviewQuotes from '@/components/InlineReviewQuotes';
+import GoogleReviewsSection from '@/components/GoogleReviewsSection';
+import { reviewsForBlog, blogReviewKinds } from '@/lib/reviews';
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
@@ -47,6 +51,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const post = getBlogPost(slug);
   if (!post) notFound();
 
+  const postReviews = reviewsForBlog(
+    blogPosts.findIndex((p) => p.slug === post.slug),
+    blogPosts.length,
+    blogReviewKinds(post.slug),
+  );
   const url = `/blog/${post.slug}`;
   const breadcrumbItems = [
     { name: 'Home', item: '/' },
@@ -244,16 +253,23 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     </table>
                   </div>
                 )}
+                {sIdx === Math.floor(((post.sections?.length ?? 1) - 1) / 2) && <InlineReviewQuotes reviews={postReviews.mid} />}
               </section>
             ))}
           </div>
         ) : (
           <section className="space-y-5 text-sm sm:text-base text-navy leading-relaxed">
             {post.bodyParagraphs.map((para, idx) => (
-              <p key={idx}>{para}</p>
+              <React.Fragment key={idx}>
+                <p>{para}</p>
+                {idx === Math.min(1, post.bodyParagraphs.length - 1) && <InlineReviewQuotes reviews={postReviews.mid} />}
+              </React.Fragment>
             ))}
           </section>
         )}
+
+        {/* More real Google reviews at the end of the article */}
+        <GoogleReviewsSection reviews={postReviews.end} />
 
         {/* Official Citations & Authority Guidance (Content & Citability) */}
         {post.citations && post.citations.length > 0 && (
