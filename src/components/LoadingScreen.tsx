@@ -100,7 +100,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
             Sushi Travels
           </p>
           <p className="text-[11px] text-cream-warm/90 uppercase tracking-[0.2em]">
-            Every Road, A New Story
+            Comfort • Safety • Memories
           </p>
         </motion.div>
       )}

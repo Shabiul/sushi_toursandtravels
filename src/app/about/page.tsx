@@ -107,7 +107,7 @@ export default function AboutPage() {
         {/* Story Section with Image Grid */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-navy">
           <div className="space-y-6">
-            <span className="text-xs font-bold uppercase tracking-widest text-primary-dark">Every Road, A New Story</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-primary-dark">Comfort • Safety • Memories</span>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold leading-tight">
               Pioneering Safe Mountain &amp; Highway Trips in South India
             </h2>

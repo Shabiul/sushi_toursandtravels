@@ -27,7 +27,7 @@ export default function Footer() {
                 </span>
               </span>
               <span className="text-[10px] text-cream-warm tracking-wider font-light mt-[-2px] uppercase">
-                Every Road, A New Story
+                Comfort • Safety • Memories
               </span>
             </Link>
             <p className="text-sm text-cream-warm leading-relaxed">

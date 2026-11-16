@@ -81,7 +81,7 @@ export default function Navbar() {
                   </span>
                 </span>
                 <span className="text-[8px] text-cream-warm tracking-[0.25em] font-light mt-1.5 uppercase">
-                  Every Road, A New Story
+                  Comfort • Safety • Memories
                 </span>
               </div>
             </Link>
@@ -186,7 +186,7 @@ export default function Navbar() {
                       </span>
                     </span>
                     <span className="text-[7px] text-cream-warm tracking-[0.2em] uppercase mt-1">
-                      Every Road, A New Story
+                      Comfort • Safety • Memories
                     </span>
                   </div>
                 </Link>
