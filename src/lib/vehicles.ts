@@ -64,8 +64,8 @@ const PRICING = {
   luxuryTempoTraveller9Plus1: { ratePerKm: 28, driverBata: 500 },
   tempoTraveller17SeaterAc: { ratePerKm: 30, driverBata: 700 },
   tempoTraveller17SeaterNonAc: { ratePerKm: 28, driverBata: 700 },
-  // Outstation per-km rates confirmed by the owner 2026-10-29 (local rentals:
-  // "call for enquiry"). driverBata/minKm for the 9- and 12-seater mirror the
+  // Per-km rates confirmed by the owner 2026-10-29; on 2026-11-16 the owner said
+  // the SAME rates apply to local rentals (hours/km for a local day confirmed on enquiry). driverBata/minKm for the 9- and 12-seater mirror the
   // 16-seater (the 12-seater Maharaja was ₹700 in the earlier pricing sheet;
   // the 9-seater's bata was NOT supplied — confirm both).
   forceUrbania9Luxury: { ratePerKm: 60, driverBata: 700 },
@@ -306,12 +306,12 @@ export const vehicles: Vehicle[] = [
       '/fleet/force-urbania-maharaja-12-seater-interior-06.webp',
     ],
     description:
-      'The Urbania 12 Seater Maharaja is the 12-seater trim of our flagship Force Urbania: a high-roof, premium van built for mid-size groups who want extra comfort. Captain seats, strong AC, and a spacious cabin make it a great choice for family holidays and corporate group travel across South India. Outstation rate ₹45/km; for local rentals, call for enquiry.',
+      'The Urbania 12 Seater Maharaja is the 12-seater trim of our flagship Force Urbania: a high-roof, premium van built for mid-size groups who want extra comfort. Captain seats, strong AC, and a spacious cabin make it a great choice for family holidays and corporate group travel across South India. Same ₹45/km rate for local and outstation.',
     sortOrder: 4,
   },
   // ---------------------------------------------------------------------
   // Force Urbania 9 Seater Luxury — real owner photos + ₹60/km outstation
-  // rate supplied 2026-10-28/29 (local rentals: call for enquiry).
+  // rate supplied 2026-10-28/29 (same rate for local rentals, per owner 2026-11-16).
   // ---------------------------------------------------------------------
   {
     id: 'force-urbania-9-seater',
@@ -347,7 +347,7 @@ export const vehicles: Vehicle[] = [
       '/fleet/force-urbania-9-seater-interior-08.webp',
     ],
     description:
-      'The Force Urbania 9 Seater Luxury is the most spacious way to travel as a small group: a high-roof, air-conditioned Urbania with leather recliner-style seats and leg rests, suited to executive travel, family holidays and premium airport transfers. Outstation rate ₹60/km; for local rentals, call for enquiry.',
+      'The Force Urbania 9 Seater Luxury is the most spacious way to travel as a small group: a high-roof, air-conditioned Urbania with leather recliner-style seats and leg rests, suited to executive travel, family holidays and premium airport transfers. Same ₹60/km rate for local and outstation.',
     sortOrder: 4,
   },
   {
@@ -381,7 +381,7 @@ export const vehicles: Vehicle[] = [
       '/fleet/force-urbania-16-seater-interior-02.webp',
     ],
     description:
-      'Our flagship Force Urbania is the largest and most premium van in the fleet: a full 16-seater built for big groups who refuse to compromise on comfort. High-roof cabin space, captain seats, and strong AC make it the top choice for large family holidays, wedding transportation, and corporate group travel across South India. Outstation rate ₹38/km; for local rentals, call for enquiry.',
+      'Our flagship Force Urbania is the largest and most premium van in the fleet: a full 16-seater built for big groups who refuse to compromise on comfort. High-roof cabin space, captain seats, and strong AC make it the top choice for large family holidays, wedding transportation, and corporate group travel across South India. Same ₹38/km rate for local and outstation.',
     sortOrder: 5,
   },
 

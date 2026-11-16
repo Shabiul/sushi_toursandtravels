@@ -1890,3 +1890,11 @@ What we did instead (all from our own confirmed data):
 - Vehicle pages now link to all 10 routes and all 18 area pages (≈86 links/page, was ≈44).
 - New guide `/blog/tempo-traveller-rental-cost-bangalore`; every figure computed from vehicle data.
 Still open (needs owner): local package rates (4h/40km, 8h/80km...), Google rating + review count, real local pickup points per area, more first-hand content/backlinks.
+
+## 22. Local rates, 20 route×vehicle fare pages, internal links, review count (2026-11-16)
+- **Local rates:** owner said the SAME per-km rates apply to local rentals. "Call for enquiry" wording replaced everywhere (vehicle pages/FAQs, descriptions, blog FAQs, llms). The hours/km of a local day are still confirmed on enquiry — no fixed local packages are advertised any more (the older Urbania blog paragraph that listed 4h/40km, 8h/80km, 12h/120km was rewritten). If those packages still exist and have their own tariff, tell the assistant.
+- **New pages:** `/routes/bangalore-to-<place>-tempo-traveller` and `...-urbania` for all 10 routes (20 pages), built by `src/lib/routeVehiclePages.ts` + `RouteVehiclePageView`. Every number is computed by the single formula in `src/lib/sampleFares.ts` (billed km = max(round trip, 300 × days); total = billed km × rate + bata × days); each page has its own fare table, per-person cost, cost-by-trip-length table and computed FAQs. Assumed trip lengths are in `ROUTE_DAYS`. In the sitemap and llms.txt.
+- **Blog:** added `/blog/force-urbania-rental-cost-bangalore` (and earlier the Tempo Traveller one), both computed from data. Optional `seoTitle` field added to BlogPost; two over-long Urbania posts use it.
+- **Internal links:** vehicle pages ≈96 links (was 44), fare pages ≈76, route pages ≈51, area pages ≈58; the /routes index lists all fare pages; each route page links to its two fare pages; each vehicle page links to its family's 10 fare pages.
+- **Reviews:** owner says ~59 Google reviews; site shows "50+" (`GOOGLE_REVIEW_COUNT_LABEL`) on the home, reviews page and review strips. Rating not supplied, so none is claimed.
+- Crawl check: 88 sitemap pages, no title/description/H1/canonical/JSON-LD/broken-link/duplicate issues.

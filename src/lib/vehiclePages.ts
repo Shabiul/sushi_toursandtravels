@@ -339,16 +339,16 @@ export const vehiclePages: VehiclePage[] = [
     h1: 'Force Urbania 9 Seater Luxury Rental in Bangalore',
     title: 'Urbania 9-Seater Luxury Bangalore @ ₹60/km',
     metaDescription:
-      'Force Urbania 9-seater luxury rental in Bangalore at ₹60/km outstation. Recliner seats, high-roof AC van with driver. Call for local rates.',
+      'Force Urbania 9-seater luxury rental in Bangalore at ₹60/km, local or outstation. Recliner seats, high-roof AC van with driver.',
     heroSubtitle:
       'Luxury 9-seat high-roof Force Urbania with recliner-style seats and full-cabin AC, at ₹60/km outstation — extra space per passenger for small groups.',
     vehicleIds: ['force-urbania-9-seater'],
     geoSummary:
-      'Sushi Travels offers the Force Urbania 9 Seater Luxury in Bangalore for executive travel, small-group family holidays and premium airport transfers. The outstation rate is ₹60/km with a 300 km/day minimum billing; for local rentals within Bangalore, call for enquiry.',
+      'Sushi Travels offers the Force Urbania 9 Seater Luxury in Bangalore for executive travel, small-group family holidays and premium airport transfers. The rate is ₹60/km with a 300 km/day minimum billing; local rentals within Bangalore use the same per-km rate.',
     bodyParagraphs: [
       'The Force Urbania 9 Seater suits groups of up to nine that want more room than a standard Tempo Traveller: a high-roof, air-conditioned cabin with space to stand and move about, and a rear cargo hold for luggage.',
       'It is a natural pick for executive and corporate travel, family holidays, and airport pickups where comfort matters as much as capacity.',
-      'The outstation rate is ₹60/km with a 300 km/day minimum; for local rentals within Bangalore, call or WhatsApp for an enquiry. For bigger groups, see the 12-seater Maharaja and the 16-seater Urbania below.',
+      'The rate is ₹60/km with a 300 km/day minimum; local rentals within Bangalore use the same per-km rate. For bigger groups, see the 12-seater Maharaja and the 16-seater Urbania below.',
     ],
     faqs: [
       {
@@ -357,7 +357,7 @@ export const vehiclePages: VehiclePage[] = [
       },
       {
         question: 'What is the per-km rate for the Force Urbania 9 Seater Luxury?',
-        answer: 'The outstation rate is ₹60/km with a 300 km/day minimum billing distance. For local rentals within Bangalore, call for enquiry.',
+        answer: 'The rate is ₹60/km with a 300 km/day minimum billing distance. Local rentals within Bangalore use the same per-km rate.',
       },
       {
         question: 'Is driver bata included?',
@@ -366,7 +366,7 @@ export const vehiclePages: VehiclePage[] = [
       },
       {
         question: 'Do you offer local (within-city) rental for this vehicle?',
-        answer: 'Yes — the per-km rate on this page is our outstation rate. For local rentals within Bangalore, call or WhatsApp us for an enquiry and we will confirm the package and price.',
+        answer: 'Yes — local rentals within Bangalore use the same per-km rate shown on this page. Call or WhatsApp us with your hours and route and we will confirm the details for your day.',
       },
       {
         question: 'Can I book the 9-seater Urbania for outstation trips?',
@@ -390,12 +390,12 @@ export const vehiclePages: VehiclePage[] = [
     h1: 'Urbania 12 Seater Maharaja Rental in Bangalore',
     title: 'Urbania 12 Seater Maharaja Rental Bangalore',
     metaDescription:
-      'Urbania 12 Seater Maharaja rental in Bangalore at ₹45/km outstation. High-roof premium van for family & corporate groups. Call for local rates.',
+      'Urbania 12 Seater Maharaja rental in Bangalore at ₹45/km, local or outstation. High-roof premium van for family & corporate groups.',
     heroSubtitle:
       'High-roof, premium 12-seater van with captain-style seating and strong AC, at ₹45/km outstation — for mid-size groups who want extra comfort.',
     vehicleIds: ['force-urbania-maharaja-12-seater'],
     geoSummary:
-      'Sushi Travels provides Urbania 12 Seater Maharaja rental in Bangalore for family holidays and corporate group travel across South India, offering a high-roof cabin with stand-up walking space, uncommon in this seating class. The outstation rate is ₹45/km with a 300 km/day minimum billing; for local rentals within Bangalore, call for enquiry.',
+      'Sushi Travels provides Urbania 12 Seater Maharaja rental in Bangalore for family holidays and corporate group travel across South India, offering a high-roof cabin with stand-up walking space, uncommon in this seating class. The rate is ₹45/km with a 300 km/day minimum billing; local rentals within Bangalore use the same per-km rate.',
     bodyParagraphs: [
       'The Urbania 12 Seater Maharaja is the 12-seater trim of our flagship Urbania — a modern, high-roof van built for mid-size groups who want more headroom and a car-like ride than a traditional Tempo Traveller offers, without stepping up to the full 16-seater.',
       'Captain-style seats, powerful roof AC with individual vents, and a large rear cargo hold make it well suited to family holidays, corporate offsites and pilgrimage groups travelling with substantial luggage.',
@@ -404,7 +404,7 @@ export const vehiclePages: VehiclePage[] = [
     faqs: [
       {
         question: 'What is the per-km rate for the Urbania 12 Seater Maharaja?',
-        answer: 'The outstation rate is ₹45/km with a 300 km/day minimum billing distance. For local rentals within Bangalore, call for enquiry.',
+        answer: 'The rate is ₹45/km with a 300 km/day minimum billing distance. Local rentals within Bangalore use the same per-km rate.',
       },
       {
         question: 'Is driver bata included?',
@@ -413,7 +413,7 @@ export const vehiclePages: VehiclePage[] = [
       },
       {
         question: 'Do you offer local (within-city) rental for this vehicle?',
-        answer: 'Yes — the per-km rate on this page is our outstation rate. For local rentals within Bangalore, call or WhatsApp us for an enquiry and we will confirm the package and price.',
+        answer: 'Yes — local rentals within Bangalore use the same per-km rate shown on this page. Call or WhatsApp us with your hours and route and we will confirm the details for your day.',
       },
       {
         question: 'Can I book this for outstation travel?',
@@ -439,7 +439,7 @@ export const vehiclePages: VehiclePage[] = [
     h1: 'Force Urbania Luxury 16-Seater Rental in Bangalore',
     title: 'Force Urbania 16-Seater Rental Bangalore',
     metaDescription:
-      'Force Urbania Luxury 16-Seater in Bangalore at ₹38/km outstation. Premium van for weddings, big families & offsites. Call for local rates.',
+      'Force Urbania Luxury 16-Seater in Bangalore at ₹38/km, local or outstation. Premium van for weddings, big families & offsites.',
     heroSubtitle:
       'Our flagship 16-seater — high-roof cabin, captain seats and strong AC, at ₹38/km, built for big groups who refuse to compromise on comfort.',
     vehicleIds: ['force-urbania-luxury-16-seater'],
@@ -453,7 +453,7 @@ export const vehiclePages: VehiclePage[] = [
     faqs: [
       {
         question: 'What is the per-km rate for the Force Urbania Luxury 16-Seater?',
-        answer: 'The outstation rate is ₹38/km with a 300 km/day minimum billing distance. For local rentals within Bangalore, call for enquiry.',
+        answer: 'The rate is ₹38/km with a 300 km/day minimum billing distance. Local rentals within Bangalore use the same per-km rate.',
       },
       {
         question: 'Is driver bata included?',
@@ -462,7 +462,7 @@ export const vehiclePages: VehiclePage[] = [
       },
       {
         question: 'Do you offer local (within-city) rental for this vehicle?',
-        answer: 'Yes — the per-km rate on this page is our outstation rate. For local rentals within Bangalore, call or WhatsApp us for an enquiry and we will confirm the package and price.',
+        answer: 'Yes — local rentals within Bangalore use the same per-km rate shown on this page. Call or WhatsApp us with your hours and route and we will confirm the details for your day.',
       },
       {
         question: 'Can I book this for outstation travel?',

@@ -6,6 +6,7 @@ import { vehicles } from '../src/lib/vehicles';
 import { servicePages } from '../src/lib/services';
 import { locationPages } from '../src/lib/locations';
 import { routePages } from '../src/lib/routes';
+import { routeVehiclePages } from '../src/lib/routeVehiclePages';
 import { blogPosts } from '../src/lib/blog';
 import { packages } from '../src/lib/packages';
 
@@ -250,6 +251,17 @@ routePages.forEach((rp) => {
         caption: `${rp.from} to ${rp.to} (${rp.distance}) outstation cab service.`,
       },
     ],
+  });
+});
+
+// Add route × vehicle fare pages (/routes/bangalore-to-mysore-tempo-traveller, ...)
+routeVehiclePages.forEach((rv) => {
+  pages.push({
+    url: `${BASE_URL}/routes/${rv.slug}`,
+    lastmod: NOW,
+    changefreq: 'monthly',
+    priority: 0.7,
+    images: [],
   });
 });
 

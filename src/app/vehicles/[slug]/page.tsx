@@ -17,6 +17,7 @@ import GoogleReviewsSection from '@/components/GoogleReviewsSection';
 import SampleFareTable from '@/components/SampleFareTable';
 import { confirmedRate } from '@/lib/sampleFares';
 import { locationPages } from '@/lib/locations';
+import { fareGroupForVehicleIds, routeVehiclePagesForGroup } from '@/lib/routeVehiclePages';
 import { reviewsForVehicle, reviewKindsFor } from '@/lib/reviews';
 import { vehicles as allVehicles } from '@/lib/vehicles';
 import { blogPosts } from '@/lib/blog';
@@ -322,6 +323,21 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
                     title: `View ${p.h1} route travel guide`,
                   })),
                 },
+                ...(() => {
+                  const fg = fareGroupForVehicleIds(page.vehicleIds);
+                  return fg
+                    ? [
+                        {
+                          heading: `${fg.label} Fares to Popular Destinations`,
+                          links: routeVehiclePagesForGroup(fg.key).map((p) => ({
+                            label: p.h1,
+                            href: `/routes/${p.slug}`,
+                            title: `${p.h1}: fares and cost examples`,
+                          })),
+                        },
+                      ]
+                    : [];
+                })(),
                 {
                   heading: 'All Outstation Routes From Bangalore',
                   links: routePages.map((p) => ({

@@ -13,6 +13,7 @@ import { vehiclePages } from '../src/lib/vehiclePages';
 import { servicePages } from '../src/lib/services';
 import { locationPages } from '../src/lib/locations';
 import { routePages } from '../src/lib/routes';
+import { routeVehiclePages } from '../src/lib/routeVehiclePages';
 import { blogPosts } from '../src/lib/blog';
 import { PHONE_NUMBER } from '../src/lib/contact';
 
@@ -69,7 +70,7 @@ const pricingTerms = `## Pricing & booking terms (from ${BASE}/terms-and-conditi
 - Airport pickups include a complimentary 45-minute wait for flight delays, with flight tracking on request.
 - Punctuality is guaranteed: your chauffeur arrives at the confirmed pickup time.
 - Chauffeurs are police-verified and have a minimum of 5 years of commercial highway and mountain-ghat driving experience.
-- Force Urbania per-km rates are outstation rates; for local (within-city) rentals, call or WhatsApp for an enquiry.
+- The per-km rates are the same for local (within-city) and outstation rentals; for a local booking, call or WhatsApp with your hours and route to confirm the details.
 - Vehicles marked "Price on Request" have no fixed per-km rate; call or WhatsApp with your route, dates and group size for a quote.
 `;
 
@@ -114,6 +115,14 @@ const sections = [
       label: p.h1,
       url: `${BASE}/routes/${p.slug}`,
       note: `${p.distance}, ${p.duration}`,
+    })),
+  ),
+  links(
+    'Route fares by vehicle (worked out from the published per-km rates)',
+    routeVehiclePages.map((p) => ({
+      label: p.h1,
+      url: `${BASE}/routes/${p.slug}`,
+      note: `from ₹${p.minTotal.toLocaleString('en-IN')} for a ${p.days}-day round trip`,
     })),
   ),
   links(
@@ -167,6 +176,7 @@ fs.writeFileSync(
     faqBlock('Questions and answers: vehicles', vehiclePages, 'vehicles'),
     faqBlock('Questions and answers: services', servicePages, 'services'),
     faqBlock('Questions and answers: routes', routePages, 'routes'),
+    faqBlock('Questions and answers: route fares by vehicle', routeVehiclePages, 'routes'),
     faqBlock('Questions and answers: Bangalore areas', locationPages, 'locations'),
     faqBlock('Questions and answers: travel guides & vehicle insights', blogPosts.map((b) => ({ h1: b.title, slug: b.slug, faqs: b.faqs })), 'blog'),
     ...sections,

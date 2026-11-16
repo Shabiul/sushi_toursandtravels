@@ -12,13 +12,38 @@ import LandingHero from '@/components/LandingHero';
 import FaqAccordion from '@/components/FaqAccordion';
 import CTABand from '@/components/CTABand';
 import RelatedLinks from '@/components/RelatedLinks';
+import RouteVehiclePageView from '@/components/RouteVehiclePageView';
+import { routeVehiclePages, getRouteVehiclePage, routeVehiclePagesFor } from '@/lib/routeVehiclePages';
 
 export function generateStaticParams() {
-  return routePages.map((p) => ({ slug: p.slug }));
+  return [...routePages, ...routeVehiclePages].map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
+  const rv = getRouteVehiclePage(slug);
+  if (rv) {
+    const rvUrl = `/routes/${rv.slug}`;
+    const rvBranded = `${rv.title} | Sushi Travels`;
+    return {
+      title: rv.title,
+      description: rv.metaDescription,
+      alternates: { canonical: rvUrl },
+      openGraph: {
+        title: rvBranded,
+        description: rv.metaDescription,
+        url: rvUrl,
+        type: 'website',
+        images: [{ url: '/fleet/force-urbania-16-seater-front-01.webp', width: 800, height: 600, alt: rv.h1 }],
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: rvBranded,
+        description: rv.metaDescription,
+        images: ['/fleet/force-urbania-16-seater-front-01.webp'],
+      },
+    };
+  }
   const page = getRoutePage(slug);
   if (!page) return {};
   const url = `/routes/${page.slug}`;
@@ -45,6 +70,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function RouteLandingPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  const rv = getRouteVehiclePage(slug);
+  if (rv) return <RouteVehiclePageView page={rv} />;
   const page = getRoutePage(slug);
   if (!page) notFound();
 
@@ -260,6 +287,14 @@ export default async function RouteLandingPage({ params }: { params: Promise<{ s
                   title: 'Book Bangalore Local Sightseeing Cab',
                 },
               ],
+            },
+            {
+              heading: `Bangalore to ${page.destination}: Fares by Vehicle`,
+              links: routeVehiclePagesFor(page.slug).map((p) => ({
+                label: p.h1,
+                href: `/routes/${p.slug}`,
+                title: `${p.h1}: fares and cost examples`,
+              })),
             },
             {
               heading: 'Travel Guides',

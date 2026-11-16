@@ -42,7 +42,7 @@ Last generated: 2026-11-16. Source of truth for every price and policy below is 
 - Airport pickups include a complimentary 45-minute wait for flight delays, with flight tracking on request.
 - Punctuality is guaranteed: your chauffeur arrives at the confirmed pickup time.
 - Chauffeurs are police-verified and have a minimum of 5 years of commercial highway and mountain-ghat driving experience.
-- Force Urbania per-km rates are outstation rates; for local (within-city) rentals, call or WhatsApp for an enquiry.
+- The per-km rates are the same for local (within-city) and outstation rentals; for a local booking, call or WhatsApp with your hours and route to confirm the details.
 - Vehicles marked "Price on Request" have no fixed per-km rate; call or WhatsApp with your route, dates and group size for a quote.
 
 ## Indicative trip estimates
@@ -98,6 +98,28 @@ Indicative estimates only, not a fixed tariff. They assume the day-minimum kilom
 - [Bangalore to Hyderabad Cab Service](https://www.sushitravels.com/routes/bangalore-to-hyderabad-cab): Approx. 570 km, Approx. 9–10 hours one way
 - [Bangalore to Mangalore Cab Service](https://www.sushitravels.com/routes/bangalore-to-mangalore-cab): Approx. 350 km, Approx. 7–8 hours one way
 
+## Route fares by vehicle (worked out from the published per-km rates)
+- [Bangalore to Mysore Tempo Traveller on Rent](https://www.sushitravels.com/routes/bangalore-to-mysore-tempo-traveller): from ₹7,300 for a 1-day round trip
+- [Bangalore to Mysore Force Urbania on Rent](https://www.sushitravels.com/routes/bangalore-to-mysore-urbania): from ₹12,100 for a 1-day round trip
+- [Bangalore to Coorg Tempo Traveller on Rent](https://www.sushitravels.com/routes/bangalore-to-coorg-tempo-traveller): from ₹14,600 for a 2-day round trip
+- [Bangalore to Coorg Force Urbania on Rent](https://www.sushitravels.com/routes/bangalore-to-coorg-urbania): from ₹24,200 for a 2-day round trip
+- [Bangalore to Ooty Tempo Traveller on Rent](https://www.sushitravels.com/routes/bangalore-to-ooty-tempo-traveller): from ₹14,600 for a 2-day round trip
+- [Bangalore to Ooty Force Urbania on Rent](https://www.sushitravels.com/routes/bangalore-to-ooty-urbania): from ₹24,200 for a 2-day round trip
+- [Bangalore to Chikmagalur Tempo Traveller on Rent](https://www.sushitravels.com/routes/bangalore-to-chikmagalur-tempo-traveller): from ₹14,600 for a 2-day round trip
+- [Bangalore to Chikmagalur Force Urbania on Rent](https://www.sushitravels.com/routes/bangalore-to-chikmagalur-urbania): from ₹24,200 for a 2-day round trip
+- [Bangalore to Hampi Tempo Traveller on Rent](https://www.sushitravels.com/routes/bangalore-to-hampi-tempo-traveller): from ₹21,900 for a 3-day round trip
+- [Bangalore to Hampi Force Urbania on Rent](https://www.sushitravels.com/routes/bangalore-to-hampi-urbania): from ₹36,300 for a 3-day round trip
+- [Bangalore to Tirupati Tempo Traveller on Rent](https://www.sushitravels.com/routes/bangalore-to-tirupati-tempo-traveller): from ₹14,600 for a 2-day round trip
+- [Bangalore to Tirupati Force Urbania on Rent](https://www.sushitravels.com/routes/bangalore-to-tirupati-urbania): from ₹24,200 for a 2-day round trip
+- [Bangalore to Pondicherry Tempo Traveller on Rent](https://www.sushitravels.com/routes/bangalore-to-pondicherry-tempo-traveller): from ₹15,040 for a 2-day round trip
+- [Bangalore to Pondicherry Force Urbania on Rent](https://www.sushitravels.com/routes/bangalore-to-pondicherry-urbania): from ₹24,960 for a 2-day round trip
+- [Bangalore to Chennai Tempo Traveller on Rent](https://www.sushitravels.com/routes/bangalore-to-chennai-tempo-traveller): from ₹16,800 for a 2-day round trip
+- [Bangalore to Chennai Force Urbania on Rent](https://www.sushitravels.com/routes/bangalore-to-chennai-urbania): from ₹28,000 for a 2-day round trip
+- [Bangalore to Hyderabad Tempo Traveller on Rent](https://www.sushitravels.com/routes/bangalore-to-hyderabad-tempo-traveller): from ₹27,180 for a 3-day round trip
+- [Bangalore to Hyderabad Force Urbania on Rent](https://www.sushitravels.com/routes/bangalore-to-hyderabad-urbania): from ₹45,420 for a 3-day round trip
+- [Bangalore to Mangalore Tempo Traveller on Rent](https://www.sushitravels.com/routes/bangalore-to-mangalore-tempo-traveller): from ₹21,900 for a 3-day round trip
+- [Bangalore to Mangalore Force Urbania on Rent](https://www.sushitravels.com/routes/bangalore-to-mangalore-urbania): from ₹36,300 for a 3-day round trip
+
 ## Bangalore areas served
 - [Car Rental in Whitefield, Bangalore](https://www.sushitravels.com/locations/car-rental-whitefield)
 - [Car Rental in Electronic City, Bangalore](https://www.sushitravels.com/locations/car-rental-electronic-city)
@@ -126,6 +148,7 @@ Indicative estimates only, not a fixed tariff. They assume the day-minimum kilom
 - [Bangalore to Coorg Weekend Trip Guide](https://www.sushitravels.com/blog/bangalore-to-coorg-weekend-trip-guide)
 - [Bangalore to Ooty by Cab: Trip Guide](https://www.sushitravels.com/blog/bangalore-to-ooty-trip-guide)
 - [Tempo Traveller Rental Cost in Bangalore](https://www.sushitravels.com/blog/tempo-traveller-rental-cost-bangalore)
+- [Force Urbania Rental Cost in Bangalore](https://www.sushitravels.com/blog/force-urbania-rental-cost-bangalore)
 
 ## Policies
 - [Terms & conditions](https://www.sushitravels.com/terms-and-conditions)

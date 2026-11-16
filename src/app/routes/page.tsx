@@ -5,6 +5,8 @@ import { ArrowRight, Route as RouteIcon } from 'lucide-react';
 import { routePages } from '@/lib/routes';
 import { getBreadcrumbListSchema, getWebPageSchema } from '@/lib/schema';
 import LandingHero from '@/components/LandingHero';
+import RelatedLinks from '@/components/RelatedLinks';
+import { FARE_GROUPS, routeVehiclePagesForGroup } from '@/lib/routeVehiclePages';
 
 export const metadata: Metadata = {
   title: 'Bangalore Outstation Cab Routes',
@@ -95,6 +97,19 @@ export default function RoutesHubPage() {
               </div>
             </Link>
           ))}
+        </div>
+
+        <div className="mt-14">
+          <RelatedLinks
+            groups={FARE_GROUPS.map((g) => ({
+              heading: `${g.label} Fares by Destination`,
+              links: routeVehiclePagesForGroup(g.key).map((p) => ({
+                label: p.h1,
+                href: `/routes/${p.slug}`,
+                title: `${p.h1}: fares and cost examples`,
+              })),
+            }))}
+          />
         </div>
 
         <div className="mt-14 bg-white rounded-2xl border border-navy-light/10 p-6 sm:p-8 text-center shadow-sm">

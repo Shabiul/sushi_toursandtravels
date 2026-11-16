@@ -692,7 +692,7 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto mb-16 text-center space-y-4">
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-navy">Reviewed By Our Travelers</h2>
-            <p className="text-sm text-navy">Real reviews from our customers on Google.</p>
+            <p className="text-sm text-navy">50+ real customer reviews on Google — a selection shown below.</p>
           </div>
 
           <div className={`flex overflow-x-auto pb-6 space-x-6 md:space-x-0 md:grid md:grid-cols-3 md:gap-8 scrollbar-thin snap-x snap-mandatory scroll-smooth ${testimonialsList.length === 1 ? 'justify-center md:justify-start' : ''}`}>

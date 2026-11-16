@@ -22,9 +22,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getBlogPost(slug);
   if (!post) return {};
   const url = `/blog/${post.slug}`;
-  const brandedTitle = `${post.title} | Sushi Travels`;
+  const shortTitle = post.seoTitle ?? post.title;
+  const brandedTitle = `${shortTitle} | Sushi Travels`;
   return {
-    title: post.title,
+    title: shortTitle,
     description: post.metaDescription,
     alternates: { canonical: url },
     openGraph: {

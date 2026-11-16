@@ -8,6 +8,7 @@ import LandingHero from '@/components/LandingHero';
 import FaqAccordion from '@/components/FaqAccordion';
 import CTABand from '@/components/CTABand';
 import RelatedLinks from '@/components/RelatedLinks';
+import { routeVehiclePages } from '@/lib/routeVehiclePages';
 
 const HERO_IMAGE = '/fleet/force-urbania-16-seater-front-01.webp';
 
@@ -171,6 +172,12 @@ export default async function LocationDetailPage({ params }: { params: Promise<{
             {
               heading: 'Nearby Areas',
               links: nearbyLocations.map((p) => ({ label: `Car Rental in ${p.name}`, href: `/locations/${p.slug}` })),
+            },
+            {
+              heading: `Fares From ${page.name} Trips: Popular Destinations`,
+              links: routeVehiclePages
+                .filter((p) => ['mysore', 'coorg', 'ooty', 'chikmagalur', 'hampi', 'tirupati'].some((d) => p.slug.includes(`-to-${d}-`)))
+                .map((p) => ({ label: p.h1, href: `/routes/${p.slug}` })),
             },
             {
               heading: 'Services',

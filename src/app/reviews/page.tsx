@@ -3,10 +3,10 @@ import { ArrowUpRight } from 'lucide-react';
 import { getBreadcrumbListSchema, getWebPageSchema } from '@/lib/schema';
 import TestimonialCard from '@/components/TestimonialCard';
 import CTABand from '@/components/CTABand';
-import { GOOGLE_PROFILE_URL, googleReviews } from '@/lib/reviews';
+import { GOOGLE_PROFILE_URL, GOOGLE_REVIEW_COUNT_LABEL, googleReviews } from '@/lib/reviews';
 
 export const metadata = {
-  title: 'Customer Reviews, Bangalore Car & Tempo Traveller Rental',
+  title: 'Customer Reviews, Bangalore Car Rental',
   description:
     'Real Google reviews of Sushi Travels, Bangalore: drivers, clean vehicles and trips to Sabarimala, Coorg and more, shown exactly as customers wrote them.',
   alternates: { canonical: '/reviews' },
@@ -51,7 +51,7 @@ export default function ReviewsPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <h1 className="text-4xl sm:text-5xl font-serif font-bold">Customer Reviews</h1>
           <p className="text-sm sm:text-base text-cream-warm">
-            What travellers say about Sushi Travels on Google — drivers, vehicles and trips, copied exactly as written.
+            {GOOGLE_REVIEW_COUNT_LABEL} Google reviews from travellers — drivers, vehicles and trips. Here are {googleReviews.length} of them, copied exactly as written.
           </p>
         </div>
       </section>

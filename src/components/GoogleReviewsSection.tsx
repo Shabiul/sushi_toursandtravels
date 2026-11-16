@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import TestimonialCard from '@/components/TestimonialCard';
-import { GOOGLE_PROFILE_URL, googleReviews, type GoogleReview } from '@/lib/reviews';
+import { GOOGLE_PROFILE_URL, GOOGLE_REVIEW_COUNT_LABEL, googleReviews, type GoogleReview } from '@/lib/reviews';
 
 /**
  * A short strip of real Google reviews. The heading says these are reviews of
@@ -15,7 +15,7 @@ export default function GoogleReviewsSection({ reviews }: { reviews: GoogleRevie
     <section className="space-y-5">
       <div className="space-y-1">
         <h2 className="font-serif font-bold text-xl text-navy">What Customers Say About Sushi Travels</h2>
-        <p className="text-xs text-navy-light">Real reviews from our Google Business Profile, shown as written.</p>
+        <p className="text-xs text-navy-light">{GOOGLE_REVIEW_COUNT_LABEL} Google reviews — a selection shown here exactly as written.</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {reviews.map((r) => (

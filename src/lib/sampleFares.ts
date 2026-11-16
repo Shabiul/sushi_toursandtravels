@@ -1,6 +1,6 @@
 import type { Vehicle } from './vehicles';
 import { MIN_KM_PER_DAY } from './vehicles';
-import { routePages } from './routes';
+import { routePages, type RoutePage } from './routes';
 
 /**
  * Worked trip-cost examples, computed from the SAME confirmed per-km rate,
@@ -36,27 +36,41 @@ export function confirmedRate(v: Vehicle): number | null {
   return r && r > 0 ? r : null;
 }
 
+/** One-way kilometres from a route's "Approx. 143 km" string. */
+export function oneWayKm(route: Pick<RoutePage, 'distance'>): number {
+  return parseInt(route.distance.replace(/[^0-9]/g, ''), 10);
+}
+
+/** The single fare formula used everywhere on the site. Null when the vehicle has no confirmed rate. */
+export function tripFare(v: Vehicle, oneWay: number, days: number) {
+  const rate = confirmedRate(v);
+  if (rate === null || !Number.isFinite(oneWay)) return null;
+  const bata = v.driverBata ?? 0;
+  const minKm = v.minKmPerDay ?? MIN_KM_PER_DAY;
+  const roundTripKm = oneWay * 2;
+  const billedKm = Math.max(roundTripKm, minKm * days);
+  const total = billedKm * rate + bata * days;
+  return {
+    rate,
+    bata,
+    minKm,
+    roundTripKm,
+    billedKm,
+    total,
+    perPerson: v.seats >= 7 ? Math.round(total / v.seats) : null,
+  };
+}
+
 export function getSampleFares(v: Vehicle): { rate: number; bata: number; minKm: number; rows: SampleFareRow[] } | null {
   const rate = confirmedRate(v);
   if (rate === null) return null;
-  const bata = v.driverBata ?? 0;
-  const minKm = v.minKmPerDay ?? MIN_KM_PER_DAY;
   const rows: SampleFareRow[] = [];
   for (const t of SAMPLE_TRIPS) {
     const route = routePages.find((r) => r.slug === t.routeSlug);
-    const oneWay = route ? parseInt(route.distance.replace(/[^0-9]/g, ''), 10) : NaN;
-    if (!Number.isFinite(oneWay)) continue;
-    const roundTripKm = oneWay * 2;
-    const billedKm = Math.max(roundTripKm, minKm * t.days);
-    const total = billedKm * rate + bata * t.days;
-    rows.push({
-      trip: t.label,
-      days: t.days,
-      roundTripKm,
-      billedKm,
-      total,
-      perPerson: v.seats >= 7 ? Math.round(total / v.seats) : null,
-    });
+    if (!route) continue;
+    const f = tripFare(v, oneWayKm(route), t.days);
+    if (!f) continue;
+    rows.push({ trip: t.label, days: t.days, roundTripKm: f.roundTripKm, billedKm: f.billedKm, total: f.total, perPerson: f.perPerson });
   }
-  return rows.length ? { rate, bata, minKm, rows } : null;
+  return rows.length ? { rate, bata: v.driverBata ?? 0, minKm: v.minKmPerDay ?? MIN_KM_PER_DAY, rows } : null;
 }

@@ -15,6 +15,9 @@ function ttVehicle(id: string) {
 const TT9 = ttVehicle('luxury-tempo-traveller-9-plus-1');
 const TT12 = ttVehicle('tempo-traveller');
 const TT17 = ttVehicle('force-tempo-traveller-17-seater');
+const U9 = ttVehicle('force-urbania-9-seater');
+const U12 = ttVehicle('force-urbania-maharaja-12-seater');
+const U16 = ttVehicle('force-urbania-luxury-16-seater');
 
 export interface BlogCitation {
   authority: string;
@@ -45,6 +48,8 @@ export interface BlogSection {
 export interface BlogPost {
   slug: string;
   title: string;
+  /** Shorter <title> / social title when the on-page headline is too long for a search result. */
+  seoTitle?: string;
   metaDescription: string;
   excerpt: string;
   publishDate: string;
@@ -122,6 +127,7 @@ export const blogPosts: BlogPost[] = [
   {
     "slug": "force-urbania-16-seater-rental-bangalore-guide",
     "title": "Force Urbania 16 Seater Rental in Bangalore: Complete Guide, Rates & Outstation Travel",
+    "seoTitle": "Force Urbania 16-Seater Rental Guide",
     "metaDescription": "Rent a 16-seater Force Urbania in Bangalore at ₹38/km with driver. High-roof cabin, captain seats, outstation rates & routes to Coorg, Ooty, Mysore & Hampi.",
     "excerpt": "The definitive guide to hiring the flagship 16-seater Force Urbania in Bangalore: ₹38/km outstation rates, driver bata, monocoque cabin comfort, luggage space, and outstation route planning across South India.",
     "publishDate": "2026-11-05",
@@ -158,7 +164,7 @@ export const blogPosts: BlogPost[] = [
           "To calculate your baseline outstation cost, multiply the 300 km minimum by ₹38/km, which yields ₹11,400 in vehicle running charges per calendar day. Adding the mandatory driver bata of ₹700 per day results in an exact baseline daily commitment of ₹12,100 before statutory GST and actual highway fees. If your journey exceeds 300 kilometres on any given calendar day (or across the multi-day trip aggregate), every additional kilometre is billed at the exact same ₹38/km rate without surge multipliers.",
           "Driver bata (allowance) is set at ₹700 per calendar day for standard duty between 6:00 AM and 10:00 PM. This covers the chauffeur’s daily meals, lodging, and professional outstation allowance. If driving is required past 10:00 PM or starts before 6:00 AM, a standard nocturnal highway allowance applies to compensate the chauffeur for nighttime duty.",
           "Inclusions & Exclusions: The published ₹38/km tariff is fully inclusive of vehicle fuel (high-grade commercial diesel), vehicle comprehensive insurance, routine mechanical servicing, and authorized vehicle sanitization before departure. Excluded from the per-kilometre rate are statutory tolls, state border permits, venue parking charges, and Goods & Services Tax (GST). All highway toll plazas are processed automatically via digital commercial FASTag, and an itemized electronic FASTag statement is provided to the client at the conclusion of the journey. Interstate tourist permits (mandatory when crossing Karnataka borders into Tamil Nadu, Kerala, Andhra Pradesh, Goa, or Maharashtra) and municipal parking fees are billed at actual government receipts. In accordance with commercial passenger transport regulations, GST is billed at 5% on passenger carriage invoices.",
-          "Local Bangalore City Rentals: While the ₹38/km rate applies to outstation and intercity travel, Sushi Travels also provides the 16-seater Force Urbania for local within-city deployments, including corporate conventions, airport transfer convoys, wedding guest shuttles, and diplomatic delegations. Local city rentals are structured as fixed-duration packages, such as 4 Hours / 40 Kilometres, 8 Hours / 80 Kilometres, and 12 Hours / 120 Kilometres, with transparent over-hour and over-kilometre rates. Due to varying route requirements within Bangalore city, local tariffs are quoted upon enquiry through our central dispatch desk."
+          "Local Bangalore City Rentals: While the ₹38/km rate applies to outstation and intercity travel, Sushi Travels also provides the 16-seater Force Urbania for local within-city deployments, including corporate conventions, airport transfer convoys, wedding guest shuttles, and diplomatic delegations. Local city rentals use the same per-kilometre rate as outstation trips; because route requirements vary within Bangalore city, the hours and kilometres for your day are confirmed through our central dispatch desk."
         ],
         "table": {
           "caption": "16-Seater Force Urbania Commercial Tariff Sheet (Owner-Confirmed & Verified)",
@@ -1022,7 +1028,7 @@ export const blogPosts: BlogPost[] = [
     "faqs": [
       {
         "question": "What is the exact per-kilometre rate for hiring a 16-seater Force Urbania in Bangalore?",
-        "answer": "The outstation rate for the 16-seater Force Urbania is ₹38 per kilometre with a standard commercial minimum billing distance of 300 kilometres per calendar day. Chauffeur bata is ₹700 per day for normal operating hours (6:00 AM to 10:00 PM). Toll charges via electronic FASTag, state entry permits, and parking are billed at actuals. For local rentals within Bangalore city, custom hourly packages (e.g. 4 hr / 40 km, 8 hr / 80 km) are quoted upon enquiry."
+        "answer": "The outstation rate for the 16-seater Force Urbania is ₹38 per kilometre with a standard commercial minimum billing distance of 300 kilometres per calendar day. Chauffeur bata is ₹700 per day for normal operating hours (6:00 AM to 10:00 PM). Toll charges via electronic FASTag, state entry permits, and parking are billed at actuals. Local rentals within Bangalore city use the same per-kilometre rate; the hours and kilometres for your day are confirmed when you enquire."
       },
       {
         "question": "How much luggage can the 16-seater Force Urbania carry in its rear boot?",
@@ -1115,6 +1121,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'force-urbania-16-seater-vs-tempo-traveller-bangalore',
     title: 'Force Urbania 16-Seater vs 17-Seater Tempo Traveller: Which Should You Rent in Bangalore?',
+    seoTitle: 'Urbania 16 vs Tempo Traveller 17 Seater',
     metaDescription:
       'Comparing the Force Urbania 16-seater (₹38/km) and 17-seater Tempo Traveller (₹30/km) in Bangalore. Suspension, ghat road comfort, luggage & cost comparison.',
     excerpt:
@@ -1580,14 +1587,102 @@ export const blogPosts: BlogPost[] = [
       { question: 'Is there a minimum distance per day?', answer: `Yes. Outstation trips are billed for at least ${TT12.fares.minKm} km per day, so a short trip still bills the daily minimum.` },
       { question: 'What is not included in the estimate?', answer: 'Tolls, parking, state permit and entry fees, night allowance after 10:00 PM and 5% GST are extra and billed at actuals.' },
       { question: 'Is fuel included in the rate?', answer: 'Yes. Fuel, vehicle insurance and routine maintenance are covered by Sushi Travels and not billed separately.' },
-      { question: 'Do you offer local rental within Bangalore?', answer: 'Yes. The rates in this guide are for outstation trips. For local rentals within the city, call or WhatsApp us for an enquiry.' },
+      { question: 'Do you offer local rental within Bangalore?', answer: 'Yes. Local rentals within the city use the same per-km rates shown in this guide. Call or WhatsApp us with your hours and route and we will confirm the details for your day.' },
     ],
     relatedLinks: [
       { label: '12 seater Tempo Traveller rent in Bangalore', href: '/vehicles/tempo-traveller-rental-bangalore', title: '12 Seater Tempo Traveller Rent in Bangalore' },
       { label: '9 seater Tempo Traveller in Bangalore', href: '/vehicles/9-seater-luxury-tempo-traveller-bangalore', title: '9 Seater Tempo Traveller in Bangalore' },
       { label: '17 seater Tempo Traveller in Bangalore', href: '/vehicles/17-seater-tempo-traveller-bangalore', title: '17 Seater Tempo Traveller in Bangalore' },
-      { label: 'Bangalore to Mysore cab', href: '/routes/bangalore-to-mysore-cab', title: 'Bangalore to Mysore Cab: Distance and Fare Enquiry' },
-      { label: 'Bangalore to Coorg cab', href: '/routes/bangalore-to-coorg-cab', title: 'Bangalore to Coorg Cab: Distance and Fare Enquiry' },
+      { label: 'Bangalore to Mysore Tempo Traveller fare', href: '/routes/bangalore-to-mysore-tempo-traveller', title: 'Bangalore to Mysore Tempo Traveller on Rent' },
+      { label: 'Bangalore to Coorg Tempo Traveller fare', href: '/routes/bangalore-to-coorg-tempo-traveller', title: 'Bangalore to Coorg Tempo Traveller on Rent' },
+      { label: 'Bangalore to Ooty Tempo Traveller fare', href: '/routes/bangalore-to-ooty-tempo-traveller', title: 'Bangalore to Ooty Tempo Traveller on Rent' },
+    ],
+  },
+  {
+    slug: 'force-urbania-rental-cost-bangalore',
+    title: 'Force Urbania Rental Cost in Bangalore',
+    metaDescription:
+      'Force Urbania rental cost in Bangalore: per-km rates for the 9, 12 and 16 seater, minimum km, driver bata and worked trip costs for Mysore and Coorg.',
+    excerpt:
+      'What a Force Urbania really costs in Bangalore: our per-km rate for each size, how the 300 km minimum and driver bata work, and worked examples for Mysore and Coorg.',
+    publishDate: '2026-11-16',
+    dateModified: '2026-11-16',
+    author: 'Sushi Travels Editorial Team',
+    authorRole: 'Bangalore Chauffeur & Outstation Travel Desk',
+    authorBio: 'The Sushi Travels team plans and runs chauffeur-driven outstation trips out of Bangalore, and writes these guides from the rates and routes we actually operate.',
+    reviewer: 'Sushi Travels Editorial & Safety Advisory Board',
+    coverImage: '/fleet/force-urbania-16-seater-front-01.webp',
+    images: ['/fleet/force-urbania-16-seater-front-01.webp'],
+    imageAltPrefix: 'Force Urbania for rent in Bangalore',
+    geoSummary: `The Force Urbania costs ${inr(U9.fares.rate)}/km for the 9-seater, ${inr(U12.fares.rate)}/km for the 12-seater Maharaja and ${inr(U16.fares.rate)}/km for the 16-seater in Bangalore, the same per-km rate for local and outstation use. Trips are billed on a ${U16.fares.minKm} km-per-day minimum plus driver bata, so a same-day Mysore round trip in the 16-seater works out to about ${inr(U16.mysore.total)} before tolls and parking.`,
+    bodyParagraphs: [
+      `The Force Urbania is priced per kilometre, with a daily minimum and a driver allowance on top. This guide shows the rate for each size and works through real trips so you can estimate your own cost before you call.`,
+    ],
+    sections: [
+      {
+        heading: 'How Force Urbania rental is priced',
+        paragraphs: [
+          `Every booking has three parts: the per-km rate for the size you choose, a minimum of ${U16.fares.minKm} km for each day of the trip, and a daily driver allowance (bata). The same per-km rate applies to local rentals within Bangalore and to outstation trips.`,
+          `The distance you are billed for is the larger of your actual round-trip kilometres and ${U16.fares.minKm} km multiplied by the number of days. Tolls, parking, state permit and entry fees are paid at actuals, and 5% GST applies to the invoice. Fuel, vehicle insurance and routine maintenance are covered by Sushi Travels.`,
+        ],
+      },
+      {
+        heading: 'Our Force Urbania rates',
+        paragraphs: [`These are the confirmed per-km rates for each Urbania size.`],
+        table: {
+          caption: 'Force Urbania rates, Bangalore',
+          headers: ['Vehicle', 'Seats', 'Rate per km', 'Minimum per day', 'Driver bata'],
+          rows: [U9, U12, U16].map(({ v, fares }) => [
+            v.name,
+            v.seatsDisplay ?? String(v.seats),
+            `${inr(fares.rate)} AC`,
+            `${fares.minKm} km`,
+            `${inr(fares.bata)} per day`,
+          ]),
+        },
+      },
+      {
+        heading: 'What a real trip costs',
+        paragraphs: [
+          `Two common trips, worked out from the rates above. Mysore is a same-day round trip of about ${U16.mysore.roundTripKm} km, so the ${U16.fares.minKm} km minimum applies. Coorg is a two-day trip of about ${U16.coorg.roundTripKm} km, billed at ${U16.coorg.billedKm} km for two days.`,
+        ],
+        table: {
+          caption: 'Estimated cost before tolls, parking, permits and GST',
+          headers: ['Vehicle', 'Mysore, same day', 'Per person (Mysore)', 'Coorg, 2 days', 'Per person (Coorg)'],
+          rows: [U9, U12, U16].map(({ v, mysore, coorg }) => [
+            v.name,
+            inr(mysore.total),
+            mysore.perPerson !== null ? `about ${inr(mysore.perPerson)}` : '—',
+            inr(coorg.total),
+            coorg.perPerson !== null ? `about ${inr(coorg.perPerson)}` : '—',
+          ]),
+        },
+        highlightBox: {
+          title: 'How the numbers are worked out',
+          text: `Billed km × rate + driver bata × days. For the 16-seater on the Mysore day trip: ${U16.mysore.billedKm} km × ${inr(U16.fares.rate)} + ${inr(U16.fares.bata)} = ${inr(U16.mysore.total)}. Per-person figures divide the estimate by the seat count.`,
+        },
+      },
+      {
+        heading: 'Urbania or Tempo Traveller?',
+        paragraphs: [
+          `The Urbania is the premium option; per kilometre it costs more than a standard Tempo Traveller, which is ${inr(TT12.fares.rate)}/km for the 12-seater. Choose it when comfort matters most, and a Tempo Traveller when you want the lowest cost per person. Our Tempo Traveller cost guide shows the equivalent worked examples.`,
+        ],
+      },
+    ],
+    citations: [],
+    faqs: [
+      { question: 'How much does a Force Urbania cost per km in Bangalore?', answer: `The 9-seater is ${inr(U9.fares.rate)}/km, the 12-seater Maharaja ${inr(U12.fares.rate)}/km and the 16-seater ${inr(U16.fares.rate)}/km.` },
+      { question: 'Is the local rental rate different from outstation?', answer: 'No. Local rentals within Bangalore use the same per-km rate as outstation trips; call or WhatsApp us with your hours and route and we will confirm the details for your day.' },
+      { question: 'Is there a minimum distance per day?', answer: `Yes. Trips are billed for at least ${U16.fares.minKm} km per day.` },
+      { question: 'What is not included in the estimate?', answer: 'Tolls, parking, state permit and entry fees, night allowance after 10:00 PM and 5% GST are extra and billed at actuals.' },
+      { question: 'Is fuel included in the rate?', answer: 'Yes. Fuel, vehicle insurance and routine maintenance are covered by Sushi Travels and not billed separately.' },
+    ],
+    relatedLinks: [
+      { label: 'Force Urbania 9 seater luxury', href: '/vehicles/force-urbania-9-seater-bangalore', title: 'Force Urbania 9 Seater Luxury Rental in Bangalore' },
+      { label: 'Urbania 12 seater Maharaja', href: '/vehicles/force-urbania-12-seater-maharaja-bangalore', title: 'Urbania 12 Seater Maharaja Rental in Bangalore' },
+      { label: 'Force Urbania 16 seater', href: '/vehicles/force-urbania-16-seater-luxury-bangalore', title: 'Force Urbania 16 Seater Rental in Bangalore' },
+      { label: 'Bangalore to Mysore Urbania fare', href: '/routes/bangalore-to-mysore-urbania', title: 'Bangalore to Mysore Force Urbania on Rent' },
+      { label: 'Bangalore to Coorg Urbania fare', href: '/routes/bangalore-to-coorg-urbania', title: 'Bangalore to Coorg Force Urbania on Rent' },
     ],
   },
 ];

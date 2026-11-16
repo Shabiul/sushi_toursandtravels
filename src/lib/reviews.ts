@@ -23,6 +23,13 @@ export interface GoogleReview {
 
 export const GOOGLE_PROFILE_URL = 'https://maps.google.com/?cid=15212322609133405823';
 
+/**
+ * Owner says the Google profile has "around 59" reviews (2026-11-16). Shown as
+ * "50+" so it stays true as the count moves; update to the exact figure if you
+ * want a precise number. Only the reviews in `googleReviews` below are shown here.
+ */
+export const GOOGLE_REVIEW_COUNT_LABEL = '50+';
+
 export const googleReviews: GoogleReview[] = [
   { name: 'Shanthappa', text: 'Shushi Travels provided a completely hassle-free, safe, and spiritually fulfilling Sabarimala yatra, taking exceptional care of our comfort and schedule every step of the way.' },
   { name: 'Sharath G.', text: 'Excellent service drivery punctual polite and the vehicle was clean and comfortable highly recommended and staff was very friendly best travels to have a great journey' },
