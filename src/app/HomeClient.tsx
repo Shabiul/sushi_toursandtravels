@@ -709,7 +709,15 @@ export default function HomeClient({ initialVehicles, initialRoutes, initialRevi
             )}
           </div>
 
-          <div className="mt-10 text-center">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+            <Link
+              href="/reviews"
+              title="Read all Sushi Travels customer reviews"
+              className="inline-flex items-center space-x-1.5 text-sm font-bold text-primary hover:text-primary-dark transition duration-150"
+            >
+              <span>Read all customer reviews</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
             <a
               href="https://maps.google.com/?cid=15212322609133405823"
               target="_blank"

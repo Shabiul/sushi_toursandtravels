@@ -111,6 +111,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/reviews" title="Read Customer Reviews" className="hover:text-primary transition-colors duration-150">
+                  Customer Reviews
+                </Link>
+              </li>
+              <li>
                 <Link href="/routes" title="Explore Outstation Cab Routes from Bangalore" className="hover:text-primary transition-colors duration-150">
                   Popular Routes
                 </Link>

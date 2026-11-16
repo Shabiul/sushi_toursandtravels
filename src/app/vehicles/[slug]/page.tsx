@@ -13,6 +13,8 @@ import RelatedLinks from '@/components/RelatedLinks';
 import VehiclePricingTable from '@/components/VehiclePricingTable';
 import GroupSizeComparisonTable from '@/components/GroupSizeComparisonTable';
 import TripEstimateTable from '@/components/TripEstimateTable';
+import GoogleReviewsSection from '@/components/GoogleReviewsSection';
+import { reviewsForVehicle, reviewKindsFor } from '@/lib/reviews';
 import { vehicles as allVehicles } from '@/lib/vehicles';
 import { blogPosts } from '@/lib/blog';
 
@@ -247,6 +249,15 @@ export default async function VehiclePage({ params }: { params: Promise<{ slug: 
             ))}
           </ul>
         </section>
+
+        {/* Real Google reviews of Sushi Travels (vehicle-specific ones first) */}
+        <GoogleReviewsSection
+          reviews={reviewsForVehicle(
+            vehiclePages.findIndex((p) => p.slug === page.slug),
+            vehiclePages.length,
+            reviewKindsFor(pageVehicles),
+          )}
+        />
 
         {/* FAQ */}
         <FaqAccordion faqs={page.faqs} />

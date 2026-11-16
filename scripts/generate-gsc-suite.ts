@@ -93,6 +93,13 @@ const pages: PageMeta[] = [
     ],
   },
   {
+    url: `${BASE_URL}/reviews`,
+    lastmod: NOW,
+    changefreq: 'monthly',
+    priority: 0.6,
+    images: [],
+  },
+  {
     url: `${BASE_URL}/contact`,
     lastmod: NOW,
     changefreq: 'monthly',

@@ -1,3 +1,5 @@
+import { googleReviews } from './reviews';
+
 // Homepage "popular routes" and sample testimonials. Pure data (no database
 // access) so the public pages can import it directly; seed.ts also uses it to
 // fill an empty database for the admin dashboard.
@@ -103,45 +105,12 @@ export const popularRoutes = [
   },
 ];
 
-// Real Google Business Profile reviews, copied word for word (typos included;
-// only line breaks/spacing normalised). All are 5-star. Reviewers are shown by
-// first name + last initial. Incomplete ("View full review") reviews and any
-// that name another business were left out on purpose.
-export const popularReviews = [
-  {
-    name: 'Shanthappa',
-    location: 'Google review',
-    rating: 5,
-    text: 'Shushi Travels provided a completely hassle-free, safe, and spiritually fulfilling Sabarimala yatra, taking exceptional care of our comfort and schedule every step of the way.',
-  },
-  {
-    name: 'Sharath G.',
-    location: 'Google review',
-    rating: 5,
-    text: 'Excellent service drivery punctual polite and the vehicle was clean and comfortable highly recommended and staff was very friendly best travels to have a great journey',
-  },
-  {
-    name: 'Ishaan M.',
-    location: 'Google review',
-    rating: 5,
-    text: 'Nice and fantastic staffs and Buses are too GOOD. The dinner and refreshment halts were at very decent places, which we never experienced in this route.',
-  },
-  {
-    name: 'Manya',
-    location: 'Google review',
-    rating: 5,
-    text: 'Pleasure to meet sushi travel! We had a smooth, comfortable and safe journey allover. Best experience, friendly driver. Thankyou for giving such a memorable and comfortable drive ✨',
-  },
-  {
-    name: 'Nandisha',
-    location: 'Google review',
-    rating: 5,
-    text: 'We had good journey, driver was so friendly and calmly Vechile was so hygienic and well maintained',
-  },
-  {
-    name: 'Ramesh P.',
-    location: 'Google review',
-    rating: 5,
-    text: 'Very Good experience and well maintained vehicles. Experienced drivers. Best travels to book a trips.',
-  },
-];
+// Homepage testimonials: six real Google reviews from the single source of truth
+// in src/lib/reviews.ts (word for word; see the notes there).
+const HOME_REVIEW_NAMES = ['Shanthappa', 'Sharath G.', 'Ishaan M.', 'Manya', 'Nandisha', 'Ramesh P.'];
+
+export const popularReviews = HOME_REVIEW_NAMES.map((name) => {
+  const r = googleReviews.find((x) => x.name === name);
+  if (!r) throw new Error(`homeContent.ts: no review for ${name}`);
+  return { name: r.name, location: 'Google review', rating: 5, text: r.text };
+});

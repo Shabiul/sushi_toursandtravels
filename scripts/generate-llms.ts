@@ -94,6 +94,7 @@ const sections = [
     { label: 'Outstation routes', url: `${BASE}/routes` },
     { label: 'Areas served in Bangalore', url: `${BASE}/locations` },
     { label: 'Tours & packages', url: `${BASE}/tours-and-packages` },
+    { label: 'Customer reviews', url: `${BASE}/reviews`, note: 'Real Google reviews, word for word' },
     { label: 'Book online', url: `${BASE}/booking` },
     { label: 'Contact', url: `${BASE}/contact` },
     { label: 'About', url: `${BASE}/about` },

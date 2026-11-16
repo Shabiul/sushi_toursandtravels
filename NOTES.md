@@ -1871,3 +1871,9 @@ Read Google's own docs (AI features page, "Optimizing for generative AI search",
 - Left out on purpose: truncated reviews ("View full review") and one that names another business.
 - No Review/AggregateRating structured data (Google doesn't show stars for a business's own reviews). Overall rating/count were not supplied, so none is claimed.
 - The admin DB `Review` table still holds the old placeholder rows (not shown on the public site).
+
+### 20b. All Google reviews used site-wide (2026-11-16)
+- Single source of truth: `src/lib/reviews.ts` — 43 real 5-star Google reviews with text, word for word (star-only reviews omitted; one naming another business omitted; Google-truncated ones end in "…"). Homepage testimonials (`homeContent.ts`) now derive from it.
+- New `/reviews` page lists all 43 (in sitemap, footer, llms.txt). Each of the 12 vehicle pages shows 3–5 reviews under "What Customers Say About Sushi Travels" (heading says company-wide on purpose).
+- Placement rule: each general review has exactly one home vehicle page (index % pages); only the two reviews that name a vehicle type are tagged (bus review -> bus pages; "traveller driver … Coorg" -> pages whose vehicle NAME contains "Tempo Traveller", not Urbania).
+- No Review/AggregateRating schema (self-serving reviews don't get stars in Google).
