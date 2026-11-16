@@ -16,14 +16,14 @@ export const metadata: Metadata = {
     description:
       'Travel diaries, route notes, and destination guides from Sushi Travels — honest notes on places worth visiting, written for travellers planning their own trip.',
     url: '/blog',
-    images: [{ url: blogPosts[0]?.coverImage ?? '/logo-light-v3.png', width: 800, height: 600, alt: 'Sushi Travels blog' }],
+    images: [{ url: blogPosts[0]?.coverImage ?? '/logo-v4.png', width: 800, height: 600, alt: 'Sushi Travels blog' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Travel Stories & Destination Guides | Sushi Travels',
     description:
       'Travel diaries, route notes, and destination guides from Sushi Travels — honest notes on places worth visiting, written for travellers planning their own trip.',
-    images: [blogPosts[0]?.coverImage ?? '/logo-light-v3.png'],
+    images: [blogPosts[0]?.coverImage ?? '/logo-v4.png'],
   },
 };
 

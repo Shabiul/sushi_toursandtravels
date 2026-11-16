@@ -47,7 +47,7 @@ export default function TermsAndConditionsPage() {
       url: 'https://www.sushitravels.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.sushitravels.com/logo-light-v3.png',
+        url: 'https://www.sushitravels.com/logo-v4.png',
       },
     },
   };

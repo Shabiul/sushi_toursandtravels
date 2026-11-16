@@ -86,7 +86,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
               />
             </svg>
             <Image
-              src="/logo-light-v3.png"
+              src="/logo-light-v4.png"
               alt="Sushi Travels Logo"
               title="Sushi Travels Logo"
               width={56}

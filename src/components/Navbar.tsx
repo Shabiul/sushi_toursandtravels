@@ -63,7 +63,7 @@ export default function Navbar() {
               title="Sushi Travels Home Page"
             >
               <Image
-                src="/logo-light-v3.png"
+                src="/logo-light-v4.png"
                 alt="Sushi Travels Logo — Car and Tempo Traveller Rental Bangalore"
                 title="Sushi Travels Official Logo"
                 width={56}
@@ -169,7 +169,7 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                 >
                   <Image
-                    src="/logo-light-v3.png"
+                    src="/logo-light-v4.png"
                     alt="Sushi Travels Logo"
                     title="Sushi Travels Official Logo"
                     width={40}

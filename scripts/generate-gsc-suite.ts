@@ -48,7 +48,7 @@ const pages: PageMeta[] = [
         caption: 'Luxury Force Urbania van rental for outstation and airport travel in Bangalore.',
       },
       {
-        loc: `${BASE_URL}/logo-light-v3.png`,
+        loc: `${BASE_URL}/logo-v4.png`,
         title: 'Sushi Tours & Travels Official Logo',
         caption: 'Sushi Travels Bangalore logo.',
       },

@@ -11,7 +11,7 @@ export function getLocalBusinessSchema() {
     name: 'Sushi Travels',
     legalName: 'Sushi Tours & Travels',
     image: `${SITE_URL}/fleet/force-urbania-16-seater-front-01.webp`,
-    logo: `${SITE_URL}/logo-light-v3.png`,
+    logo: `${SITE_URL}/logo-v4.png`,
     description: 'Sushi Travels is a premier Indian travel agency renting out vehicles with drivers for local, airport transfer, and outstation trips in India.',
     url: SITE_URL,
     telephone: PHONE_NUMBER,
@@ -324,7 +324,7 @@ export function getBlogPostingSchema(params: {
       name: 'Sushi Travels',
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/logo-light-v3.png`,
+        url: `${SITE_URL}/logo-v4.png`,
       },
     },
     mainEntityOfPage: {
@@ -373,7 +373,7 @@ export function getWebPageSchema(params: {
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/logo-light-v3.png`,
+        url: `${SITE_URL}/logo-v4.png`,
       },
     },
     isPartOf: {
@@ -484,7 +484,7 @@ export function getVideoObjectSchema(params: {
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/logo-light-v3.png`,
+        url: `${SITE_URL}/logo-v4.png`,
       },
     },
   };
